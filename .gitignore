@@ -1,0 +1,11 @@
+.ipynb_checkpoints/
+*~
+*.pyc
+*.bak
+*.diff
+*.orig
+.sw[nop]
+*.tmp
+.DS_Store
+.Rproj.user
+.Rhistory
