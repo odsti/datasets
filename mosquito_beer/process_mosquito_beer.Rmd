@@ -1,0 +1,111 @@
+---
+jupyter:
+  jupytext:
+    metadata_filter:
+      notebook:
+        additional: all
+        excluded:
+        - language_info
+    split_at_heading: true
+    text_representation:
+      extension: .Rmd
+      format_name: rmarkdown
+      format_version: '1.0'
+      jupytext_version: 0.8.6
+  kernelspec:
+    display_name: Python 3
+    language: python
+    name: python3
+---
+
+These are the data from [Beer Consumption Increases Human Attractiveness to Malaria Mosquitoes](https://doi.org/10.1371/journal.pone.0009546).
+
+The first author, Dr [Thierry Lefèvre](https://sites.google.com/site/thierryelefevre), kindly sent the original data.
+
+He released the data and derivatives under the [CC-BY](https://creativecommons.org/licenses/by/4.0) license.
+
+```{python}
+import os.path as op
+import numpy as np
+import pandas as pd
+```
+
+`beer.txt` is the original data file as provided by Dr Lefèvre.
+
+It is in tab-separated value format.
+
+```{python}
+df = pd.read_csv('beer.txt', sep='\t')
+df.head()
+```
+
+Here are the variable descriptions sent by Dr Lefèvre.
+
+* `volunteer`: 43 levels corresponding to the id of the 43
+  volunteers.
+* `group`: 2 levels "beer" or "water" (= volunteers were
+  assigned to either the beer (volunteer 1 to 25) or the water
+  treatment (volunteer 26 to 43).
+* `test`: 2 levels "after" or "before"  (the attractiveness of
+  each volunteer was tested twice: before drinking and 15 min
+  after drinking either water or beer).
+* `nb_relased`: nb of released mosquitoes (n=50 for each test
+  and group).
+* `no_odour`: nb of caught mosquitoes in the "no_odour control
+  trap".
+* `volunt_odour`: nb of caught mosquitoes in the volunteer odour
+  trap.
+* `activated`: number of trapped mosquitoes (= no_odour
+  volunt_odour).
+* `co2no`: CO2 concentration in the no odour trap.
+* `co2od`: CO2 concentration in the volunteer odour trap.
+* `temp`: body temperature of the volunteer.
+* `trapside`: 2 levels (A or B) this is the side of the
+  volunteer odour treatment in the Y-olfactometer (volunteer
+  odour on the right side: A or on the left side: B)
+* `hour`: hour at which the test began.
+* `date`: date of the test.
+
+
+The `date` column looks like Excel format dates, which are
+number of days since January 1st 1900 - see [this
+explanation](http://www.cpearson.com/Excel/datetime.htm).
+
+The paper has:
+
+> Experiments were conducted between September and October 2007.
+
+The dates should be in this range.
+
+```{python}
+dates = pd.to_datetime('1900-01-01') + pd.to_timedelta(df['date'], unit='days')
+dates.describe()
+```
+
+Add the hours:
+
+```{python}
+date_times = dates + pd.to_timedelta(df['hour'], unit='hours')
+date_times.head()
+```
+
+```{python}
+clean_df = df.loc[:, :'trapside']
+clean_df['datetime'] = date_times
+clean_df.head()
+```
+
+Check the number released is always 50:
+
+```{python}
+np.all(clean_df['nb_released'] == 50)
+```
+
+Save without the index (row labels), and load to check it worked:
+
+```{python}
+out_path = op.join('processed', 'mosquito_beer.csv')
+clean_df.to_csv(out_path, index=False)  # No row labels
+# Read it back again.
+pd.read_csv(out_path).head()
+```
