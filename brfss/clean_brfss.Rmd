@@ -96,6 +96,87 @@ state_pcs.index = state_fips.index
 state_pcs.value_counts(sort=False)
 ```
 
+`QSTVER`: "Questionnaire Version Identifier".
+
+* 10 Landline single questionnaire
+* 11 Landline multiple questionnaire version 1
+* 12 Landline multiple questionnaire version 2
+* 13 Landline multiple questionnaire version 3
+* 20 Cell Phone single questionnaire
+* 21 Cell Phone multiple questionnaire version 1
+* 22 Cell Phone multiple questionnaire version 2
+* 23 Cell Phone multiple questionnaire version 3
+
+```{python}
+qstver = df['QSTVER']
+qstver.value_counts()
+```
+
+```{python}
+qstver.head()
+```
+
+```{python}
+def recode_qt(v):
+    if v < 20:
+        return "LAND"
+    if v >= 20:
+        return 'CELL'
+    return v
+
+qst_type = qstver.apply(recode_qt)
+qst_type.value_counts()
+```
+
+```{python}
+qst_type.head()
+```
+
+`QSTLANG`: "Language identifier"
+
+* 1 English
+* 2 Spanish
+* 3-99 Other
+
+```{python}
+qstlang = df['QSTLANG']
+qstlang.value_counts()
+```
+
+```{python}
+def recode_ql(v):
+    if v == 1:
+        return 'ENG'
+    if v == 2:
+        return 'SPA'
+    return np.nan
+
+qstlang_labels = qstlang.apply(recode_ql)
+qstlang_labels.value_counts()
+```
+
+`_URBSTAT` : "Urban/Rural Status"
+
+* 1 Urban counties 
+* 2 Rural counties
+
+```{python}
+urbstat = df['_URBSTAT']
+urbstat.value_counts()
+```
+
+```{python}
+def recode_1_2(v):
+    if v == 1:
+        return 'URBAN'
+    if v == 2:
+        return 'RURAL'
+    return v
+
+urbstat_labels = urbstat.apply(recode_1_2)
+urbstat_labels.value_counts()
+```
+
 `HTM4` is the "Computed Height in Meters", with 2 implied decimal places, so in fact it is the computed height in centimeters.
 
 It is computed because the original variable, `HEIGHT3` could be in feet / inches or meters.
@@ -259,14 +340,17 @@ smoke100_labels.value_counts()
 
 ```{python}
 clean_df = pd.DataFrame()
-cols = [state_pcs, height_cm, weight_kg, sex_clean,
+cols = [qst_type, qstlang_labels, urbstat_labels,
+        state_pcs, height_cm, weight_kg, sex_clean,
          genhlth_clean, physhlth_clean,
          menhlth_clean, smoke100_clean]
-names = ['state', 'height_cm', 'weight_kg',
+names = ['interview_type', 'quest_lang', 'urban_rural',
+         'state', 'height_cm', 'weight_kg',
          'gen_health', 'phys_health_days', 'mental_health_days',
           'smoke100']
 for col, name in zip(cols, names):
     clean_df[name] = col
+
 clean_df.head()
 ```
 
