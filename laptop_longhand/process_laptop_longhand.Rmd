@@ -1,0 +1,140 @@
+---
+jupyter:
+  jupytext:
+    notebook_metadata_filter: all,-language_info
+    split_at_heading: true
+    text_representation:
+      extension: .Rmd
+      format_name: rmarkdown
+      format_version: '1.1'
+      jupytext_version: 1.2.4
+  kernelspec:
+    display_name: Python 3
+    language: python
+    name: python3
+---
+
+Data from study 1 of "The Pen Is Mightier Than the Keyboard: Advantages of Longhand Over Laptop Note Taking".
+
+See <https://journals.sagepub.com/doi/full/10.1177/0956797614524581> for the main paper and <https://journals.sagepub.com/doi/10.1177/0956797618781773> for the corrigendum.
+
+OSF data repository housed at <https://osf.io/crsiz>.
+
+Data file from <https://osf.io/23yad>.
+
+Data codebook at <https://osf.io/j9472>.
+
+```{python}
+import os.path as op
+import numpy as np
+import pandas as pd
+import matplotlib.pyplot as plt
+# %matplotlib inline
+```
+
+```{python}
+df = pd.read_csv('laptop_notes_study1.csv')
+df.head()
+```
+
+There are some duplicate columns:
+
+```{python}
+cond1 = df[['condition', 'condition.1']].dropna()
+np.all(cond1['condition'] == cond1['condition.1'])
+```
+
+```{python}
+df['condition'].value_counts()
+```
+
+From text describing figure 1 in the [corrigendum](https://journals.sagepub.com/doi/10.1177/0956797618781773), mean z score on conceptual responses for writing notes was 0.162, and mean z score for laptop notes was −0.178.  This doesn't look like what we have:
+
+```{python}
+df[['condition', 'openZ']].groupby('condition').mean()
+```
+
+Let's try the raw scores:
+
+```{python}
+df[['condition', 'rawopen']].groupby('condition').mean()
+```
+
+Make a new dataset with fewer columns:
+
+
+From the paper:
+
+> Participants were 67 students (33 male, 33 female, 1 unknown) from the Princeton University subject pool. Two participants were excluded, 1 because he had seen the lecture serving as the stimulus prior to participation, and 1 because of a data-recording error.
+
+
+We have:
+
+```{python}
+len(df)
+```
+
+One subject doesn't have a condition recorded:
+
+```{python}
+bad_condition = df['condition'].isna()
+df[bad_condition]
+```
+
+Let's assume this is the subject with a "data-recording error", and drop that subject:
+
+```{python}
+clean_df = df[~bad_condition].copy()
+len(clean_df)
+```
+
+The authors also had this question:
+
+> betterlorn - In general, do you think it is better for learning purposes to take notes on a laptop or in a notebook? a. Laptop significantly better (1) – Notebook significantly better (7)
+
+Let's include that too.
+
+
+We will also use `SATcombined` as an index of student prior ability.
+
+
+Make a clearer column for laptop use (compared to by hand writing):
+
+```{python}
+clean_df['laptop_longhand'] = 'laptop'
+clean_df.loc[clean_df['condition'] == 1, 'laptop_longhand'] = 'longhand'
+clean_df.head()
+```
+
+```{python}
+# New empty data frame.
+smaller_df = pd.DataFrame()
+# Rename laptop_longhand column.
+smaller_df['condition'] = clean_df['laptop_longhand']
+# Change whichtalk to integers.
+smaller_df['whichtalk'] = clean_df['whichtalk'].astype(int)
+# Copy over, rename open and objective scores.
+smaller_df['concept_score'] = clean_df['rawopen']
+smaller_df['factual_score'] = clean_df['rawobjective']
+# Add betterlorn
+smaller_df['better_laptop_or_long'] = clean_df['betterlorn']
+# Combined SAT score
+smaller_df['SAT_combined'] = clean_df['SATcombined']
+smaller_df.head()
+```
+
+```{python}
+# Check we still get the same answer as before.
+smaller_df.groupby('condition').mean()
+```
+
+```{python}
+# Save to CSV, without the row labels (index).
+out_fname = op.join('processed', 'laptop_longhand_study1.csv')
+smaller_df.to_csv(out_fname, index=False)
+```
+
+```{python}
+# Check we can load back, get the same thing.
+pd.read_csv(out_fname).head()
+```
