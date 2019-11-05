@@ -1,0 +1,31 @@
+---
+jupyter:
+  jupytext:
+    split_at_heading: true
+    text_representation:
+      extension: .Rmd
+      format_name: rmarkdown
+      format_version: '1.1'
+      jupytext_version: 1.2.4
+  kernelspec:
+    display_name: Python 3
+    language: python
+    name: python3
+---
+
+```{python}
+import pandas as pd
+```
+
+```{python}
+df = pd.read_excel('disciplines_SI.xlsx')
+df
+```
+
+```{python}
+df.to_csv('processed/rate_my_course.csv', index=None)
+```
+
+```{python}
+pd.read_csv('processed/rate_my_course.csv').head()
+```
