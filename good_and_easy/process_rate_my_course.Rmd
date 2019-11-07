@@ -13,19 +13,31 @@ jupyter:
     name: python3
 ---
 
+From [supplementary material](https://www.tandfonline.com/doi/suppl/10.1080/02602938.2016.1276155) of:
+
+Andrew S Rosen (2018) "Correlations, trends and potential biases among
+publicly accessible web-based student evaluations of teaching: a large-scale
+study of RateMyProfessors.com data" *Assessment & Evaluation in Higher
+Education* 43(1) pp 31-44. <https://doi.org/10.1080/02602938.2016.1276155>
+
+See `README.md` for more detail.
+
+This notebook converts the Excel format file to a CSV file.
+
 ```{python}
+# Read in file
 import pandas as pd
-```
-
-```{python}
 df = pd.read_excel('disciplines_SI.xlsx')
-df
 ```
 
 ```{python}
-df.to_csv('processed/rate_my_course.csv', index=None)
+# Convert to CSV
+import os.path as op
+csv_fname = op.join('processed', 'rate_my_course.csv')
+df.to_csv(csv_fname, index=None)
 ```
 
 ```{python}
-pd.read_csv('processed/rate_my_course.csv').head()
+# Read back as check
+pd.read_csv(csv_fname).head()
 ```
