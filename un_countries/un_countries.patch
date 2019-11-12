@@ -1,0 +1,29 @@
+--- un_stats_division_countries.csv	2019-11-12 13:54:39.000000000 +0000
++++ UNSD — Methodology.csv	2019-11-12 14:06:52.000000000 +0000
+@@ -64,7 +64,7 @@
+ 001,World,019,Americas,419,Latin America and the Caribbean,029,Caribbean,Aruba,533,ABW,,,x,Developing
+ 001,World,019,Americas,419,Latin America and the Caribbean,029,Caribbean,Bahamas,044,BHS,,,x,Developing
+ 001,World,019,Americas,419,Latin America and the Caribbean,029,Caribbean,Barbados,052,BRB,,,x,Developing
+-001,World,019,Americas,419,Latin America and the Caribbean,029,Caribbean,Bonaire Sint Eustatius and Saba,535,BES,,,x,Developing
++001,World,019,Americas,419,Latin America and the Caribbean,029,Caribbean,Bonaire, Sint Eustatius and Saba,535,BES,,,x,Developing
+ 001,World,019,Americas,419,Latin America and the Caribbean,029,Caribbean,British Virgin Islands,092,VGB,,,x,Developing
+ 001,World,019,Americas,419,Latin America and the Caribbean,029,Caribbean,Cayman Islands,136,CYM,,,,Developing
+ 001,World,019,Americas,419,Latin America and the Caribbean,029,Caribbean,Cuba,192,CUB,,,x,Developing
+@@ -123,8 +123,8 @@
+ 001,World,142,Asia,143,Central Asia,,,Turkmenistan,795,TKM,,x,,Developing
+ 001,World,142,Asia,143,Central Asia,,,Uzbekistan,860,UZB,,x,,Developing
+ 001,World,142,Asia,030,Eastern Asia,,,China,156,CHN,,,,Developing
+-001,World,142,Asia,030,Eastern Asia,,,China; Hong Kong Special Administrative Region,344,HKG,,,,Developing
+-001,World,142,Asia,030,Eastern Asia,,,China; Macao Special Administrative Region,446,MAC,,,,Developing
++001,World,142,Asia,030,Eastern Asia,,,China, Hong Kong Special Administrative Region,344,HKG,,,,Developing
++001,World,142,Asia,030,Eastern Asia,,,China, Macao Special Administrative Region,446,MAC,,,,Developing
+ 001,World,142,Asia,030,Eastern Asia,,,Democratic People's Republic of Korea,408,PRK,,,,Developing
+ 001,World,142,Asia,030,Eastern Asia,,,Japan,392,JPN,,,,Developed
+ 001,World,142,Asia,030,Eastern Asia,,,Mongolia,496,MNG,,x,,Developing
+@@ -247,4 +247,4 @@
+ 001,World,009,Oceania,061,Polynesia,,,Tokelau,772,TKL,,,,Developing
+ 001,World,009,Oceania,061,Polynesia,,,Tonga,776,TON,,,x,Developing
+ 001,World,009,Oceania,061,Polynesia,,,Tuvalu,798,TUV,x,,x,Developing
+-001,World,009,Oceania,061,Polynesia,,,Wallis and Futuna Islands,876,WLF,,,,Developing
++001,World,009,Oceania,061,Polynesia,,,Wallis and Futuna Islands,876,WLF,,,,Developing
+\ No newline at end of file

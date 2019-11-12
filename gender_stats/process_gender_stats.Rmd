@@ -1,0 +1,306 @@
+---
+jupyter:
+  jupytext:
+    formats: ''
+    split_at_heading: true
+    text_representation:
+      extension: .Rmd
+      format_name: rmarkdown
+      format_version: '1.0'
+      jupytext_version: 0.8.4
+  kernelspec:
+    display_name: Python 3
+    language: python
+    name: python3
+  language_info:
+    codemirror_mode:
+      name: ipython
+      version: 3
+    file_extension: .py
+    mimetype: text/x-python
+    name: python
+    nbconvert_exporter: python
+    pygments_lexer: ipython3
+    version: 3.7.0
+---
+
+# Schooling and fertility
+
+Here we are processing a version of this dataset from the World Bank on gender
+and inequality:
+
+* [https://data.worldbank.org/data-catalog/gender-statistics](https://data.worldbank.org/data-catalog/gender-statistics)
+
+You can download a current version of these data as a zip file [from that
+site](http://databank.worldbank.org/data/download/Gender_Stats_csv.zip).
+
+The version I've used here was from 2017.  This version had data on health care expenditure that the current data does not have.
+
+You can get a copy of the 2017 data at:
+
+* [Gender_StatsData.csv](https://ndownloader.figshare.com/files/17803202)
+
+That's the link I'm using below.
+
+```{python}
+# Import Pandas with its usual short name
+import pandas as pd
+```
+
+Load the Comma Separated Value text file into Pandas as a data frame:
+
+```{python}
+df = pd.read_csv('https://ndownloader.figshare.com/files/17803301')
+```
+
+This is a slightly clumsy-looking data frame, because it has years for
+columns, and variables for rows, where there are 630 variables for each
+country.  So there are 630 rows \* the number of countries.  To investigate,
+we first look at the column names:
+
+```{python}
+df.columns
+```
+
+Next we look at the data frame itself:
+
+```{python}
+df
+```
+
+There are lots of countries here, so to start, let’s look at the variables for
+the UK.
+
+We get the UK country code from [http://www.worldatlas.com/aatlas/ctycodes.htm](http://www.worldatlas.com/aatlas/ctycodes.htm).
+The code is `GBR`.
+
+```{python}
+# We select only the UK rows
+gb = df[df['Country Code'] == 'GBR']
+gb
+```
+
+Pandas truncates the output to only show a certain number of rows, and only a
+certain length for the text fields.  To investigate further, you can increase
+these limits to see all 630 rows for the UK, and more of the text for the text
+fields:
+
+```{python}
+# See more of the text, more rows in the displayed output
+pd.options.display.max_colwidth = 80
+pd.options.display.max_rows = 700
+```
+
+If you are working in the Notebook, you will now see all of the rows and the
+whole text field with the variable description.
+
+```{python}
+# This will be different from above when working in the Notebook
+gb
+```
+
+We need to reduce the data.  Let us start by trying to reduce the number of missing values.  Here are the number of valid observations for some recent years:
+
+```{python}
+for year in range(2008, 2018):
+    print(year, df[str(year)].count())
+```
+
+```{python}
+recent = df[[str(year) for year in range(2012, 2017)]]
+recent.columns
+```
+
+Let's try taking the average of 2012 through 2016. This automatically discards missing (NA) values.
+
+```{python}
+recent_mean = recent.mean(axis=1)
+recent_mean.count()
+```
+
+We only want the first three columns of the data frame - the rest are year values, many of which are missing.  Drop the columns after the fourth, and then add back the 2012 through 2016 data.
+
+```{python}
+thin_df = df[['Country Name', 'Country Code', 'Indicator Name']].copy()
+thin_df['recent_mean'] = recent_mean.copy()
+thin_df
+```
+
+```{python}
+cols = ['Country Code', 'Country Name']
+country_lookup = thin_df[cols].groupby(cols).nth(0).reset_index()
+country_lookup
+```
+
+This data frame is still a mess, with a new row for each variable.  We can
+solve this using the Pandas
+[pivot](http://pandas.pydata.org/pandas-docs/stable/reshaping.html) function
+to push the rows up into columns, thus:
+
+```{python}
+pivoted = thin_df.pivot(index='Country Code',
+                        columns='Indicator Name',
+                        values='recent_mean')
+pivoted.columns
+```
+
+Now we have 630 columns, one per variable, and 263 rows, one per country.
+
+```{python}
+pivoted.shape
+```
+
+Many of these columns have a lot of missing values.  Which columns have at least 220 non-missing values?
+
+```{python}
+cols_ok = [name for name in pivoted.columns if pivoted[name].count() > 220]
+[(name, pivoted[name].count()) for name in cols_ok]
+```
+
+We will use some of these columns.  The current column names are the whole description.  These are hard to use.  Here's a function to do a first pass in stripping the description down into something more like a variable name.
+
+```{python}
+def col_proc(cname):
+    if '(' in cname:  # Drop phrase in parentheses
+        cname = cname[:cname.index('(')]
+    return '_'.join(word.lower()[:3] for word in cname.split())
+```
+
+Print out the long description and the first-pass variable name the function returns:
+
+```{python}
+[(name, col_proc(name)) for name in cols_ok]
+```
+
+After copy-pasting this output into a text editor, and reflecting for a bit, these variables seem useful.  I've hand-edited the variable names to make them a bit clearer:
+
+
+```{python}
+# (Description, Variable name) pairs.
+# I've edited the Variable name by hand in a text editor.
+renamers = [
+    ('Fertility rate, total (births per woman)', 'fert_rate'),
+    ('GDP (current US$)', 'gdp'),
+    ('Health expenditure per capita, PPP (constant 2011 international $)', 
+     'health_exp_per_cap'),
+    ('Health expenditure, public (% of GDP)', 'health_exp_pub'),
+    ('Primary education, pupils (% female)', 'prim_ed_girls'),
+    ('Maternal mortality ratio (modeled estimate, per 100,000 live births)',
+     'mat_mort_ratio'),
+    ('Population, total', 'population')
+]
+```
+
+Create a new, much smaller data frame, using these columns.  Rename the columns with the new names.
+
+```{python}
+gender_stats = pivoted[[name for (name, rename) in renamers]]
+gender_stats.columns = [rename for (name, rename) in renamers]
+gender_stats
+```
+
+Add back the country name:
+
+```{python}
+gender_stats = gender_stats.merge(country_lookup, on='Country Code')
+# Reorder Country Name to front
+cols = list(gender_stats)
+gender_stats = gender_stats[[cols[-1]] + cols[:-1]]
+gender_stats
+```
+
+There are a number of not-countries in the remaining rows.  For example `ARB`
+is not a valid country code.   To remove these, we use the standard list of
+countries from the [UN statistics division
+website](https://unstats.un.org/unsd/methodology/m49/overview).
+
+```{python}
+import os.path as op
+un_countries = pd.read_csv(op.join('un_countries', 'un_stats_division_countries.csv'))
+un_countries.head()
+```
+
+```{python}
+iso3 = un_countries['ISO-alpha3 Code']
+iso3.head()
+```
+
+Check which rows have a country code in the UN list:
+
+```{python}
+valid_country = gender_stats['Country Code'].isin(iso3)
+valid_country.head()
+```
+
+Check the country names of countries with apparently invalid country codes:
+
+```{python}
+bad_countries = gender_stats[~valid_country][['Country Code', 'Country Name']]
+bad_countries
+```
+
+[Kosovo](https://en.wikipedia.org/wiki/Kosovo) seems like it might be a valid country. Add this back to the valid countries:
+
+```{python}
+valid_country[gender_stats['Country Code'] == 'XKX'] = True
+```
+
+Select data for the valid countries:
+
+```{python}
+valid_gender_stats = gender_stats.loc[valid_country]
+valid_gender_stats.head()
+```
+
+The GDP is in dollars, giving some annoying exponential numbers.  Can we store this value in billions of dollars, without making lots of small numbers?
+
+```{python}
+gdp_us_billion = valid_gender_stats['gdp'] / 1e9
+gdp_us_billion.sort_values()[:20]
+```
+
+```{python}
+valid_gender_stats.loc[:, 'gdp'] = gdp_us_billion
+valid_gender_stats = valid_gender_stats.rename(columns={'gdp': 'gdp_us_billion'})
+# We need to change the name for later output in the data dictionary.
+renamers = [t if t != ('GDP (current US$)', 'gdp')
+            else ('GDP (current US billion $)', 'gdp_us_billion')
+            for t in renamers]
+valid_gender_stats.head()
+```
+
+Rename country columns to harmonize with format of other names:
+
+```{python}
+valid_gender_stats = valid_gender_stats.rename(
+    columns={'Country Name': 'country_name',
+             'Country Code': 'country_code'})
+valid_gender_stats.head()
+```
+
+Write the resulting data frame out to CSV.
+
+```{python}
+import os.path as op
+out_fname = op.join('processed', 'gender_stats.csv')
+# Write without index column.
+valid_gender_stats.to_csv(out_fname, index=False)
+```
+
+Read it back in to check it is what we were expecting:
+
+```{python}
+gs_back = pd.read_csv(out_fname)
+gs_back.head()
+```
+
+Write a data dictionary too.  We will have to backslash escape dollars for the Markdown output.
+
+```{python}
+out_dd_fname = op.join('processed', 'gender_stats_data_dict.md')
+with open(out_dd_fname, 'wt') as fobj:
+    fobj.write('# Gender statistics data dictionary\n\n')
+    for name, rename in renamers:
+        name = name.replace('$', '\$')  # For Markdown
+        fobj.write(f'* `{rename}`: {name}.\n')
+```
