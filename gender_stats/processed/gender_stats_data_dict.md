@@ -6,4 +6,4 @@
 * `health_exp_pub`: Health expenditure, public (% of GDP).
 * `prim_ed_girls`: Primary education, pupils (% female).
 * `mat_mort_ratio`: Maternal mortality ratio (modeled estimate, per 100,000 live births).
-* `population`: Population, total.
+* `population`: Population, total (millions).
