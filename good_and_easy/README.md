@@ -1,11 +1,12 @@
-# RateMyProfessor aggregate data
+# RateMyProfessors aggregate data
 
 From [supplementary material](https://www.tandfonline.com/doi/suppl/10.1080/02602938.2016.1276155) of:
 
 Andrew S Rosen (2018) "Correlations, trends and potential biases among
-publicly accessible web-based student evaluations of teaching: a large-scale
-study of RateMyProfessors.com data" *Assessment & Evaluation in Higher
-Education* 43(1) pp 31-44. <https://doi.org/10.1080/02602938.2016.1276155>
+publicly accessible web-based student evaluations of teaching:
+a large-scale study of RateMyProfessors.com data" *Assessment
+& Evaluation in Higher Education* 43(1) pp 31-44.
+<https://doi.org/10.1080/02602938.2016.1276155>
 
 There is a [freely available post
 print](https://asrosen.com/wp-content/uploads/2018/07/postprint_rmp-1.pdf) on
