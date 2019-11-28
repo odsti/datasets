@@ -12,7 +12,7 @@ There is a [freely available post
 print](https://asrosen.com/wp-content/uploads/2018/07/postprint_rmp-1.pdf) on
 [Andrew Rosen's website](https://asrosen.com).
 
-The paper studies ratings from RateMyProfessor.com, for the 190,006 US
+The paper studies ratings from RateMyProfessors.com, for the 190,006 US
 professors that have at least 20 student ratings.
 
 Each row of the data table gives the mean ratings for all professors in a given discipline; thus there is one row per discipline.
