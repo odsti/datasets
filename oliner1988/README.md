@@ -78,3 +78,23 @@ PDF.  These are in percentages of each category "rescuers", "nonrescuers", "byst
 `process_oliner.py` converts these values into counts in each category
 "rescuers", "actives", "bystanders", with the last row having overall counts in
 each category.  The resulting tables are in the `processed` directory.
+
+Output tables are:
+
+* `oliner_tab6_7.csv`: values conveyed by person's most influential role-model.
+  Respondents first answered question B1 (p. 333): "... who was the *one*
+  person who had the *most influence* on you when you were growing up?   That
+  is, who taught you the most about life?".  Question B12 was "What were the
+  most important things you learned about life from [this role model]?".  The row labels in table 6.7 of Oliner (1988), and here, are responses to B12, recoded into categories.  Respondents could name more than one value, and therefore, score on more than one category.
+* `oliner_tab_6_8a_1.csv` records the answers to question D15 "Did you belong
+  to a political party before the war?".
+* `oliner_tab_6_8a_2.csv` has coded answers to the free-form question D15a
+  "What party did you belong to?".  The interviewer asked this question only if
+  the respondent answered "yes" to question D15.  Of course, the available
+  political parties differed for each nationality, such as German, Dutch,
+  Polish.  The authors recoded the party names into categories "economic left"
+  vs not, "democratic" vs not, "tolerant of minorities" vs not, and "tolerant
+  of Jews" or not, based on the authors' historical assessment of these
+  parties.  See `oliner1988chap6footnote11.pdf` for the names of parties
+  classified as "economic left" and "democratic". Five of eight "economic left"
+  parties also qualified as "democratic".
