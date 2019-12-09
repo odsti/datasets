@@ -3,6 +3,7 @@
 
 import os.path as op
 
+import numpy as np
 import pandas as pd
 
 def proc_n_table(fname, label_col):
@@ -27,7 +28,19 @@ def proc_n_table(fname, label_col):
     tab_fname = op.join('processed', fname)
     tab.to_csv(tab_fname, index=None)
 
-# Table 6.7
+
+def check_pcts(fname):
+    df = pd.read_csv(fname)
+    pcts = df.iloc[1:, 1:]
+    n = len(pcts)
+    assert np.all(np.abs(pcts.sum() - 100) <= n * 0.05)
+
+check_pcts('oliner_tab6_5mother.csv')
+proc_n_table('oliner_tab6_5mother.csv', 'level')
+check_pcts('oliner_tab6_5father.csv')
+proc_n_table('oliner_tab6_5father.csv', 'level')
+check_pcts('oliner_tab6_6.csv')
+proc_n_table('oliner_tab6_6.csv', 'level')
 proc_n_table('oliner_tab6_7.csv', 'value')
 proc_n_table('oliner_tab6_8a_1.csv', 'party_yn')
 proc_n_table('oliner_tab6_8a_2.csv', 'party_type')
