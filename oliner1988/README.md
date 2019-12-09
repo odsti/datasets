@@ -84,14 +84,15 @@ Output tables are:
 * `oliner_tab6_5mother.csv`: answers to question B19 "Was your mother very
   religious, somewhat religious, not very religious or not at all religious?".
 * `oliner_tab6_5father.csv`: answers to question B29 "Was your father very
-  religious, somewhat religious, not very religious or not religious at all?" (slight difference in phrasing between B19 and B29 in original).
+  religious, somewhat religious, not very religious or not religious at all?".
+  (slight difference in phrasing between B19 and B29 in the original).
 * `oliner_tab6_6.csv`: answers to question D14 "Before the war, were you very
   religious, somewhat religious, not very religious or not at all religious?".
 * `oliner_tab6_7.csv`: values conveyed by person's most influential role-model.
   Respondents first answered question B1 (p. 333): "... who was the *one*
   person who had the *most influence* on you when you were growing up?   That
   is, who taught you the most about life?".  Question B12 was "What were the
-  most important things you learned about life from [this role model]?".  The
+  most important things you learned about life from \[this role model\]?".  The
   row labels in table 6.7 of Oliner (1988), and here, are responses to B12,
   recoded into categories.  Respondents could name more than one value, and
   therefore, score on more than one category.
