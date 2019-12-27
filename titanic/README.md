@@ -30,7 +30,8 @@ processed data in `processed/titanic_stlearn.csv`.
   age of babies (under 12 months) is given as a fraction of one year, rounded
   to the nearest month (2 months = 2/12 = 0.1667).
 * `class`: a string specifying the class for passengers ("1st", "2nd", "3rd"),
-  or the type of service aboard for crew members. See below for discussion of passengers, crew and the crew service types.
+  or the type of service aboard for crew members. See below for discussion of
+  passengers, crew and the crew service types.
 * `embarked`: a string with the person's port of embarkation, one of "Belfast",
   "Cherbourg", "Queenstown" or "Southampton".
 * `country`: a string with the person's home country.
@@ -92,3 +93,9 @@ Also see the [table from Lord Merey's
 report](https://www.titanicinquiry.org/BOTInq/BOTReport/botRepSaved.php) for
 tabulations of lost and saved.  These numbers differ slightly from those you
 can calculate from the dataset here.
+
+For discussion of the `sibsp` and `parch` variables, see the [information file
+on the Vanderbuilt
+website](http://biostat.mc.vanderbilt.edu/wiki/pub/Main/DataSets/titanic3info.txt),
+archived here, along with the matching `titanic3.csv` data file - see
+`vanderbilt/README.md`.
