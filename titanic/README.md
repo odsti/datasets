@@ -80,7 +80,10 @@ The musicians and the Guarantee Group have missing values for their ticket
 price (`fare`), as do the rest of the crew, and 9 other passengers. The crew
 other than the Guarantee Group and musicians have missing values for their
 ticket number `ticketno`, as does one other Third Class passenger: "Törnquist,
-Mr. William Henry".
+Mr. William Henry".  [ET's page on
+Törnquist](https://www.encyclopedia-titanica.org/titanic-survivor/william-henry-tornquist.html)
+suggests that he should in fact have ticket number 370160, shared with his
+fellow employees of American Line (see ET link above).
 
 See the [ET crew
 lists](https://www.encyclopedia-titanica.org/titanic-crew-lists) for the
