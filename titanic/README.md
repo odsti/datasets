@@ -74,8 +74,13 @@ Wolff](https://en.wikipedia.org/wiki/Harland_and_Wolff), including the ship's
 designer, [Thomas Andrews](https://en.wikipedia.org/wiki/Thomas_Andrews). Their
 job was to monitor the ship's performance and fix any problems that might
 arise. Unfortunately, the biggest problem that did arise proved too difficult
-to fix. The musicians and the Guarantee Group have missing values for their
-ticket price (`fare`), as do the rest of the crew, and one other passenger.
+to fix.
+
+The musicians and the Guarantee Group have missing values for their ticket
+price (`fare`), as do the rest of the crew, and 9 other passengers. The crew
+other than the Guarantee Group and musicians have missing values for their
+ticket number `ticketno`, as does one other Third Class passenger: "Törnquist,
+Mr. William Henry".
 
 See the [ET crew
 lists](https://www.encyclopedia-titanica.org/titanic-crew-lists) for the
