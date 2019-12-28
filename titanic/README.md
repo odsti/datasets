@@ -21,19 +21,19 @@ recoding the `embarked` field from "B", "C", "Q", "S" to "Belfast",
 ## Data dictionary
 
 This description largely derives from
-<https://rdrr.io/cran/stablelearner/man/titanic.html>, but also applies to the
+<https://rdrr.io/cran/stablelearner/man/titanic.html>, but applies to the
 processed data in `processed/titanic_stlearn.csv`.
 
 * `name`: a string with the name of the passenger.
-* `gender`: a string with one of two labels, "male" and "female".
+* `gender`: a string with one of two labels: "male" and "female".
 * `age`: a numeric value with the person's age on the day of the sinking. The
   age of babies (under 12 months) is given as a fraction of one year, rounded
   to the nearest month (2 months = 2/12 = 0.1667).
-* `class`: a string specifying the class for passengers ("1st", "2nd", "3rd"),
+* `class`: a string specifying the class for passengers: "1st", "2nd", "3rd";
   or the type of service aboard for crew members. See below for discussion of
   passengers, crew and the crew service types.
-* `embarked`: a string with the person's port of embarkation, one of "Belfast",
-  "Cherbourg", "Queenstown" or "Southampton".
+* `embarked`: a string with the person's port of embarkation, one of:
+  "Belfast", "Cherbourg", "Queenstown" or "Southampton".
 * `country`: a string with the person's home country.
 * `ticketno`: a numeric value specifying the persons ticket number (NA for crew
   members, also see below).
@@ -45,8 +45,8 @@ processed data in `processed/titanic_stlearn.csv`.
 * `parch`: an ordered factor specifying the number of parents/children aboard;
   adopted from Vanderbilt data set (see below).  Always NA for crew, sometimes
   NA for passengers.
-* `survived`: a string with two labels ("no" and "yes") specifying whether the
-  person has survived the sinking.
+* `survived`: a string with one of two labels: "no" and "yes". It specifies
+  whether the person survived the sinking.
 
 ### Source (from Stablelearner link above)
 
@@ -58,33 +58,35 @@ in `sibsp` and `parch` was adopted from a data set obtained from
 ### Details
 
 The main source of these data, [Encylopedia
-Titanica](http://www.encyclopedia-titanica.org), contains much information
+Titanica](http://www.encyclopedia-titanica.org) (ET), contains much information
 about Titanic's passengers and crew.
 
-The [Encylopedia Titanica passenger
+The [ET passenger
 list](https://www.encyclopedia-titanica.org/titanic-passenger-lists) lists 324
 First Class passengers, 285 Second Class and 708 Third Class, for a total of
 1317 passengers. People listed as passengers include the [8
 musicians](https://en.wikipedia.org/wiki/Musicians_of_the_RMS_Titanic) and the
-[9 memmers of the Guarantee
+[9 members of the Guarantee
 Group](https://en.wikipedia.org/wiki/Crew_of_the_RMS_Titanic#Guarantee_group)
-who stayed on the ship for the journey across the Atlantic. The Guarantee group
+who stayed on the ship for the journey across the Atlantic. The Guarantee Group
 were a team of employees of the shipbuilding company, [Harland and
 Wolff](https://en.wikipedia.org/wiki/Harland_and_Wolff), including the ship's
-designer, [Thomas Andrews](https://en.wikipedia.org/wiki/Thomas_Andrews).
-Their job was to monitor the ship's performance and fix any problems that might
+designer, [Thomas Andrews](https://en.wikipedia.org/wiki/Thomas_Andrews). Their
+job was to monitor the ship's performance and fix any problems that might
 arise. Unfortunately, the biggest problem that did arise proved too difficult
-to fix. The musicians and the Guarantee group have missing values for their
+to fix. The musicians and the Guarantee Group have missing values for their
 ticket price (`fare`), as do the rest of the crew, and one other passenger.
 
-See the [Encyclopedia Titanica crew lists](https://www.encyclopedia-titanica.org/titanic-crew-lists) for the following numbers of crew in different categories:
+See the [ET crew
+lists](https://www.encyclopedia-titanica.org/titanic-crew-lists) for the
+following numbers of crew in different categories:
 
 * 66 deck crew (including officers).
 * 325 engineers and engineering crew.
 * 431 victualling crew (including - in this list - 5 postal clerks).
 * 69 restaurant staff.
 
-This gives a total of 891 crew members listed at Encyclopedia Titanica.
+This gives a total of 891 crew members listed at ET.
 
 The dataset here only has 324 engineers / engineering crew, so the total number
 of crew in this data set is one less, at 890.
