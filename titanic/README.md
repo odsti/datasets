@@ -62,9 +62,10 @@ Titanica](http://www.encyclopedia-titanica.org) (ET), contains much information
 about Titanic's passengers and crew.
 
 The [ET passenger
-list](https://www.encyclopedia-titanica.org/titanic-passenger-lists) lists 324
+lists](https://www.encyclopedia-titanica.org/titanic-passenger-lists) have 324
 First Class passengers, 285 Second Class and 708 Third Class, for a total of
-1317 passengers. People listed as passengers include the [8
+1317 passengers, the same number as in this dataset. People listed as
+passengers include the [8
 musicians](https://en.wikipedia.org/wiki/Musicians_of_the_RMS_Titanic) and the
 [9 members of the Guarantee
 Group](https://en.wikipedia.org/wiki/Crew_of_the_RMS_Titanic#Guarantee_group)
@@ -83,7 +84,7 @@ ticket number `ticketno`, as does one other Third Class passenger: "Törnquist,
 Mr. William Henry".  [ET's page on
 Törnquist](https://www.encyclopedia-titanica.org/titanic-survivor/william-henry-tornquist.html)
 suggests that he should in fact have ticket number 370160, shared with his
-fellow employees of American Line (see ET link above).
+fellow employees of American Line.
 
 See the [ET crew
 lists](https://www.encyclopedia-titanica.org/titanic-crew-lists) for the
@@ -97,15 +98,18 @@ following numbers of crew in different categories:
 This gives a total of 891 crew members listed at ET.
 
 The dataset here only has 324 engineers / engineering crew, so the total number
-of crew in this data set is one less, at 890.
+of crew in this data set is one less, at 890.  See the `et` directory for an
+analysis of the engineers' names.  The missing engineer appears to be [William
+John
+Murdock](https://www.encyclopedia-titanica.org/titanic-biography/william-murdock.html).
 
-Also see the [table from Lord Merey's
+See the [table from Lord Mersey's
 report](https://www.titanicinquiry.org/BOTInq/BOTReport/botRepSaved.php) for
-tabulations of lost and saved.  These numbers differ slightly from those you
-can calculate from the dataset here.
+tabulations with numbers of lost and saved.  These numbers differ slightly from
+those you can calculate from the dataset here.
 
 For discussion of the `sibsp` and `parch` variables, see the [information file
 on the Vanderbuilt
 website](http://biostat.mc.vanderbilt.edu/wiki/pub/Main/DataSets/titanic3info.txt),
-archived here, along with the matching `titanic3.csv` data file - see
+also archived here, along with the matching `titanic3.csv` data file - see
 `vanderbilt/README.md`.
