@@ -1,0 +1,324 @@
+Abrams, Mr. William Thomas               34.0
+Adams, Mr. Robert John                   26.0
+Allen, Mr. Ernest Frederick              24.0
+Allen, Mr. Henry                         30.0
+Allsop, Mr. Alfred Samuel                36.0
+Avery, Mr. James Albert                  21.0
+Bailey, Mr. George Frank                 46.0
+Baines, Mr. Richard                      24.0
+Bannon, Mr. John Joseph                  34.0
+Barlow, Mr. Charles                      30.0
+Barnes, Mr. Charles                      29.0
+Barnes, Mr. John                         40.0
+Barrett, Mr. Frederick                   28.0
+Barrett, Mr. Frederick William           33.0
+Beattie, Mr. Joseph                      35.0
+Beauchamp, Mr. George William            24.0
+Bell, Mr. Joseph                         51.0
+Bendell, Mr. Frank                       24.0
+Bennett, Mr. George Alfred               30.0
+Benville, Mr. Edward                     47.0
+Bessant, Mr. William Edward Lowe         39.0
+Bevis, Mr. Joseph Henry                  22.0
+Biddlecombe, Mr. Reginald Charles        31.0
+Biggs, Mr. Edward Charles                20.0
+Billows, Mr. James                       20.0
+Binstead, Mr. Walter William             20.0
+Black, Mr. Alexander                     28.0
+Black, Mr. D.                            41.0
+Blackman, Mr. Albert Edward              23.0
+Blake, Mr. Percival Albert               23.0
+Blake, Mr. Seaton                        26.0
+Blake, Mr. Thomas Henry                  37.0
+Blaney, Mr. James                        32.0
+Blann, Mr. Eustace Horatius              22.0
+Bott, Mr. William Thomas                 46.0
+Bradley, Mr. Patrick Joseph              39.0
+Brewer, Mr. Harry                        30.0
+Briant, Mr. Albert                       34.0
+Brooks, Mr. J.                           25.0
+Brown, Mr. John                          28.0
+Brown, Mr. Joseph James                  25.0
+Burroughs, Mr. Arthur Peckham            35.0
+Burton, Mr. Edward John                  35.0
+Butt, Mr. William John                   31.0
+Calderwood, Mr. Hugh                     30.0
+Canner, Mr. John                         40.0
+Carr, Mr. Richard Stephen                27.0
+Carter (Ball), Mr. James (W.)            46.0
+Casey, Mr. Thomas                        44.0
+Castleman, Mr. Edward                    37.0
+Cavell, Mr. George Henry                 22.0
+Cherrett, Mr. William Victor             25.0
+Chisnall, Mr. George Alexander           37.0
+Chorley, Mr. John Henry                  25.0
+Clark, Mr. William                       40.0
+Coe, Mr. Harry                           22.0
+Coleman, Mr. John                        58.0
+Collins, Mr. John                        38.0
+Combes, Mr. George                       34.0
+Cooper, Mr. Harry                        26.0
+Cooper, Mr. James Edward                 26.0
+Copperthwaite, Mr. Albert Harry          28.0
+Corcoran, Mr. Dennis                     33.0
+Cotton, Mr. Alfred                       36.0
+Couch, Mr. Joseph Henry                  49.0
+Couper, Mr. Robert Frederick William     30.0
+Coy, Mr. Francis Ernest George           27.0
+Crabb, Mr. Henry James                   23.0
+Creese, Mr. Henry Philip                 45.0
+Crimmins, Mr. James                      21.0
+Cross, Mr. William Alfred                44.0
+Cunningham, Mr. Bernard                  35.0
+Curtis, Mr. Arthur                       26.0
+Davies, Mr. Thomas                       33.0
+Dawson, Mr. Joseph                       23.0
+Diaper, Mr. John Joseph                  27.0
+Dickson, Mr. William                     37.0
+Dilley, Mr. John                         30.0
+Dillon, Mr. Thomas Patrick               34.0
+Dodd, Mr. Edward Charles                 39.0
+Dodds, Mr. Henry Watson                  27.0
+Doel, Mr. Frederick                      22.0
+Dore, Mr. Albert James                   23.0
+Doyle, Mr. Laurence                      27.0
+Duffy, Mr. William Luke                  36.0
+Durnil, Mr. James                        38.0
+Dyer, Mr. Henry Ryland                   24.0
+Dymond, Mr. Frank                        41.0
+Eagle, Mr. Alfred James                  22.0
+Eastman, Mr. Charles                     44.0
+Elliott, Mr. Everett Edward              23.0
+Ervine, Mr. Albert George                18.0
+Evans, Mr. William Thomas                33.0
+Farquharson, Mr. William Edward          39.0
+Fay, Mr. Thomas Joseph                   30.0
+Ferrary, Mr. Antonio                     33.0
+Ferris, Mr. William                      39.0
+Fitzpatrick, Mr. Cecil William           21.0
+Fitzpatrick, Mr. Hugh Joseph             29.0
+Flarty, Mr. Edward                       52.0
+Ford, Mr. H.                             22.0
+Ford, Mr. Thomas                         33.0
+Foster, Mr. Alfred Charles               37.0
+Fraser, Mr. J.                           30.0
+Fraser, Mr. James                        30.0
+Fredericks, Mr. Walter Francis           21.0
+Fryer, Mr. Albert Ernest                 29.0
+Geer, Mr. Alfred Emest                   26.0
+Godley, Mr. George Auguste               61.0
+Godwin, Mr. Frederick Charles            36.0
+Golder, Mr. M. W.                        32.0
+Gordon, Mr. J.                           29.0
+Goree, Mr. Frank                         41.0
+Gosling, Mr. Bertram James               22.0
+Gosling, Mr. S.                          26.0
+Gradidge, Mr. Ernest Edward              22.0
+Graham, Mr. Thomas Gibson                28.0
+Green, Mr. George                        20.0
+Gregory, Mr. David                       43.0
+Gumery, Mr. George                       24.0
+Haggan, Mr. John                         35.0
+Hall, Mr. J.                             32.0
+Hallett, Mr. George Alexander            23.0
+Hands, Mr. Bernard                       54.0
+Hannam, Mr. George                       30.0
+Harris, Mr. Amos                         24.0
+Harris, Mr. Edward John                  29.0
+Harris, Mr. Frederick                    39.0
+Harrison, Mr. Norman E.                  38.0
+Hart, Mr. James                          54.0
+Harvey, Mr. Herbert Gifford              34.0
+Head, Mr. Alfred                         24.0
+Hebb, Mr. William Albert                 22.0
+Hendrickson, Mr. Charles Osker           28.0
+Hesketh, Mr. John Henry                  33.0
+Heslin, Mr. James                        45.0
+Hill, Mr. James                          25.0
+Hinton, Mr. Stephen William              31.0
+Hodge, Mr. Charley                       29.0
+Hodges, Mr. W.                           26.0
+Hodgkinson, Mr. Leonard                  46.0
+Hopgood, Mr. Roland John C.              29.0
+Hosgood, Mr. Richard William             23.0
+Hosking, Mr. George Fox                  36.0
+Hunt, Mr. Albert Sylvanus                23.0
+Hunt, Mr. Tom                            27.0
+Hurst, Mr. Charles John                  41.0
+Hurst, Mr. Walter                        23.0
+Ingram, Mr. George                       19.0
+Instance, Mr. T.                         33.0
+Jackopson, Mr. John Henry                30.0
+Jago, Mr. Joseph                         59.0
+James, Mr. Thomas                        27.0
+Joas, Mr. N.                             38.0
+Judd, Mr. Charles Edward                 31.0
+Jukes, Mr. Henry James                   38.0
+Jupe, Mr. Boykett Herbert                30.0
+Kasper, Mr. Franz Wilhelm                40.0
+Kearl, Mr. Charles Henry                 44.0
+Kearl, Mr. George Edward                 25.0
+Kelly, Mr. James                         44.0
+Kelly, Mr. William                       23.0
+Kemish, Mr. George                       22.0
+Kemp, Mr. Thomas Hulman                  43.0
+Kenchenten, Mr. Frederick Charles        37.0
+Kenzler, Mr. August                      44.0
+Kerr, Mr. Thomas Russell                 26.0
+Kinsella, Mr. Louis                      30.0
+Kirkham, Mr. James                       43.0
+Knowles, Mr. Thomas                      43.0
+Lahy, Mr. T.                             41.0
+Lee, Mr. H.                              18.0
+Light, Mr. Christopher William           20.0
+Light, Mr. W.                            47.0
+Lindsay, Mr. William Charles             30.0
+Lloyd, Mr. William                       29.0
+Long, Mr. Frank                          31.0
+Long, Mr. William                        36.0
+Mackie, Mr. William Dickson              32.0
+Major, Mr. William James                 32.0
+Marett, Mr. George John                  27.0
+Marsh, Mr. Frederick Charles             40.0
+Maskell, Mr. Leopold Adolphus            25.0
+Mason, Mr. Frank Archibald Robert        32.0
+Mason, Mr. J.                            39.0
+May, Mr. Arthur William                  22.0
+May, Mr. Arthur William                  59.0
+Mayo, Mr. William Peter                  28.0
+Mayzes, Mr. Thomas Jubilee               25.0
+McAndrew, Mr. Thomas Patrick             38.0
+McAndrews, Mr. William                   23.0
+McCastlan, Mr. W.                        38.0
+McGann, Mr. James                        29.0
+McGarvey, Mr. Edward Joseph              34.0
+McGaw, Mr. Erroll Victor                 30.0
+McInerney, Mr. Thomas                    38.0
+McIntyre, Mr. William                    21.0
+McQuillan, Mr. William                   26.0
+McRae, Mr. William Alexander             32.0
+McReynolds, Mr. William                  22.0
+Middleton, Mr. Alfred Pirrie             27.0
+Milford, Mr. George                      28.0
+Millar, Mr. Robert                       26.0
+Millar, Mr. Thomas                       32.0
+Mintram, Mr. William                     46.0
+Mitchell, Mr. Lorenzo (Lawrence) Horace  19.0
+Moore, Mr. John J.                       29.0
+Moore, Mr. Ralph                         22.0
+Moores, Mr. Richard Henry                44.0
+Morgan, Mr. Arthur Herbert               27.0
+Morgan, Mr. Thomas A.                    26.0
+Morris, Mr. Arthur                       30.0
+Morris, Mr. William Edward               23.0
+Moyes, Mr. William Young                 24.0
+Nettleton, Mr. George Walter             30.0
+Newman, Mr. Charles Thomas               33.0
+Niven, Mr. John Brown                    30.0
+Noon, Mr. John Thomas                    42.0
+Norris, Mr. James                        22.0
+Noss, Mr. Bertram Arthur                 21.0
+Noss, Mr. Henry                          30.0
+Nutbean, Mr. William                     30.0
+O'Connor, Mr. John                       29.0
+Olive, Mr. Charles                       31.0
+Oliver, Mr. H.                           32.0
+Othen, Mr. Charles Alfred                36.0
+Paice, Mr. Richard Charles John          32.0
+Painter, Mr. Charles                     32.0
+Painter, Mr. Frank                       29.0
+Palles, Mr. Thomas Henry Michael         45.0
+Parsons, Mr. Frank Alfred                27.0
+Pearce, Mr. John                         28.0
+Pelham, Mr. George                       39.0
+Perry, Mr. Edgar Lionel                  19.0
+Perry, Mr. Henry Frederick               23.0
+Phillips, Mr. A. George                  27.0
+Pitfield, Mr. William James              25.0
+Podesta, Mr. Alfred John Alexander       24.0
+Pond, Mr. George                         33.0
+Prangnell, Mr. George Alexander          30.0
+Preston, Mr. Thomas Charles Alfred       20.0
+Priest, Mr. Arthur John                  24.0
+Proudfoot, Mr. Richard Royston           22.0
+Pugh, Mr. Arthur Percy                   31.0
+Pusey, Mr. William Robert Holland        22.0
+Ranger, Mr. Thomas                       29.0
+Read, Mr. Joseph                         20.0
+Reeves, Mr. Frederick Simms              34.0
+Reid, Mr. Robert Thomas                  30.0
+Rice, Mr. Charles                        32.0
+Richards, Mr. Joseph James               30.0
+Rickman, Mr. George Albert               36.0
+Roberts, Mr. Robert George               35.0
+Rous, Mr. Arthur John                    26.0
+Rudd, Mr. Henry                          24.0
+Rutter, Mr. Sidney Frank                 27.0
+Sangster, Mr. Charles Edward             30.0
+Saunders, Mr. F.                         22.0
+Saunders, Mr. W.                         23.0
+Saunders, Mr. Walter Ernest              23.0
+Scott, Mr. Archibald                     41.0
+Scott, Mr. Frederick William             28.0
+Self, Mr. Albert Charles Edward          24.0
+Self, Mr. Alfred Henry                   40.0
+Senior, Mr. Harry                        31.0
+Shea, Mr. Thomas                         32.0
+Sheath, Mr. Frederick                    20.0
+Shepherd, Mr. Jonathan                   32.0
+Shiers, Mr. Alfred Charles               25.0
+Shillabeer, Mr. Charles Frederick        19.0
+Skeates, Mr. William                     23.0
+Sloan, Mr. Peter                         31.0
+Small, Mr. William                       40.0
+Smith, Mr. Emest George                  27.0
+Smith, Mr. James Muil                    39.0
+Smither, Mr. Harry James                 22.0
+Snellgrove, Mr. George                   41.0
+Snooks, Mr. W.                           26.0
+Snow, Mr. Eustace Philip                 21.0
+Sparkman, Mr. Henry William              36.0
+Stanbrook, Mr. Augustus George           31.0
+Steel, Mr. Robert Edward                 30.0
+Stocker, Mr. Henry Dorey                 20.0
+Street, Mr. Thomas Albert                25.0
+Stubbs, Mr. James Henry                  28.0
+Sullivan, Mr. S.                         25.0
+Taylor, Mr. George                       24.0
+Taylor, Mr. J.                           42.0
+Taylor, Mr. John Henry                   49.0
+Taylor, Mr. William Henry                28.0
+Thomas, Mr. Joseph Wakefield             24.0
+Thompson, Mr. John William               35.0
+Threlfall, Mr. Thomas                    44.0
+Thresher, Mr. George Terrill             25.0
+Tizard, Mr. Arthur Leopold               31.0
+Tozer, Mr. James                         32.0
+Triggs, Mr. Reuben Robert                39.0
+Turley, Mr. Richard                      37.0
+Veal, Mr. Arthur                         36.0
+Vear, Mr. Henry                          33.0
+Vear, Mr. William                        34.0
+Ward, Mr. Arthur                         23.0
+Ward, Mr. James William                  31.0
+Wardner, Mr. Fred Albert                 40.0
+Wateridge, Mr. Edward Lewis              26.0
+Watson, Mr. Willim                       27.0
+Webb, Mr. Samuel Francis                 28.0
+Webber, Mr. Francis Albert               31.0
+White, Mr. Albert                        21.0
+White, Mr. Alfred                        32.0
+White, Mr. Frank Leonard                 28.0
+White, Mr. William George                23.0
+Williams, Mr. Samuel Solomon             26.0
+Wilson, Mr. Herbert 'Bertie'             28.0
+Wilton, Mr. William Edward               53.0
+Witcher, Mr. Albert Ernest               39.0
+Witt, Mr. Henry Dennis                   37.0
+Witts, Mr. William Francis               35.0
+Wood, Mr. Henry                          31.0
+Woodford, Mr. Frederick Ernest           40.0
+Worthman, Mr. William Henry              37.0
+Wyeth, Mr. James Robert                  26.0
+Young, Mr. Francis James                 32.0
+van der Brugge, Mr. Wessel Adrianus      38.0

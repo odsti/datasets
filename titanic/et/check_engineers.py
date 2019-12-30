@@ -7,7 +7,7 @@ import pandas as pd
 
 from bs4 import BeautifulSoup
 
-
+ET_URL = 'https://www.encyclopedia-titanica.org'
 HERE = op.dirname(__file__)
 
 def read_page(html_fname):
@@ -27,40 +27,50 @@ def page2people(page):
 def person2dict(row):
     details, age, category, picture = row.find_all('td')
     details_a = details.find('a')
-    title = details_a['title'] 
+    title = details_a['title']
     in_detail = details_a.find('span', class_='fn').find_all('span')
     p_dict = {e.attrs['itemprop']: e.text for e in in_detail}
     p_dict['age'] = float(age.text.strip())
-    p_dict['role'] = category.text.strip()
+    p_dict['category'] = category.find('span').text.strip()
+    p_dict['url'] = details_a['href']
     low_family = p_dict['familyName'].lower()
     where_title = title.lower().find(low_family)
     assert where_title != -1
-    p_dict['familyName'] = title[where_title:where_title+len(low_family)]
+    title_surname = title[where_title:where_title + len(low_family)]
+    p_dict['familyName'] = title_surname
     return p_dict
+
+
+def people2df(people):
+    names = [dict2name(d) for d in people]
+    raw_df = pd.DataFrame(people)
+    out_df = pd.DataFrame(data=names, columns=['name'])
+    return out_df.assign(**{'age': raw_df['age'],
+                            'class': raw_df['category'],
+                            'honorific': raw_df['honorificPrefix'],
+                            'given_name': raw_df['givenName'],
+                            'family_name': raw_df['familyName'],
+                            'url': raw_df['url']})
 
 
 def dict2name(d):
     return '{familyName}, {honorificPrefix}. {givenName}'.format(**d)
 
 
-data = pd.read_csv(op.join(HERE, '..', 'processed', 'titanic_stlearn.csv'))
-engineers = data[data['class'] == 'engineering crew'].sort_values('name')
+# Read data from page, write to CSV.
 page = read_page(op.join(HERE, 'et_engineering_crew.html'))
 people = page2people(page)
-names_ages = [(dict2name(d), d['age']) for d in people]
+et_df = people2df(people)
+et_df.to_csv('et_engineers.csv', index=None)
 
+# Read data from original CSV.
+st_df = pd.read_csv(op.join(HERE, '..', 'processed', 'titanic_stlearn.csv'))
+st_engineers = st_df[st_df['class'] == 'engineering crew']
 
-def s1(e):
-    return e[0]
-
-
-names_ages = sorted(names_ages, key=s1)
-enames_ages = sorted(zip(engineers['name'], engineers['age']), key=s1)
-
-with open('et_names.txt', 'wt') as fobj:
-    for name, age in names_ages:
-        fobj.write(f'{name:40s} {age}\n')
-
-with open('st_names.txt', 'wt') as fobj:
-    for name, age in enames_ages:
-        fobj.write(f'{name:40s} {age}\n')
+# Write to txt files to check with diff utility.
+for df, fname in [(st_engineers, 'et_names.txt'),
+                  (et_df, 'st_names.txt')]:
+    names_ages = sorted(zip(df['name'], df['age']), key=lambda e: e[0])
+    with open(fname, 'wt') as fobj:
+        for name, age in names_ages:
+            fobj.write(f'{name:40s} {age}\n')
