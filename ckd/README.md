@@ -4,13 +4,19 @@ From <https://archive.ics.uci.edu/ml/datasets/Chronic_Kidney_Disease>
 
 The file `original/chronic_kidney_disease_full.arff` contains the full source information at the top of the file.
 
-The data are blood tests and other measures from patients with and without
-chronic kidney disease.  There are 400 rows, one per patient.  These are
-patients seen over a period of about two months at a hospital in Tamil Nadu,
-India, maybe [Apollo Reach
+The data are blood tests and other measures from patients with and without CKD.
+There are 400 rows, one per patient; these are patients seen over a period of
+about two months at some point before July 2015, in a hospital in Tamil Nadu,
+India; maybe [Apollo Reach
 Karaikudi](https://www.purplehealth.com/10765-DrSoundarapandianPS).
 
-L. Jerlin Rubini appears to have created the data, with the collaboration of Doctors P. Soundarapandian and P. Eswaran. See the original file or the link above for details.
+Of the 400 rows, 250 correspond to patients *with* CKD and the remaining 150
+rows correspond to patients *without* CKD.  This information is in the "Class"
+column of the dataset.
+
+L. Jerlin Rubini created the data, with the collaboration of Doctors P.
+Soundarapandian and P. Eswaran. See the original file or the link above for
+details.
 
 See the [citation request](https://archive.ics.uci.edu/ml/citation_policy.html)
 for the original website policy for citing datasets; please do follow that if you publish an analysis of these data.
