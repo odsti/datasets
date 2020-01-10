@@ -68,5 +68,14 @@ for col_name, col_dtype in df.dtypes.items():
         pass
     df[col_name] = new_col
 
-out_fname = op.join('processed', 'chronic_kidney_disease.csv')
+out_fname = op.join('processed', 'ckd_full.csv')
 df.to_csv(out_fname, index=False)
+
+
+# Processing to match (almost) the file from Berkeley Foundations of Data
+# Science: https://www.inferentialthinking.com
+# See README
+clean = df.dropna(how='any')
+clean = clean.replace({'Class': dict(ckd=1, notckd=0)})
+out_fname_clean = op.join('processed', 'ckd_clean.csv')
+clean.to_csv(out_fname_clean, index=False)
