@@ -2,13 +2,22 @@
 """
 
 import os.path as op
+from io import StringIO
 
 import numpy as np
 import pandas as pd
 from scipy.io import arff
 
-# Load data as Numpy record arrays.
-data, meta = arff.loadarff('chronic_kidney_disease_full.arff')
+# Patch input file to remove extra missing value.
+# The original file appears to be mal-formed, and therefore causes errors when
+# reading with Scipy.  Specifically, the value in line 399, starting `75,70`,
+# has an extra missing field specified with double commas: `,,`.
+with open('chronic_kidney_disease_full.arff', 'rt') as fobj:
+    data_txt = fobj.read()
+data_txt = data_txt.replace(',,', ',')
+
+# Load modified data as Numpy record arrays.
+data, meta = arff.loadarff(StringIO(data_txt))
 
 # To pandas data frame
 df = pd.DataFrame.from_records(data)
