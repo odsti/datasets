@@ -45,8 +45,8 @@ simple_cols = ['name',
 basic_passengers = titanic.loc[~is_crew, simple_cols].dropna()
 
 # Save basic dataset
-out_fname = op.join('processed', 'titanic_simple.csv')
-titanic.to_csv(out_fname, index=None)
+out_fname = op.join('processed', 'titanic_clean.csv')
+basic_passengers.to_csv(out_fname, index=None)
 
 # Check that data frame loads correctly.
 print(pd.read_csv(out_fname).head())
