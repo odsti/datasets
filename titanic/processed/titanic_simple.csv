@@ -1,0 +1,2208 @@
+name,gender,age,class,embarked,country,ticketno,fare,sibsp,parch,survived
+"Abbing, Mr. Anthony",male,42.0,3rd,Southampton,United States,5547.0,7.11,0.0,0.0,no
+"Abbott, Mr. Eugene Joseph",male,13.0,3rd,Southampton,United States,2673.0,20.05,0.0,2.0,no
+"Abbott, Mr. Rossmore Edward",male,16.0,3rd,Southampton,United States,2673.0,20.05,1.0,1.0,no
+"Abbott, Mrs. Rhoda Mary 'Rosa'",female,39.0,3rd,Southampton,England,2673.0,20.05,1.0,1.0,yes
+"Abelseth, Miss. Karen Marie",female,16.0,3rd,Southampton,Norway,348125.0,7.13,0.0,0.0,yes
+"Abelseth, Mr. Olaus Jørgensen",male,25.0,3rd,Southampton,United States,348122.0,7.13,0.0,0.0,yes
+"Abelson, Mr. Samuel",male,30.0,2nd,Cherbourg,France,3381.0,24.0,1.0,0.0,no
+"Abelson, Mrs. Hannah",female,28.0,2nd,Cherbourg,France,3381.0,24.0,1.0,0.0,yes
+"Abī-Al-Munà, Mr. Nāsīf Qāsim",male,27.0,3rd,Cherbourg,Lebanon,2699.0,18.1509,0.0,0.0,yes
+"Abrahamsson, Mr. Abraham August Johannes",male,20.0,3rd,Southampton,Finland,3101284.0,7.1806,0.0,0.0,yes
+"Ådahl, Mr. Mauritz",male,30.0,3rd,Southampton,Sweden,7076.0,7.05,0.0,0.0,no
+"Adams, Mr. John",male,27.0,3rd,Southampton,England,341826.0,8.01,0.0,0.0,no
+"Ahlin, Mrs. Johanna Persdotter",female,40.0,3rd,Southampton,Sweden,7546.0,9.0906,1.0,0.0,no
+"Aks, Master. Frank Philip",male,0.8333333333,3rd,Southampton,England,392091.0,9.07,0.0,1.0,yes
+"Aks, Mrs. Leah",female,18.0,3rd,Southampton,England,392091.0,9.07,0.0,1.0,yes
+"Aldworth, Mr. Augustus Henry",male,35.0,2nd,Southampton,England,248744.0,13.0,0.0,0.0,no
+"Alexander, Mr. William Albert",male,25.0,3rd,Southampton,England,3474.0,7.1709,0.0,0.0,no
+"Alhomäki, Mr. Ilmari Rudolf",male,19.0,3rd,Southampton,Finland,3101287.0,7.1806,0.0,0.0,no
+"Ali, Mr. Ahmed",male,24.0,3rd,Southampton,Argentina,3101311.0,7.01,0.0,0.0,no
+"Ali, Mr. William",male,25.0,3rd,Southampton,Argentina,3101312.0,7.01,0.0,0.0,no
+"Allen, Miss. Elisabeth Walton",female,29.0,1st,Southampton,United States,24160.0,211.6009,0.0,0.0,yes
+"Allen, Mr. William Henry",male,39.0,3rd,Southampton,England,373450.0,8.01,0.0,0.0,no
+"Allison, Master. Hudson Trevor",male,0.9166666667,1st,Southampton,Canada,113781.0,151.16,1.0,2.0,yes
+"Allison, Miss. Helen Loraine",female,2.0,1st,Southampton,Canada,113781.0,151.16,1.0,2.0,no
+"Allison, Mr. Hudson Joshua Creighton",male,30.0,1st,Southampton,Canada,113781.0,151.16,1.0,2.0,no
+"Allison, Mrs. Bessie Waldo",female,25.0,1st,Southampton,United States,113781.0,151.16,1.0,2.0,no
+"Allum, Mr. Owen George",male,18.0,3rd,Southampton,England,2223.0,8.06,0.0,0.0,no
+"Al-Munà, Mr. Farīd Husayn Qāsim",male,19.0,3rd,Cherbourg,Lebanon,2700.0,7.0407,0.0,0.0,no
+"Andersen-Jensen, Miss. Carla Christine Nielsine",female,19.0,3rd,Southampton,Denmark,350046.0,7.1701,1.0,0.0,yes
+"Andersen, Mr. Albert Karvin",male,33.0,3rd,Southampton,Norway,4001.0,22.1006,0.0,0.0,no
+"Anderson, Mr. Harry",male,47.0,1st,Southampton,United States,19952.0,26.11,0.0,0.0,yes
+"Andersson, Master. Sigvard Harald Elias",male,4.0,3rd,Southampton,Sweden,347082.0,31.0506,4.0,2.0,no
+"Andersson, Miss. Ebba Iris Alfrida",female,6.0,3rd,Southampton,Sweden,347082.0,31.0506,4.0,2.0,no
+"Andersson, Miss. Ellis Anna Maria",female,2.0,3rd,Southampton,Sweden,347082.0,31.0506,4.0,2.0,no
+"Andersson, Miss. Erna Alexandra",female,16.0,3rd,Southampton,Finland,3101281.0,7.1806,4.0,2.0,yes
+"Andersson, Miss. Ida Augusta Margareta",female,38.0,3rd,Southampton,Sweden,347091.0,7.1506,4.0,2.0,no
+"Andersson, Miss. Ingeborg Constanzia",female,9.0,3rd,Southampton,Sweden,347082.0,31.0506,4.0,2.0,no
+"Andersson, Miss. Sigrid Elisabeth",female,11.0,3rd,Southampton,Sweden,347082.0,31.0506,4.0,2.0,no
+"Andersson, Mr. Anders Johan",male,39.0,3rd,Southampton,Sweden,347082.0,31.0506,1.0,5.0,no
+"Andersson, Mr. Johan Samuel",male,26.0,3rd,Southampton,Sweden,347075.0,7.1506,0.0,0.0,no
+"Andersson, Mrs. Alfrida Konstantia Brogren",female,39.0,3rd,Southampton,Sweden,347082.0,31.0506,1.0,5.0,no
+"Andreasson, Mr. Pål Edvin",male,20.0,3rd,Southampton,Sweden,347466.0,7.1701,0.0,0.0,no
+"Andrew, Mr. Edgar Samuel",male,17.0,2nd,Southampton,Argentina,231945.0,11.1,0.0,0.0,no
+"Andrew, Mr. Frank Thomas",male,27.0,2nd,Southampton,England,34050.0,10.1,0.0,0.0,no
+"Andrews, Miss. Kornelia Theodosia",female,62.0,1st,Cherbourg,United States,13502.0,77.1902,1.0,0.0,yes
+"Andrews, Mr. Thomas",male,39.0,1st,Belfast,Northern Ireland,112050.0,,0.0,0.0,no
+"Angheloff, Mr. Minko",male,26.0,3rd,Southampton,Bulgaria,349202.0,7.1711,0.0,0.0,no
+"Angle, Mrs. Florence Agnes",female,36.0,2nd,Southampton,England,226875.0,26.0,1.0,0.0,yes
+"Angle, Mr. William",male,31.0,2nd,Southampton,England,226875.0,26.0,1.0,0.0,no
+"Appleton, Mrs. Charlotte",female,53.0,1st,Southampton,United States,11769.0,51.0907,2.0,0.0,yes
+"Arnold-Franchi, Mr. Josef",male,25.0,3rd,Southampton,Switzerland,349237.0,17.16,1.0,0.0,no
+"Arnold-Franchi, Mrs. Josefine",female,18.0,3rd,Southampton,Switzerland,349237.0,17.16,1.0,0.0,no
+"Aronsson, Mr. Ernst Axel Algot",male,25.0,3rd,Southampton,Sweden,349911.0,7.1506,0.0,0.0,no
+"Artagaveytia, Mr. Ramon",male,71.0,1st,Cherbourg,Argentina,17609.0,49.1001,0.0,0.0,no
+"Ashby, Mr. John",male,57.0,2nd,Southampton,England,244346.0,13.0,0.0,0.0,no
+"Asim, Mr. Adola",male,35.0,3rd,Southampton,Argentina,3101310.0,7.01,0.0,0.0,no
+"Asplund, Master. Carl Edgar",male,5.0,3rd,Southampton,Sweden,347077.0,31.0709,4.0,2.0,no
+"Asplund, Master. Clarence Gustaf Hugo",male,9.0,3rd,Southampton,Sweden,347077.0,31.0709,4.0,2.0,no
+"Asplund, Master. Edvin Rojj Felix",male,3.0,3rd,Southampton,Sweden,347077.0,31.0709,4.0,2.0,yes
+"Asplund, Master. Filip Oscar",male,13.0,3rd,Southampton,Sweden,347077.0,31.0709,4.0,2.0,no
+"Asplund, Miss. Lillian Gertrud",female,5.0,3rd,Southampton,Sweden,347077.0,31.0709,4.0,2.0,yes
+"Asplund, Mr. Carl Oscar Vilhelm Gustafsson",male,40.0,3rd,Southampton,Sweden,347077.0,31.0709,1.0,5.0,no
+"Asplund, Mr. Johan Charles",male,13.0,3rd,Southampton,Sweden,350054.0,7.1511,0.0,0.0,yes
+"Asplund, Mrs. Selma Augusta Emilia",female,38.0,3rd,Southampton,Sweden,347077.0,31.0709,1.0,5.0,yes
+"Assaf, Mrs. Mariana",female,45.0,3rd,Cherbourg,Lebanon,2696.0,7.0406,0.0,0.0,yes
+"Assam, Mr. Ali",male,23.0,3rd,Southampton,Argentina,3101309.0,7.01,0.0,0.0,no
+"Astor, Colonel. John Jacob",male,47.0,1st,Cherbourg,United States,17757.0,247.1006,1.0,0.0,no
+"Astor, Mrs. Madeleine Talmage",female,18.0,1st,Cherbourg,United States,17757.0,247.1006,1.0,0.0,yes
+"Attalah, Miss. Malake",female,17.0,3rd,Cherbourg,Lebanon,2627.0,14.0902,0.0,0.0,no
+"Attala, Mr. Sleiman",male,27.0,3rd,Cherbourg,Canada,2694.0,7.0406,0.0,0.0,no
+"Aubart, Mme. Léontine Pauline",female,24.0,1st,Cherbourg,France,17477.0,69.06,0.0,0.0,yes
+"Augustsson, Mr. Albert",male,23.0,3rd,Southampton,Sweden,347468.0,7.1701,0.0,0.0,no
+"Ayoub Daher, Miss. Banoura",female,15.0,3rd,Cherbourg,Lebanon,2687.0,7.0407,0.0,0.0,yes
+"Backström, Mr. Karl Alfred",male,32.0,3rd,Southampton,Finland,3101278.0,15.17,1.0,0.0,no
+"Backström, Mrs. Maria Mathilda",female,33.0,3rd,Southampton,Finland,3101278.0,15.17,3.0,0.0,yes
+"Baclini, Miss. Eugenie",female,3.0,3rd,Cherbourg,Lebanon,2666.0,19.0502,2.0,1.0,yes
+"Baclini, Miss. Helene Barbara",female,0.75,3rd,Cherbourg,Lebanon,2666.0,19.0502,2.0,1.0,yes
+"Baclini, Miss. Marie Catherine",female,5.0,3rd,Cherbourg,Lebanon,2666.0,19.0502,2.0,1.0,yes
+"Baclini, Mrs. Latifa",female,23.0,3rd,Cherbourg,Lebanon,2666.0,19.0502,0.0,3.0,yes
+"Badman, Miss. Emily Louisa",female,18.0,3rd,Southampton,England,31416.0,8.01,0.0,0.0,yes
+"Badt, Mr. Mohamed",male,40.0,3rd,Cherbourg,Lebanon,2623.0,7.0406,0.0,0.0,no
+"Bailey, Mr. Percy",male,18.0,2nd,Southampton,England,29108.0,11.1,0.0,0.0,no
+"Bainbrigge, Mr. Charles Robert",male,22.0,2nd,Southampton,Channel Islands,31030.0,10.1,0.0,0.0,no
+"Balkic, Mr. Cerin",male,26.0,3rd,Southampton,Bosnia,349248.0,7.1711,0.0,0.0,no
+"Balls, Mrs. Ada E.",female,36.0,2nd,Southampton,England,28551.0,13.0,0.0,0.0,yes
+"Banfield, Mr. Frederick James",male,28.0,2nd,Southampton,England,34068.0,10.1,0.0,0.0,no
+"Banski, Mrs. Mara",female,31.0,3rd,Southampton,Hungary,349244.0,8.1308,0.0,0.0,yes
+"Barbara, Miss. Saiide",female,18.0,3rd,Cherbourg,Lebanon,2691.0,14.0901,0.0,1.0,no
+"Barbara, Mrs. Catherine David",female,45.0,3rd,Cherbourg,Lebanon,2691.0,14.0901,0.0,1.0,no
+"Barber, Miss. Ellen Mary",female,27.0,1st,Southampton,,19877.0,78.17,0.0,0.0,yes
+"Barkworth, Mr. Algernon Henry",male,47.0,1st,Southampton,England,27042.0,30.0,0.0,0.0,yes
+"Barry, Miss. Julia",female,33.0,3rd,Queenstown,Ireland,330844.0,7.1707,0.0,0.0,no
+"Barton, Mr. David John",male,22.0,3rd,Southampton,England,324669.0,8.01,0.0,0.0,no
+"Bassani, Mrs. Albina",female,32.0,1st,Cherbourg,Italy,11813.0,76.051,0.0,0.0,yes
+"Bateman, Revd. Robert James",male,52.0,2nd,Southampton,England,1166.0,12.1006,0.0,0.0,no
+"Batoshev, Mr. Hristo Lalev",male,23.0,3rd,Southampton,Bulgaria,349217.0,7.1711,0.0,0.0,no
+"Baumann, Mr. John D.",male,60.0,1st,Cherbourg,United States,17318.0,25.1806,0.0,0.0,no
+"Baxter, Mr. Quigg Edmond",male,24.0,1st,Cherbourg,Canada,17558.0,247.1005,0.0,1.0,no
+"Baxter, Mrs. Hélène",female,50.0,1st,Cherbourg,Canada,17558.0,247.1005,0.0,1.0,yes
+"Beane, Mr. Edward",male,32.0,2nd,Southampton,England,2908.0,26.0,1.0,0.0,yes
+"Beane, Mrs. Ethel",female,22.0,2nd,Southampton,England,2908.0,26.0,1.0,0.0,yes
+"Beattie, Mr. Thomson",male,36.0,1st,Southampton,Canada,13050.0,75.041,0.0,0.0,no
+"Beauchamp, Mr. Henry James",male,44.0,2nd,Southampton,England,244358.0,26.0,0.0,0.0,no
+"Beavan, Mr. William Thomas",male,20.0,3rd,Southampton,England,323951.0,8.01,0.0,0.0,no
+"Becker, Master. Richard F.",male,1.0,2nd,Southampton,India,230136.0,39.0,2.0,1.0,yes
+"Becker, Miss. Marion Louise",female,4.0,2nd,Southampton,India,230136.0,39.0,2.0,1.0,yes
+"Becker, Miss. Ruth Elizabeth",female,12.0,2nd,Southampton,India,230136.0,39.0,2.0,1.0,yes
+"Becker, Mrs. Nellie E.",female,35.0,2nd,Southampton,United States,230136.0,39.0,0.0,3.0,yes
+"Beckwith, Mr. Richard Leonard",male,37.0,1st,Southampton,United States,11751.0,52.1101,1.0,1.0,yes
+"Beckwith, Mrs. Sallie",female,46.0,1st,Southampton,United States,11751.0,52.1101,1.0,1.0,yes
+"Beesley, Mr. Lawrence",male,34.0,2nd,Southampton,England,248698.0,13.0,0.0,0.0,yes
+"Behr, Mr. Karl Howell",male,26.0,1st,Cherbourg,United States,111369.0,30.0,0.0,0.0,yes
+"Bengtsson, Mr. Johan Viktor",male,26.0,3rd,Southampton,Sweden,347068.0,7.1506,0.0,0.0,no
+"Bentham, Miss. Lillian W.",female,19.0,2nd,Southampton,United States,28404.0,13.0,0.0,0.0,yes
+"Berglund, Mr. Karl Ivar Sven",male,22.0,3rd,Southampton,Finland,4348.0,9.07,0.0,0.0,no
+"Berriman, Mr. William John",male,23.0,2nd,Southampton,England,28425.0,13.0,0.0,0.0,no
+"Bessette, Miss. Nellie Mayo",female,39.0,1st,Cherbourg,United States,17760.0,63.0702,0.0,0.0,yes
+"Bidois, Miss. Rosalie",female,46.0,1st,Cherbourg,,17757.0,247.1006,0.0,0.0,yes
+"Bing, Mr. Lee",male,32.0,3rd,Southampton,,1601.0,56.0911,0.0,0.0,yes
+"Bird, Miss. Ellen",female,31.0,1st,Southampton,England,17483.0,221.1507,0.0,0.0,yes
+"Birkeland, Mr. Hans Martin Monsen",male,21.0,3rd,Southampton,Norway,312992.0,7.1506,0.0,0.0,no
+"Birnbaum, Mr. Jakob",male,24.0,1st,Cherbourg,,13905.0,26.0,0.0,0.0,no
+"Bishop, Mr. Dickinson H.",male,25.0,1st,Cherbourg,United States,11967.0,91.0107,1.0,0.0,yes
+"Bishop, Mrs. Helen",female,19.0,1st,Cherbourg,United States,11967.0,91.0107,1.0,0.0,yes
+"Björklund, Mr. Ernst Herbert",male,18.0,3rd,Southampton,Sweden,347090.0,7.15,0.0,0.0,no
+"Björnström-Steffansson, Mr. Mauritz Hokan",male,28.0,1st,Southampton,Sweden,110564.0,26.11,0.0,0.0,yes
+"Blackwell, Mr. Stephen Weart",male,45.0,1st,Southampton,United States,113784.0,35.1,0.0,0.0,no
+"Blank, Mr. Henry",male,39.0,1st,Cherbourg,United States,112277.0,31.0,0.0,0.0,yes
+"Bonnell, Miss. Caroline",female,30.0,1st,Southampton,United States,36928.0,164.1704,0.0,0.0,yes
+"Bonnell, Miss. Elizabeth",female,61.0,1st,Southampton,England,113783.0,26.11,0.0,0.0,yes
+"Borebank, Mr. John James",male,41.0,1st,Southampton,England,110489.0,26.11,0.0,0.0,no
+"Bostandyeff, Mr. Guentcho",male,26.0,3rd,Southampton,,349224.0,7.1711,0.0,0.0,no
+"Botsford, Mr. William Hull",male,25.0,2nd,Southampton,United States,237670.0,13.0,0.0,0.0,no
+"Bourke, Miss. Mary",female,40.0,3rd,Queenstown,Ireland,364848.0,7.15,0.0,2.0,no
+"Bourke, Mr. John",male,42.0,3rd,Queenstown,Ireland,364849.0,15.1,1.0,1.0,no
+"Bourke, Mrs. Catherine",female,32.0,3rd,Queenstown,Ireland,364849.0,15.1,1.0,1.0,no
+"Bowen, Miss. Grace Scott",female,45.0,1st,Cherbourg,United States,17608.0,262.0706,0.0,0.0,yes
+"Bowen, Mr. David John 'Dai'",male,26.0,3rd,Southampton,Wales,54636.0,16.02,0.0,0.0,no
+"Bowenur, Mr. Solomon",male,42.0,2nd,Southampton,,211535.0,13.0,0.0,0.0,no
+"Bowerman, Miss. Elsie Edith",female,22.0,1st,Southampton,England,113505.0,55.0,0.0,1.0,yes
+"Bracken, Mr. James Hollen",male,30.0,2nd,Southampton,United States,220367.0,13.0,0.0,0.0,no
+"Bradley, Miss. Bridget Delia",female,22.0,3rd,Queenstown,Ireland,334914.0,7.1406,0.0,0.0,yes
+"Brady, Mr. John Bertram",male,41.0,1st,Southampton,United States,113054.0,30.1,0.0,0.0,no
+"Braf, Miss. Elin Ester Maria",female,20.0,3rd,Southampton,Sweden,347471.0,7.1701,0.0,0.0,no
+"Brailey, Mr. William Theodore Ronald",male,24.0,2nd,Southampton,England,250654.0,,,,no
+"Brandeis, Mr. Emil Franklin",male,48.0,1st,Cherbourg,United States,17591.0,50.0911,0.0,0.0,no
+"Braund, Mr. Lewis Richard",male,29.0,3rd,Southampton,England,3460.0,7.0,1.0,0.0,no
+"Braund, Mr. Owen Harris",male,23.0,3rd,Southampton,England,21171.0,7.05,1.0,0.0,no
+"Brereton, Mr. George Andrew",male,37.0,1st,Southampton,United States,111427.0,26.11,0.0,0.0,yes
+"Brewe, Dr. Arthur Jackson",male,46.0,1st,Cherbourg,United States,112379.0,39.12,0.0,0.0,no
+"Bricoux, Mr. Roger Marie",male,20.0,2nd,Southampton,France,250654.0,,,,no
+"Brito, Mr. José Joaquim de",male,32.0,2nd,Southampton,,244360.0,13.0,0.0,0.0,no
+"Brobäck, Mr. Karl Rudolf",male,22.0,3rd,Southampton,Sweden,350045.0,7.1511,0.0,0.0,no
+"Brocklebank, Mr. William Alfred",male,40.0,3rd,Southampton,England,364512.0,8.01,0.0,0.0,no
+"Brown, Miss. Amelia Mary",female,18.0,2nd,Southampton,England,248733.0,13.0,0.0,0.0,yes
+"Brown, Miss. Edith Eileen",female,15.0,2nd,Southampton,South Africa,29750.0,39.0,0.0,2.0,yes
+"Brown, Mrs. Caroline Lane",female,59.0,1st,Southampton,United States,11769.0,51.0907,2.0,0.0,yes
+"Brown, Mrs. Elizabeth Catherine",female,40.0,2nd,Southampton,South Africa,29750.0,39.0,1.0,1.0,yes
+"Brown, Mrs. Margaret",female,44.0,1st,Cherbourg,United States,17610.0,27.1405,0.0,0.0,yes
+"Brown, Mr. Thomas William Solomon",male,60.0,2nd,Southampton,South Africa,29750.0,39.0,1.0,1.0,no
+"Bryhl, Miss. Dagmar Jenny Ingeborg",female,20.0,2nd,Southampton,Sweden,236853.0,26.0,1.0,0.0,yes
+"Bryhl, Mr. Kurt Arnold Gottfrid",male,25.0,2nd,Southampton,Sweden,236853.0,26.0,1.0,0.0,no
+"Buckley, Miss. Katherine",female,22.0,3rd,Queenstown,Ireland,329944.0,7.0508,0.0,0.0,no
+"Buckley, Mr. Daniel",male,21.0,3rd,Queenstown,Ireland,330920.0,7.1517,0.0,0.0,yes
+"Bucknell, Mrs. Emma Eliza",female,58.0,1st,Cherbourg,India,11813.0,76.051,0.0,0.0,yes
+"Būlus, Master. Akar",male,7.0,3rd,Cherbourg,Lebanon,2678.0,15.0411,1.0,1.0,no
+"Būlus, Miss. Nūr al-'ayn",female,10.0,3rd,Cherbourg,Lebanon,2678.0,15.0411,1.0,1.0,no
+"Būlus, Mrs. Sultānah",female,40.0,3rd,Cherbourg,Lebanon,2678.0,15.0411,0.0,2.0,no
+"Burke, Mr. Jeremiah",male,19.0,3rd,Queenstown,Ireland,365222.0,6.15,0.0,0.0,no
+"Burns, Miss. Elizabeth Margaret",female,41.0,1st,Cherbourg,,16966.0,134.1,0.0,0.0,yes
+"Burns, Miss. Mary Delia",female,17.0,3rd,Queenstown,Ireland,330963.0,7.1707,0.0,0.0,no
+"Buss, Miss. Kate",female,36.0,2nd,Southampton,England,27849.0,13.0,0.0,0.0,yes
+"Butler, Mr. Reginald Fenton",male,26.0,2nd,Southampton,England,234686.0,13.0,0.0,0.0,no
+"Butrus-Ka'wī, Mr. Tannūs",male,21.0,3rd,Cherbourg,Lebanon,2648.0,7.0407,0.0,0.0,no
+"Butt, Major. Archibald Willingham",male,46.0,1st,Southampton,United States,113050.0,26.11,0.0,0.0,no
+"Byles, Fr. Thomas Roussel Davids",male,42.0,2nd,Southampton,England,244310.0,13.0,0.0,0.0,no
+"Byström, Mrs. Karolina",female,40.0,2nd,Southampton,United States,236852.0,13.0,0.0,0.0,yes
+"Cacic, Miss. Manda",female,21.0,3rd,Southampton,Croatia (Modern),315087.0,8.1303,0.0,0.0,no
+"Cacic, Miss. Marija",female,30.0,3rd,Southampton,Croatia (Modern),315084.0,8.1303,0.0,0.0,no
+"Cacic, Mr. Jego Grga",male,18.0,3rd,Southampton,Croatia (Modern),315091.0,8.1303,0.0,0.0,no
+"Cacic, Mr. Luka",male,38.0,3rd,Southampton,Croatia (Modern),315089.0,8.1303,0.0,0.0,no
+"Cairns, Mr. Alexander Milne",male,28.0,1st,Southampton,Scotland,113798.0,31.0,0.0,0.0,no
+"Calderhead, Mr. Edward Pennington",male,42.0,1st,Southampton,United States,17476.0,26.0509,0.0,0.0,yes
+"Caldwell, Master. Alden Gates",male,0.8333333333,2nd,Southampton,Siam,248738.0,29.0,0.0,2.0,yes
+"Caldwell, Mr. Albert Francis",male,26.0,2nd,Southampton,Siam,248738.0,29.0,1.0,1.0,yes
+"Caldwell, Mrs. Sylvia Mae",female,28.0,2nd,Southampton,United States,248738.0,29.0,1.0,1.0,yes
+"Calic, Mr. Jovo",male,17.0,3rd,Southampton,Croatia (Modern),315093.0,8.1303,0.0,0.0,no
+"Calic, Mr. Petar",male,17.0,3rd,Southampton,Croatia (Modern),315086.0,8.1303,0.0,0.0,no
+"Cameron, Miss. Clear Annie",female,35.0,2nd,Southampton,England,13528.0,21.0,0.0,0.0,yes
+"Campbell, Mr. William Henry",male,21.0,2nd,Belfast,Northern Ireland,239853.0,,0.0,0.0,no
+"Canavan, Miss. Mary",female,22.0,3rd,Queenstown,Ireland,364846.0,7.15,0.0,0.0,no
+"Canavan, Mr. Patrick",male,21.0,3rd,Queenstown,Ireland,364858.0,7.15,0.0,0.0,no
+"Candee, Mrs. Helen Churchill",female,52.0,1st,Cherbourg,United States,17606.0,27.0811,0.0,0.0,yes
+"Cann, Mr. Ernest",male,29.0,3rd,Southampton,England,2152.0,8.01,0.0,0.0,no
+"Caram, Mr. Joseph",male,28.0,3rd,Cherbourg,Canada,2689.0,14.0902,1.0,0.0,no
+"Caram, Mrs. Maria Elias",female,18.0,3rd,Cherbourg,Lebanon,2689.0,14.0902,1.0,0.0,no
+"Carbines, Mr. William",male,19.0,2nd,Southampton,England,28424.0,13.0,0.0,0.0,no
+"Cardeza, Mrs. Charlotte Wardle",female,58.0,1st,Cherbourg,United States,17755.0,512.0607,0.0,1.0,yes
+"Cardeza, Mr. Thomas Drake Martinez",male,36.0,1st,Cherbourg,United States,17755.0,512.0607,0.0,1.0,yes
+"Carlsson, Mr. August Sigfrid",male,28.0,3rd,Southampton,Sweden,350042.0,7.1511,0.0,0.0,no
+"Carlsson, Mr. Carl Robert",male,24.0,3rd,Southampton,Sweden,350409.0,7.1701,0.0,0.0,no
+"Carlsson, Mr. Frans Olof",male,33.0,1st,Southampton,United States,695.0,5.0,0.0,0.0,no
+"Carraú-Esteves, Mr. José Pedro",male,17.0,1st,Southampton,Uruguay,113059.0,47.02,0.0,0.0,no
+"Carrau, Mr. Francisco Mauro Severiano",male,27.0,1st,Southampton,Uruguay,113059.0,47.02,0.0,0.0,no
+"Carr, Miss. Jane",female,45.0,3rd,Queenstown,Ireland,368364.0,7.15,0.0,0.0,no
+"Carter, Fr. Ernest Courtenay",male,54.0,2nd,Southampton,England,244252.0,26.0,1.0,0.0,no
+"Carter, Master. William Thornton II",male,11.0,1st,Southampton,United States,113760.0,120.0,1.0,2.0,yes
+"Carter, Miss. Lucile Polk",female,13.0,1st,Southampton,United States,113760.0,120.0,1.0,2.0,yes
+"Carter, Mrs. Lilian",female,45.0,2nd,Southampton,England,244252.0,26.0,1.0,0.0,no
+"Carter, Mrs. Lucile",female,36.0,1st,Southampton,United States,113760.0,120.0,1.0,2.0,yes
+"Carter, Mr. William Ernest",male,36.0,1st,Southampton,United States,113760.0,120.0,1.0,2.0,yes
+"Carver, Mr. Alfred John",male,28.0,3rd,Southampton,England,370160.0,7.05,0.0,0.0,no
+"Case, Mr. Howard Brown",male,49.0,1st,Southampton,United States,19924.0,26.0,0.0,0.0,no
+"Cassebeer, Mrs. Eleanor Genevieve",female,36.0,1st,Cherbourg,United States,17770.0,27.1405,0.0,0.0,yes
+"Cavendish, Mrs. Julia Florence",female,25.0,1st,Southampton,United States,19877.0,78.17,1.0,0.0,yes
+"Cavendish, Mr. Tyrell William",male,36.0,1st,Southampton,England,19877.0,78.17,1.0,0.0,no
+"Celotti, Mr. Francesco",male,24.0,3rd,Southampton,,343275.0,8.01,0.0,0.0,no
+"Chaffee, Mr. Herbert Fuller",male,46.0,1st,Southampton,United States,5734.0,61.0306,1.0,0.0,no
+"Chaffee, Mrs. Carrie Constance",female,47.0,1st,Southampton,United States,5734.0,61.0306,1.0,0.0,yes
+"Chambers, Mr. Norman Campbell",male,27.0,1st,Southampton,United States,113806.0,53.02,1.0,0.0,yes
+"Chambers, Mrs. Bertha",female,32.0,1st,Southampton,United States,113806.0,53.02,1.0,0.0,yes
+"Chapman, Mr. Charles Henry",male,52.0,2nd,Southampton,United States,248731.0,13.1,0.0,0.0,no
+"Chapman, Mr. John Henry",male,37.0,2nd,Southampton,England,29037.0,26.0,1.0,0.0,no
+"Chapman, Mrs. Sara Elizabeth",female,29.0,2nd,Southampton,England,29037.0,26.0,1.0,0.0,no
+"Charters, Mr. David",male,20.0,3rd,Queenstown,Ireland,13032.0,7.1408,0.0,0.0,no
+"Chaudanson, Miss. Victorine",female,36.0,1st,Cherbourg,,17608.0,262.0706,0.0,0.0,yes
+"Cherry, Miss. Gladys",female,30.0,1st,Southampton,England,110152.0,86.1,0.0,0.0,yes
+"Chevré, Mr. Paul Romaine Marie Léonce",male,45.0,1st,Cherbourg,Belgium,17594.0,29.14,0.0,0.0,yes
+"Chibnall, Mrs. Edith Martha Bowerman",female,48.0,1st,Southampton,England,113505.0,55.0,0.0,1.0,yes
+"Chip, Mr. Chang",male,32.0,3rd,Southampton,,1601.0,56.0911,0.0,0.0,yes
+"Chisholm, Mr. Roderick Robert Crispin",male,43.0,1st,Belfast,Scotland,112051.0,,0.0,0.0,no
+"Christmann, Mr. Emil",male,29.0,3rd,Southampton,England,343276.0,8.01,0.0,0.0,no
+"Christy, Miss. Rachel Juli Cohen",female,25.0,2nd,Southampton,England,237789.0,30.0,1.0,1.0,yes
+"Christy, Mrs. Alice Frances",female,52.0,2nd,Southampton,England,237789.0,30.0,0.0,2.0,yes
+"Chronopoulos, Mr. Apostolos M.",male,26.0,3rd,Cherbourg,,2680.0,14.0901,1.0,0.0,no
+"Chronopoulos, Mr. Dimitrios M.",male,21.0,3rd,Cherbourg,,2680.0,14.0901,1.0,0.0,no
+"Clarke, Mr. Charles Valentine",male,29.0,2nd,Southampton,England,2003.0,26.0,1.0,0.0,no
+"Clarke, Mr. John Frederick Preston",male,28.0,2nd,Southampton,England,250654.0,,,,no
+"Clarke, Mrs. Ada Maria",female,28.0,2nd,Southampton,England,2003.0,27.0,1.0,0.0,yes
+"Clark, Mrs. Virginia Estelle",female,26.0,1st,Cherbourg,United States,13508.0,136.1507,1.0,0.0,yes
+"Clark, Mr. Walter Miller",male,27.0,1st,Cherbourg,United States,13508.0,136.1507,1.0,0.0,no
+"Cleaver, Miss. Alice Catherine",female,22.0,1st,Southampton,England,113781.0,151.16,0.0,0.0,yes
+"Clifford, Mr. George Quincy",male,40.0,1st,Southampton,United States,110465.0,52.0,0.0,0.0,no
+"Coelho, Mr. Domingos Fernandeo",male,20.0,3rd,Southampton,,3101307.0,7.01,0.0,0.0,no
+"Cohen, Mr. Gurshon",male,18.0,3rd,Southampton,England,3540.0,8.01,0.0,0.0,yes
+"Colbert, Mr. Patrick",male,24.0,3rd,Queenstown,Ireland,371109.0,7.05,0.0,0.0,no
+"Coleff, Mr. Satio",male,24.0,3rd,Southampton,Bulgaria,349209.0,7.1711,0.0,0.0,no
+"Coleridge, Mr. Reginald Charles",male,29.0,2nd,Southampton,England,14263.0,10.1,0.0,0.0,no
+"Collander, Mr. Erik Gustaf",male,27.0,2nd,Southampton,Finland,248740.0,13.0,0.0,0.0,no
+"Collett, Mr. Sidney Clarence Stuart",male,25.0,2nd,Southampton,England,28034.0,10.1,0.0,0.0,yes
+"Colley, Mr. Edward Pomeroy",male,37.0,1st,Southampton,Ireland,5727.0,25.1109,0.0,0.0,no
+"Collyer, Miss. Marjorie Lottie",female,8.0,2nd,Southampton,England,31921.0,26.05,0.0,2.0,yes
+"Collyer, Mr. Harvey",male,31.0,2nd,Southampton,England,31921.0,26.05,1.0,1.0,no
+"Collyer, Mrs. Charlotte Caroline",female,30.0,2nd,Southampton,England,31921.0,26.05,1.0,1.0,yes
+"Coltcheff, Mr. Peju",male,36.0,3rd,Southampton,Bulgaria,349210.0,7.1711,0.0,0.0,no
+"Compton, Miss. Sara Rebecca",female,39.0,1st,Cherbourg,United States,17756.0,83.0302,1.0,1.0,yes
+"Compton, Mr. Alexander Taylor jr",male,37.0,1st,Cherbourg,United States,17756.0,83.0302,1.0,1.0,no
+"Compton, Mrs. Mary Eliza",female,64.0,1st,Cherbourg,United States,17756.0,83.0302,0.0,2.0,yes
+"Conlin, Mr. Thomas Henry",male,31.0,3rd,Queenstown,United States,21332.0,7.1408,0.0,0.0,no
+"Connaughton, Mr. Michael",male,40.0,3rd,Queenstown,Ireland,335097.0,7.15,0.0,0.0,no
+"Connolly, Miss. Catherine",female,23.0,3rd,Queenstown,Ireland,370373.0,7.15,0.0,0.0,yes
+"Connolly, Miss. Kate",female,41.0,3rd,Queenstown,Ireland,330972.0,7.1207,0.0,0.0,no
+"Connors, Mr. Patrick",male,66.0,3rd,Queenstown,Ireland,370369.0,7.15,0.0,0.0,no
+"Cook, Mr. Jacob",male,43.0,3rd,Southampton,,3536.0,8.01,0.0,0.0,no
+"Cook, Mrs. Selena",female,22.0,2nd,Southampton,England,14266.0,10.1,0.0,0.0,yes
+"Corbett, Mrs. Irene",female,30.0,2nd,Southampton,United States,237249.0,13.0,0.0,0.0,no
+"Corey, Mrs. Mary Emma",female,32.0,2nd,Southampton,,13534.0,21.0,0.0,0.0,no
+"Cor, Mr. Bartol",male,35.0,3rd,Southampton,Croatia (Modern),349230.0,7.1711,0.0,0.0,no
+"Cor, Mr. Ivan",male,27.0,3rd,Southampton,Hungary,349229.0,7.1711,0.0,0.0,no
+"Cor, Mr. Liudevit",male,19.0,3rd,Southampton,Hungary,349231.0,7.1711,0.0,0.0,no
+"Cornblatt, Mr. Harris",male,30.0,3rd,Southampton,Poland,392090.0,8.01,0.0,0.0,no
+"Cornell, Mrs. Malvina Helen",female,55.0,1st,Southampton,United States,11770.0,25.141,2.0,0.0,yes
+"Corr, Miss. Ellen",female,16.0,3rd,Queenstown,Ireland,367231.0,7.15,0.0,0.0,yes
+"Cotterill, Mr. Henry",male,21.0,2nd,Southampton,England,29107.0,11.1,0.0,0.0,no
+"Coutts, Master. Neville Leslie",male,3.0,3rd,Southampton,England,37671.0,15.18,1.0,1.0,yes
+"Coutts, Master. William Loch",male,9.0,3rd,Southampton,England,37671.0,15.18,1.0,1.0,yes
+"Coutts, Mrs. Winnie",female,36.0,3rd,Southampton,England,37671.0,15.18,0.0,2.0,yes
+"Coxon, Mr. Daniel",male,58.0,3rd,Southampton,England,364500.0,7.05,0.0,0.0,no
+"Crafton, Mr. John Bertram",male,59.0,1st,Southampton,United States,113791.0,26.11,0.0,0.0,no
+"Crease, Mr. Ernest James",male,20.0,3rd,Southampton,United States,3464.0,8.0302,0.0,0.0,no
+"Cribb, Miss. Laura Mae",female,16.0,3rd,Southampton,United States,371362.0,16.02,0.0,1.0,yes
+"Cribb, Mr. John Hatfield",male,43.0,3rd,Southampton,Australia,371362.0,16.02,0.0,1.0,no
+"Crosby, Captain. Edward Gifford",male,70.0,1st,Southampton,United States,5735.0,71.0,1.0,1.0,no
+"Crosby, Miss. Harriette Rebecca",female,39.0,1st,Southampton,United States,112901.0,26.11,0.0,2.0,yes
+"Crosby, Mrs. Catherine Elizabeth",female,64.0,1st,Southampton,United States,5735.0,71.0,1.0,1.0,yes
+"Culumovic, Mr. Jeso",male,17.0,3rd,Southampton,Croatia (Modern),315090.0,8.1303,0.0,0.0,no
+"Cumings, Mr. John Bradley",male,39.0,1st,Cherbourg,United States,17599.0,71.0508,1.0,0.0,no
+"Cumings, Mrs. Florence Briggs",female,35.0,1st,Cherbourg,Peru,17599.0,71.0508,1.0,0.0,yes
+"Cunningham, Mr. Alfred Fleming",male,22.0,2nd,Belfast,Northern Ireland,239853.0,,0.0,0.0,no
+"Daher, Mr. Tannous",male,28.0,3rd,Cherbourg,,2686.0,7.0407,0.0,0.0,no
+"Dahlberg, Miss. Gerda Ulrika",female,22.0,3rd,Southampton,Sweden,7552.0,10.1004,0.0,0.0,no
+"Dahl, Mr. Charles Edward",male,45.0,3rd,Southampton,,7598.0,8.01,0.0,0.0,yes
+"Dakic, Mr. Branko",male,19.0,3rd,Southampton,,349228.0,10.0305,0.0,0.0,no
+"Daly, Miss. Margaret Marcella",female,33.0,3rd,Queenstown,Ireland,382650.0,6.19,0.0,0.0,yes
+"Daly, Mr. Eugene Patrick",male,29.0,3rd,Queenstown,Ireland,382651.0,7.15,0.0,0.0,yes
+"Daly, Mr. Peter Dennis",male,51.0,1st,Southampton,England,113055.0,26.11,0.0,0.0,yes
+"Danbom, Master. Gilbert Sigvard Emanuel",male,0.3333333333,3rd,Southampton,Sweden,347080.0,14.08,0.0,2.0,no
+"Danbom, Mr. Ernst Gilbert",male,34.0,3rd,Southampton,Sweden,347080.0,14.08,1.0,1.0,no
+"Danbom, Mrs. Anna Sigrid Maria",female,28.0,3rd,Southampton,Sweden,347080.0,14.08,1.0,1.0,no
+"Daniel, Mr. Robert Williams",male,27.0,1st,Southampton,United States,113804.0,30.1,0.0,0.0,yes
+"Daniels, Miss. Sarah Rebecca",female,36.0,1st,Southampton,England,113781.0,151.16,0.0,0.0,yes
+"Danoff, Mr. Yoto",male,27.0,3rd,Southampton,,349219.0,7.1711,0.0,0.0,no
+"Davidson, Mrs. Orian",female,27.0,1st,Cherbourg,Canada,12750.0,52.0,1.0,2.0,yes
+"Davidson, Mr. Thornton",male,31.0,1st,Cherbourg,Canada,12750.0,52.0,1.0,0.0,no
+"Davies, Master. John Morgan jr",male,8.0,2nd,Southampton,England,33112.0,36.15,1.0,1.0,yes
+"Davies, Mr. Alfred James",male,24.0,3rd,Southampton,England,48871.0,24.03,2.0,0.0,no
+"Davies, Mr. Charles Henry",male,19.0,2nd,Southampton,England,14879.0,73.1,0.0,0.0,no
+"Davies, Mr. Evan Lewis",male,22.0,3rd,Southampton,Wales,23568.0,8.01,0.0,0.0,no
+"Davies, Mr. John",male,22.0,3rd,Southampton,England,48871.0,24.03,2.0,0.0,no
+"Davies, Mr. Joseph",male,17.0,3rd,Southampton,England,48873.0,8.01,2.0,0.0,no
+"Davies, Mrs. Agnes",female,48.0,2nd,Southampton,England,33112.0,36.15,0.0,2.0,yes
+"Davis, Miss. Mary Ann Charlotte",female,28.0,2nd,Southampton,England,237668.0,13.0,0.0,0.0,yes
+"Davison, Mrs. Mary Elizabeth",female,34.0,3rd,Southampton,England,386525.0,16.02,1.0,0.0,yes
+"Davison, Mr. Thomas Henry",male,32.0,3rd,Southampton,England,386525.0,16.02,1.0,0.0,no
+"Deacon, Mr. Percy William",male,18.0,2nd,Southampton,England,14879.0,73.1,0.0,0.0,no
+"Dean, Master. Bertram Vere",male,1.0,3rd,Southampton,England,2315.0,20.1106,1.0,2.0,yes
+"Dean, Miss. Elizabeth Gladys 'Millvina'",female,0.1666666667,3rd,Southampton,England,2315.0,20.1106,1.0,2.0,yes
+"Dean, Mr. Bertram Frank",male,25.0,3rd,Southampton,England,2315.0,20.1106,1.0,2.0,no
+"Dean, Mrs. Eva Georgetta",female,32.0,3rd,Southampton,England,2315.0,20.1106,1.0,2.0,yes
+"Delalic, Mr. Redjo",male,25.0,3rd,Southampton,Bosnia,349250.0,7.1711,0.0,0.0,no
+"Del Carlo, Mrs. Argene",female,24.0,2nd,Cherbourg,Italy,2167.0,27.1405,1.0,0.0,yes
+"Del Carlo, Mr. Sebastiano",male,29.0,2nd,Cherbourg,Italy,2167.0,27.1405,1.0,0.0,no
+"De Messemaeker, Mr. Guillaume Joseph",male,36.0,3rd,Southampton,United States,345572.0,17.08,1.0,0.0,yes
+"De Messemaeker, Mrs. Anna",female,36.0,3rd,Southampton,United States,345572.0,17.08,1.0,0.0,yes
+"De Mulder, Mr. Theodoor",male,30.0,3rd,Southampton,Belgium,345774.0,9.1,0.0,0.0,yes
+"Denbuoy, Mr. Albert Joseph",male,25.0,2nd,Southampton,Channel Islands,31029.0,31.1,0.0,0.0,no
+"Denkoff, Mr. Mitto",male,30.0,3rd,Southampton,,349225.0,7.1711,0.0,0.0,no
+"Dennis, Mr. Samuel",male,22.0,3rd,Southampton,England,21172.0,7.05,0.0,0.0,no
+"Dennis, Mr. William",male,26.0,3rd,Southampton,England,21175.0,7.05,0.0,0.0,no
+"De Pelsmaeker, Mr. Alfons",male,16.0,3rd,Southampton,Belgium,345778.0,9.1,0.0,0.0,no
+"Devaney, Miss. Margaret Delia",female,19.0,3rd,Queenstown,Ireland,330958.0,7.1707,0.0,0.0,yes
+"Dibden, Mr. William",male,18.0,2nd,Southampton,England,14879.0,73.1,0.0,0.0,no
+"Dick, Mr. Albert Adrian",male,31.0,1st,Southampton,Canada,17474.0,57.0,1.0,0.0,yes
+"Dick, Mrs. Vera",female,17.0,1st,Southampton,United States,17474.0,57.0,1.0,0.0,yes
+"Dika, Mr. Mirko",male,17.0,3rd,Southampton,Croatia (Modern),349232.0,7.1711,0.0,0.0,no
+"Dimic, Mr. Jovan",male,42.0,3rd,Southampton,Hungary,315088.0,8.1303,0.0,0.0,no
+"Dintcheff, Mr. Valtcho",male,43.0,3rd,Southampton,,349226.0,7.1711,0.0,0.0,no
+"Dodge, Dr. Washington",male,52.0,1st,Southampton,United States,33638.0,81.1702,1.0,1.0,yes
+"Dodge, Master. Washington",male,4.0,1st,Southampton,United States,33638.0,81.1702,0.0,2.0,yes
+"Dodge, Mrs. Ruth",female,34.0,1st,Southampton,United States,33638.0,81.1702,1.0,1.0,yes
+"Doling, Miss. Elsie",female,18.0,2nd,Southampton,England,231919.0,23.0,0.0,1.0,yes
+"Doling, Mrs. Ada Julia Elizabeth",female,34.0,2nd,Southampton,England,231919.0,23.0,0.0,1.0,yes
+"Donohoe, Miss. Bridget",female,21.0,3rd,Queenstown,Ireland,364856.0,7.15,0.0,0.0,no
+"Dooly, Mr. Patrick",male,37.0,3rd,Queenstown,Ireland,370376.0,7.15,0.0,0.0,no
+"Dorking, Mr. Edward Arthur",male,18.0,3rd,Southampton,England,10482.0,8.01,0.0,0.0,yes
+"Dougherty, Mr. William John",male,22.0,3rd,Queenstown,Ireland,330877.0,8.0902,0.0,0.0,no
+"Douglas, Mrs. Mahala",female,48.0,1st,Cherbourg,United States,17761.0,106.0806,1.0,0.0,yes
+"Douglas, Mrs. Mary Hélène",female,27.0,1st,Cherbourg,Canada,17558.0,247.1005,1.0,1.0,yes
+"Douglas, Mr. Walter Donald",male,50.0,1st,Cherbourg,United States,17761.0,106.0806,1.0,0.0,no
+"Douton, Mr. William Joseph",male,55.0,2nd,Southampton,England,28403.0,26.0,0.0,0.0,no
+"Dowdell, Miss. Elizabeth",female,31.0,3rd,Southampton,United States,364516.0,12.0906,0.0,0.0,yes
+"Doyle, Miss. Elizabeth",female,28.0,3rd,Queenstown,Ireland,368702.0,7.15,0.0,0.0,no
+"Drazenovic, Mr. Jozef",male,33.0,3rd,Cherbourg,Croatia (Modern),349241.0,7.1711,0.0,0.0,no
+"Drew, Master. Marshall Brines",male,8.0,2nd,Southampton,United States,28220.0,32.1,0.0,2.0,yes
+"Drew, Mr. James Vivian",male,42.0,2nd,Southampton,England,28220.0,32.1,1.0,1.0,no
+"Drew, Mrs. Maria Louisa Thorne",female,34.0,2nd,Southampton,United States,28220.0,32.1,1.0,1.0,yes
+"Driscoll, Miss. Bridget",female,27.0,3rd,Queenstown,Ireland,14311.0,7.15,0.0,0.0,yes
+"Dropkin, Miss. Jennie",female,24.0,3rd,Southampton,England,392083.0,8.01,0.0,0.0,yes
+"Duff Gordon, Lucy Christiana, Lady",female,48.0,1st,Cherbourg,England,17485.0,56.1807,1.0,0.0,yes
+"Duff Gordon, Sir. Cosmo Edmund",male,49.0,1st,Cherbourg,England,11755.0,39.12,1.0,0.0,yes
+"Dulles, Mr. William Crothers",male,39.0,1st,Cherbourg,United States,17580.0,29.14,0.0,0.0,no
+"Duquemin, Mr. Joseph Pierre",male,24.0,3rd,Southampton,Channel Islands,752.0,7.11,0.0,0.0,yes
+"Durán i Moné, Sra. Asuncion",female,27.0,2nd,Cherbourg,Spain,2149.0,13.1702,1.0,0.0,yes
+"Durán i Moné, Sra. Florentina",female,30.0,2nd,Cherbourg,Spain,2148.0,13.1702,1.0,0.0,yes
+"Dwan, Mr. Frank",male,65.0,3rd,Queenstown,Ireland,336439.0,7.15,0.0,0.0,no
+"Dyker, Mr. Adolf Fredrik",male,23.0,3rd,Southampton,United States,347072.0,13.18,1.0,0.0,no
+"Dyker, Mrs. Anna Elisabeth Judith",female,22.0,3rd,Southampton,United States,347072.0,13.18,1.0,0.0,yes
+"Earnshaw, Mrs. Olive",female,23.0,1st,Cherbourg,United States,11767.0,83.0302,0.0,1.0,yes
+"Edvardsson, Mr. Gustaf Hjalmar",male,18.0,3rd,Southampton,Sweden,349912.0,7.1506,0.0,0.0,no
+"Eitemiller, Mr. George Floyd",male,25.0,2nd,Southampton,United States,29751.0,13.0,0.0,0.0,no
+"Eklund, Mr. Hans Linus",male,16.0,3rd,Southampton,Sweden,347074.0,7.1506,0.0,0.0,no
+"Ekström, Mr. Amandus",male,45.0,3rd,Southampton,Sweden,347061.0,6.1906,0.0,0.0,no
+"Elias, Mr. Dibo",male,29.0,3rd,Cherbourg,,2674.0,7.0406,0.0,0.0,no
+"Elias, Mr. Joseph jr.",male,15.0,3rd,Cherbourg,Lebanon,2690.0,7.0407,1.0,1.0,no
+"Elias Nasrallah, Mr. Tannous",male,22.0,3rd,Cherbourg,Lebanon,2695.0,7.0407,1.0,1.0,no
+"Elsbury, Mr. William James",male,48.0,3rd,Southampton,England,3902.0,7.05,0.0,0.0,no
+"Emanuel, Miss. Virginia Ethel",female,5.0,3rd,Southampton,United States,364516.0,12.0906,0.0,0.0,yes
+"Enander, Mr. Ingvar",male,21.0,2nd,Southampton,Sweden,236854.0,13.0,0.0,0.0,no
+"Endres, Miss. Caroline Louise",female,39.0,1st,Cherbourg,United States,17757.0,247.1006,0.0,0.0,yes
+"Estanislau, Mr. Manuel Gonçalves",male,37.0,3rd,Southampton,,3101306.0,7.01,0.0,0.0,no
+"Eustis, Miss. Elizabeth Mussey",female,54.0,1st,Cherbourg,United States,36947.0,78.0504,1.0,0.0,yes
+"Evans, Miss. Edith Corse",female,36.0,1st,Cherbourg,United States,17531.0,31.1307,0.0,0.0,no
+"Everett, Mr. Thomas James",male,38.0,3rd,Southampton,England,6212.0,15.02,0.0,0.0,no
+"Fahlstrøm, Mr. Arne Joma",male,18.0,2nd,Southampton,Norway,236171.0,13.0,0.0,0.0,no
+"Fardon, Mr. Charles Richard",male,46.0,3rd,Southampton,England,3101314.0,7.05,0.0,0.0,no
+"Farrell, Mr. James",male,26.0,3rd,Queenstown,Ireland,367232.0,7.15,0.0,0.0,no
+"Farthing, Mr. John",male,49.0,1st,Southampton,England,17483.0,221.1507,0.0,0.0,no
+"Faunthorpe, Mr. Harry Bartram",male,32.0,2nd,Southampton,England,2926.0,26.0,1.0,0.0,no
+"Fillbrook, Mr. Joseph Charles",male,18.0,2nd,Southampton,England,15185.0,10.1,0.0,0.0,no
+"Finoli, Mr. Luigi",male,34.0,3rd,Southampton,,3101308.0,7.01,0.0,0.0,yes
+"Fischer, Mr. Eberhard Thelander",male,18.0,3rd,Southampton,Sweden,350036.0,7.1511,0.0,0.0,no
+"Flegenheim, Mrs. Antoinette",female,48.0,1st,Cherbourg,United States,17598.0,31.1308,0.0,0.0,yes
+"Fleming, Miss. Honor",female,22.0,3rd,Queenstown,Ireland,364859.0,7.15,0.0,0.0,no
+"Fleming, Miss. Margaret",female,42.0,1st,Cherbourg,United States,17421.0,110.1708,0.0,0.0,yes
+"Flynn, Mr. James",male,28.0,3rd,Queenstown,Ireland,364851.0,7.15,0.0,0.0,no
+"Flynn, Mr. John",male,48.0,3rd,Queenstown,Ireland,368323.0,6.19,0.0,0.0,no
+"Flynn, Mr. John Irwin",male,36.0,1st,Southampton,Canada,14474.0,26.0509,0.0,0.0,yes
+"Foley, Mr. Joseph",male,19.0,3rd,Queenstown,Ireland,330910.0,7.1707,0.0,0.0,no
+"Foley, Mr. William",male,20.0,3rd,Queenstown,Ireland,365235.0,7.15,0.0,0.0,no
+"Foo, Mr. Choong",male,32.0,3rd,Southampton,,1601.0,56.0911,0.0,0.0,yes
+"Ford, Miss. Dollina Margaret",female,20.0,3rd,Southampton,England,6608.0,34.0706,2.0,2.0,no
+"Ford, Miss. Robina Maggie",female,7.0,3rd,Southampton,England,6608.0,34.0706,2.0,2.0,no
+"Ford, Mr. Arthur",male,23.0,3rd,Southampton,England,1478.0,8.01,0.0,0.0,no
+"Ford, Mr. Edward Watson",male,18.0,3rd,Southampton,England,6608.0,34.0706,2.0,2.0,no
+"Ford, Mrs. Margaret Ann Watson",female,54.0,3rd,Southampton,Scotland,6608.0,34.0706,1.0,3.0,no
+"Ford, Mr. William Neal Thomas",male,14.0,3rd,Southampton,England,6608.0,34.0706,1.0,3.0,no
+"Foreman, Mr. Benjamin Laventall",male,30.0,1st,Southampton,United States,113051.0,27.15,0.0,0.0,no
+"Fortune, Miss. Alice Elizabeth",female,24.0,1st,Southampton,Canada,19950.0,263.0,3.0,2.0,yes
+"Fortune, Miss. Ethel Flora",female,28.0,1st,Southampton,Canada,19950.0,263.0,3.0,2.0,yes
+"Fortune, Miss. Mabel Helen",female,23.0,1st,Southampton,Canada,19950.0,263.0,3.0,2.0,yes
+"Fortune, Mr. Charles Alexander",male,19.0,1st,Southampton,Canada,19950.0,263.0,3.0,2.0,no
+"Fortune, Mr. Mark",male,64.0,1st,Southampton,Canada,19950.0,263.0,1.0,4.0,no
+"Fortune, Mrs. Mary",female,60.0,1st,Southampton,Canada,19950.0,263.0,1.0,4.0,yes
+"Fox, Mr. Patrick",male,28.0,3rd,Queenstown,Ireland,368573.0,7.15,0.0,0.0,no
+"Fox, Mr. Stanley Harrington",male,38.0,2nd,Southampton,United States,229236.0,13.0,0.0,0.0,no
+"Francatelli, Miss. Laura Mabel",female,32.0,1st,Cherbourg,England,17485.0,56.1807,0.0,0.0,yes
+"Franklin, Mr. Thomas Parnham",male,37.0,1st,Southampton,England,113778.0,26.11,0.0,0.0,no
+"Frauenthal, Dr. Henry William",male,49.0,1st,Southampton,United States,17611.0,133.13,2.0,0.0,yes
+"Frauenthal, Mr. Isaac Gerald",male,43.0,1st,Cherbourg,United States,17765.0,27.1405,1.0,0.0,yes
+"Frauenthal, Mrs. Clara",female,42.0,1st,Southampton,United States,17611.0,133.13,1.0,0.0,yes
+"Frölicher, Miss. Hedwig Margaritha",female,22.0,1st,Cherbourg,Switzerland,13568.0,49.1,0.0,2.0,yes
+"Frölicher-Stehli, Mr. Maximilian Josef",male,60.0,1st,Cherbourg,Switzerland,13567.0,79.04,1.0,1.0,yes
+"Frölicher-Stehli, Mrs. Margaretha Emerentia",female,48.0,1st,Cherbourg,Switzerland,13567.0,79.04,1.0,1.0,yes
+"Frost, Mr. Anthony Wood",male,39.0,2nd,Belfast,England,239854.0,,0.0,0.0,no
+"Fry, Mr. Richard",male,39.0,1st,Southampton,England,112058.0,,0.0,0.0,no
+"Funk, Miss. Annie Clemmer",female,38.0,2nd,Southampton,India,237671.0,13.0,0.0,0.0,no
+"Futrelle, Mr. Jacques Heath",male,37.0,1st,Southampton,England,113803.0,53.02,1.0,0.0,no
+"Futrelle, Mrs. Lily May",female,35.0,1st,Southampton,England,113803.0,53.02,1.0,0.0,yes
+"Fynney, Mr. Joseph J.",male,36.0,2nd,Southampton,England,239865.0,26.0,0.0,0.0,no
+"Gale, Mr. Harry",male,38.0,2nd,Southampton,England,28664.0,21.0,1.0,0.0,no
+"Gale, Mr. Shadrach",male,33.0,2nd,Southampton,England,28664.0,21.0,1.0,0.0,no
+"Gallagher, Mr. Martin",male,29.0,3rd,Queenstown,Ireland,36864.0,7.141,0.0,0.0,no
+"Garfirth, Mr. John",male,23.0,3rd,Southampton,England,358585.0,14.1,0.0,0.0,no
+"Garside, Miss. Ethel",female,39.0,2nd,Southampton,England,243880.0,13.0,0.0,0.0,yes
+"Gaskell, Mr. William Alfred",male,19.0,2nd,Southampton,England,239865.0,26.0,0.0,0.0,no
+"Gavey, Mr. Laurence",male,26.0,2nd,Southampton,Channel Islands,31028.0,10.1,0.0,0.0,no
+"Gee, Mr. Arthur H.",male,47.0,1st,Southampton,England,111320.0,38.1,0.0,0.0,no
+"George/Joseph, Mrs. Shawneene",female,38.0,3rd,Cherbourg,United States,2688.0,7.0407,0.0,0.0,yes
+"Gerios Thamah, Mr. Assaf",male,21.0,3rd,Cherbourg,Lebanon,2692.0,7.0406,0.0,0.0,no
+"Gheorgheff, Mr. Stanio",male,,3rd,Cherbourg,Bulgaria,349254.0,7.1711,0.0,0.0,no
+"Gibson, Miss. Dorothy Winifred",female,22.0,1st,Cherbourg,United States,112378.0,59.08,0.0,1.0,yes
+"Gibson, Mrs. Pauline Caroline",female,44.0,1st,Cherbourg,United States,112378.0,59.08,0.0,1.0,yes
+"Gieger, Miss. Amalie",female,35.0,1st,Southampton,,113503.0,211.1,0.0,0.0,yes
+"Giglio, Mr. Victor Gaitan Andrea",male,23.0,1st,Cherbourg,,17593.0,79.04,0.0,0.0,no
+"Gilbert, Mr. William",male,47.0,2nd,Southampton,England,30769.0,10.1,0.0,0.0,no
+"Giles, Mr. Edgar",male,19.0,2nd,Southampton,England,28133.0,11.1,1.0,0.0,no
+"Giles, Mr. Frederick Edward",male,21.0,2nd,Southampton,England,28134.0,11.1,1.0,0.0,no
+"Giles, Mr. Ralph",male,24.0,2nd,Southampton,England,248726.0,13.1,0.0,0.0,no
+"Gilinski, Mr. Eliezer",male,23.0,3rd,Southampton,Wales,14973.0,8.01,0.0,0.0,no
+"Gillespie, Mr. William Henry",male,31.0,2nd,Southampton,Ireland,12233.0,13.0,0.0,0.0,no
+"Gill, Mr. John",male,24.0,2nd,Southampton,England,233866.0,13.0,0.0,0.0,no
+"Gilnagh, Miss. Katherine",female,17.0,3rd,Queenstown,Ireland,35851.0,7.1408,0.0,0.0,yes
+"Givard, Mr. Hans Kristensen",male,30.0,2nd,Southampton,Argentina,250646.0,13.0,0.0,0.0,no
+"Glynn, Miss. Mary Agatha",female,18.0,3rd,Queenstown,Ireland,335677.0,7.15,0.0,0.0,yes
+"Goldenberg, Mr. Samuel L.",male,47.0,1st,Cherbourg,United States,17453.0,89.0201,1.0,0.0,yes
+"Goldenberg, Mrs. Nella",female,40.0,1st,Cherbourg,United States,17453.0,89.0201,1.0,0.0,yes
+"Goldschmidt, Mr. George B.",male,71.0,1st,Cherbourg,United States,17754.0,34.1301,0.0,0.0,no
+"Goldsmith, Master. Frank John William",male,9.0,3rd,Southampton,England,363291.0,20.1006,0.0,2.0,yes
+"Goldsmith, Mr. Frank John",male,33.0,3rd,Southampton,England,363291.0,20.1006,1.0,1.0,no
+"Goldsmith, Mr. Nathan",male,41.0,3rd,Southampton,,3101263.0,7.17,0.0,0.0,no
+"Goldsmith, Mrs. Emily Alice",female,31.0,3rd,Southampton,England,363291.0,20.1006,1.0,1.0,yes
+"Goodwin, Master. Harold Victor",male,9.0,3rd,Southampton,England,2144.0,46.18,5.0,2.0,no
+"Goodwin, Master. Sidney Leslie",male,1.0,3rd,Southampton,England,2144.0,46.18,5.0,2.0,no
+"Goodwin, Master. William Frederick",male,11.0,3rd,Southampton,England,2144.0,46.18,5.0,2.0,no
+"Goodwin, Miss. Jessie Allis",female,10.0,3rd,Southampton,England,2144.0,46.18,5.0,2.0,no
+"Goodwin, Miss. Lillian Amy",female,16.0,3rd,Southampton,England,2144.0,46.18,5.0,2.0,no
+"Goodwin, Mr. Charles Edward",male,14.0,3rd,Southampton,England,2144.0,46.18,5.0,2.0,no
+"Goodwin, Mr. Frederick Joseph",male,42.0,3rd,Southampton,England,2144.0,46.18,1.0,6.0,no
+"Goodwin, Mrs. Augusta",female,43.0,3rd,Southampton,England,2144.0,46.18,1.0,6.0,no
+"Gracie, Colonel. Archibald",male,53.0,1st,Southampton,United States,113780.0,28.1,0.0,0.0,yes
+"Graham, Miss. Margaret Edith",female,19.0,1st,Southampton,England,17582.0,153.0903,0.0,0.0,yes
+"Graham, Mr. George Edward",male,38.0,1st,Southampton,Canada,112053.0,30.0,0.0,1.0,no
+"Graham, Mrs. Edith",female,59.0,1st,Southampton,England,17582.0,153.0903,0.0,1.0,yes
+"Greenberg, Mr. Samuel",male,52.0,2nd,Southampton,South Africa,250647.0,13.0,0.0,0.0,no
+"Greenfield, Mrs. Blanche",female,45.0,1st,Cherbourg,United States,17759.0,63.0702,0.0,1.0,yes
+"Greenfield, Mr. William Bertram",male,23.0,1st,Cherbourg,United States,17759.0,63.0702,0.0,1.0,yes
+"Green, Mr. George",male,20.0,engineering crew,Southampton,England,,,,,no
+"Green, Mr. George",male,41.0,3rd,Southampton,England,21440.0,8.01,0.0,0.0,no
+"Grønnestad, Mr. Daniel Danielsen",male,32.0,3rd,Southampton,Norway,8471.0,8.0615,0.0,0.0,no
+"Guest, Mr. Charles Robert",male,25.0,3rd,Southampton,England,376563.0,8.01,0.0,0.0,no
+"Guggenheim, Mr. Benjamin",male,46.0,1st,Cherbourg,France,17593.0,79.04,0.0,0.0,no
+"Gustafsson, Mr. Alfred Ossian",male,19.0,3rd,Southampton,Finland,7534.0,9.1611,0.0,0.0,no
+"Gustafsson, Mr. Anders Vilhelm",male,37.0,3rd,Southampton,Finland,3101276.0,7.1806,2.0,0.0,no
+"Gustafsson, Mr. Johan Birger",male,28.0,3rd,Southampton,Finland,3101277.0,7.1806,2.0,0.0,no
+"Gustafsson, Mr. Karl Gideon",male,19.0,3rd,Southampton,Sweden,347069.0,7.1506,0.0,0.0,no
+"Haas, Miss. Aloisia",female,24.0,3rd,Southampton,Switzerland,349236.0,8.17,0.0,0.0,no
+"Hagland, Mr. Ingvald Olai Olsen",male,28.0,3rd,Southampton,Norway,65303.0,6.1904,1.0,0.0,no
+"Hagland, Mr. Konrad Mathias Reiersen",male,19.0,3rd,Southampton,Norway,65304.0,6.1904,1.0,0.0,no
+"Hakkarainen, Mr. Pekka Pietari",male,28.0,3rd,Southampton,Finland,3101279.0,15.17,1.0,0.0,no
+"Hakkarainen, Mrs. Elin Matilda",female,24.0,3rd,Southampton,Finland,3101279.0,15.17,1.0,0.0,yes
+"Hale, Mr. Reginald",male,30.0,2nd,Southampton,England,250653.0,13.0,0.0,0.0,no
+"Hämäläinen, Master. Viljo Unto Johannes",male,0.5833333333,2nd,Southampton,United States,250649.0,14.1,1.0,1.0,yes
+"Hämäläinen, Mrs. Anna",female,23.0,2nd,Southampton,United States,250649.0,14.1,0.0,2.0,yes
+"Hampe, Mr. Léon Jérome",male,19.0,3rd,Southampton,Belgium,345769.0,9.1,0.0,0.0,no
+"Hannah, Mr. Borak",male,27.0,3rd,Cherbourg,Lebanon,2663.0,7.0407,0.0,0.0,yes
+"Hanna, Mr. Boulos",male,18.0,3rd,Cherbourg,Lebanon,2664.0,7.0406,0.0,0.0,no
+"Hanna, Mr. Mansour",male,35.0,3rd,Cherbourg,Lebanon,2693.0,7.0407,0.0,0.0,no
+"Hansen, Mr. Claus Peter",male,41.0,3rd,Southampton,United States,350026.0,14.0202,2.0,0.0,no
+"Hansen, Mr. Henrik Juul",male,26.0,3rd,Southampton,Denmark,350025.0,7.1701,1.0,0.0,no
+"Hansen, Mr. Henry Damsgaard",male,21.0,3rd,Southampton,Denmark,350029.0,7.1701,0.0,0.0,no
+"Hansen, Mrs. Jennie Louise",female,45.0,3rd,Southampton,United States,350026.0,14.0202,1.0,0.0,yes
+"Harbeck, Mr. William H.",male,45.0,2nd,Southampton,United States,248746.0,13.0,0.0,0.0,no
+"Harder, Mr. George Achilles",male,25.0,1st,Cherbourg,United States,11765.0,55.081,1.0,0.0,yes
+"Harder, Mrs. Dorothy",female,21.0,1st,Cherbourg,United States,11765.0,55.081,1.0,0.0,yes
+"Hargadon, Miss. Catherine",female,17.0,3rd,Queenstown,Ireland,30631.0,7.1408,0.0,0.0,no
+"Harknett, Miss. Alice Phoebe",female,21.0,3rd,Southampton,England,6609.0,7.11,0.0,0.0,no
+"Harper, Miss. Annie Jessie",female,6.0,2nd,Southampton,Scotland,248727.0,33.0,0.0,1.0,yes
+"Harper, Mr. Henry Sleeper",male,48.0,1st,Cherbourg,United States,17572.0,76.1407,1.0,0.0,yes
+"Harper, Mrs. Myra Raymond",female,49.0,1st,Cherbourg,United States,17572.0,76.1407,1.0,0.0,yes
+"Harper, Rev. John",male,39.0,2nd,Southampton,Scotland,248727.0,33.0,0.0,1.0,no
+"Harrington, Mr. Charles Henry",male,37.0,1st,Southampton,England,113796.0,42.08,0.0,0.0,no
+"Harris, Mr. George",male,62.0,2nd,Southampton,England,752.0,10.1,0.0,0.0,yes
+"Harris, Mr. Henry Birkhardt",male,45.0,1st,Southampton,United States,36973.0,83.0906,1.0,0.0,no
+"Harris, Mrs. Irene",female,35.0,1st,Southampton,United States,36973.0,83.0906,1.0,0.0,yes
+"Harris, Mr. Walter",male,45.0,2nd,Southampton,England,14208.0,10.1,0.0,0.0,no
+"Harrison, Mr. William Henry",male,46.0,1st,Southampton,England,112059.0,,0.0,0.0,no
+"Hartley, Mr. Wallace Henry",male,33.0,2nd,Southampton,England,250654.0,,,,no
+"Hart, Miss. Eva Miriam",female,7.0,2nd,Southampton,England,13529.0,26.05,0.0,2.0,yes
+"Hart, Mr. Benjamin",male,47.0,2nd,Southampton,England,13529.0,26.05,1.0,1.0,no
+"Hart, Mr. Henry",male,29.0,3rd,Queenstown,Ireland,394140.0,6.1702,0.0,0.0,no
+"Hart, Mrs. Esther Ada",female,48.0,2nd,Southampton,England,13529.0,26.05,1.0,1.0,yes
+"Hassab, Mr. Hammad",male,27.0,1st,Cherbourg,Egypt,17572.0,76.1407,0.0,0.0,yes
+"Hawksford, Mr. Walter James",male,45.0,1st,Southampton,England,16988.0,30.0,0.0,0.0,yes
+"Hays, Miss. Margaret Bechstein",female,24.0,1st,Cherbourg,United States,11767.0,83.0302,0.0,0.0,yes
+"Hays, Mr. Charles Melville",male,55.0,1st,Southampton,Canada,12749.0,93.1,1.0,1.0,no
+"Hays, Mrs. Clara Jennings",female,52.0,1st,Southampton,Canada,12749.0,93.1,1.0,1.0,yes
+"Head, Mr. Christopher",male,42.0,1st,Southampton,England,113038.0,42.1,0.0,0.0,no
+"Healy, Miss. Honor",female,33.0,3rd,Queenstown,Ireland,370375.0,7.15,0.0,0.0,yes
+"Hedman, Mr. Oskar Arvid",male,27.0,3rd,Southampton,Sweden,347089.0,6.1906,0.0,0.0,yes
+"Hee, Mr. Ling",male,24.0,3rd,Southampton,,1601.0,56.0911,0.0,0.0,yes
+"Hegarty, Miss. Hanora",female,20.0,3rd,Queenstown,Ireland,365226.0,6.15,0.0,0.0,no
+"Heikkinen, Miss. Laina",female,16.0,3rd,Southampton,Finland,3101282.0,7.1806,0.0,0.0,yes
+"Heininen, Miss. Wendla Maria",female,23.0,3rd,Southampton,Finland,3101290.0,7.1806,0.0,0.0,no
+"Hellström, Miss. Hilda Maria",female,22.0,3rd,Southampton,Sweden,7548.0,8.1903,0.0,0.0,yes
+"Hendekovic, Mr. Ignjac",male,30.0,3rd,Southampton,Hungary,349243.0,7.1711,0.0,0.0,no
+"Henriksson, Miss. Jenny Lovisa",female,28.0,3rd,Southampton,Sweden,347086.0,7.1506,0.0,0.0,no
+"Henry, Miss. Bridget Delia",female,21.0,3rd,Queenstown,Ireland,382649.0,7.15,0.0,0.0,no
+"Herman, Miss. Alice",female,24.0,2nd,Southampton,England,220845.0,65.0,1.0,2.0,yes
+"Herman, Miss. Kate",female,24.0,2nd,Southampton,England,220845.0,65.0,1.0,2.0,yes
+"Herman, Mr. Samuel",male,50.0,2nd,Southampton,England,220845.0,65.0,1.0,2.0,no
+"Herman, Mrs. Jane",female,50.0,2nd,Southampton,India,220845.0,65.0,1.0,2.0,yes
+"Hewlett, Mrs. Mary Dunbar",female,56.0,2nd,Southampton,India,248706.0,16.0,0.0,0.0,yes
+"Hickman, Mr. Leonard Mark",male,24.0,2nd,Southampton,England,14879.0,73.1,2.0,0.0,no
+"Hickman, Mr. Lewis",male,30.0,2nd,Southampton,England,14879.0,73.1,2.0,0.0,no
+"Hickman, Mr. Stanley George",male,21.0,2nd,Southampton,England,14879.0,73.1,2.0,0.0,no
+"Hilliard, Mr. Herbert Henry",male,44.0,1st,Southampton,England,17463.0,51.1703,0.0,0.0,no
+"Hiltunen, Miss. Marta",female,18.0,2nd,Southampton,Finland,250650.0,13.0,1.0,1.0,no
+"Hipkins, Mr. William Edward",male,55.0,1st,Southampton,England,680.0,50.0,0.0,0.0,no
+"Hippach, Miss. Jean Gertrude",female,17.0,1st,Cherbourg,United States,111361.0,57.1907,0.0,1.0,yes
+"Hippach, Mrs. Ida Sophia",female,44.0,1st,Cherbourg,United States,111361.0,57.1907,0.0,1.0,yes
+"Hirvonen, Miss. Hildur Elisabeth",female,2.0,3rd,Southampton,Finland,3101298.0,12.0509,0.0,1.0,yes
+"Hirvonen, Mrs. Helga Elisabeth Lindqvist",female,22.0,3rd,Southampton,Finland,3101298.0,12.0509,1.0,1.0,yes
+"Hocking, Miss. Ellen",female,20.0,2nd,Southampton,England,29105.0,23.0,2.0,1.0,yes
+"Hocking, Mr. Richard George",male,24.0,2nd,Southampton,England,29104.0,11.1,2.0,1.0,no
+"Hocking, Mr. Samuel James Metcalfe",male,36.0,2nd,Southampton,England,242963.0,13.0,0.0,0.0,no
+"Hocking, Mrs. Eliza",female,54.0,2nd,Southampton,England,29105.0,23.0,1.0,3.0,yes
+"Hodges, Mr. Henry Price",male,50.0,2nd,Southampton,England,250643.0,13.0,0.0,0.0,no
+"Hogeboom, Mrs. Anna Louisa",female,51.0,1st,Cherbourg,United States,13502.0,77.1902,1.0,0.0,yes
+"Hold, Mrs. Annie Margaret",female,29.0,2nd,Southampton,England,26707.0,26.0,1.0,0.0,yes
+"Hold, Mr. Stephen",male,44.0,2nd,Southampton,England,26707.0,26.0,1.0,0.0,no
+"Holm, Mr. John Fredrik Alexander",male,43.0,3rd,Southampton,Sweden,7075.0,6.09,0.0,0.0,no
+"Holthen, Mr. Johan Martin",male,18.0,3rd,Southampton,Norway,4001.0,22.1006,0.0,0.0,no
+"Holverson, Mr. Alexander Oskar",male,42.0,1st,Southampton,United States,113789.0,52.0,1.0,0.0,no
+"Holverson, Mrs. Mary Aline",female,35.0,1st,Southampton,United States,113789.0,52.0,1.0,0.0,yes
+"Homer, Mr. Harry",male,40.0,1st,Southampton,United States,111426.0,26.11,0.0,0.0,yes
+"Honkanen, Miss. Eliina",female,27.0,3rd,Southampton,Finland,3101283.0,7.1806,0.0,0.0,yes
+"Hood, Mr. Ambrose Jr",male,21.0,2nd,Southampton,England,14879.0,73.1,0.0,0.0,no
+"Horgan, Mr. John",male,22.0,3rd,Queenstown,,370377.0,7.15,0.0,0.0,no
+"Hosono, Mr. Masabumi",male,41.0,2nd,Southampton,Japan,237798.0,13.0,0.0,0.0,yes
+"Howard, Miss. May Elizabeth",female,26.0,3rd,Southampton,England,39186.0,8.01,0.0,0.0,yes
+"Howard, Mr. Benjamin",male,63.0,2nd,Southampton,England,24065.0,26.0,1.0,0.0,no
+"Howard, Mrs. Ellen Truelove",female,61.0,2nd,Southampton,England,24065.0,26.0,1.0,0.0,no
+"Hoyt, Mr. Frederick Maxfield",male,38.0,1st,Southampton,United States,19943.0,100.0,1.0,0.0,yes
+"Hoyt, Mrs. Jane Anne",female,31.0,1st,Southampton,United States,19943.0,100.0,1.0,0.0,yes
+"Hoyt, Mr. William Fisher",male,43.0,1st,Cherbourg,United States,17600.0,30.1311,0.0,0.0,no
+"Humblen, Mr. Adolf Mathias Nicolai Olsen",male,42.0,3rd,Southampton,Norway,348121.0,7.13,0.0,0.0,no
+"Hume, Mr. John Law",male,21.0,2nd,Southampton,,250654.0,,,,no
+"Hunt, Mr. George Henry",male,34.0,2nd,Southampton,England,1585.0,12.0506,0.0,0.0,no
+"Hyman, Mr. Abraham Joseph",male,34.0,3rd,Southampton,England,3470.0,7.1709,0.0,0.0,yes
+"Ibrāhīm, Mr. Husayn Mahmūd Husayn",male,11.0,3rd,Cherbourg,,2699.0,18.1509,0.0,0.0,no
+"Ibrāhīm, Mrs. Sāfiyah",female,18.0,3rd,Cherbourg,Syria,2657.0,7.0407,0.0,0.0,yes
+"Ibrahim Shawah, Mr. Yousseff",male,33.0,3rd,Cherbourg,Lebanon,2627.0,14.0902,0.0,0.0,no
+"Icard, Miss. Rose Amélie",female,39.0,1st,Southampton,,113572.0,80.0,0.0,0.0,yes
+"Ilett, Miss. Bertha",female,17.0,2nd,Southampton,Channel Islands,14885.0,10.1,0.0,0.0,yes
+"Ilieff, Mr. Ylio",male,32.0,3rd,Southampton,,349220.0,7.1711,0.0,0.0,no
+"Ilmakangas, Miss. Ida Livija",female,17.0,3rd,Southampton,United States,3101270.0,7.1806,1.0,0.0,no
+"Ilmakangas, Miss. Pieta Sofia",female,25.0,3rd,Southampton,Finland,3101271.0,7.1806,1.0,0.0,no
+"Isham, Miss. Ann Elizabeth",female,50.0,1st,Cherbourg,United States,17595.0,28.1403,0.0,0.0,no
+"Ismay, Mr. Joseph Bruce",male,49.0,1st,Southampton,England,112058.0,,0.0,0.0,yes
+"Ivanoff, Mr. Kanio",male,20.0,3rd,Southampton,Bulgaria,349201.0,7.1711,0.0,0.0,no
+"Jabbur (Zabour), Miss. Hileni",female,16.0,3rd,Cherbourg,,2665.0,14.0901,1.0,0.0,no
+"Jabbur (Zabour), Miss. Thamine",female,19.0,3rd,Cherbourg,,2665.0,14.0901,1.0,0.0,no
+"Jacobsohn, Mrs. Amy Frances Christy",female,24.0,2nd,Southampton,England,243847.0,27.0,2.0,1.0,yes
+"Jacobsohn, Mr. Sidney Samuel",male,42.0,2nd,Southampton,South Africa,243847.0,27.0,1.0,0.0,no
+"Jalševac, Mr. Ivan",male,30.0,3rd,Cherbourg,Croatia (Modern),349240.0,7.1711,0.0,0.0,yes
+"Jansson, Mr. Carl Olof",male,21.0,3rd,Southampton,Sweden,350034.0,7.1511,0.0,0.0,yes
+"Jardim, Mr. José Neto",male,21.0,3rd,Southampton,,3101305.0,7.01,0.0,0.0,no
+"Jarvis, Mr. Denzil John",male,46.0,2nd,Southampton,Wales,237565.0,15.0,0.0,0.0,no
+"Jefferys, Mr. Clifford Thomas",male,24.0,2nd,Southampton,England,31029.0,31.1,2.0,0.0,no
+"Jefferys, Mr. Ernest Wilfred",male,21.0,2nd,Southampton,England,31029.0,31.1,2.0,0.0,no
+"Jenkin, Mr. Stephen Curnow",male,32.0,2nd,Southampton,England,33111.0,10.1,0.0,0.0,no
+"Jensen, Mr. Hans Peder",male,20.0,3rd,Southampton,Denmark,350050.0,7.1701,0.0,0.0,no
+"Jensen, Mr. Niels Rasmus",male,48.0,3rd,Southampton,Denmark,350048.0,7.0101,0.0,0.0,no
+"Jensen, Mr. Svend Lauritz",male,17.0,3rd,Southampton,Denmark,350047.0,7.1701,1.0,0.0,no
+"Jermyn, Miss. Annie Jane",female,26.0,3rd,Queenstown,Ireland,14313.0,7.15,0.0,0.0,yes
+"Jerwan, Mrs. Marie Marthe",female,23.0,2nd,Cherbourg,United States,541.0,13.151,0.0,0.0,yes
+"Johannesen, Mr. Bernt Johannes",male,29.0,3rd,Southampton,Norway,65306.0,8.0203,0.0,0.0,yes
+"Johanson, Mr. Jakob Alfred",male,34.0,3rd,Southampton,Finland,3101264.0,6.0911,0.0,0.0,no
+"Johansson, Mr. Erik",male,22.0,3rd,Southampton,Sweden,350052.0,7.1511,0.0,0.0,no
+"Johansson, Mr. Gustaf Joel",male,33.0,3rd,Southampton,Sweden,7540.0,8.1301,0.0,0.0,no
+"Johansson, Mr. Karl Johan",male,31.0,3rd,Southampton,United States,347063.0,7.1506,0.0,0.0,no
+"Johansson, Mr. Nils",male,29.0,3rd,Southampton,United States,347467.0,7.1701,0.0,0.0,no
+"Johansson Palmquist, Mr. Oskar Leander",male,26.0,3rd,Southampton,Sweden,347070.0,7.1506,0.0,0.0,yes
+"Johnson, Master. Harold Theodor",male,4.0,3rd,Southampton,,347742.0,11.0208,1.0,1.0,yes
+"Johnson, Miss. Eleanor Ileen",female,1.0,3rd,Southampton,,347742.0,11.0208,1.0,1.0,yes
+"Johnson, Mr. August",male,49.0,3rd,Southampton,United States,370160.0,,,,no
+"Johnson, Mr. Malkolm Joackim",male,33.0,3rd,Southampton,United States,347062.0,7.1506,0.0,0.0,no
+"Johnson, Mrs. Elisabeth Vilhelmina",female,26.0,3rd,Southampton,,347742.0,11.0208,0.0,2.0,yes
+"Johnson, Mr. William Cahoone Jr.",male,19.0,3rd,Southampton,United States,370160.0,,0.0,0.0,no
+"Johnston, Master. William Andrew",male,8.0,3rd,Southampton,England,6607.0,23.09,1.0,2.0,no
+"Johnston, Miss. Catherine Nellie",female,7.0,3rd,Southampton,England,6607.0,23.09,1.0,2.0,no
+"Johnston, Mr. Andrew Emslie",male,35.0,3rd,Southampton,Scotland,6607.0,23.09,1.0,2.0,no
+"Johnston, Mrs. Eliza",female,36.0,3rd,Southampton,Scotland,6607.0,23.09,1.0,2.0,no
+"Jones, Mr. Charles Cresson",male,46.0,1st,Southampton,United States,694.0,26.0,0.0,0.0,no
+"Jonkoff, Mr. Lalio",male,23.0,3rd,Southampton,Bulgaria,349204.0,7.1711,0.0,0.0,no
+"Jonsson, Mr. Carl",male,25.0,3rd,Southampton,Sweden,350417.0,7.1701,0.0,0.0,yes
+"Jönsson, Mr. Nils Hilding",male,27.0,3rd,Southampton,Sweden,350408.0,7.1701,0.0,0.0,no
+"Joseph (Shahin), Mr. Elias",male,39.0,3rd,Cherbourg,Lebanon,2675.0,7.0407,0.0,2.0,no
+"Julian, Mr. Henry Forbes",male,50.0,1st,Southampton,England,113044.0,26.0,0.0,0.0,no
+"Jussila, Miss. Katriina",female,20.0,3rd,Southampton,Finland,4136.0,9.161,1.0,0.0,no
+"Jussila, Miss. Mari Aina",female,21.0,3rd,Southampton,Finland,4137.0,9.161,1.0,0.0,no
+"Jussila, Mr. Eiriik",male,32.0,3rd,Southampton,Finland,3101286.0,7.1806,0.0,0.0,yes
+"Kallio, Mr. Nikolai Erland",male,17.0,3rd,Southampton,Finland,3101274.0,7.0206,0.0,0.0,no
+"Kalvik, Mr. Johannes Halvorsen",male,21.0,3rd,Southampton,Norway,8475.0,8.0808,0.0,0.0,no
+"Kantor, Mr. Sinai",male,34.0,2nd,Southampton,Russia,244367.0,26.0,1.0,0.0,no
+"Kantor, Mrs. Miriam",female,24.0,2nd,Southampton,Russia,244367.0,26.0,1.0,0.0,yes
+"Karajic, Mr. Milan",male,30.0,3rd,Southampton,Hungary,349246.0,7.1711,0.0,0.0,no
+"Karlsson, Mr. Einar Gervasius",male,21.0,3rd,Southampton,Sweden,350053.0,7.1511,0.0,0.0,yes
+"Karlsson, Mr. Julius Konrad Eugen",male,33.0,3rd,Southampton,Sweden,347465.0,7.1701,0.0,0.0,no
+"Karlsson, Mr. Nils August",male,22.0,3rd,Southampton,Sweden,350060.0,7.1005,0.0,0.0,no
+"Karnes, Mrs. Claire",female,22.0,2nd,Southampton,United States,13534.0,21.0,0.0,0.0,no
+"Karun, Miss. Manca",female,5.0,3rd,Cherbourg,Slovenia,349256.0,13.0804,0.0,1.0,yes
+"Karun, Mr. Franz",male,39.0,3rd,Cherbourg,United States,349256.0,13.0804,0.0,1.0,yes
+"Katavelos, Mr. Vasilios G.",male,19.0,3rd,Cherbourg,Greece,2682.0,7.0407,0.0,0.0,no
+"Keane, Miss. Nora Agnes",female,46.0,2nd,Queenstown,Ireland,226593.0,12.07,0.0,0.0,yes
+"Keane, Mr. Andrew",male,23.0,3rd,Queenstown,Ireland,12460.0,7.15,0.0,0.0,no
+"Keane, Mr. Daniel",male,35.0,2nd,Queenstown,Ireland,233734.0,12.07,0.0,0.0,no
+"Keefe, Mr. Arthur",male,39.0,3rd,Southampton,United States,323592.0,7.05,0.0,0.0,no
+"Keeping, Mr. Edwin Herbert",male,33.0,1st,Southampton,England,113503.0,211.1,0.0,0.0,no
+"Kelly, Miss. Anna Katherine",female,20.0,3rd,Queenstown,Ireland,9234.0,7.15,0.0,0.0,yes
+"Kelly, Miss. Mary",female,22.0,3rd,Queenstown,Ireland,14312.0,7.15,0.0,0.0,yes
+"Kelly, Mr. James",male,19.0,3rd,Southampton,Scotland,363592.0,8.01,0.0,0.0,no
+"Kelly, Mr. James",male,44.0,3rd,Queenstown,Ireland,330911.0,7.1607,0.0,0.0,no
+"Kelly, Mr. James",male,44.0,engineering crew,Southampton,England,,,,,no
+"Kelly, Mrs. Fanny Maria",female,49.0,2nd,Southampton,England,223596.0,13.1,0.0,0.0,yes
+"Kennedy, Mr. John",male,24.0,3rd,Queenstown,Ireland,368783.0,7.15,0.0,0.0,yes
+"Kent, Mr. Edward Austin",male,58.0,1st,Cherbourg,United States,11771.0,29.14,0.0,0.0,no
+"Kenyon, Mr. Frederick Roland",male,41.0,1st,Southampton,United States,17464.0,51.1703,1.0,0.0,no
+"Kenyon, Mrs. Marion Estelle",female,40.0,1st,Southampton,United States,17464.0,51.1703,1.0,0.0,yes
+"Khalil, Mr. Betros",male,25.0,3rd,Cherbourg,Lebanon,2660.0,14.0901,1.0,0.0,no
+"Khalil, Mrs. Zahie",female,20.0,3rd,Cherbourg,Lebanon,2660.0,14.0901,1.0,0.0,no
+"Kiernan, Mr. John Joseph",male,25.0,3rd,Queenstown,Ireland,367227.0,7.15,1.0,0.0,no
+"Kiernan, Mr. Philip",male,22.0,3rd,Queenstown,Ireland,367229.0,7.15,1.0,0.0,no
+"Kilgannon, Mr. Thomas",male,22.0,3rd,Queenstown,Ireland,36865.0,7.1409,0.0,0.0,no
+"Kimball, Mr. Edwin Nelson Jr.",male,42.0,1st,Southampton,United States,11753.0,52.1101,1.0,0.0,yes
+"Kimball, Mrs. Susan Gertrude",female,45.0,1st,Southampton,United States,11753.0,52.1101,1.0,0.0,yes
+"Kink-Heilmann, Miss. Luise Gretchen",female,4.0,3rd,Southampton,Switzerland,315153.0,22.0,0.0,2.0,yes
+"Kink-Heilmann, Mrs. Luise",female,26.0,3rd,Southampton,Switzerland,315153.0,22.0,1.0,1.0,yes
+"Kink, Miss. Maria",female,23.0,3rd,Southampton,Switzerland,315152.0,8.1303,2.0,0.0,no
+"Kink, Mr. Anton",male,29.0,3rd,Southampton,Switzerland,315153.0,22.0,3.0,1.0,yes
+"Kink, Mr. Vincenz",male,26.0,3rd,Southampton,Switzerland,315151.0,8.1303,2.0,0.0,no
+"Kirkland, Fr. Charles Leonard",male,52.0,2nd,Queenstown,United States,219533.0,12.07,0.0,0.0,no
+"Klaber, Mr. Herman",male,41.0,1st,Southampton,United States,113028.0,26.11,0.0,0.0,no
+"Klasén, Miss. Gertrud Emilia",female,1.0,3rd,Southampton,Sweden,350405.0,12.0308,1.0,1.0,no
+"Klasén, Mr. Klas Albin",male,18.0,3rd,Southampton,Sweden,350404.0,7.1701,1.0,1.0,no
+"Klasén, Mrs. Hulda Kristina Eugenia",female,36.0,3rd,Southampton,Sweden,350405.0,12.0308,0.0,2.0,no
+"Knight, Mr. Robert",male,41.0,2nd,Belfast,Northern Ireland,239855.0,,0.0,0.0,no
+"Kraeff, Mr. Theodor",male,,3rd,Cherbourg,Bulgaria,349253.0,7.1711,0.0,0.0,no
+"Krekorian, Mr. Neshan",male,25.0,3rd,Cherbourg,Turkey,2654.0,7.0407,0.0,0.0,yes
+"Kreuchen, Miss. Emilie",female,29.0,1st,Southampton,,24160.0,211.0609,0.0,0.0,yes
+"Krins, Mr. Georges Alexandre",male,23.0,2nd,Southampton,England,250654.0,,,,no
+"Kutscher (Lithman), Mr. Simon",male,26.0,3rd,Southampton,Scotland,251.0,7.11,0.0,0.0,no
+"Kvillner, Mr. Johan Henrik Johannesson",male,31.0,2nd,Southampton,Sweden,18723.0,10.1,0.0,0.0,no
+"Lahhūd Ishaq Mu'awwad, Mr. Sarkīs",male,35.0,3rd,Cherbourg,Lebanon,2624.0,7.0406,0.0,0.0,no
+"Lahtinen, Fr. William",male,35.0,2nd,Southampton,United States,250651.0,26.0,1.0,1.0,no
+"Lahtinen, Mrs. Anna Amelia",female,34.0,2nd,Southampton,United States,250651.0,26.0,1.0,1.0,no
+"Laitinen, Miss. Kristina Sofia",female,37.0,3rd,Southampton,Finland,4135.0,9.1109,0.0,0.0,no
+"Lamb, Mr. John J.",male,31.0,2nd,Queenstown,Ireland,240261.0,10.1402,0.0,0.0,no
+"Lam, Mr. Ali",male,38.0,3rd,Southampton,China/Hong Kong,1601.0,56.0911,0.0,0.0,yes
+"Lam, Mr. Len",male,23.0,3rd,Southampton,,1601.0,56.0911,0.0,0.0,no
+"Landergren, Miss. Aurora Adelia",female,22.0,3rd,Southampton,Sweden,7077.0,7.05,0.0,0.0,yes
+"Lane, Mr. Patrick",male,17.0,3rd,Queenstown,Ireland,7935.0,7.15,0.0,0.0,no
+"Lang, Mr. Fang",male,32.0,3rd,Southampton,,1601.0,56.0911,0.0,0.0,yes
+"Laroche, Miss. Louise",female,1.0,2nd,Cherbourg,France,2123.0,41.1107,1.0,2.0,yes
+"Laroche, Miss. Simonne Marie Anne Andrée",female,3.0,2nd,Cherbourg,France,2123.0,41.1107,1.0,2.0,yes
+"Laroche, Mr. Joseph Philippe Lemercier",male,25.0,2nd,Cherbourg,France,2123.0,41.1107,1.0,2.0,no
+"Laroche, Mrs. Juliette Marie Louise",female,22.0,2nd,Cherbourg,France,2123.0,41.1107,1.0,2.0,yes
+"Larsson, Mr. August Viktor",male,29.0,3rd,Southampton,United States,7545.0,9.0908,0.0,0.0,no
+"Larsson, Mr. Bengt Edvin",male,29.0,3rd,Southampton,Sweden,347067.0,7.1506,0.0,0.0,no
+"Larsson, Mr. Edvard",male,22.0,3rd,Southampton,Sweden,347065.0,7.1506,0.0,0.0,no
+"Leader, Dr. Alice May",female,49.0,1st,Southampton,United States,17465.0,25.1807,0.0,0.0,yes
+"Lefebvre, Master. Henry",male,5.0,3rd,Southampton,,4133.0,25.0904,3.0,1.0,no
+"Lefebvre, Miss. Ida",female,3.0,3rd,Southampton,,4133.0,25.0904,3.0,1.0,no
+"Lefebvre, Miss. Jeannie",female,8.0,3rd,Southampton,,4133.0,25.0904,3.0,1.0,no
+"Lefebvre, Miss. Mathilde",female,12.0,3rd,Southampton,,4133.0,25.0904,3.0,1.0,no
+"Lefebvre, Mrs. Frances Marie",female,40.0,3rd,Southampton,,4133.0,25.0904,0.0,4.0,no
+"Lehmann, Miss. Bertha",female,17.0,2nd,Cherbourg,Switzerland,1748.0,12.0,0.0,0.0,yes
+"Leinonen, Mr. Antti Gustaf",male,32.0,3rd,Southampton,Finland,3101292.0,7.1806,0.0,0.0,no
+"Leitch, Miss. Jessie Wills",female,31.0,2nd,Southampton,Scotland,248727.0,33.0,0.0,0.0,yes
+"Lemore, Mrs. Amelia",female,39.0,2nd,Southampton,England,34260.0,10.1,0.0,0.0,yes
+"Lennon, Miss. Mary",female,18.0,3rd,Queenstown,Ireland,370371.0,15.1,1.0,0.0,no
+"Lennon, Mr. Denis",male,20.0,3rd,Queenstown,Ireland,370371.0,15.1,1.0,0.0,no
+"Leroy, Miss. Berthe",female,27.0,1st,Cherbourg,France,17761.0,106.0806,0.0,0.0,yes
+"Lester, Mr. James",male,41.0,3rd,Southampton,England,48871.0,24.03,0.0,0.0,no
+"Lesueur, Mr. Gustave J.",male,35.0,1st,Cherbourg,,17755.0,512.0607,0.0,0.0,yes
+"Lévy, Mr. René Jacques",male,37.0,2nd,Southampton,Canada,2163.0,12.1706,0.0,0.0,no
+"Lewy, Mr. Ervin G.",male,30.0,1st,Cherbourg,United States,17612.0,27.1405,0.0,0.0,no
+"Leyson, Mr. Robert William Norman",male,25.0,2nd,Southampton,England,29566.0,10.1,0.0,0.0,no
+"Lievens, Mr. René Aimé",male,24.0,3rd,Southampton,Belgium,345781.0,9.1,0.0,0.0,no
+"Lindahl, Miss. Agda Thorilda Viktoria",female,25.0,3rd,Southampton,Sweden,347071.0,7.1506,0.0,0.0,no
+"Lindblom, Miss. Augusta Charlotta",female,45.0,3rd,Southampton,England,347073.0,7.15,0.0,0.0,no
+"Lindeberg-Lind, Mr. Erik Gustaf",male,42.0,1st,Southampton,Sweden,17475.0,26.11,0.0,0.0,no
+"Lindell, Mr. Edvard Bengtsson",male,36.0,3rd,Southampton,Sweden,349910.0,15.11,1.0,0.0,no
+"Lindell, Mrs. Elin Gerda",female,30.0,3rd,Southampton,Sweden,349910.0,15.11,1.0,0.0,no
+"Lindqvist, Mr. Eino William",male,20.0,3rd,Southampton,Finland,3101285.0,7.1806,1.0,0.0,yes
+"Lindström, Mrs. Sigrid",female,55.0,1st,Cherbourg,Sweden,112377.0,27.1405,0.0,0.0,yes
+"Linehan, Mr. Michael",male,21.0,3rd,Queenstown,Ireland,330971.0,7.1707,0.0,0.0,no
+"Lines, Miss. Mary Conover",female,16.0,1st,Cherbourg,France,17592.0,39.08,0.0,1.0,yes
+"Lines, Mrs. Elizabeth Lindsey",female,50.0,1st,Cherbourg,United States,17592.0,39.08,0.0,1.0,yes
+"Lingane, Mr. John",male,61.0,2nd,Queenstown,Ireland,235509.0,12.07,0.0,0.0,no
+"Ling, Mr. Lee",male,28.0,3rd,Southampton,,1601.0,56.0911,0.0,0.0,no
+"Linhart, Mr. Wenzel",male,27.0,3rd,Southampton,Austria,345775.0,9.1,0.0,0.0,no
+"Livshin, Mr. David",male,25.0,3rd,Southampton,Latvia,374887.0,7.05,0.0,0.0,no
+"Lobb, Mrs. Cordelia",female,34.0,3rd,Southampton,England,3336.0,16.02,1.0,0.0,no
+"Lobb, Mr. William Arthur",male,31.0,3rd,Southampton,England,3336.0,16.02,1.0,0.0,no
+"Lockyer, Mr. Edward Thomas",male,19.0,3rd,Southampton,England,1222.0,7.1707,0.0,0.0,no
+"Longley, Miss. Gretchen Fiske",female,21.0,1st,Cherbourg,United States,13502.0,77.1902,0.0,0.0,yes
+"Long, Mr. Milton Clyde",male,29.0,1st,Southampton,United States,113501.0,30.0,0.0,0.0,no
+"Loring, Mr. Joseph Holland",male,30.0,1st,Southampton,United States,113801.0,45.1,0.0,0.0,no
+"Louch, Mr. Charles",male,50.0,2nd,Southampton,England,3085.0,26.0,1.0,0.0,no
+"Louch, Mrs. Alice Adelaide",female,43.0,2nd,Southampton,England,3085.0,26.0,1.0,0.0,yes
+"Lovell, Mr. John Hall",male,20.0,3rd,Southampton,England,21173.0,7.05,0.0,0.0,no
+"Lulic, Mr. Nikola",male,29.0,3rd,Southampton,Croatia (Modern),315098.0,8.1303,0.0,0.0,yes
+"Lundahl, Mr. Johan Svensson",male,50.0,3rd,Southampton,Sweden,347743.0,7.0101,0.0,0.0,no
+"Lundin, Miss. Olga Elida",female,23.0,3rd,Southampton,United States,347469.0,7.1701,0.0,0.0,yes
+"Lundström, Mr. Thure Edvin",male,32.0,3rd,Southampton,Sweden,350403.0,7.1107,0.0,0.0,yes
+"Lurette, Miss. Eugénie Elise",female,59.0,1st,Cherbourg,France,17569.0,146.1005,0.0,0.0,yes
+"Lymperopoulus, Mr. Panagiotis K.",male,30.0,3rd,Cherbourg,Greece,2683.0,6.0809,0.0,0.0,no
+"Lyntakoff, Mr. Stanko",male,44.0,3rd,Southampton,,349235.0,7.1711,0.0,0.0,no
+"MacKay, Mr. George William",male,20.0,3rd,Southampton,Scotland,42795.0,7.11,0.0,0.0,no
+"Mack, Mrs. Mary",female,57.0,2nd,Southampton,England,3.0,10.1,0.0,0.0,no
+"Madigan, Miss. Margaret",female,21.0,3rd,Queenstown,Ireland,370370.0,7.15,0.0,0.0,yes
+"Madill, Miss. Georgette Alexandra",female,16.0,1st,Southampton,United States,24160.0,211.0609,0.0,1.0,yes
+"Madsen, Mr. Fridtjof Arne",male,24.0,3rd,Southampton,Norway,17369.0,7.021,0.0,0.0,yes
+"Mäenpää, Mr. Matti Alexanteri",male,22.0,3rd,Southampton,Finland,3101275.0,7.0206,0.0,0.0,no
+"Maguire, Mr. John Edward",male,30.0,1st,Southampton,United States,110469.0,26.0,0.0,0.0,no
+"Mahon, Miss. Bridget Delia",female,20.0,3rd,Queenstown,Ireland,330924.0,7.1707,0.0,0.0,no
+"Maioni, Miss. Roberta Elizabeth Mary",female,20.0,1st,Southampton,England,110152.0,86.1,0.0,0.0,yes
+"Maisner, Mr. Simon",male,34.0,3rd,Southampton,England,2816.0,8.01,0.0,0.0,no
+"Mäkinen, Mr. Kalle Edvard",male,29.0,3rd,Southampton,Finland,3101268.0,7.1806,0.0,0.0,no
+"Malachard, Mr. Jean-Noël",male,25.0,2nd,Cherbourg,France,237735.0,15.0,0.0,0.0,no
+"Mallet, Master. André Clement",male,1.0,2nd,Cherbourg,France,2079.0,37.0,0.0,2.0,yes
+"Mallet, Mr. Albert Denis Pierre",male,45.0,2nd,Cherbourg,France,2079.0,37.0,1.0,1.0,no
+"Mallet, Mrs. Antonine Marie",female,24.0,2nd,Cherbourg,France,2079.0,37.0,1.0,1.0,yes
+"Māmā, Mr. Hannā Mikā'īl",male,18.0,3rd,Cherbourg,Lebanon,2677.0,7.0407,0.0,0.0,yes
+"Mangan, Miss. Mary",female,32.0,3rd,Queenstown,Ireland,364850.0,7.15,0.0,0.0,no
+"Mangiavacchi, Mr. Serafino Emilio",male,30.0,2nd,Cherbourg,United States,32861.0,15.1107,0.0,0.0,no
+"Mannion, Miss. Margaret",female,28.0,3rd,Queenstown,Ireland,36866.0,7.1409,0.0,0.0,yes
+"Mardirosian, Mr. Sarkis",male,25.0,3rd,Cherbourg,Turkey,2655.0,7.0407,0.0,0.0,no
+"Maréchal, Mr. Pierre",male,29.0,1st,Cherbourg,France,11774.0,29.14,0.0,0.0,yes
+"Marinko, Mr. Dmitri",male,23.0,3rd,Southampton,Yugoslavia,349238.0,7.1711,0.0,0.0,no
+"Markoff, Mr. Marin",male,35.0,3rd,Southampton,Bulgaria,349213.0,7.1711,0.0,0.0,no
+"Markun, Mr. Johann",male,33.0,3rd,Cherbourg,Slovenia,349257.0,7.1711,0.0,0.0,no
+"Marvin, Mr. Daniel Warner",male,18.0,1st,Southampton,United States,113773.0,53.02,1.0,0.0,no
+"Marvin, Mrs. Mary Graham Carmichael",female,18.0,1st,Southampton,Scotland,113773.0,53.02,1.0,0.0,yes
+"Matinoff, Mr. Nicola",male,30.0,3rd,Cherbourg,Bulgaria,349255.0,7.1711,0.0,0.0,no
+"Matthews, Mr. William John",male,23.0,2nd,Southampton,England,28228.0,13.0,0.0,0.0,no
+"Maybery, Mr. Frank Hubert",male,36.0,2nd,Southampton,England,239059.0,16.0,0.0,0.0,no
+"Mayné, Mlle. Berthe Antonine",female,24.0,1st,Cherbourg,Belgium,17482.0,49.1001,0.0,0.0,yes
+"McCaffry, Mr. Thomas Francis",male,46.0,1st,Southampton,Canada,13050.0,75.041,0.0,0.0,no
+"McCarthy, Miss. Catherine",female,25.0,3rd,Queenstown,Ireland,383123.0,7.15,0.0,0.0,yes
+"McCarthy, Mr. Timothy J.",male,55.0,1st,Southampton,United States,17463.0,51.1703,0.0,0.0,no
+"McCormack, Mr. Thomas Joseph",male,19.0,3rd,Queenstown,United States,367228.0,7.15,0.0,0.0,yes
+"McCoy, Miss. Agnes",female,29.0,3rd,Queenstown,Ireland,367226.0,23.05,2.0,0.0,yes
+"McCoy, Miss. Alice",female,26.0,3rd,Queenstown,Ireland,367226.0,23.05,2.0,0.0,yes
+"McCoy, Mr. Bernard",male,24.0,3rd,Queenstown,Ireland,367226.0,23.05,2.0,0.0,yes
+"McCrae, Mr. Arthur Gordon",male,32.0,2nd,Southampton,Australia,237216.0,13.1,0.0,0.0,no
+"McCrie, Mr. James Matthew",male,32.0,2nd,Southampton,Canada,233478.0,13.0,0.0,0.0,no
+"McDermott, Miss. Bridget Delia",female,31.0,3rd,Queenstown,Ireland,330932.0,7.1508,0.0,0.0,yes
+"McEvoy, Mr. Michael",male,20.0,3rd,Queenstown,Ireland,36568.0,15.1,0.0,0.0,no
+"McGough, Mr. James Robert",male,35.0,1st,Southampton,Ireland,17473.0,26.0509,0.0,0.0,yes
+"McGovern, Ms. Mary",female,22.0,3rd,Queenstown,Ireland,330931.0,7.1707,0.0,0.0,yes
+"McGowan, Miss. Anna Louise",female,17.0,3rd,Queenstown,United States,330923.0,8.0,0.0,0.0,yes
+"McGowan, Miss. Catherine",female,42.0,3rd,Queenstown,Ireland,9232.0,7.15,0.0,0.0,no
+"McKane, Mr. Peter Daniel",male,46.0,2nd,Southampton,Channel Islands,28403.0,26.0,0.0,0.0,no
+"McMahon, Mr. Martin",male,19.0,3rd,Queenstown,Ireland,370372.0,7.15,0.0,0.0,no
+"McNamee, Mr. Neal",male,27.0,3rd,Southampton,England,376566.0,16.02,1.0,0.0,no
+"McNamee, Mrs. Eileen",female,19.0,3rd,Southampton,England,376566.0,16.02,1.0,0.0,no
+"McNeill, Miss. Bridget",female,32.0,3rd,Queenstown,Ireland,370368.0,7.15,0.0,0.0,no
+"Meanwell, Mrs. Marian",female,62.0,3rd,Southampton,England,392087.0,8.01,0.0,0.0,no
+"Meehan, Mr. John",male,22.0,3rd,Queenstown,Ireland,3130.0,7.15,0.0,0.0,no
+"Meek, Mrs. Annie Louisa",female,32.0,3rd,Southampton,England,343095.0,8.01,0.0,0.0,no
+"Mellinger, Miss. Violet Madeline",female,13.0,2nd,Southampton,England,250644.0,19.1,0.0,1.0,yes
+"Mellinger, Mrs. Elizabeth Anne",female,42.0,2nd,Southampton,England,250644.0,19.1,0.0,1.0,yes
+"Mellors, Mr. William John",male,19.0,2nd,Southampton,England,751.0,10.1,0.0,0.0,yes
+"Meo (Martino), Mr. Alfonzo",male,48.0,3rd,Southampton,Italy,11206.0,8.01,0.0,0.0,no
+"Mernagh, Mr. Robert",male,28.0,3rd,Queenstown,Ireland,368703.0,7.15,0.0,0.0,no
+"Meyer, Mr. August",male,31.0,2nd,Southampton,England,248723.0,13.0,0.0,0.0,no
+"Meyer, Mr. Edgar Joseph",male,28.0,1st,Cherbourg,United States,17604.0,82.0305,1.0,0.0,no
+"Meyer, Mrs. Leila",female,25.0,1st,Cherbourg,United States,17604.0,82.0305,1.0,0.0,yes
+"Midtsjø, Mr. Karl Albert",male,21.0,3rd,Southampton,Norway,345501.0,7.1506,0.0,0.0,yes
+"Mihoff, Mr. Stoytcho",male,28.0,3rd,Southampton,Bulgaria,349207.0,7.1711,0.0,0.0,no
+"Miles, Mr. Frank",male,23.0,3rd,Southampton,England,359306.0,8.01,0.0,0.0,no
+"Millet, Mr. Francis Davis",male,65.0,1st,Cherbourg,United States,13509.0,26.11,0.0,0.0,no
+"Milling, Mr. Jacob Christian",male,48.0,2nd,Southampton,Denmark,234360.0,13.0,0.0,0.0,no
+"Minahan, Dr. William Edward",male,44.0,1st,Queenstown,United States,19928.0,90.0,2.0,0.0,no
+"Minahan, Miss. Daisy E.",female,33.0,1st,Queenstown,United States,19928.0,90.0,1.0,0.0,yes
+"Minahan, Mrs. Lillian E.",female,37.0,1st,Queenstown,United States,19928.0,90.0,1.0,0.0,yes
+"Mineff, Mr. Ivan",male,24.0,3rd,Southampton,,349233.0,7.1711,0.0,0.0,no
+"Minkoff, Mr. Lazar",male,21.0,3rd,Southampton,Bulgaria,349211.0,7.1711,0.0,0.0,no
+"Mitchell, Mr. Henry Michael",male,72.0,2nd,Southampton,England,24580.0,10.1,0.0,0.0,no
+"Mitkoff, Mr. Mito",male,23.0,3rd,Southampton,,349221.0,7.1711,0.0,0.0,no
+"Mockler, Miss. Ellen Mary",female,23.0,3rd,Queenstown,Ireland,330980.0,7.1707,0.0,0.0,yes
+"Mock, Mr. Philipp Edmund",male,30.0,1st,Cherbourg,United States,13236.0,57.15,1.0,0.0,yes
+"Moen, Mr. Sigurd Hansen",male,27.0,3rd,Southampton,Norway,348123.0,7.13,0.0,0.0,no
+"Molson, Mr. Harry Markland",male,55.0,1st,Southampton,Canada,113787.0,30.1,0.0,0.0,no
+"Montvila, Fr. Juozas",male,27.0,2nd,Southampton,England,211536.0,13.0,0.0,0.0,no
+"Moore, Mr. Clarence Bloomfield",male,47.0,1st,Southampton,United States,113796.0,42.08,0.0,0.0,no
+"Moore, Mr. Leonard Charles",male,19.0,3rd,Southampton,England,54510.0,8.01,0.0,0.0,no
+"Moor, Master. Meier",male,7.0,3rd,Southampton,,392096.0,12.0906,0.0,1.0,yes
+"Moor, Mrs. Beila",female,29.0,3rd,Southampton,,392096.0,12.0906,0.0,1.0,yes
+"Moran, Miss. Bridget",female,28.0,3rd,Queenstown,Ireland,371110.0,24.03,1.0,0.0,yes
+"Moran, Mr. Daniel J.",male,28.0,3rd,Queenstown,Ireland,371110.0,24.03,1.0,0.0,no
+"Moraweck, Dr. Ernest",male,54.0,2nd,Southampton,United States,29011.0,14.0,0.0,0.0,no
+"Morley, Mr. Henry Samuel",male,38.0,2nd,Southampton,England,250655.0,26.0,0.0,0.0,no
+"Morley, Mr. William",male,34.0,3rd,Southampton,England,364506.0,8.01,0.0,0.0,no
+"Morrow, Mr. Thomas Rowan",male,30.0,3rd,Queenstown,Ireland,372622.0,7.15,0.0,0.0,no
+"Moss, Mr. Albert Johan",male,29.0,3rd,Southampton,Norway,312991.0,7.1506,0.0,0.0,yes
+"Moussa, Mrs. Mantoura Boulos",female,35.0,3rd,Cherbourg,Lebanon,2626.0,7.0407,0.0,0.0,yes
+"Moutal, Mr. Rahamin Haim",male,28.0,3rd,Southampton,England,374746.0,8.01,0.0,0.0,no
+"Mubārik, Master. Halīm",male,4.0,3rd,Cherbourg,Lebanon,2661.0,15.0411,1.0,1.0,yes
+"Mubārik, Master. Jirjis",male,7.0,3rd,Cherbourg,Lebanon,2661.0,15.0411,1.0,1.0,yes
+"Mubārik, Mrs. Amīnah",female,25.0,3rd,Cherbourg,Lebanon,2661.0,15.0411,0.0,2.0,yes
+"Mudd, Mr. Thomas Cupper",male,17.0,2nd,Southampton,England,3.0,10.1,0.0,0.0,no
+"Mullin, Miss. Catherine",female,21.0,3rd,Queenstown,Ireland,35852.0,7.1408,0.0,0.0,yes
+"Mulvihill, Miss. Bridget Elizabeth",female,25.0,3rd,Queenstown,Ireland,382653.0,7.15,0.0,0.0,yes
+"Murdlin, Mr. Joseph",male,22.0,3rd,Southampton,England,3235.0,8.01,0.0,0.0,no
+"Murphy, Miss. Catherine",female,18.0,3rd,Queenstown,Ireland,367230.0,15.1,1.0,0.0,yes
+"Murphy, Miss. Margaret Jane",female,25.0,3rd,Queenstown,Ireland,367230.0,15.1,1.0,0.0,yes
+"Murphy, Miss. Nora",female,31.0,3rd,Queenstown,Ireland,36568.0,15.1,0.0,0.0,yes
+"Muslamānī, Mrs. Fatīmah Muhammad",female,22.0,3rd,Cherbourg,Lebanon,2649.0,7.0406,0.0,0.0,yes
+"Myhrman, Mr. Pehr Fabian Oliver Malkolm",male,18.0,3rd,Southampton,Sweden,347078.0,7.15,0.0,0.0,no
+"Myles, Mr. Thomas Francis",male,63.0,2nd,Queenstown,Ireland,240276.0,9.1309,0.0,0.0,no
+"Naidenoff, Mr. Penko",male,22.0,3rd,Southampton,Bulgaria,349206.0,7.1711,0.0,0.0,no
+"Najib Kiamie, Miss. Adele",female,15.0,3rd,Cherbourg,Lebanon,2667.0,7.0406,0.0,0.0,yes
+"Nakhli, Mr. Toufik",male,17.0,3rd,Cherbourg,Lebanon,2641.0,7.0407,0.0,0.0,no
+"Nakid, Miss. Maria",female,1.0,3rd,Cherbourg,Lebanon,2653.0,15.140999999999998,0.0,2.0,yes
+"Nakid, Mr. Sahid",male,21.0,3rd,Cherbourg,Lebanon,2653.0,15.140999999999998,1.0,1.0,yes
+"Nakid, Mrs. Waika",female,19.0,3rd,Cherbourg,Lebanon,2653.0,15.140999999999998,1.0,1.0,yes
+"Nancarrow, Mr. William Henry",male,36.0,3rd,Southampton,England,3338.0,8.01,0.0,0.0,no
+"Nankoff, Mr. Minko",male,32.0,3rd,Southampton,,349218.0,7.1711,0.0,0.0,no
+"Nasr 'Almā, Mr. Mustafà",male,20.0,3rd,Cherbourg,Lebanon,2652.0,7.0407,0.0,0.0,no
+"Nasser, Mr. Nicholas",male,28.0,2nd,Cherbourg,United States,237736.0,30.0105,1.0,0.0,no
+"Nasser, Mrs. Adele",female,14.0,2nd,Cherbourg,Lebanon,237736.0,30.0105,1.0,0.0,yes
+"Nassr Rizq, Mr. Saade",male,20.0,3rd,Cherbourg,Lebanon,2676.0,7.0406,0.0,0.0,no
+"Natsch, Mr. Charles",male,36.0,1st,Cherbourg,United States,17596.0,29.14,0.0,1.0,no
+"Naughton, Miss. Hannah",female,21.0,3rd,Queenstown,Ireland,365237.0,7.15,0.0,0.0,no
+"Navratil, Master. Edmond Roger",male,2.0,2nd,Southampton,France,230080.0,26.0,1.0,1.0,yes
+"Navratil, Master. Michel Marcel",male,3.0,2nd,Southampton,France,230080.0,26.0,1.0,1.0,yes
+"Navratil, Mr. Michel",male,32.0,2nd,Southampton,Slovakia (Modern day),230080.0,26.0,0.0,2.0,no
+"Nenkov, Mr. Hristo",male,22.0,3rd,Southampton,,349234.0,7.1711,0.0,0.0,no
+"Nesson, Mr. Israel",male,26.0,2nd,Southampton,England,244368.0,13.0,0.0,0.0,no
+"Newell, Miss. Madeleine",female,31.0,1st,Cherbourg,United States,35273.0,113.0506,1.0,0.0,yes
+"Newell, Miss. Marjorie Anne",female,23.0,1st,Cherbourg,United States,35273.0,113.0506,1.0,0.0,yes
+"Newell, Mr. Arthur Webster",male,58.0,1st,Cherbourg,United States,35273.0,113.0506,0.0,2.0,no
+"Newsom, Miss. Helen Monypeny",female,19.0,1st,Southampton,United States,11752.0,26.0508,0.0,2.0,yes
+"Nicholls, Mr. Joseph Charles",male,19.0,2nd,Southampton,England,33112.0,36.15,1.0,1.0,no
+"Nicholson, Mr. Arthur Ernest",male,60.0,1st,Southampton,England,693.0,26.0,0.0,0.0,no
+"Nieminen, Miss. Manta Josefina",female,29.0,3rd,Southampton,Finland,3101297.0,7.1806,0.0,0.0,no
+"Niklasson, Mr. Samuel",male,28.0,3rd,Southampton,Sweden,363611.0,8.01,0.0,0.0,no
+"Nilsson, Miss. Berta Olivia",female,18.0,3rd,Southampton,Sweden,347066.0,7.1506,0.0,0.0,yes
+"Nilsson, Miss. Helmina Josefina",female,26.0,3rd,Southampton,Sweden,347470.0,7.1701,0.0,0.0,yes
+"Nilsson, Mr. August Ferdinand",male,21.0,3rd,Southampton,Sweden,350410.0,7.1701,0.0,0.0,no
+"Nīqūla Yārid, Master. Ilyās",male,11.0,3rd,Cherbourg,Lebanon,2651.0,11.040999999999999,1.0,0.0,yes
+"Nīqūla Yārid, Miss. Jamilah",female,14.0,3rd,Cherbourg,Lebanon,2651.0,11.040999999999999,1.0,0.0,yes
+"Nirva, Mr. Iisakki Antino Äijö",male,41.0,3rd,Southampton,Finland,3101272.0,7.0206,0.0,0.0,no
+"Niskänen, Mr. Juha",male,39.0,3rd,Southampton,United States,3101289.0,7.1806,0.0,0.0,yes
+"Nofal, Mr. Mansouer",male,20.0,3rd,Cherbourg,Lebanon,2697.0,7.0407,0.0,0.0,no
+"Norman, Mr. Robert Douglas",male,27.0,2nd,Southampton,Scotland,218629.0,13.1,0.0,0.0,no
+"Nosworthy, Mr. Richard Cater",male,21.0,3rd,Southampton,England,39886.0,7.16,0.0,0.0,no
+"Nourney, Mr. Alfred",male,20.0,1st,Cherbourg,Germany,2166.0,13.1703,0.0,0.0,yes
+"Nye, Mrs. Elizabeth",female,29.0,2nd,Southampton,United States,29395.0,10.1,0.0,0.0,yes
+"Nysten, Miss. Anna Sofia",female,22.0,3rd,Southampton,Sweden,347081.0,7.15,0.0,0.0,yes
+"Nysveen, Mr. Johan Hansen",male,60.0,3rd,Southampton,Norway,345364.0,6.0409,0.0,0.0,no
+"O'Brien, Mr. Denis",male,21.0,3rd,Queenstown,Ireland,330979.0,7.1607,0.0,0.0,no
+"O'Brien, Mrs. Johanna",female,26.0,3rd,Queenstown,Ireland,370365.0,15.1,1.0,0.0,yes
+"O'Brien, Mr. Thomas",male,27.0,3rd,Queenstown,Ireland,370365.0,15.1,1.0,0.0,no
+"O'Connell, Mr. Patrick Denis",male,18.0,3rd,Queenstown,Ireland,334912.0,7.1408,0.0,0.0,no
+"O'Connor, Mr. Maurice",male,17.0,3rd,Queenstown,Ireland,371060.0,7.15,0.0,0.0,no
+"O'Connor, Mr. Patrick",male,23.0,3rd,Queenstown,Ireland,366713.0,7.15,0.0,0.0,no
+"Ödahl, Mr. Nils Martin",male,23.0,3rd,Southampton,Sweden,7267.0,9.0406,0.0,0.0,no
+"O'Dwyer, Miss. Ellen",female,24.0,3rd,Queenstown,Ireland,330959.0,7.1707,0.0,0.0,yes
+"Öhman, Miss. Velin",female,22.0,3rd,Southampton,Sweden,347085.0,7.1506,0.0,0.0,yes
+"O'Keefe, Mr. Patrick",male,21.0,3rd,Queenstown,Ireland,368402.0,7.15,0.0,0.0,yes
+"O'Leary, Miss. Hanora",female,16.0,3rd,Queenstown,Ireland,330919.0,7.1607,0.0,0.0,yes
+"Oliva y Ocana, Doña. Fermina",female,39.0,1st,Cherbourg,Spain,17758.0,108.18,0.0,0.0,yes
+"Olsen, Master. Artur Karl",male,9.0,3rd,Southampton,Norway,17368.0,3.0305,0.0,1.0,yes
+"Olsen, Mr. Henry Margido",male,28.0,3rd,Southampton,Norway,4001.0,22.1006,0.0,0.0,no
+"Olsen, Mr. Karl Siegwart Andreas",male,42.0,3rd,Southampton,United States,4579.0,8.0801,0.0,1.0,no
+"Olsen, Mr. Ole Martin",male,27.0,3rd,Southampton,Norway,265302.0,7.0603,0.0,0.0,no
+"Olsson, Miss. Elina",female,31.0,3rd,Southampton,Sweden,350407.0,7.1701,0.0,0.0,no
+"Olsson, Mr. Nils Johan Göransson",male,28.0,3rd,Southampton,Sweden,347464.0,7.1701,0.0,0.0,no
+"Olsson, Mr. Oscar Wilhelm",male,32.0,3rd,Southampton,Sweden,347079.0,7.1506,0.0,0.0,yes
+"Olsvigen, Mr. Thor Anderson",male,20.0,3rd,Southampton,Norway,6563.0,9.0406,0.0,0.0,no
+"Omont, Mr. Alfred Fernand",male,29.0,1st,Cherbourg,France,12998.0,25.141,0.0,0.0,yes
+"Oreskovic, Miss. Jelka",female,23.0,3rd,Southampton,Croatia,315085.0,8.1303,0.0,0.0,no
+"Oreskovic, Miss. Marija",female,20.0,3rd,Southampton,Croatia,315096.0,8.1303,0.0,0.0,no
+"Oreskovic, Mr. Luka",male,20.0,3rd,Southampton,Croatia,315094.0,8.1303,0.0,0.0,no
+"Osén, Mr. Olaf Elon",male,16.0,3rd,Southampton,Sweden,7534.0,9.0404,0.0,0.0,no
+"Østby, Miss. Helen Ragnhild",female,22.0,1st,Southampton,United States,113509.0,61.1907,0.0,1.0,yes
+"Ostby, Mr. Engelhart Cornelius",male,64.0,1st,Southampton,United States,113509.0,61.1907,0.0,1.0,no
+"O'Sullivan, Miss. Bridget Mary",female,21.0,3rd,Queenstown,Ireland,330909.0,7.1207,0.0,0.0,no
+"Otter, Mr. Richard",male,38.0,2nd,Southampton,United States,28213.0,13.0,0.0,0.0,no
+"Oviés y Rodríguez, Mr. Servando José Florentino",male,36.0,1st,Cherbourg,Cuba,17562.0,27.1405,0.0,0.0,no
+"Oxenham, Mr. Percy Thomas",male,22.0,2nd,Southampton,England,14260.0,10.1,0.0,0.0,yes
+"Padron Manent, Mr. Julian",male,27.0,2nd,Cherbourg,Spain,2146.0,13.1703,0.0,0.0,yes
+"Pain, Dr. Alfred",male,23.0,2nd,Southampton,Canada,244278.0,10.1,0.0,0.0,no
+"Pallàs i Castelló, Sr. Emili",male,29.0,2nd,Cherbourg,Spain,2147.0,13.1702,0.0,0.0,yes
+"Pålsson, Master. Gösta Leonard",male,2.0,3rd,Southampton,Sweden,349909.0,21.0106,3.0,1.0,no
+"Pålsson, Master. Paul Folke",male,6.0,3rd,Southampton,Sweden,349909.0,21.0106,3.0,1.0,no
+"Pålsson, Miss. Stina Viola",female,3.0,3rd,Southampton,Sweden,349909.0,21.0106,3.0,1.0,no
+"Pålsson, Miss. Torborg Danira",female,8.0,3rd,Southampton,Sweden,349909.0,21.0106,3.0,1.0,no
+"Pålsson, Mrs. Alma Cornelia",female,29.0,3rd,Southampton,Sweden,349909.0,21.0106,0.0,4.0,no
+"Panula, Master. Eino Viljam",male,1.0,3rd,Southampton,Finland,3101295.0,39.1309,4.0,1.0,no
+"Panula, Master. Jaako Arnold",male,15.0,3rd,Southampton,United States,3101295.0,39.1309,4.0,1.0,no
+"Panula, Master. Juha Niilo",male,7.0,3rd,Southampton,Finland,3101295.0,39.1309,4.0,1.0,no
+"Panula, Master. Urho Abraham",male,2.0,3rd,Southampton,Finland,3101295.0,39.1309,4.0,1.0,no
+"Panula, Mr. Ernesti Arvid",male,16.0,3rd,Southampton,Finland,3101295.0,39.1309,4.0,1.0,no
+"Panula, Mrs. Maija Emelia Abrahamintytar",female,41.0,3rd,Southampton,Finland,3101295.0,39.1309,0.0,5.0,no
+"Parker, Mr. Clifford Richard",male,17.0,2nd,Southampton,Channel Islands,14888.0,10.1,0.0,0.0,no
+"Parkes, Mr. Francis",male,21.0,2nd,Belfast,Northern Ireland,239853.0,,0.0,0.0,no
+"Parrish, Mrs. Lutie Davis",female,59.0,2nd,Southampton,United States,230433.0,26.0,0.0,1.0,yes
+"Parr, Mr. William Henry Marsh",male,30.0,1st,Belfast,England,112052.0,,0.0,0.0,no
+"Partner, Mr. Austin",male,40.0,1st,Southampton,England,113043.0,28.1,0.0,0.0,no
+"Pasic, Mr. Jakob",male,21.0,3rd,Southampton,Slovenia,315097.0,8.1303,0.0,0.0,no
+"Patchett, Mr. George",male,20.0,3rd,Southampton,England,358585.0,14.1,0.0,0.0,no
+"Pavlovic, Mr. Stefo",male,32.0,3rd,Southampton,Croatia,349242.0,7.1711,0.0,0.0,no
+"Payne, Mr. Vivian Ponsonby",male,23.0,1st,Southampton,Canada,12749.0,93.1,0.0,0.0,no
+"Peacock, Master. Albert Edward",male,0.5833333333,3rd,Southampton,England,3101315.0,13.1506,1.0,1.0,no
+"Peacock, Miss. Treasteall",female,4.0,3rd,Southampton,England,3101315.0,13.1506,1.0,1.0,no
+"Peacock, Mrs. Edith",female,26.0,3rd,Southampton,England,3101315.0,13.1506,0.0,2.0,no
+"Pearce, Mr. Ernest",male,32.0,3rd,Southampton,England,343271.0,7.0,0.0,0.0,no
+"Pears, Mrs. Edith",female,22.0,1st,Southampton,England,113776.0,66.12,1.0,0.0,yes
+"Pears, Mr. Thomas Clinton",male,29.0,1st,Southampton,England,113776.0,66.12,1.0,0.0,no
+"Pedersen, Mr. Olaf",male,28.0,3rd,Southampton,Norway,345498.0,7.1506,0.0,0.0,no
+"Peduzzi, Mr. Giuseppe",male,24.0,3rd,Southampton,England,2817.0,8.01,0.0,0.0,no
+"Pekoniemi, Mr. Edvard",male,21.0,3rd,Southampton,Finland,3101294.0,7.1806,0.0,0.0,no
+"Peltomäki, Mr. Nikolai Johannes",male,25.0,3rd,Southampton,Finland,3101291.0,7.1806,0.0,0.0,no
+"Peñasco y Castellana, Mrs. Maria Josefa Perezde Soto y Vallejo",female,22.0,1st,Cherbourg,Spain,17758.0,108.18,1.0,0.0,yes
+"Peñasco y Castellana, Mr. Victor",male,24.0,1st,Cherbourg,Spain,17758.0,108.18,1.0,0.0,no
+"Pengelly, Mr. Frederick William",male,19.0,2nd,Southampton,England,28665.0,10.1,0.0,0.0,no
+"Perkin, Mr. John Henry",male,24.0,3rd,Southampton,England,21174.0,7.05,0.0,0.0,no
+"Pernot, Mr. René",male,39.0,2nd,Cherbourg,France,2131.0,15.01,0.0,0.0,no
+"Perreault, Miss. Mary Anne",female,33.0,1st,Southampton,Canada,12749.0,93.1,0.0,0.0,yes
+"Persson, Mr. Ernst Ulrik",male,25.0,3rd,Southampton,Sweden,347083.0,7.1506,1.0,0.0,yes
+"Peruschitz, Fr. Josef",male,41.0,2nd,Southampton,Germany,237393.0,13.0,0.0,0.0,no
+"Peteranec, Miss. Mathilda",female,28.0,3rd,Southampton,Croatia,349245.0,7.1711,0.0,0.0,no
+"Peter / Joseph, Master. Michael J.",male,4.0,3rd,Cherbourg,Lebanon,2668.0,22.0702,1.0,1.0,yes
+"Peter / Joseph, Miss. Anna",female,2.0,3rd,Cherbourg,Lebanon,2668.0,22.0702,1.0,1.0,yes
+"Petersen, Mr. Marius",male,24.0,3rd,Southampton,England,342441.0,8.01,0.0,0.0,no
+"Peters, Miss. Catherine",female,28.0,3rd,Queenstown,Ireland,330935.0,8.0209,0.0,0.0,no
+"Petroff, Mr. Nedialco",male,19.0,3rd,Southampton,Bulgaria,349212.0,7.1711,0.0,0.0,no
+"Petroff, Mr. Pastcho",male,29.0,3rd,Southampton,Bulgaria,349215.0,7.1711,0.0,0.0,no
+"Pettersson, Miss. Elin Natalia",female,18.0,3rd,Southampton,Sweden,347087.0,7.1506,0.0,0.0,no
+"Pettersson, Mr. Johan Emil",male,25.0,3rd,Southampton,Sweden,347076.0,7.1506,1.0,0.0,no
+"Peuchen, Major. Arthur Godfrey",male,52.0,1st,Southampton,Canada,113786.0,30.1,0.0,0.0,yes
+"Phillips, Miss. Alice Frances Louisa",female,21.0,2nd,Southampton,England,2.0,21.0,0.0,1.0,yes
+"Phillips, Miss. Kate Florence",female,19.0,2nd,Southampton,England,250655.0,26.0,0.0,0.0,yes
+"Phillips, Mr. Escott Robert",male,43.0,2nd,Southampton,England,2.0,21.0,0.0,1.0,no
+"Picard, Mr. Benoît",male,33.0,3rd,Southampton,Poland,392078.0,8.01,0.0,0.0,yes
+"Pinsky, Mrs. Rosa",female,32.0,2nd,Southampton,Poland,234604.0,13.0,0.0,0.0,yes
+"Plotcharsky, Mr. Vasil",male,27.0,3rd,Southampton,,349227.0,7.1711,0.0,0.0,no
+"Pokrnic, Mr. Mate",male,17.0,3rd,Southampton,Croatia,315095.0,8.1303,0.0,0.0,no
+"Pokrnic, Mr. Tome",male,24.0,3rd,Southampton,Croatia,315092.0,8.1303,0.0,0.0,no
+"Ponesell, Mr. Martin",male,24.0,2nd,Southampton,England,250647.0,13.0,0.0,0.0,no
+"Portaluppi, Mr. Emilio Ilario Giuseppe",male,30.0,2nd,Cherbourg,United States,34644.0,12.1409,0.0,0.0,yes
+"Porter, Mr. Walter Chamberlain",male,46.0,1st,Southampton,United States,110465.0,52.0,0.0,0.0,no
+"Potter, Mrs. Lily Alexenia",female,56.0,1st,Cherbourg,United States,11767.0,83.0302,0.0,1.0,yes
+"Pulbaum, Mr. Franz",male,27.0,2nd,Cherbourg,United States,2168.0,15.0,0.0,0.0,no
+"Pulner, Mr. Uscher",male,16.0,3rd,Cherbourg,,3411.0,8.1403,0.0,0.0,no
+"Quick, Miss. Phyllis May",female,2.0,2nd,Southampton,,26360.0,26.0,1.0,1.0,yes
+"Quick, Miss. Winifred Vera",female,8.0,2nd,Southampton,,26360.0,26.0,1.0,1.0,yes
+"Quick, Mrs. Jane",female,33.0,2nd,Southampton,,26360.0,26.0,0.0,2.0,yes
+"Radeff, Mr. Alexander",male,27.0,3rd,Southampton,,349223.0,7.1711,0.0,0.0,no
+"Rafūl-Būlus, Mr. Bākhūs",male,21.0,3rd,Cherbourg,Lebanon,2679.0,7.0406,0.0,0.0,no
+"Rasmussen, Mrs. Lena Jakobsen",female,63.0,3rd,Southampton,Norway,65305.0,8.0203,0.0,0.0,no
+"Razi, Mr. Raihed",male,30.0,3rd,Cherbourg,Lebanon,2629.0,7.0407,0.0,0.0,no
+"Reed, Mr. James George",male,18.0,3rd,Southampton,Wales,362316.0,7.05,0.0,0.0,no
+"Reeves, Mr. David",male,36.0,2nd,Southampton,England,17248.0,10.1,0.0,0.0,no
+"Rekic, Mr. Tido",male,38.0,3rd,Southampton,Bosnia,349249.0,7.1711,0.0,0.0,no
+"Renouf, Mr. Peter Henry",male,33.0,2nd,Southampton,Channel Islands,31027.0,21.0,1.0,0.0,no
+"Renouf, Mrs. Lillian",female,30.0,2nd,Southampton,Channel Islands,31027.0,21.0,3.0,0.0,yes
+"Reuchlin, Mr. Jonkheer Johan George",male,37.0,1st,Cherbourg,Netherlands,19972.0,,0.0,0.0,no
+"Reynalds, Sra. Encarnación",female,29.0,2nd,Southampton,Spain,230434.0,13.0,0.0,0.0,yes
+"Reynolds, Mr. Harold",male,21.0,3rd,Southampton,England,342684.0,8.01,0.0,0.0,no
+"Rheims, Mr. George Alexander Lucien",male,33.0,1st,Cherbourg,United States,17607.0,39.12,0.0,0.0,yes
+"Rice, Master. Albert",male,10.0,3rd,Queenstown,Ireland,382652.0,29.0206,4.0,1.0,no
+"Rice, Master. Arthur",male,4.0,3rd,Queenstown,Ireland,382652.0,29.0206,4.0,1.0,no
+"Rice, Master. Eric",male,7.0,3rd,Queenstown,Ireland,382652.0,29.0206,4.0,1.0,no
+"Rice, Master. Eugene Francis",male,2.0,3rd,Queenstown,Ireland,382652.0,29.0206,4.0,1.0,no
+"Rice, Master. George Hugh",male,8.0,3rd,Queenstown,Ireland,382652.0,29.0206,4.0,1.0,no
+"Rice, Mrs. Margaret",female,39.0,3rd,Queenstown,Ireland,382652.0,29.0206,0.0,5.0,no
+"Richard, Mr. Emile Phillippe",male,23.0,2nd,Cherbourg,,2133.0,15.0,0.0,0.0,no
+"Richards, Master. Sibley George",male,0.75,2nd,Southampton,England,29106.0,18.15,1.0,1.0,yes
+"Richards, Master. William Rowe",male,3.0,2nd,Southampton,England,29106.0,18.15,1.0,1.0,yes
+"Richards, Mrs. Emily",female,24.0,2nd,Southampton,England,29106.0,18.15,2.0,3.0,yes
+"Ridsdale, Miss. Lucy",female,58.0,2nd,Southampton,England,14258.0,10.1,0.0,0.0,yes
+"Righini, Mr. Sante",male,22.0,1st,Cherbourg,,17760.0,135.1208,0.0,0.0,no
+"Riihivuori, Miss. Susanna Juhantytär",female,22.0,3rd,Southampton,Finland,3101295.0,39.1309,0.0,0.0,no
+"Rintamäki, Mr. Matti",male,35.0,3rd,Southampton,Finland,3101273.0,7.0206,0.0,0.0,no
+"Riordan, Miss. Hannah",female,22.0,3rd,Queenstown,Ireland,334915.0,7.1405,0.0,0.0,yes
+"Risien, Mr. Samuel Beard",male,69.0,3rd,Southampton,England,364498.0,14.1,0.0,0.0,no
+"Risien, Mrs. Emma Jane",female,64.0,3rd,Southampton,England,364498.0,14.1,0.0,0.0,no
+"Robert, Mrs. Elisabeth Walton",female,43.0,1st,Southampton,United States,24160.0,211.0609,0.0,1.0,yes
+"Robins, Mr. Alexander A.",male,50.0,3rd,Southampton,England,3337.0,14.1,1.0,0.0,no
+"Robins, Mrs. Charity",female,48.0,3rd,Southampton,England,3337.0,14.1,1.0,0.0,no
+"Robins, Mr. Victor",male,45.0,1st,Cherbourg,England,17757.0,247.1006,0.0,0.0,no
+"Roebling, Mr. Washington Augustus II",male,31.0,1st,Southampton,United States,17590.0,50.0911,0.0,0.0,no
+"Rogers, Mr. Reginald Harry",male,18.0,2nd,Southampton,England,28004.0,10.1,0.0,0.0,no
+"Rogers, Mr. William John",male,30.0,3rd,Southampton,Wales,23567.0,8.01,0.0,0.0,no
+"Romaine, Mr. Charles Hallace",male,45.0,1st,Southampton,United States,111428.0,26.11,0.0,0.0,yes
+"Rommetvedt, Mr. Knud Paust",male,49.0,3rd,Southampton,Norway,312993.0,7.1506,0.0,0.0,no
+"Rood, Mr. Hugh Roscoe",male,39.0,1st,Southampton,United States,113767.0,50.0,0.0,0.0,no
+"Rosblom, Miss. Salli Helena",female,2.0,3rd,Southampton,Finland,370129.0,20.0403,1.0,1.0,no
+"Rosblom, Mrs. Helena Wilhelmina",female,41.0,3rd,Southampton,Finland,370129.0,20.0403,0.0,2.0,no
+"Rosblom, Mr. Viktor Richard",male,18.0,3rd,Southampton,Finland,370129.0,20.0403,1.0,1.0,no
+"Rosenbaum, Miss. Edith Louise",female,33.0,1st,Cherbourg,France,17613.0,27.1405,0.0,0.0,yes
+"Rosenshine, Mr. George",male,46.0,1st,Cherbourg,United States,17585.0,79.0,0.0,0.0,no
+"Ross, Mr. John Hugo",male,36.0,1st,Southampton,Canada,13049.0,40.0206,0.0,0.0,no
+"Rothes, Lucy Noël Martha, Countess of",female,33.0,1st,Southampton,England,110152.0,86.1,0.0,0.0,yes
+"Roth, Miss. Sarah",female,26.0,3rd,Southampton,Austria,342712.0,8.01,0.0,0.0,yes
+"Rothschild, Mr. Martin",male,46.0,1st,Cherbourg,United States,17603.0,59.08,1.0,0.0,no
+"Rothschild, Mrs. Elizabeth Jane Anne",female,54.0,1st,Cherbourg,United States,17603.0,59.08,1.0,0.0,yes
+"Rouse, Mr. Richard Henry",male,55.0,3rd,Southampton,England,3594.0,8.01,0.0,0.0,no
+"Rowe, Mr. Alfred G.",male,59.0,1st,Southampton,Peru,113790.0,26.11,0.0,0.0,no
+"Rugg, Miss. Emily",female,22.0,2nd,Southampton,Channel Islands,31026.0,10.1,0.0,0.0,yes
+"Rush, Mr. Alfred George John",male,17.0,3rd,Southampton,England,20589.0,8.01,0.0,0.0,no
+"Ryan, Mr. Edward",male,24.0,3rd,Queenstown,Ireland,383162.0,7.15,0.0,0.0,yes
+"Ryan, Mr. Patrick",male,30.0,3rd,Queenstown,Ireland,371110.0,24.03,0.0,0.0,no
+"Ryerson, Master. John Borie",male,13.0,1st,Cherbourg,United States,17608.0,262.0706,2.0,2.0,yes
+"Ryerson, Miss. Emily Borie",female,18.0,1st,Cherbourg,United States,17608.0,262.0706,2.0,2.0,yes
+"Ryerson, Miss. Susan Parker Suzette",female,21.0,1st,Cherbourg,United States,17608.0,262.0706,2.0,2.0,yes
+"Ryerson, Mr. Arthur Larned",male,61.0,1st,Cherbourg,United States,17608.0,262.0706,1.0,3.0,no
+"Ryerson, Mrs. Emily Maria",female,48.0,1st,Cherbourg,United States,17608.0,262.0706,1.0,3.0,yes
+"Saad, Mr. Amin",male,30.0,3rd,Cherbourg,Lebanon,2671.0,7.0407,0.0,0.0,no
+"Saad, Mr. Khalil",male,27.0,3rd,Cherbourg,Lebanon,2672.0,7.0406,0.0,0.0,no
+"Saalfeld, Mr. Adolphe",male,47.0,1st,Southampton,England,19988.0,30.1,0.0,0.0,yes
+"Sadlier, Mr. Matthew",male,19.0,3rd,Queenstown,Ireland,367655.0,7.1407,0.0,0.0,no
+"Sadowitz, Mr. Henry",male,17.0,3rd,Southampton,England,1855.0,7.111000000000001,0.0,0.0,no
+"Sæther, Mr. Simon Sivertsen",male,43.0,3rd,Southampton,Norway,3101262.0,7.05,0.0,0.0,no
+"Sage, Master. Anthony William",male,13.0,3rd,Southampton,England,2343.0,69.11,8.0,2.0,no
+"Sage, Master. Thomas Henry",male,5.0,3rd,Southampton,England,2343.0,69.11,8.0,2.0,no
+"Sage, Miss. Constance Gladys",female,8.0,3rd,Southampton,England,2343.0,69.11,8.0,2.0,no
+"Sage, Miss. Dorothy",female,14.0,3rd,Southampton,England,2343.0,69.11,8.0,2.0,no
+"Sage, Miss. Elizabeth Ada",female,10.0,3rd,Southampton,England,2343.0,69.11,8.0,2.0,no
+"Sage, Miss. Stella Anne",female,21.0,3rd,Southampton,England,2343.0,69.11,8.0,2.0,no
+"Sage, Mr. Douglas Bullen",male,18.0,3rd,Southampton,England,2343.0,69.11,8.0,2.0,no
+"Sage, Mr. Frederick",male,17.0,3rd,Southampton,England,2343.0,69.11,8.0,2.0,no
+"Sage, Mr. George John",male,20.0,3rd,Southampton,England,2343.0,69.11,8.0,2.0,no
+"Sage, Mr. John George",male,45.0,3rd,Southampton,England,2343.0,69.11,1.0,9.0,no
+"Sage, Mrs. Annie Elizabeth",female,45.0,3rd,Southampton,England,2343.0,69.11,1.0,9.0,no
+"Sägesser, Mlle. Emma",female,24.0,1st,Cherbourg,,17477.0,69.06,0.0,0.0,yes
+"Salander, Mr. Karl Johan",male,24.0,3rd,Southampton,Sweden,7266.0,9.0606,0.0,0.0,no
+"Salkjelsvik, Miss. Anna Kristine",female,21.0,3rd,Southampton,Norway,343120.0,7.13,0.0,0.0,yes
+"Salomon, Mr. Abraham Lincoln",male,43.0,1st,Southampton,United States,111163.0,26.0,0.0,0.0,yes
+"Salonen, Mr. Johan Werner",male,29.0,3rd,Southampton,United States,3101296.0,7.1806,0.0,0.0,no
+"Samaan, Mr. Elias",male,17.0,3rd,Cherbourg,Lebanon,2662.0,21.1307,2.0,0.0,no
+"Samaan, Mr. Hanna Elias",male,40.0,3rd,Cherbourg,Lebanon,2662.0,21.1307,2.0,0.0,no
+"Samaan, Mr. Youssef",male,16.0,3rd,Cherbourg,Lebanon,2662.0,21.1307,2.0,0.0,no
+"Sandström, Miss. Beatrice Irene",female,1.0,3rd,Southampton,Sweden,9549.0,16.14,1.0,1.0,yes
+"Sandström, Miss. Marguerite Rut",female,4.0,3rd,Southampton,Sweden,9549.0,16.14,1.0,1.0,yes
+"Sandström, Mrs. Agnes Charlotta",female,24.0,3rd,Southampton,Sweden,9549.0,16.14,0.0,2.0,yes
+"Sap, Mr. Julius",male,21.0,3rd,Southampton,Belgium,345768.0,9.1,0.0,0.0,yes
+"Saundercock, Mr. William Henry",male,19.0,3rd,Southampton,England,2151.0,8.01,0.0,0.0,no
+"Sawyer, Mr. Frederick Charles",male,24.0,3rd,Southampton,England,342826.0,8.01,0.0,0.0,no
+"Scanlan, Mr. James",male,22.0,3rd,Queenstown,Ireland,36209.0,7.1406,0.0,0.0,no
+"Schabert, Mrs. Emma",female,35.0,1st,Cherbourg,Germany,13236.0,57.15,1.0,0.0,yes
+"Scheerlinck, Mr. Jean",male,29.0,3rd,Southampton,Belgium,345779.0,9.1,0.0,0.0,yes
+"Schmidt, Mr. Augustus",male,22.0,2nd,Southampton,England,248659.0,13.0,0.0,0.0,no
+"Sdycoff, Mr. Todor",male,42.0,3rd,Southampton,,349222.0,7.1711,0.0,0.0,no
+"Sedgwick, Mr. Charles Frederick Waddington",male,28.0,2nd,Southampton,England,244361.0,13.0,0.0,0.0,no
+"Seman, Master. Betros",male,10.0,3rd,Cherbourg,Lebanon,2622.0,4.0,0.0,0.0,no
+"Serreplan, Miss. Auguste",female,30.0,1st,Southampton,,113798.0,31.0,0.0,0.0,yes
+"Seward, Mr. Frederic Kimber",male,34.0,1st,Southampton,United States,113794.0,26.11,0.0,0.0,yes
+"Shannon, Mr. Andrew John",male,35.0,3rd,Southampton,Ireland,370160.0,,,,no
+"Sharp, Mr. Percival",male,29.0,2nd,Southampton,England,244358.0,26.0,0.0,0.0,no
+"Shaughnessy, Mr. Patrick",male,27.0,3rd,Queenstown,Ireland,370374.0,7.15,0.0,0.0,no
+"Shedid, Mr. Daher",male,19.0,3rd,Cherbourg,,2698.0,7.0406,0.0,0.0,no
+"Shellard, Mr. Frederick William Blainey",male,55.0,3rd,Southampton,England,6212.0,15.02,0.0,0.0,no
+"Shelley, Mrs. Imanita Parrish",female,25.0,2nd,Southampton,United States,230433.0,26.0,0.0,1.0,yes
+"Shihāb, Mr. Al-Amīr Fāris",male,26.0,3rd,Cherbourg,Lebanon,2631.0,7.0406,0.0,0.0,no
+"Shine, Miss. Ellen",female,20.0,3rd,Queenstown,Ireland,330968.0,7.1607,0.0,0.0,yes
+"Shorney, Mr. Charles Joseph",male,22.0,3rd,Southampton,England,374910.0,8.01,0.0,0.0,no
+"Shutes, Miss. Elizabeth Weed",female,40.0,1st,Southampton,United States,17582.0,153.0903,0.0,0.0,yes
+"Silvén, Miss. Lyyli Karoliina",female,17.0,2nd,Southampton,Finland,250652.0,13.0,0.0,2.0,yes
+"Silverthorne, Mr. Spencer Victor",male,35.0,1st,Southampton,United States,17475.0,26.0509,0.0,0.0,yes
+"Silvey, Mrs. Alice Gray",female,39.0,1st,Cherbourg,United States,13507.0,55.18,1.0,0.0,yes
+"Silvey, Mr. William Baird",male,51.0,1st,Cherbourg,United States,13507.0,55.18,1.0,0.0,no
+"Simmons, Mr. John",male,40.0,3rd,Southampton,England,392082.0,8.01,0.0,0.0,no
+"Simonius-Blumer, Mr. Colonel (Oberst) Alfons",male,56.0,1st,Southampton,Switzerland,13213.0,35.1,0.0,0.0,yes
+"Sincock, Miss. Maude",female,20.0,2nd,Southampton,England,33112.0,36.15,0.0,0.0,yes
+"Sinkkonen, Miss. Anna",female,30.0,2nd,Southampton,Finland,250648.0,13.0,0.0,0.0,yes
+"Sirayanian, Mr. Orsen",male,22.0,3rd,Cherbourg,Turkey,2669.0,7.0407,0.0,0.0,no
+"Sirota, Mr. Morris",male,20.0,3rd,Southampton,England,392092.0,8.01,0.0,0.0,no
+"Sivic, Mr. Husein",male,40.0,3rd,Southampton,Bosnia,349251.0,7.1711,0.0,0.0,no
+"Sivola, Mr. Antti Wilhelm",male,21.0,3rd,Southampton,United States,3101280.0,7.1806,0.0,0.0,no
+"Sjöblom, Miss. Anna Sofia",female,18.0,3rd,Southampton,Finland,3101265.0,6.0911,0.0,0.0,yes
+"Sjöstedt, Mr. Ernst Adolf",male,59.0,2nd,Southampton,Sweden,237442.0,13.1,0.0,0.0,no
+"Skoog, Master. Harald",male,5.0,3rd,Southampton,United States,347088.0,27.18,3.0,2.0,no
+"Skoog, Master. Karl Thorsten",male,11.0,3rd,Southampton,United States,347088.0,27.18,3.0,2.0,no
+"Skoog, Miss. Mabel",female,9.0,3rd,Southampton,United States,347088.0,27.18,3.0,2.0,no
+"Skoog, Miss. Margit Elizabeth",female,2.0,3rd,Southampton,United States,347088.0,27.18,3.0,2.0,no
+"Skoog, Mrs. Anna Bernhardina",female,43.0,3rd,Southampton,Sweden,347088.0,27.18,1.0,4.0,no
+"Skoog, Mr. Wilhelm Johansson",male,40.0,3rd,Southampton,Sweden,347088.0,27.18,1.0,4.0,no
+"Slabenoff, Mr. Petco",male,42.0,3rd,Southampton,,349214.0,7.1711,0.0,0.0,no
+"Slayter, Miss. Hilda Mary",female,30.0,2nd,Queenstown,Canada,234818.0,12.07,0.0,0.0,yes
+"Slemen, Mr. Richard James",male,35.0,2nd,Southampton,England,28206.0,10.1,0.0,0.0,no
+"Slocovski, Mr. Selman Francis",male,20.0,3rd,Southampton,England,392086.0,8.01,0.0,0.0,no
+"Sloper, Mr. William Thompson",male,28.0,1st,Southampton,United States,113788.0,35.1,0.0,0.0,yes
+"Smart, Mr. John Montgomery",male,56.0,1st,Southampton,England,113792.0,26.11,0.0,0.0,no
+"Smiljanic, Mr. Mile",male,37.0,3rd,Southampton,Croatia,315037.0,8.1303,0.0,0.0,no
+"Smith, Miss. Marion Elsie",female,49.0,2nd,Southampton,England,31418.0,13.0,0.0,0.0,yes
+"Smith, Mr. James Clinch",male,56.0,1st,Cherbourg,France,17764.0,30.1311,0.0,0.0,no
+"Smith, Mr. Lucian Philip",male,24.0,1st,Cherbourg,United States,13695.0,60.0,1.0,0.0,no
+"Smith, Mr. Richard William",male,57.0,1st,Southampton,England,113056.0,26.0,0.0,0.0,no
+"Smith, Mrs. Mary Eloise",female,18.0,1st,Cherbourg,United States,13695.0,60.0,1.0,0.0,yes
+"Smyth, Miss. Julia",female,18.0,3rd,Queenstown,Ireland,335432.0,7.1408,0.0,0.0,yes
+"Smyth, Mr. Thomas",male,27.0,3rd,Queenstown,Ireland,384461.0,7.15,0.0,0.0,no
+"Snyder, Mr. John Pillsbury",male,24.0,1st,Southampton,United States,21228.0,82.0504,1.0,0.0,yes
+"Snyder, Mrs. Nelle",female,23.0,1st,Southampton,United States,21228.0,82.0504,1.0,0.0,yes
+"Sobey, Mr. Samuel James Hayden",male,25.0,2nd,Southampton,England,29178.0,13.0,0.0,0.0,no
+"Søholt, Mr. Peter Andreas Lauritz Andersen",male,19.0,3rd,Southampton,Norway,348124.0,7.13,0.0,0.0,no
+"Somerton, Mr. Francis William",male,31.0,3rd,Southampton,England,18509.0,8.01,0.0,0.0,no
+"Spector, Mr. Woolf",male,23.0,3rd,Southampton,England,3236.0,8.01,0.0,0.0,no
+"Spedden, Master. Robert Douglas",male,6.0,1st,Cherbourg,United States,16966.0,134.1,0.0,2.0,yes
+"Spedden, Mr. Frederic Oakley",male,45.0,1st,Cherbourg,United States,16966.0,134.1,1.0,1.0,yes
+"Spedden, Mrs. Margaretta Corning",female,39.0,1st,Cherbourg,United States,16966.0,134.1,1.0,1.0,yes
+"Spencer, Mrs. Marie Eugenie",female,48.0,1st,Cherbourg,United States,17569.0,146.1005,1.0,0.0,yes
+"Spencer, Mr. William Augustus",male,57.0,1st,Cherbourg,United States,17569.0,146.1005,1.0,0.0,no
+"Spinner, Mr. Henry John",male,31.0,3rd,Southampton,England,369943.0,8.01,0.0,0.0,no
+"Stähelin-Maeglin, Dr. Max",male,32.0,1st,Southampton,Switzerland,13214.0,30.1,0.0,0.0,yes
+"Staneff, Mr. Ivan",male,23.0,3rd,Southampton,Bulgaria,349208.0,7.1711,0.0,0.0,no
+"Stankovic, Mr. Ivan",male,33.0,3rd,Cherbourg,Croatia,349239.0,8.1309,0.0,0.0,no
+"Stanley, Miss. Amy Zillah Elsie",female,24.0,3rd,Southampton,England,2314.0,7.11,0.0,0.0,yes
+"Stanley, Mr. Rowland Edwin",male,22.0,3rd,Southampton,England,45380.0,8.01,0.0,0.0,no
+"Stanton, Mr. Samuel Ward",male,42.0,2nd,Cherbourg,United States,237734.0,15.0,0.0,0.0,no
+"Stead, Mr. William Thomas",male,62.0,1st,Southampton,England,113514.0,26.11,0.0,0.0,no
+"Stengel, Mr. Charles Emil Henry",male,54.0,1st,Cherbourg,United States,11778.0,55.081,1.0,0.0,yes
+"Stengel, Mrs. Annie May",female,43.0,1st,Cherbourg,Ireland,11778.0,55.081,1.0,0.0,yes
+"Stephenson, Mrs. Martha",female,52.0,1st,Cherbourg,United States,36947.0,78.0504,1.0,0.0,yes
+"Stewart, Mr. Albert Ankeny",male,64.0,1st,Cherbourg,United States,17605.0,27.1405,0.0,0.0,no
+"Stokes, Mr. Philip Joseph",male,24.0,2nd,Southampton,England,13540.0,10.1,0.0,0.0,no
+"Stone, Mrs. Martha Evelyn",female,61.0,1st,Southampton,United States,113572.0,80.0,0.0,0.0,yes
+"Storey, Mr. Thomas",male,59.0,3rd,Southampton,England,370160.0,,0.0,0.0,no
+"Stoytcheff, Mr. Ilia",male,19.0,3rd,Southampton,Bulgaria,349205.0,7.1711,0.0,0.0,no
+"Strandberg, Miss. Ida Sofia",female,22.0,3rd,Southampton,Finland,7553.0,9.1609,0.0,0.0,no
+"Strandén, Mr. Juho Niilosson",male,30.0,3rd,Southampton,Finland,3101288.0,7.1806,0.0,0.0,yes
+"Straus, Mr. Isidor",male,67.0,1st,Southampton,United States,17483.0,221.1507,1.0,0.0,no
+"Straus, Mrs. Rosalie Ida",female,63.0,1st,Southampton,Germany,17483.0,221.1507,1.0,0.0,no
+"Strilic, Mr. Ivan",male,27.0,3rd,Southampton,Croatia,315083.0,8.1303,0.0,0.0,no
+"Ström, Miss. Telma Matilda",female,2.0,3rd,Southampton,United States,347054.0,10.0903,0.0,1.0,no
+"Ström, Mrs. Elna Matilda",female,29.0,3rd,Southampton,Sweden,347054.0,10.0903,1.0,1.0,no
+"Sunderland, Mr. Victor Francis",male,20.0,3rd,Southampton,England,392089.0,8.01,0.0,0.0,yes
+"Sundman, Mr. Johan Julian",male,44.0,3rd,Southampton,Finland,3101269.0,7.1806,0.0,0.0,yes
+"Sutehall, Mr. Henry Jr",male,25.0,3rd,Southampton,England,392076.0,7.01,0.0,0.0,no
+"Sutton, Mr. Frederick",male,61.0,1st,Southampton,England,36963.0,32.0605,0.0,0.0,no
+"Svensson, Mr. Johan",male,74.0,3rd,Southampton,Sweden,347060.0,7.1506,0.0,0.0,no
+"Svensson, Mr. Johan Cervin",male,14.0,3rd,Southampton,Sweden,7538.0,9.0406,0.0,0.0,yes
+"Svensson, Mr. Olof",male,24.0,3rd,Southampton,Sweden,350035.0,7.1511,0.0,0.0,no
+"Swane, Mr. George",male,19.0,2nd,Southampton,England,248734.0,13.0,0.0,0.0,no
+"Sweet, Mr. George Frederick",male,14.0,2nd,Southampton,England,220845.0,65.0,0.0,0.0,no
+"Swift, Mrs. Margaret Welles",female,46.0,1st,Southampton,United States,17466.0,25.1807,0.0,0.0,yes
+"Tannūs, Master. As'ad",male,0.4166666667,3rd,Cherbourg,Lebanon,2625.0,8.1004,0.0,1.0,yes
+"Tannūs, Mr. Bashīr",male,30.0,3rd,Cherbourg,Lebanon,2621.0,6.0809,1.0,0.0,no
+"Tannūs, Mrs. Thamīn",female,16.0,3rd,Cherbourg,Lebanon,2625.0,8.1004,1.0,1.0,yes
+"Taussig, Miss. Ruth",female,18.0,1st,Southampton,United States,110413.0,79.13,0.0,2.0,yes
+"Taussig, Mr. Emil",male,52.0,1st,Southampton,United States,110413.0,79.13,1.0,1.0,no
+"Taussig, Mrs. Tillie",female,39.0,1st,Southampton,United States,110413.0,79.13,1.0,1.0,yes
+"Taylor, Mr. Elmer Zebley",male,48.0,1st,Southampton,United States,19996.0,52.0,1.0,0.0,yes
+"Taylor, Mr. Percy Cornelius",male,40.0,2nd,Southampton,England,250654.0,,,,no
+"Taylor, Mrs. Juliet Cummins",female,49.0,1st,Southampton,United States,19996.0,52.0,1.0,0.0,yes
+"Tenglin, Mr. Gunnar Isidor",male,25.0,3rd,Southampton,Sweden,350033.0,7.1511,0.0,0.0,yes
+"Thayer, Mr. John Borland",male,49.0,1st,Cherbourg,United States,17421.0,110.1708,1.0,1.0,no
+"Thayer, Mr. John Borland jr",male,17.0,1st,Cherbourg,United States,17421.0,110.1708,0.0,2.0,yes
+"Thayer, Mrs. Marian Longstreth",female,39.0,1st,Cherbourg,United States,17421.0,110.1708,1.0,1.0,yes
+"Theobald, Mr. Thomas Leonard",male,34.0,3rd,Southampton,England,363294.0,8.01,0.0,0.0,no
+"Thomas/Tannous, Mr. John",male,34.0,3rd,Cherbourg,,2681.0,6.0809,0.0,0.0,no
+"Thomas/Tannous, Mr. Tannous",male,16.0,3rd,Cherbourg,,2684.0,7.0406,0.0,0.0,no
+"Thompson, Mr. Alexander Mellis",male,37.0,3rd,Southampton,Scotland,32302.0,8.01,0.0,0.0,no
+"Thorne, Miss. Gertrude Maybelle",female,38.0,1st,Cherbourg,United States,17585.0,80.0,0.0,0.0,yes
+"Thorneycroft, Mr. Percival",male,37.0,3rd,Southampton,England,376564.0,16.02,1.0,0.0,no
+"Thorneycroft, Mrs. Florence Kate",female,33.0,3rd,Southampton,England,376564.0,16.02,1.0,0.0,yes
+"Tikkanen, Mr. Juho",male,32.0,3rd,Southampton,Finland,3101293.0,7.1806,0.0,0.0,no
+"Tobin, Mr. Roger",male,20.0,3rd,Queenstown,Ireland,383121.0,7.15,0.0,0.0,no
+"Todoroff, Mr. Lalio",male,23.0,3rd,Southampton,Bulgaria,349216.0,7.1711,0.0,0.0,no
+"Tomlin, Mr. Ernest Portage",male,22.0,3rd,Southampton,England,364499.0,8.01,0.0,0.0,no
+"Toomey, Miss. Ellen Mary",female,48.0,2nd,Southampton,Ireland,13531.0,10.1,0.0,0.0,yes
+"Törber, Mr. Ernst Wilhelm",male,41.0,3rd,Southampton,England,364511.0,8.01,0.0,0.0,no
+"Torfa, Mr. Assad",male,20.0,3rd,Cherbourg,Lebanon,2673.0,7.0407,0.0,0.0,no
+"Törnquist, Mr. William Henry",male,26.0,3rd,Southampton,Sweden,,,0.0,0.0,yes
+"Totevski, Mr. Hristo Danchev",male,25.0,3rd,Southampton,Bulgaria,349203.0,7.1711,0.0,0.0,no
+"Troupiansky, Mr. Moses Aaron",male,23.0,2nd,Southampton,England,233639.0,13.0,0.0,0.0,no
+"Trout, Mrs. Jessie Laird",female,27.0,2nd,Southampton,Scotland,240929.0,12.13,0.0,0.0,yes
+"Troutt, Miss. Edwina Celia",female,27.0,2nd,Southampton,England,34218.0,10.1,0.0,0.0,yes
+"Tucker, Mr. Gilbert Milligan jr",male,31.0,1st,Cherbourg,United States,2543.0,28.1009,0.0,0.0,yes
+"Tu'mah, Master. Jirjis Yūsuf",male,8.0,3rd,Cherbourg,Lebanon,2650.0,15.0411,1.0,1.0,yes
+"Tu'mah, Miss. Mariyam",female,9.0,3rd,Cherbourg,Lebanon,2650.0,15.0411,1.0,1.0,yes
+"Tu'mah, Mrs. Hinnah",female,27.0,3rd,Cherbourg,Lebanon,2650.0,15.0411,0.0,2.0,yes
+"Turcin, Mr. Stjepan",male,36.0,3rd,Southampton,Croatia,349247.0,7.1711,0.0,0.0,no
+"Turja, Miss. Anna Sofia",female,18.0,3rd,Southampton,Finland,4138.0,9.161,0.0,0.0,yes
+"Turkula, Mrs. Hedwig",female,63.0,3rd,Southampton,Finland,4134.0,9.1109,0.0,0.0,yes
+"Turpin, Mrs. Dorothy Ann",female,26.0,2nd,Southampton,England,11668.0,21.0,1.0,0.0,no
+"Turpin, Mr. William John",male,29.0,2nd,Southampton,England,11668.0,21.0,1.0,0.0,no
+"Uruchurtu, Don. Manuel Ramirez",male,39.0,1st,Cherbourg,Mexico,17601.0,27.1405,0.0,0.0,no
+"van Billiard, Master. James William",male,10.0,3rd,Southampton,England,851.0,14.1,1.0,1.0,no
+"van Billiard, Master. Walter John",male,9.0,3rd,Southampton,England,851.0,14.1,1.0,1.0,no
+"van Billiard, Mr. Austin Blyler",male,35.0,3rd,Southampton,England,851.0,14.1,0.0,2.0,no
+"Van den Steen, Mr. Leo Peter",male,28.0,3rd,Southampton,Belgium,345783.0,9.1,0.0,0.0,no
+"Vandercruyssen, Mr. Victor",male,46.0,3rd,Southampton,Belgium,345765.0,9.0,0.0,0.0,no
+"Van der hoef, Mr. Wyckoff",male,61.0,1st,Southampton,United States,111240.0,33.1,0.0,0.0,no
+"Vanderplancke, Miss. Augusta Maria",female,18.0,3rd,Southampton,Belgium,345764.0,18.0,2.0,0.0,no
+"Vanderplancke, Mr. Julius",male,31.0,3rd,Southampton,Belgium,345763.0,18.0,3.0,0.0,no
+"Vanderplancke, Mr. Leo Edmondus",male,15.0,3rd,Southampton,Belgium,345763.0,18.0,2.0,0.0,no
+"Vanderplancke, Mrs. Emelie Maria",female,31.0,3rd,Southampton,Belgium,345763.0,18.0,1.0,0.0,no
+"Van de Velde, Mr. Johannes Josef",male,35.0,3rd,Southampton,Belgium,345780.0,9.1,0.0,0.0,no
+"Vandewalle, Mr. Nestor Cyriel",male,28.0,3rd,Southampton,Belgium,345770.0,9.1,0.0,0.0,no
+"Van Impe, Miss. Catharina",female,10.0,3rd,Southampton,Belgium,345773.0,24.03,0.0,2.0,no
+"Van Impe, Mr. Jean Baptiste",male,36.0,3rd,Southampton,Belgium,345773.0,24.03,1.0,1.0,no
+"Van Impe, Mrs. Rosalie Paula",female,30.0,3rd,Southampton,Belgium,345773.0,24.03,1.0,1.0,no
+"van Melckebeke, Mr. Philemon",male,23.0,3rd,Southampton,Belgium,345777.0,9.1,0.0,0.0,no
+"Vartanian, Mr. David",male,22.0,3rd,Cherbourg,Turkey,2658.0,7.0406,0.0,0.0,yes
+"Veal, Mr. James",male,40.0,2nd,Southampton,United States,28221.0,13.0,0.0,0.0,no
+"Vendel, Mr. Olof Edvin",male,20.0,3rd,Southampton,Sweden,350416.0,7.1701,0.0,0.0,no
+"Veström, Miss. Hulda Amanda Adolfina",female,14.0,3rd,Southampton,Sweden,350406.0,7.1701,0.0,0.0,no
+"Vovk, Mr. Janko",male,21.0,3rd,Southampton,Slovenia,349252.0,7.1711,0.0,0.0,no
+"Waelens, Mr. Achille",male,22.0,3rd,Southampton,Belgium,345767.0,9.0,0.0,0.0,no
+"Walker, Mr. William Anderson",male,48.0,1st,Southampton,United States,36967.0,34.0,0.0,0.0,no
+"Wallcroft, Miss. Ellen 'Nellie'",female,36.0,2nd,Southampton,England,13528.0,21.0,0.0,0.0,yes
+"Ward, Miss. Annie Moore",female,37.0,1st,Cherbourg,,17755.0,512.0607,0.0,0.0,yes
+"Ware, Mr. Frederick",male,35.0,3rd,Southampton,England,359309.0,8.01,0.0,0.0,no
+"Ware, Mr. John James",male,47.0,2nd,Southampton,England,31352.0,21.0,1.0,0.0,no
+"Ware, Mrs. Florence Louise",female,32.0,2nd,Southampton,England,31352.0,21.0,0.0,0.0,yes
+"Ware, Mr. William Jeffery",male,23.0,2nd,Southampton,England,28666.0,10.1,1.0,0.0,no
+"Warren, Mr. Charles William",male,31.0,3rd,Southampton,England,49867.0,7.11,0.0,0.0,no
+"Warren, Mr. Frank Manley",male,63.0,1st,Cherbourg,United States,110813.0,75.05,1.0,0.0,no
+"Warren, Mrs. Anna Sophia",female,60.0,1st,Cherbourg,England,110813.0,75.05,1.0,0.0,yes
+"Watson, Mr. Ennis Hastings",male,19.0,2nd,Belfast,Northern Ireland,239856.0,,0.0,0.0,no
+"Watt, Miss. Robertha Josephine",female,12.0,2nd,Southampton,Scotland,33595.0,15.15,0.0,0.0,yes
+"Watt, Mrs. Elizabeth",female,40.0,2nd,Southampton,Scotland,33595.0,15.15,0.0,0.0,yes
+"Wazli, Mr. Yousif Ahmed",male,23.0,3rd,Cherbourg,Lebanon,2647.0,7.0406,0.0,0.0,no
+"Webber, Miss. Susan",female,37.0,2nd,Southampton,England,27267.0,13.0,0.0,0.0,yes
+"Webber, Mr. James",male,66.0,3rd,Southampton,England,3101316.0,8.01,0.0,0.0,no
+"Weir, Colonel. John",male,59.0,1st,Southampton,United States,113800.0,26.11,0.0,0.0,no
+"Weisz, Mr. Léopold",male,37.0,2nd,Southampton,Hungary,228414.0,26.0,1.0,0.0,no
+"Weisz, Mrs. Mathilde Françoise",female,37.0,2nd,Southampton,England,228414.0,26.0,1.0,0.0,yes
+"Wells, Master. Ralph Lester",male,2.0,2nd,Southampton,England,29103.0,23.0,1.0,1.0,yes
+"Wells, Miss. Joan",female,4.0,2nd,Southampton,England,29103.0,23.0,1.0,1.0,yes
+"Wells, Mrs. Addie Dart",female,29.0,2nd,Southampton,England,29103.0,23.0,0.0,2.0,yes
+"Wennerström, Mr. August",male,27.0,3rd,Southampton,Sweden,350043.0,7.1511,0.0,0.0,yes
+"West, Miss. Barbara Joyce",female,0.8333333333,2nd,Southampton,England,34651.0,27.15,1.0,2.0,yes
+"West, Miss. Constance Mirium",female,4.0,2nd,Southampton,England,34651.0,27.15,1.0,2.0,yes
+"West, Mr. Edwy Arthur",male,36.0,2nd,Southampton,England,34651.0,27.15,1.0,2.0,no
+"West, Mrs. Ada Mary",female,33.0,2nd,Southampton,England,34651.0,27.15,1.0,2.0,yes
+"Wheadon, Mr. Edward Henry",male,65.0,2nd,Southampton,England,24579.0,10.1,0.0,0.0,no
+"Wheeler, Mr. Edwin Charles",male,26.0,2nd,Southampton,England,2159.0,12.1706,0.0,0.0,no
+"Whilems, Mr. Charles",male,31.0,2nd,Southampton,England,244270.0,13.0,0.0,0.0,yes
+"White, Mr. Percival Wayland",male,54.0,1st,Southampton,United States,35281.0,77.0509,0.0,1.0,no
+"White, Mr. Richard Frasar",male,21.0,1st,Southampton,United States,35281.0,77.0509,0.0,1.0,no
+"White, Mrs. Ella",female,55.0,1st,Cherbourg,,17760.0,135.1208,0.0,0.0,yes
+"Wick, Col. George Dennick",male,57.0,1st,Southampton,United States,36928.0,164.1704,1.0,1.0,no
+"Wick, Miss. Mary Natalie",female,31.0,1st,Southampton,United States,36928.0,164.1704,0.0,2.0,yes
+"Wick, Mrs. Mary Peebles",female,45.0,1st,Southampton,United States,36928.0,164.1704,1.0,1.0,yes
+"Widegren, Mr. Carl Peter",male,51.0,3rd,Southampton,Sweden,347064.0,7.15,0.0,0.0,no
+"Widener, Mr. George Dunton",male,50.0,1st,Southampton,United States,113503.0,211.1,1.0,1.0,no
+"Widener, Mr. Harry Elkins",male,27.0,1st,Southampton,United States,113503.0,211.1,0.0,2.0,no
+"Widener, Mrs. Eleanor",female,50.0,1st,Southampton,United States,113503.0,211.1,1.0,1.0,yes
+"Wiklund, Mr. Jakob Alfred",male,18.0,3rd,Southampton,Finland,3101267.0,6.0911,1.0,0.0,no
+"Wiklund, Mr. Karl Johan",male,21.0,3rd,Southampton,Finland,3101266.0,6.0911,1.0,0.0,no
+"Wilkes, Mrs. Ellen",female,47.0,3rd,Southampton,England,363272.0,7.0,1.0,0.0,yes
+"Wilkinson, Mrs. Elizabeth Anne",female,30.0,2nd,Southampton,England,2926.0,26.0,1.0,0.0,yes
+"Willard, Miss. Constance",female,21.0,1st,Southampton,United States,113795.0,26.11,0.0,0.0,yes
+"Willer, Mr. Aaron",male,37.0,3rd,Cherbourg,,3410.0,8.1403,0.0,0.0,no
+"Willey, Mr. Edward John",male,21.0,3rd,Southampton,Wales,751.0,7.11,0.0,0.0,no
+"Williams, Mr. Charles Duane",male,51.0,1st,Cherbourg,Switzerland,17597.0,61.0707,0.0,1.0,no
+"Williams, Mr. Charles Eugene",male,23.0,2nd,Southampton,England,244373.0,13.0,0.0,0.0,yes
+"Williams, Mr. Fletcher Fellowes Lambert",male,43.0,1st,Southampton,United States,113510.0,35.0,0.0,0.0,no
+"Williams, Mr. Howard Hugh",male,28.0,3rd,Southampton,England,2466.0,8.01,0.0,0.0,no
+"Williams, Mr. Leslie",male,28.0,3rd,Southampton,Wales,54636.0,16.02,0.0,0.0,no
+"Williams, Mr. Richard Norris II",male,21.0,1st,Cherbourg,Switzerland,17597.0,61.0707,0.0,1.0,yes
+"Wilson, Miss. Helen Alice",female,31.0,1st,Cherbourg,,16966.0,134.1,0.0,0.0,yes
+"Windeløv, Mr. Einar",male,21.0,3rd,Southampton,South Africa,3101317.0,7.05,0.0,0.0,no
+"Wirz, Mr. Albert",male,17.0,3rd,Southampton,Switzerland,315154.0,8.1303,0.0,0.0,no
+"Wiseman, Mr. Philippe",male,54.0,3rd,Southampton,England,34244.0,7.05,0.0,0.0,no
+"Wittevrongel, Mr. Camilius Aloysius",male,36.0,3rd,Southampton,Belgium,345771.0,9.1,0.0,0.0,no
+"Woodward, Mr. John Wesley",male,32.0,2nd,Southampton,England,250654.0,,,,no
+"Woolner, Mr. Hugh",male,46.0,1st,Southampton,England,19947.0,35.1,0.0,0.0,yes
+"Wright, Miss. Marion",female,26.0,2nd,Southampton,England,220844.0,13.1,0.0,0.0,yes
+"Wright, Mr. George",male,62.0,1st,Southampton,Canada,113807.0,26.11,0.0,0.0,no
+"Yasbeck, Mr. Antoni",male,27.0,3rd,Cherbourg,Lebanon,2659.0,14.0901,1.0,0.0,no
+"Yazbeck, Mrs. Selini",female,15.0,3rd,Cherbourg,Lebanon,2659.0,14.0901,1.0,0.0,yes
+"Young, Miss. Marie Grice",female,36.0,1st,Cherbourg,United States,17760.0,135.1208,0.0,0.0,yes
+"Yousseff (Abi Saab), Mr. Gerios",male,26.0,3rd,Cherbourg,Lebanon,2685.0,7.0406,0.0,0.0,no
+"Youssiff (Sam'aan), Mr. Gerios",male,45.0,3rd,Cherbourg,Lebanon,2628.0,7.0407,0.0,0.0,no
+"Yūsuf, Mrs. Kātrīn",female,23.0,3rd,Cherbourg,Lebanon,2668.0,22.0702,0.0,2.0,yes
+"Yvois, Miss. Henriette",female,24.0,2nd,Southampton,France,248747.0,13.0,0.0,0.0,no
+"Zakarian, Mr. Mapriededer",male,22.0,3rd,Cherbourg,Turkey,2656.0,7.0406,0.0,0.0,no
+"Zakarian, Mr. Ortin",male,27.0,3rd,Cherbourg,Turkey,2670.0,7.0406,0.0,0.0,no
+"Zenni, Mr. Philip",male,25.0,3rd,Cherbourg,Lebanon,2620.0,7.0406,0.0,0.0,yes
+"Zimmermann, Mr. Leo",male,29.0,3rd,Southampton,Germany,315082.0,7.1706,0.0,0.0,no
+"Abbott, Mr. Ernest Owen",male,21.0,victualling crew,Southampton,England,,,,,no
+"Abrams, Mr. William Thomas",male,34.0,engineering crew,Southampton,England,,,,,no
+"Adams, Mr. Robert John",male,26.0,engineering crew,Southampton,England,,,,,no
+"Ahier, Mr. Percy Snowden",male,20.0,victualling crew,Southampton,Channel Islands,,,,,no
+"Akerman, Mr. Albert Edward",male,31.0,victualling crew,Southampton,England,,,,,no
+"Akerman, Mr. Joseph Francis",male,37.0,victualling crew,Southampton,England,,,,,no
+"Allaria, Sig. Battista Antonio",male,22.0,restaurant staff,Southampton,England,,,,,no
+"Allen, Mr. Ernest Frederick",male,24.0,engineering crew,Southampton,England,,,,,yes
+"Allen, Mr. Frederick",male,17.0,victualling crew,Southampton,England,,,,,no
+"Allen, Mr. George",male,26.0,victualling crew,Southampton,England,,,,,no
+"Allen, Mr. Henry",male,30.0,engineering crew,Southampton,England,,,,,no
+"Allen, Mr. Robert Spencer",male,36.0,victualling crew,Southampton,England,,,,,no
+"Allsop, Mr. Alfred Samuel",male,36.0,engineering crew,Belfast,England,,,,,no
+"Allsop, Mr. Frank Richard",male,41.0,victualling crew,Belfast,England,,,,,no
+"Anderson, Mr. James",male,40.0,deck crew,Southampton,England,,,,,yes
+"Anderson, Mr. Walter Yuill",male,48.0,victualling crew,Southampton,England,,,,,no
+"Andrews, Mr. Charles Edward",male,19.0,victualling crew,Southampton,England,,,,,yes
+"Archer, Mr. Ernest Edward",male,35.0,deck crew,Southampton,England,,,,,yes
+"Ashcroft, Mr. Austin Aloysius",male,26.0,victualling crew,Southampton,England,,,,,no
+"Ashe, Mr. Henry Wellesley",male,41.0,victualling crew,Southampton,Ireland,,,,,no
+"Aspeslagh, Mr. Georges",male,26.0,restaurant staff,Southampton,England,,,,,no
+"Avery, Mr. James Albert",male,21.0,engineering crew,Southampton,England,,,,,yes
+"Ayling, Mr. Edwin George",male,23.0,victualling crew,Southampton,England,,,,,no
+"Back, Mr. Charles Frederick",male,37.0,victualling crew,Belfast,England,,,,,no
+"Baggott, Mr. Allen Marden",male,28.0,victualling crew,Southampton,England,,,,,yes
+"Bagley, Mr. Edward Henry",male,33.0,victualling crew,Southampton,England,,,,,no
+"Bailey, Mr. George Francis",male,36.0,victualling crew,Belfast,England,,,,,no
+"Bailey, Mr. George Frank",male,46.0,engineering crew,Southampton,Wales,,,,,no
+"Bailey, Mr. Henry Joseph",male,46.0,deck crew,Southampton,England,,,,,yes
+"Baines, Mr. Richard",male,24.0,engineering crew,Southampton,England,,,,,no
+"Ball, Mr. Percy",male,19.0,victualling crew,Southampton,England,,,,,yes
+"Banfi, Sig. Ugo",male,24.0,restaurant staff,Southampton,England,,,,,no
+"Bannon, Mr. John Joseph",male,34.0,engineering crew,Southampton,England,,,,,no
+"Barker, Mr. Albert Vale",male,19.0,victualling crew,Southampton,England,,,,,no
+"Barker, Mr. Ernest Thomas",male,41.0,victualling crew,Southampton,England,,,,,no
+"Barker, Mr. Reginald Lomond",male,42.0,victualling crew,Belfast,England,,,,,no
+"Barlow, Mr. Charles",male,30.0,engineering crew,Southampton,England,,,,,no
+"Barlow, Mr. George",male,36.0,victualling crew,Southampton,England,,,,,no
+"Barnes, Mr. Charles",male,29.0,engineering crew,Southampton,England,,,,,no
+"Barnes, Mr. Frederick Charles",male,40.0,victualling crew,Southampton,England,,,,,no
+"Barnes, Mr. John",male,40.0,engineering crew,Southampton,England,,,,,no
+"Barratt, Mr. Arthur",male,16.0,victualling crew,Southampton,England,,,,,no
+"Barrett, Mr. Frederick",male,28.0,engineering crew,Southampton,England,,,,,yes
+"Barrett, Mr. Frederick William",male,33.0,engineering crew,Southampton,England,,,,,no
+"Barringer, Mr. Arthur William",male,34.0,victualling crew,Belfast,England,,,,,no
+"Barrow, Mr. Charles Henry John Barrow",male,36.0,victualling crew,Southampton,England,,,,,no
+"Barrows, Mr. William",male,32.0,victualling crew,Southampton,England,,,,,no
+"Barton, Mr. Sidney John",male,26.0,victualling crew,Southampton,England,,,,,no
+"Basilico, Sig. Giovanni",male,27.0,restaurant staff,Southampton,England,,,,,no
+"Baxter, Mr. Harry Ross",male,53.0,victualling crew,Southampton,England,,,,,no
+"Baxter, Mr. Thomas Ferguson",male,55.0,victualling crew,Southampton,Scotland,,,,,no
+"Bazzi, Sig. Narciso",male,33.0,restaurant staff,Southampton,England,,,,,no
+"Beattie, Mr. Joseph",male,35.0,engineering crew,Belfast,Northern Ireland,,,,,no
+"Beauchamp, Mr. George William",male,24.0,engineering crew,Southampton,England,,,,,yes
+"Bedford, Mr. William Barnett",male,31.0,victualling crew,Southampton,England,,,,,no
+"Beedem, Mr. George Arthur",male,35.0,victualling crew,Southampton,England,,,,,no
+"Beere, Mr. William",male,19.0,victualling crew,Southampton,England,,,,,no
+"Bell, Mr. Joseph",male,51.0,engineering crew,Belfast,England,,,,,no
+"Bendell, Mr. Frank",male,24.0,engineering crew,Southampton,England,,,,,no
+"Benham, Mr. Fred John",male,30.0,victualling crew,Southampton,England,,,,,no
+"Bennett, Mr. George Alfred",male,30.0,engineering crew,Southampton,England,,,,,no
+"Bennett, Mrs. Mabel",female,33.0,victualling crew,Southampton,England,,,,,yes
+"Benville, Mr. Edward",male,47.0,engineering crew,Southampton,England,,,,,no
+"Bernardi, Sig. Battista",male,22.0,restaurant staff,Southampton,England,,,,,no
+"Bessant, Mr. Edward",male,31.0,victualling crew,Southampton,England,,,,,no
+"Bessant, Mr. William Edward Lowe",male,39.0,engineering crew,Southampton,England,,,,,no
+"Best, Mr. Edwin Alfred",male,40.0,victualling crew,Belfast,England,,,,,no
+"Beux, Mr. David",male,26.0,restaurant staff,Southampton,England,,,,,no
+"Bevis, Mr. Joseph Henry",male,22.0,engineering crew,Southampton,England,,,,,no
+"Biddlecombe, Mr. Reginald Charles",male,31.0,engineering crew,Southampton,England,,,,,no
+"Bietrix, Mr. George Baptiste",male,28.0,restaurant staff,Southampton,England,,,,,no
+"Biggs, Mr. Edward Charles",male,20.0,engineering crew,Southampton,England,,,,,no
+"Billows, Mr. James",male,20.0,engineering crew,Southampton,England,,,,,no
+"Binstead, Mr. Walter William",male,20.0,engineering crew,Southampton,England,,,,,yes
+"Bishop, Mr. Walter Alexander",male,34.0,victualling crew,Belfast,England,,,,,no
+"Blackman, Mr. Albert Edward",male,23.0,engineering crew,Southampton,England,,,,,no
+"Black, Mr. Alexander",male,28.0,engineering crew,Southampton,England,,,,,no
+"Black, Mr. D.",male,41.0,engineering crew,Southampton,England,,,,,no
+"Blake, Mr. Percival Albert",male,23.0,engineering crew,Southampton,England,,,,,yes
+"Blake, Mr. Seaton",male,26.0,engineering crew,Belfast,England,,,,,no
+"Blake, Mr. Thomas Henry",male,37.0,engineering crew,Southampton,England,,,,,no
+"Blaney, Mr. James",male,32.0,engineering crew,Southampton,Northern Ireland,,,,,no
+"Blann, Mr. Eustace Horatius",male,22.0,engineering crew,Southampton,England,,,,,no
+"Bliss, Mrs. Emma",female,45.0,victualling crew,Southampton,Switzerland,,,,,yes
+"Blumet, Mr. Jean Baptiste",male,26.0,restaurant staff,Southampton,England,,,,,no
+"Bochatay, Mr. Alexis Joseph",male,30.0,victualling crew,Southampton,England,,,,,no
+"Bochet, Mr. Pierre Giuseppe",male,43.0,restaurant staff,Southampton,England,,,,,no
+"Bogie, Mr. Norman Leslie",male,59.0,victualling crew,Southampton,Scotland,,,,,no
+"Bolhuis, Mr. Hendrik",male,27.0,restaurant staff,Southampton,England,,,,,no
+"Bond, Mr. William John",male,40.0,victualling crew,Belfast,England,,,,,no
+"Boothby, Mr. Walter Thomas",male,38.0,victualling crew,Southampton,England,,,,,no
+"Boston, Mr. William John",male,33.0,victualling crew,Belfast,England,,,,,no
+"Bott, Mr. William Thomas",male,46.0,engineering crew,Southampton,England,,,,,no
+"Boughton, Mr. Bernard John",male,24.0,victualling crew,Southampton,England,,,,,no
+"Bowker, Miss. Ruth Harwood",female,31.0,restaurant staff,Southampton,England,,,,,yes
+"Boxhall, Mr. Joseph Groves",male,28.0,deck crew,Belfast,England,,,,,yes
+"Boyd, Mr. John",male,37.0,victualling crew,Southampton,England,,,,,no
+"Boyes, Mr. John Henry",male,36.0,victualling crew,Belfast,England,,,,,no
+"Bradley, Mr. Patrick Joseph",male,39.0,engineering crew,Southampton,England,,,,,no
+"Bradley, Mr. T.",male,29.0,deck crew,Southampton,England,,,,,no
+"Bradshaw, Mr. John Albert Perkin",male,43.0,victualling crew,Southampton,England,,,,,no
+"Brewer, Mr. Harry",male,30.0,engineering crew,Southampton,England,,,,,no
+"Brewster, Mr. George Henry",male,52.0,victualling crew,Belfast,England,,,,,no
+"Briant, Mr. Albert",male,34.0,engineering crew,Southampton,England,,,,,no
+"Brice, Mr. Walter Thomas",male,43.0,deck crew,Southampton,England,,,,,yes
+"Bride, Mr. Harold Sydney",male,22.0,victualling crew,Belfast,England,,,,,yes
+"Bright, Mr. Arthur John",male,42.0,deck crew,Belfast,England,,,,,yes
+"Bristow, Mr. Harry",male,38.0,victualling crew,Southampton,,,,,,no
+"Bristow, Mr. Robert Charles",male,31.0,victualling crew,Southampton,England,,,,,no
+"Brookman, Mr. John Cress",male,28.0,victualling crew,Southampton,England,,,,,no
+"Brooks, Mr. J.",male,25.0,engineering crew,Southampton,England,,,,,no
+"Broome, Mr. Athol Frederick",male,31.0,victualling crew,Southampton,England,,,,,no
+"Broom, Mr. Herbert George",male,33.0,victualling crew,Belfast,England,,,,,no
+"Brown, Mr. Edward",male,34.0,victualling crew,Belfast,Wales,,,,,yes
+"Brown, Mr. John",male,28.0,engineering crew,Southampton,Wales,,,,,no
+"Brown, Mr. Joseph James",male,25.0,engineering crew,Southampton,England,,,,,no
+"Brown, Mr. Walter James",male,41.0,victualling crew,Belfast,England,,,,,no
+"Buckley, Mr. H. E.",male,34.0,victualling crew,Southampton,England,,,,,no
+"Buley, Mr. Edward John",male,26.0,deck crew,Southampton,England,,,,,yes
+"Bulley, Mr. Henry Ashburnham",male,22.0,victualling crew,Southampton,England,,,,,no
+"Bull, Mr. Walter Edward",male,37.0,victualling crew,Southampton,England,,,,,no
+"Bunnell, Mr. Wilfred James",male,21.0,victualling crew,Belfast,England,,,,,no
+"Burgess, Mr. Charles",male,18.0,victualling crew,Southampton,England,,,,,yes
+"Burke, Mr. Richard Edward",male,30.0,victualling crew,Belfast,England,,,,,no
+"Burke, Mr. William",male,31.0,victualling crew,Belfast,Ireland,,,,,yes
+"Burrage, Mr. Arthur Victor Edwards",male,20.0,victualling crew,Southampton,England,,,,,yes
+"Burr, Mr. Ewart Sydenham",male,29.0,victualling crew,Southampton,England,,,,,no
+"Burroughs, Mr. Arthur Peckham",male,35.0,engineering crew,Southampton,England,,,,,no
+"Burton, Mr. Edward John",male,35.0,engineering crew,Southampton,England,,,,,no
+"Butterworth, Mr. John",male,23.0,victualling crew,Southampton,England,,,,,no
+"Butt, Mr. Robert Henry",male,22.0,victualling crew,Southampton,England,,,,,no
+"Butt, Mr. William John",male,31.0,engineering crew,Southampton,England,,,,,no
+"Byrne, Mr. James Edward",male,45.0,victualling crew,Southampton,England,,,,,no
+"Calderwood, Mr. Hugh",male,30.0,engineering crew,Belfast,Northern Ireland,,,,,no
+"Campbell, Mr. Donald S.",male,25.0,victualling crew,Southampton,Australia,,,,,no
+"Canner, Mr. John",male,40.0,engineering crew,Southampton,England,,,,,no
+"Carney, Mr. William",male,31.0,victualling crew,Southampton,England,,,,,no
+"Carr, Mr. Richard Stephen",male,27.0,engineering crew,Southampton,England,,,,,no
+"Carter (Ball), Mr. James (W.)",male,46.0,engineering crew,Southampton,England,,,,,no
+"Cartwright, Mr. James Edward",male,33.0,victualling crew,Belfast,England,,,,,no
+"Casali, Sig. Giulio",male,32.0,restaurant staff,Southampton,Italy,,,,,no
+"Casey, Mr. Thomas",male,44.0,engineering crew,Southampton,England,,,,,no
+"Casswill, Mr. Charles",male,34.0,victualling crew,Southampton,England,,,,,no
+"Castleman, Mr. Edward",male,37.0,engineering crew,Southampton,England,,,,,no
+"Caton, Miss. Annie",female,33.0,victualling crew,Southampton,England,,,,,yes
+"Caunt, Mr. William Ewart",male,28.0,victualling crew,Southampton,England,,,,,no
+"Cavell, Mr. George Henry",male,22.0,engineering crew,Southampton,England,,,,,yes
+"Cave, Mr. Herbert",male,39.0,victualling crew,Belfast,England,,,,,no
+"Cecil, Mr. Charles Thomas",male,21.0,victualling crew,Southampton,England,,,,,no
+"Chaboisson, Mr. Adrien Finnin",male,25.0,restaurant staff,Southampton,England,,,,,no
+"Chapman, Mr. Joseph Charles",male,32.0,victualling crew,Southampton,England,,,,,yes
+"Charman, Mr. John James",male,25.0,victualling crew,Southampton,England,,,,,no
+"Cherrett, Mr. William Victor",male,25.0,engineering crew,Southampton,England,,,,,no
+"Cheverton, Mr. William Frederick",male,28.0,victualling crew,Belfast,England,,,,,no
+"Chisnall, Mr. George Alexander",male,37.0,engineering crew,Belfast,England,,,,,no
+"Chitty, Mr. Archibald George",male,29.0,victualling crew,Southampton,England,,,,,no
+"Chitty, Mr. George Henry",male,50.0,victualling crew,Southampton,England,,,,,no
+"Chorley, Mr. John Henry",male,25.0,engineering crew,Southampton,England,,,,,no
+"Christmas, Mr. Herbert Harry",male,34.0,victualling crew,Southampton,England,,,,,no
+"Clark, Mr. William",male,40.0,engineering crew,Southampton,Ireland,,,,,yes
+"Clench, Mr. Frederick Charles",male,33.0,deck crew,Southampton,England,,,,,yes
+"Clench, Mr. George James",male,31.0,deck crew,Southampton,England,,,,,no
+"Coe, Mr. Harry",male,22.0,engineering crew,Southampton,England,,,,,no
+"Coleman, Mr. Albert Edward",male,29.0,victualling crew,Southampton,England,,,,,no
+"Coleman, Mr. John",male,58.0,engineering crew,Belfast,Ireland,,,,,no
+"Colgan, Mr. E. Joseph",male,33.0,victualling crew,Southampton,England,,,,,yes
+"Collins, Mr. John",male,17.0,victualling crew,Southampton,Northern Ireland,,,,,yes
+"Collins, Mr. John",male,38.0,engineering crew,Southampton,England,,,,,yes
+"Combes, Mr. George",male,34.0,engineering crew,Southampton,England,,,,,yes
+"Conway, Mr. Percy Walter",male,25.0,victualling crew,Belfast,England,,,,,no
+"Cook, Mr. Gilbert William",male,32.0,victualling crew,Southampton,England,,,,,no
+"Coombs, Mr. Charles Augustus",male,45.0,victualling crew,Southampton,England,,,,,no
+"Cooper, Mr. Harry",male,26.0,engineering crew,Southampton,England,,,,,no
+"Cooper, Mr. James Edward",male,26.0,engineering crew,Southampton,England,,,,,no
+"Copperthwaite, Mr. Albert Harry",male,28.0,engineering crew,Southampton,England,,,,,no
+"Corben, Mr. Ernest Theodore",male,27.0,victualling crew,Southampton,England,,,,,no
+"Corcoran, Mr. Dennis",male,33.0,engineering crew,Southampton,England,,,,,no
+"Cornaire, Mr. Marcel Raymond André",male,19.0,restaurant staff,Southampton,England,,,,,no
+"Cotton, Mr. Alfred",male,36.0,engineering crew,Southampton,England,,,,,no
+"Couch, Mr. Frank",male,28.0,deck crew,Southampton,England,,,,,no
+"Couch, Mr. Joseph Henry",male,49.0,engineering crew,Southampton,England,,,,,no
+"Couper, Mr. Robert Frederick William",male,30.0,engineering crew,Southampton,England,,,,,yes
+"Coutin, Mr. Auguste Louis",male,28.0,restaurant staff,Southampton,France,,,,,no
+"Cox, Mr. William Denton",male,30.0,victualling crew,Southampton,England,,,,,no
+"Coy, Mr. Francis Ernest George",male,27.0,engineering crew,Belfast,England,,,,,no
+"Crabb, Mr. Henry James",male,23.0,engineering crew,Southampton,England,,,,,no
+"Crafter, Mr. Frederick Horace",male,20.0,victualling crew,Southampton,England,,,,,yes
+"Crawford, Mr. Alfred George",male,43.0,victualling crew,Belfast,England,,,,,yes
+"Creese, Mr. Henry Philip",male,45.0,engineering crew,Belfast,England,,,,,no
+"Crimmins, Mr. James",male,21.0,engineering crew,Southampton,England,,,,,yes
+"Crispin, Mr. William",male,33.0,victualling crew,Southampton,England,,,,,no
+"Crisp, Mr. Albert Hector",male,39.0,victualling crew,Belfast,England,,,,,no
+"Crosbie, Mr. John Borthwick",male,45.0,victualling crew,Southampton,England,,,,,no
+"Cross, Mr. William Alfred",male,44.0,engineering crew,Southampton,England,,,,,no
+"Crovella, Sig. Luigi",male,17.0,restaurant staff,Southampton,England,,,,,no
+"Crowe, Mr. George Frederick",male,30.0,victualling crew,Southampton,England,,,,,yes
+"Crumplin, Mr. Charles George Chandler",male,35.0,victualling crew,Belfast,England,,,,,no
+"Cullen, Mr. Charles James",male,49.0,victualling crew,Belfast,England,,,,,yes
+"Cunningham, Mr. Andrew Orr",male,38.0,victualling crew,Belfast,Scotland,,,,,yes
+"Cunningham, Mr. Bernard",male,35.0,engineering crew,Southampton,England,,,,,no
+"Curtis, Mr. Arthur",male,26.0,engineering crew,Southampton,England,,,,,no
+"Daniels, Mr. Sidney Edward",male,18.0,victualling crew,Southampton,England,,,,,yes
+"Dashwood, Mr. William George",male,18.0,victualling crew,Southampton,England,,,,,no
+"Davies, Mr. Gordon Raleigh",male,32.0,victualling crew,Belfast,England,,,,,no
+"Davies, Mr. Robert J.",male,26.0,victualling crew,Belfast,Wales,,,,,no
+"Davies, Mr. Thomas",male,33.0,engineering crew,Southampton,England,,,,,no
+"Davis, Mr. John",male,29.0,victualling crew,Belfast,England,,,,,no
+"Davis, Mr. Stephen James",male,39.0,deck crew,Southampton,England,,,,,no
+"Dawson, Mr. Joseph",male,23.0,engineering crew,Southampton,England,,,,,no
+"Dean, Mr. George H.",male,19.0,victualling crew,Southampton,England,,,,,no
+"Debreucq, Mr. Maurice Emile Victor",male,18.0,restaurant staff,Southampton,England,,,,,no
+"Deeble, Mr. Alfred Arnold",male,35.0,victualling crew,Belfast,England,,,,,no
+"De Marsico, Sig. Govanni",male,20.0,restaurant staff,Southampton,England,,,,,no
+"Derrett, Mr. Arthur Henry",male,29.0,victualling crew,Belfast,England,,,,,no
+"Deslandes, Mr. Percival Stainer",male,38.0,victualling crew,Southampton,England,,,,,no
+"Desvernine, Mr. Louis Gabriel",male,20.0,restaurant staff,Southampton,England,,,,,no
+"Diaper, Mr. John Joseph",male,27.0,engineering crew,Southampton,England,,,,,yes
+"Dickson, Mr. William",male,37.0,engineering crew,Southampton,England,,,,,no
+"Dilley, Mr. John",male,30.0,engineering crew,Southampton,England,,,,,yes
+"Dillon, Mr. Thomas Patrick",male,34.0,engineering crew,Southampton,England,,,,,yes
+"Dinenage, Mr. James Richard",male,49.0,victualling crew,Southampton,England,,,,,no
+"Dodd, Mr. Edward Charles",male,39.0,engineering crew,Belfast,England,,,,,no
+"Dodd, Mr. George Charles",male,44.0,victualling crew,Belfast,England,,,,,no
+"Dodds, Mr. Henry Watson",male,27.0,engineering crew,Southampton,Guyana,,,,,no
+"Doel, Mr. Frederick",male,22.0,engineering crew,Southampton,England,,,,,yes
+"Dolby, Mr. Joseph",male,39.0,victualling crew,Belfast,England,,,,,no
+"Donati, Sig. Italo Francesco",male,17.0,restaurant staff,Southampton,Italy,,,,,no
+"Donoghue, Mr. Frank (?Thomas)",male,35.0,victualling crew,Belfast,England,,,,,no
+"Dore, Mr. Albert James",male,23.0,engineering crew,Southampton,England,,,,,yes
+"Dornier, Mr. Louis Auguste",male,20.0,restaurant staff,Southampton,England,,,,,no
+"Doughty, Mr. Walter Thomas",male,22.0,victualling crew,Southampton,England,,,,,no
+"Doyle, Mr. Laurence",male,27.0,engineering crew,Southampton,England,,,,,no
+"Duffy, Mr. William Luke",male,36.0,engineering crew,Belfast,Ireland,,,,,no
+"Dunford, Mr. William",male,48.0,victualling crew,Southampton,England,,,,,no
+"Durnil, Mr. James",male,38.0,engineering crew,Southampton,England,,,,,no
+"Dyer, Mr. Henry Ryland",male,24.0,engineering crew,Belfast,India,,,,,no
+"Dyer, Mr. William Henry",male,33.0,victualling crew,Southampton,England,,,,,no
+"Dymond, Mr. Frank",male,41.0,engineering crew,Southampton,England,,,,,yes
+"Eagle, Mr. Alfred James",male,22.0,engineering crew,Southampton,England,,,,,no
+"Eastman, Mr. Charles",male,44.0,engineering crew,Southampton,England,,,,,no
+"Edbrooke, Mr. Francis Samuel Jacob",male,23.0,victualling crew,Southampton,England,,,,,no
+"Ede, Mr. George Bulkeley",male,23.0,victualling crew,Southampton,England,,,,,no
+"Edge, Mr. Frederick William",male,39.0,victualling crew,Southampton,England,,,,,no
+"Edwards, Mr. Charles Essex",male,39.0,victualling crew,Southampton,Wales,,,,,no
+"Egg, Mr. William Henry",male,48.0,victualling crew,Southampton,England,,,,,no
+"Elliott, Mr. Everett Edward",male,23.0,engineering crew,Southampton,England,,,,,no
+"Ellis, Mr. John Bertie",male,29.0,victualling crew,Southampton,England,,,,,yes
+"Ennis, Mr. Walter",male,34.0,victualling crew,Southampton,England,,,,,no
+"Ervine, Mr. Albert George",male,18.0,engineering crew,Belfast,Northern Ireland,,,,,no
+"Etches, Mr. Henry Samuel",male,43.0,victualling crew,Belfast,England,,,,,yes
+"Evans, Mr. Alfred Frank",male,25.0,deck crew,Southampton,England,,,,,yes
+"Evans, Mr. Frank Oliver",male,27.0,deck crew,Southampton,England,,,,,yes
+"Evans, Mr. George Richard",male,27.0,victualling crew,Belfast,England,,,,,no
+"Evans, Mr. William Thomas",male,33.0,engineering crew,Southampton,England,,,,,no
+"Fairall, Mr. Henry Charles",male,38.0,victualling crew,Belfast,England,,,,,no
+"Farenden, Mr. Ernest John",male,22.0,victualling crew,Belfast,England,,,,,no
+"Farquharson, Mr. William Edward",male,39.0,engineering crew,Belfast,England,,,,,no
+"Faulkner, Mr. William Stephen",male,37.0,victualling crew,Belfast,England,,,,,yes
+"Fay, Mr. Thomas Joseph",male,30.0,engineering crew,Southampton,England,,,,,no
+"Fellowes, Mr. Alfred James",male,29.0,victualling crew,Belfast,England,,,,,no
+"Feltham, Mr. George William",male,42.0,victualling crew,Southampton,England,,,,,no
+"Ferrary, Mr. Antonio",male,33.0,engineering crew,Southampton,England,,,,,no
+"Ferris, Mr. William",male,39.0,engineering crew,Southampton,England,,,,,no
+"Fey, Sig. Carlo",male,30.0,restaurant staff,Southampton,England,,,,,no
+"Finch, Mr. Henry Herman",male,19.0,victualling crew,Southampton,England,,,,,no
+"Fioravante, Sig. Giuseppe Bertoldo",male,23.0,restaurant staff,Southampton,England,,,,,no
+"Fitzpatrick, Mr. Cecil William",male,21.0,engineering crew,Southampton,England,,,,,yes
+"Fitzpatrick, Mr. Hugh Joseph",male,29.0,engineering crew,Belfast,England,,,,,no
+"Flarty, Mr. Edward",male,52.0,engineering crew,Southampton,England,,,,,yes
+"Fleet, Mr. Frederick",male,24.0,deck crew,Belfast,England,,,,,yes
+"Fletcher, Mr. Percy William",male,26.0,victualling crew,Belfast,England,,,,,no
+"Foley, Mr. John",male,46.0,deck crew,Belfast,Ireland,,,,,yes
+"Foley, Mr. Wilfred Cyril",male,22.0,victualling crew,Southampton,Wales,,,,,yes
+"Ford, Mr. Ernest",male,33.0,victualling crew,Southampton,England,,,,,no
+"Ford, Mr. Francis",male,44.0,victualling crew,Southampton,England,,,,,no
+"Ford, Mr. H.",male,22.0,engineering crew,Southampton,England,,,,,no
+"Ford, Mr. Thomas",male,33.0,engineering crew,Southampton,England,,,,,no
+"Forward, Mr. James",male,27.0,deck crew,Southampton,England,,,,,yes
+"Foster, Mr. Alfred Charles",male,37.0,engineering crew,Belfast,England,,,,,no
+"Fox, Mr. William Thomas",male,27.0,victualling crew,Southampton,England,,,,,no
+"Franklin, Mr. Alan Vincent",male,28.0,victualling crew,Southampton,England,,,,,no
+"Fraser, Mr. J.",male,30.0,engineering crew,Southampton,England,,,,,no
+"Fraser, Mr. James",male,30.0,engineering crew,Belfast,Scotland,,,,,no
+"Fredericks, Mr. Walter Francis",male,21.0,engineering crew,Southampton,England,,,,,yes
+"Freeman, Mr. Ernest Edward Samuel",male,45.0,victualling crew,Belfast,England,,,,,no
+"Fryer, Mr. Albert Ernest",male,29.0,engineering crew,Southampton,England,,,,,yes
+"Gatti, Sig. Gaspare Antonio Pietro",male,37.0,restaurant staff,Southampton,England,,,,,no
+"Geddes, Mr. Richard Charles",male,32.0,victualling crew,Southampton,England,,,,,no
+"Geer, Mr. Alfred Emest",male,26.0,engineering crew,Southampton,England,,,,,no
+"Gibbons, Mr. Jacob William",male,36.0,victualling crew,Southampton,England,,,,,yes
+"Gilardino, Sig. Vincenzo Pio",male,31.0,restaurant staff,Southampton,England,,,,,no
+"Giles, Mr. John Robert",male,32.0,victualling crew,Southampton,England,,,,,no
+"Gill, Mr. Joseph Stanley",male,38.0,victualling crew,Belfast,England,,,,,no
+"Gill, Mr. Patrick",male,38.0,victualling crew,Southampton,England,,,,,no
+"Godley, Mr. George Auguste",male,61.0,engineering crew,Southampton,England,,,,,yes
+"Godwin, Mr. Frederick Charles",male,36.0,engineering crew,Southampton,England,,,,,no
+"Golder, Mr. M. W.",male,32.0,engineering crew,Southampton,England,,,,,no
+"Gold, Mrs. Jane Kate Coulson",female,45.0,victualling crew,Southampton,England,,,,,yes
+"Gollop, Mr. F.",male,28.0,victualling crew,Southampton,England,,,,,no
+"Gordon, Mr. J.",male,29.0,engineering crew,Southampton,England,,,,,no
+"Goree, Mr. Frank",male,41.0,engineering crew,Southampton,England,,,,,no
+"Goshawk, Mr. Alfred James",male,40.0,victualling crew,Belfast,England,,,,,no
+"Gosling, Mr. Bertram James",male,22.0,engineering crew,Southampton,England,,,,,no
+"Gosling, Mr. S.",male,26.0,engineering crew,Southampton,England,,,,,no
+"Gradidge, Mr. Ernest Edward",male,22.0,engineering crew,Southampton,England,,,,,no
+"Graham, Mr. Thomas Gibson",male,28.0,engineering crew,Belfast,Northern Ireland,,,,,yes
+"Gregory, Mr. David",male,43.0,engineering crew,Southampton,England,,,,,no
+"Gregson, Miss. Mary",female,45.0,victualling crew,Southampton,England,,,,,yes
+"Grosclaude, Mr. Gérald",male,24.0,restaurant staff,Southampton,England,,,,,no
+"Gumery, Mr. George",male,24.0,engineering crew,Southampton,England,,,,,no
+"Gunn, Mr. Joseph Alfred",male,30.0,victualling crew,Southampton,England,,,,,no
+"Guy, Mr. Elgar John",male,29.0,victualling crew,Southampton,England,,,,,yes
+"Gwinn, Mr. William Logan",male,37.0,victualling crew,Southampton,United States,,,,,no
+"Haggan, Mr. John",male,35.0,engineering crew,Belfast,Northern Ireland,,,,,yes
+"Haines, Mr. Albert",male,31.0,deck crew,Belfast,England,,,,,yes
+"Halford, Mr. Walter Stamford",male,22.0,victualling crew,Southampton,England,,,,,yes
+"Hallett, Mr. George Alexander",male,23.0,engineering crew,Southampton,England,,,,,no
+"Hall, Mr. Frank Alfred James",male,41.0,victualling crew,Southampton,England,,,,,no
+"Hall, Mr. J.",male,32.0,engineering crew,Southampton,England,,,,,no
+"Hamblyn, Mr. Ernest William",male,47.0,victualling crew,Southampton,England,,,,,no
+"Hamilton, Mr. Ernest",male,25.0,victualling crew,Belfast,England,,,,,no
+"Hands, Mr. Bernard",male,54.0,engineering crew,Southampton,Ireland,,,,,no
+"Hannam, Mr. George",male,30.0,engineering crew,Southampton,England,,,,,no
+"Harder, Mr. William",male,39.0,deck crew,Southampton,England,,,,,yes
+"Harding, Mr. Alfred John",male,21.0,victualling crew,Southampton,England,,,,,no
+"Hardwick, Mr. Reginald",male,21.0,victualling crew,Southampton,England,,,,,yes
+"Hardy, Mr. John",male,40.0,victualling crew,Belfast,England,,,,,yes
+"Harris, Mr. Amos",male,24.0,engineering crew,Southampton,England,,,,,no
+"Harris, Mr. Charles William",male,19.0,victualling crew,Southampton,England,,,,,no
+"Harris, Mr. Clifford Henry",male,17.0,victualling crew,Southampton,England,,,,,no
+"Harris, Mr. Edward John",male,29.0,engineering crew,Southampton,England,,,,,no
+"Harris, Mr. Edward Matthew",male,17.0,victualling crew,Southampton,England,,,,,no
+"Harris, Mr. Frederick",male,39.0,engineering crew,Southampton,England,,,,,yes
+"Harrison, Mr. Aragõa Drummond",male,40.0,victualling crew,Southampton,England,,,,,yes
+"Harrison, Mr. Norman E.",male,38.0,engineering crew,Belfast,England,,,,,no
+"Hart, Mr. James",male,54.0,engineering crew,Southampton,England,,,,,no
+"Hart, Mr. John Edward",male,32.0,victualling crew,Southampton,England,,,,,yes
+"Hartnell, Mr. Fred",male,21.0,victualling crew,Southampton,England,,,,,yes
+"Harvey, Mr. Herbert Gifford",male,34.0,engineering crew,Belfast,Northern Ireland,,,,,no
+"Hatch, Mr. Hugh",male,23.0,victualling crew,Southampton,England,,,,,no
+"Hawkesworth, Mr. James",male,52.0,victualling crew,Southampton,England,,,,,no
+"Hawkesworth, Mr. William Walter",male,43.0,victualling crew,Southampton,England,,,,,no
+"Hayter, Mr. Arthur",male,45.0,victualling crew,Belfast,England,,,,,no
+"Head, Mr. Alfred",male,24.0,engineering crew,Southampton,England,,,,,no
+"Hebb, Mr. William Albert",male,22.0,engineering crew,Southampton,England,,,,,yes
+"Heinen, Mr. Joseph Dominichus",male,30.0,victualling crew,Southampton,England,,,,,no
+"Hemming, Mr. Samuel Ernest",male,43.0,deck crew,Belfast,England,,,,,yes
+"Hendrickson, Mr. Charles Osker",male,28.0,engineering crew,Southampton,England,,,,,yes
+"Hendy, Mr. Edward Martin",male,40.0,victualling crew,Belfast,England,,,,,no
+"Hensford, Mr. Herbert George Ernest",male,26.0,victualling crew,Southampton,England,,,,,no
+"Hesketh, Mr. John Henry",male,33.0,engineering crew,Belfast,England,,,,,no
+"Heslin, Mr. James",male,45.0,engineering crew,Southampton,England,,,,,no
+"Hewitt, Mr. Thomas",male,37.0,victualling crew,Belfast,England,,,,,no
+"Hichens, Mr. Robert",male,29.0,deck crew,Southampton,England,,,,,yes
+"Hill, Mr. H. P.",male,36.0,victualling crew,Southampton,England,,,,,no
+"Hill, Mr. James",male,25.0,engineering crew,Southampton,England,,,,,no
+"Hill, Mr. James Colston",male,43.0,victualling crew,Belfast,England,,,,,no
+"Hinckley, Mr. George Herbert",male,40.0,victualling crew,Southampton,England,,,,,no
+"Hine, Mr. William Edward",male,36.0,victualling crew,Southampton,England,,,,,no
+"Hinton, Mr. Stephen William",male,31.0,engineering crew,Southampton,England,,,,,no
+"Hiscock, Mr. Sydney George",male,25.0,victualling crew,Southampton,England,,,,,no
+"Hoare, Mr. Leonard James",male,19.0,victualling crew,Belfast,England,,,,,no
+"Hodge, Mr. Charley",male,29.0,engineering crew,Belfast,England,,,,,no
+"Hodges, Mr. W.",male,26.0,engineering crew,Southampton,England,,,,,no
+"Hodgkinson, Mr. Leonard",male,46.0,engineering crew,Belfast,England,,,,,no
+"Hogg, Mr. Charles William",male,43.0,victualling crew,Southampton,England,,,,,no
+"Hogg, Mr. George Alfred",male,29.0,deck crew,Belfast,England,,,,,yes
+"Hogue, Mr. E.",male,22.0,victualling crew,Southampton,England,,,,,no
+"Holland, Mr. Thomas",male,28.0,victualling crew,Belfast,England,,,,,no
+"Holloway, Mr. Sidney",male,24.0,victualling crew,Southampton,England,,,,,no
+"Holman, Mr. Harry",male,29.0,deck crew,Belfast,England,,,,,no
+"Hopgood, Mr. Roland John C.",male,29.0,engineering crew,Southampton,England,,,,,no
+"Hopkins, Mr. Frederick William",male,15.0,victualling crew,Southampton,England,,,,,no
+"Hopkins, Mr. Robert John",male,40.0,deck crew,Southampton,England,,,,,yes
+"Horswill, Mr. Albert Edward James",male,33.0,deck crew,Southampton,England,,,,,yes
+"Hosgood, Mr. Richard William",male,23.0,engineering crew,Southampton,England,,,,,no
+"Hosking, Mr. George Fox",male,36.0,engineering crew,Belfast,England,,,,,no
+"House, Mr. William John",male,38.0,victualling crew,Belfast,England,,,,,no
+"Howell, Mr. Arthur Albert",male,31.0,victualling crew,Belfast,England,,,,,no
+"Hughes, Mr. William Thomas",male,34.0,victualling crew,Southampton,England,,,,,no
+"Humby, Mr. Frederick Charles",male,18.0,victualling crew,Southampton,England,,,,,no
+"Humphreys, Mr. Humphrey",male,32.0,victualling crew,Southampton,England,,,,,no
+"Humphreys, Mr. Sidney",male,53.0,deck crew,Southampton,England,,,,,yes
+"Hunt, Mr. Albert Sylvanus",male,23.0,engineering crew,Southampton,England,,,,,yes
+"Hunt, Mr. Tom",male,27.0,engineering crew,Southampton,England,,,,,no
+"Hurst, Mr. Charles John",male,41.0,engineering crew,Southampton,England,,,,,no
+"Hurst, Mr. Walter",male,23.0,engineering crew,Southampton,England,,,,,yes
+"Hutchinson, Mr. James",male,31.0,victualling crew,Southampton,England,,,,,no
+"Hutchinson, Mr. John Hall",male,28.0,deck crew,Belfast,England,,,,,no
+"Hyland, Mr. James Leo",male,19.0,victualling crew,Southampton,England,,,,,yes
+"Ide, Mr. Harry John",male,31.0,victualling crew,Southampton,England,,,,,no
+"Ingram, Mr. George",male,19.0,engineering crew,Southampton,England,,,,,no
+"Ingrouille, Mr. Henry",male,21.0,victualling crew,Southampton,England,,,,,no
+"Ings, Mr. William Ernest",male,20.0,victualling crew,Southampton,England,,,,,no
+"Instance, Mr. T.",male,33.0,engineering crew,Southampton,England,,,,,no
+"Jackopson, Mr. John Henry",male,30.0,engineering crew,Southampton,England,,,,,no
+"Jackson, Mr. Cecil",male,22.0,victualling crew,Belfast,England,,,,,no
+"Jago, Mr. Joseph",male,59.0,engineering crew,Southampton,England,,,,,no
+"Jaillet, Mr. Henri Marie",male,38.0,restaurant staff,Southampton,France,,,,,no
+"James, Mr. Thomas",male,27.0,engineering crew,Southampton,Wales,,,,,no
+"Janaway, Mr. William Frank",male,35.0,victualling crew,Belfast,England,,,,,no
+"Janin, Mr. Claude Marie",male,29.0,restaurant staff,Southampton,England,,,,,no
+"Jeffery, Mr. William Alfred",male,28.0,restaurant staff,Southampton,England,,,,,no
+"Jenner, Mr. Thomas Henry (Harry)",male,55.0,victualling crew,Belfast,England,,,,,no
+"Jensen, Mr. Charles Valdemar",male,25.0,victualling crew,Southampton,England,,,,,no
+"Jessop, Miss. Violet Constance",female,24.0,victualling crew,Southampton,England,,,,,yes
+"Jewell, Mr. Archie",male,23.0,deck crew,Belfast,England,,,,,yes
+"Joas, Mr. N.",male,38.0,engineering crew,Southampton,England,,,,,no
+"Johnston, Mr. James",male,41.0,victualling crew,Belfast,England,,,,,yes
+"Jones, Mr. Albert Hugh Brabner",male,17.0,victualling crew,Southampton,England,,,,,no
+"Jones, Mr. Arthur Ernest",male,37.0,victualling crew,Southampton,England,,,,,no
+"Jones, Mr. Harry Owen G.",male,29.0,victualling crew,Southampton,England,,,,,no
+"Jones, Mr. Thomas William",male,32.0,deck crew,Southampton,England,,,,,yes
+"Jones, Mr. Victor Reginald",male,21.0,victualling crew,Southampton,England,,,,,no
+"Jouannault, Mr. Georges Jules",male,24.0,restaurant staff,Southampton,England,,,,,no
+"Joughin, Mr. Charles John",male,32.0,victualling crew,Belfast,England,,,,,yes
+"Judd, Mr. Charles Edward",male,31.0,engineering crew,Southampton,England,,,,,yes
+"Jukes, Mr. Henry James",male,38.0,engineering crew,Southampton,England,,,,,no
+"Jupe, Mr. Boykett Herbert",male,30.0,engineering crew,Southampton,England,,,,,no
+"Kasper, Mr. Franz Wilhelm",male,40.0,engineering crew,Southampton,England,,,,,yes
+"Kearl, Mr. Charles Henry",male,44.0,engineering crew,Southampton,England,,,,,no
+"Kearl, Mr. George Edward",male,25.0,engineering crew,Southampton,England,,,,,no
+"Keen, Mr. Percy Edward",male,30.0,victualling crew,Southampton,England,,,,,yes
+"Kelland, Mr. Thomas",male,18.0,victualling crew,Southampton,England,,,,,no
+"Kelly, Mr. William",male,23.0,engineering crew,Belfast,Scotland,,,,,no
+"Kemish, Mr. George",male,22.0,engineering crew,Southampton,England,,,,,yes
+"Kemp, Mr. Thomas Hulman",male,43.0,engineering crew,Belfast,England,,,,,no
+"Kenchenten, Mr. Frederick Charles",male,37.0,engineering crew,Southampton,England,,,,,no
+"Kennell, Mr. Charles",male,30.0,victualling crew,Southampton,England,,,,,no
+"Kenzler, Mr. August",male,44.0,engineering crew,Belfast,England,,,,,no
+"Kerley, Mr. William Thomas",male,28.0,victualling crew,Southampton,England,,,,,no
+"Kerr, Mr. Thomas Russell",male,26.0,engineering crew,Southampton,Scotland,,,,,no
+"Ketchley, Mr. Henry",male,36.0,victualling crew,Belfast,England,,,,,no
+"Kieran, Mr. Edgar Michael",male,34.0,victualling crew,Southampton,Ireland,,,,,no
+"Kieran, Mr. James William",male,35.0,victualling crew,Southampton,England,,,,,no
+"King, Mr. Alfred John Moffett",male,18.0,victualling crew,Southampton,England,,,,,no
+"King, Mr. Ernest Waldron",male,28.0,victualling crew,Southampton,Ireland,,,,,no
+"King, Mr. G.",male,20.0,victualling crew,Southampton,England,,,,,no
+"King, Mr. Thomas Walter",male,42.0,deck crew,Southampton,England,,,,,no
+"Kingscote, Mr. William Ford",male,48.0,victualling crew,Southampton,England,,,,,no
+"Kinsella, Mr. Louis",male,30.0,engineering crew,Southampton,England,,,,,no
+"Kirkaldy, Mr. Thomas Benjamin",male,36.0,victualling crew,Southampton,England,,,,,no
+"Kirkham, Mr. James",male,43.0,engineering crew,Southampton,England,,,,,no
+"Kitching, Mr. Arthur Alfred",male,31.0,victualling crew,Southampton,England,,,,,no
+"Klein, Mr. Herbert",male,33.0,victualling crew,Southampton,England,,,,,no
+"Knight, Mr. George",male,49.0,victualling crew,Southampton,England,,,,,yes
+"Knight, Mr. Leonard George",male,21.0,victualling crew,Southampton,England,,,,,no
+"Knowles, Mr. Thomas",male,43.0,engineering crew,Southampton,England,,,,,yes
+"Lacey, Mr. Bertie William",male,20.0,victualling crew,Southampton,England,,,,,no
+"Lahy, Mr. T.",male,41.0,engineering crew,Southampton,England,,,,,no
+"Lake, Mr. William",male,46.0,victualling crew,Belfast,England,,,,,no
+"Lane, Mr. Albert Edward",male,34.0,victualling crew,Southampton,England,,,,,no
+"Latimer, Mr. Andrew",male,55.0,victualling crew,Belfast,England,,,,,no
+"Lavington, Miss. Elizabeth",female,40.0,victualling crew,Southampton,England,,,,,yes
+"Lawrence, Mr. Arthur",male,36.0,victualling crew,Belfast,England,,,,,no
+"Leader, Mr. Archibald",male,22.0,victualling crew,Southampton,England,,,,,no
+"Leather, Mrs. Elizabeth Mary",female,50.0,victualling crew,Southampton,England,,,,,yes
+"Lee, Mr. H.",male,18.0,engineering crew,Southampton,England,,,,,no
+"Lee, Mr. Henry Reginald",male,29.0,victualling crew,Southampton,England,,,,,yes
+"Lee, Mr. Reginald Robinson",male,41.0,deck crew,Southampton,England,,,,,yes
+"Lefebvre, Mr. Paul Georges",male,35.0,victualling crew,Southampton,England,,,,,no
+"Leonard, Mr. Matthew",male,25.0,victualling crew,Belfast,United States,,,,,no
+"Levett, Mr. George Alfred",male,26.0,victualling crew,Belfast,England,,,,,no
+"Lewis, Mr. Arthur Ernest Read",male,27.0,victualling crew,Southampton,England,,,,,yes
+"Light, Mr. Charles Edward",male,24.0,victualling crew,Southampton,England,,,,,no
+"Light, Mr. Christopher William",male,20.0,engineering crew,Southampton,England,,,,,no
+"Light, Mr. W.",male,47.0,engineering crew,Southampton,England,,,,,no
+"Lightoller, Mr. Charles Herbert",male,38.0,deck crew,Belfast,England,,,,,yes
+"Lindsay, Mr. William Charles",male,30.0,engineering crew,Southampton,England,,,,,yes
+"Littlejohn, Mr. Alexander James",male,40.0,victualling crew,Belfast,England,,,,,yes
+"Lloyd, Mr. Humphrey",male,41.0,victualling crew,Belfast,England,,,,,no
+"Lloyd, Mr. William",male,29.0,engineering crew,Southampton,England,,,,,no
+"Locke, Mr. A.",male,33.0,victualling crew,Southampton,England,,,,,no
+"Long, Mr. Frank",male,31.0,engineering crew,Southampton,England,,,,,no
+"Long, Mr. William",male,36.0,engineering crew,Southampton,England,,,,,no
+"Longmuir, Mr. John Dickson",male,20.0,victualling crew,Southampton,England,,,,,no
+"Lovell, Mr. John",male,37.0,victualling crew,Southampton,England,,,,,no
+"Lowe, Mr. Harold Godfrey",male,29.0,deck crew,Belfast,Wales,,,,,yes
+"Lucas, Mr. William Arthur",male,25.0,deck crew,Southampton,England,,,,,yes
+"Lucas, Mr. William Watson",male,31.0,victualling crew,Belfast,England,,,,,yes
+"Lydiatt, Mr. Charles",male,45.0,victualling crew,Southampton,England,,,,,no
+"Lyons, Mr. William Henry",male,26.0,deck crew,Southampton,Ireland,,,,,no
+"Mabey, Mr. John Charles",male,24.0,victualling crew,Southampton,England,,,,,no
+"MacKie, Mr. George William",male,34.0,victualling crew,Southampton,England,,,,,no
+"Mackie, Mr. William Dickson",male,32.0,engineering crew,Belfast,Scotland,,,,,no
+"Major, Mr. Thomas Edgar",male,36.0,victualling crew,Belfast,England,,,,,no
+"Major, Mr. William James",male,32.0,engineering crew,Southampton,England,,,,,yes
+"Mantle, Mr. Roland Frederick",male,40.0,victualling crew,Southampton,England,,,,,no
+"March, Mr. John Starr",male,50.0,victualling crew,Southampton,United States,,,,,no
+"Marett, Mr. George John",male,27.0,engineering crew,Southampton,England,,,,,no
+"Marks, Mr. James",male,27.0,victualling crew,Southampton,Scotland,,,,,no
+"Marriott, Mr. John William",male,21.0,victualling crew,Southampton,England,,,,,no
+"Marsden, Miss. Evelyn",female,28.0,victualling crew,Southampton,England,,,,,yes
+"Marsh, Mr. Frederick Charles",male,40.0,engineering crew,Southampton,England,,,,,no
+"Martin, Miss. Mabel Elvina",female,20.0,restaurant staff,Southampton,England,,,,,yes
+"Martin, Mrs. Annie Martha",female,39.0,victualling crew,Southampton,Channel Islands,,,,,yes
+"Maskell, Mr. Leopold Adolphus",male,25.0,engineering crew,Southampton,England,,,,,no
+"Mason, Mr. Frank Archibald Robert",male,32.0,engineering crew,Southampton,England,,,,,yes
+"Mason, Mr. J.",male,39.0,engineering crew,Southampton,England,,,,,no
+"Matherson, Mr. David",male,30.0,deck crew,Southampton,England,,,,,no
+"Mathias, Mr. Montague Vincent",male,29.0,deck crew,Southampton,Wales,,,,,no
+"Mattmann, Sig. Adolf",male,20.0,restaurant staff,Southampton,England,,,,,no
+"Mauge, Mr. Paul Achille Maurice Germain",male,25.0,restaurant staff,Southampton,England,,,,,yes
+"Maxwell, Mr. John",male,30.0,deck crew,Belfast,England,,,,,no
+"May, Mr. Arthur William",male,22.0,engineering crew,Southampton,England,,,,,no
+"May, Mr. Arthur William",male,59.0,engineering crew,Southampton,England,,,,,no
+"Maynard, Mr. Isaac Hiram",male,31.0,victualling crew,Belfast,England,,,,,yes
+"Mayo, Mr. William Peter",male,28.0,engineering crew,Southampton,England,,,,,no
+"Maytum, Mr. Alfred",male,53.0,victualling crew,Belfast,England,,,,,no
+"Mayzes, Mr. Thomas Jubilee",male,25.0,engineering crew,Southampton,England,,,,,yes
+"McAndrew, Mr. Thomas Patrick",male,38.0,engineering crew,Southampton,England,,,,,no
+"McAndrews, Mr. William",male,23.0,engineering crew,Southampton,,,,,,no
+"McCarthy, Mr. Frederick James",male,38.0,victualling crew,Southampton,England,,,,,no
+"McCarthy, Mr. William",male,47.0,deck crew,Southampton,Ireland,,,,,yes
+"McCastlan, Mr. W.",male,38.0,engineering crew,Southampton,England,,,,,no
+"McCawley, Mr. Thomas W.",male,36.0,victualling crew,Belfast,Scotland,,,,,no
+"McElroy, Mr. Hugh Walter",male,37.0,victualling crew,Southampton,England,,,,,no
+"McGann, Mr. James",male,29.0,engineering crew,Southampton,England,,,,,yes
+"McGarvey, Mr. Edward Joseph",male,34.0,engineering crew,Southampton,England,,,,,no
+"McGaw, Mr. Erroll Victor",male,30.0,engineering crew,Southampton,England,,,,,no
+"McGough, Mr. George Francis 'Paddy'",male,36.0,deck crew,Southampton,Ireland,,,,,yes
+"McGrady, Mr. James",male,17.0,victualling crew,Southampton,England,,,,,no
+"McInerney, Mr. Thomas",male,38.0,engineering crew,Southampton,England,,,,,no
+"McIntyre, Mr. William",male,21.0,engineering crew,Southampton,England,,,,,yes
+"McKay, Mr. Charles Donald",male,30.0,victualling crew,Belfast,England,,,,,yes
+"McLaren, Mrs. Hypatia",female,40.0,victualling crew,Southampton,England,,,,,yes
+"McMicken, Mr. Arthur",male,23.0,victualling crew,Belfast,England,,,,,yes
+"McMicken, Mr. Benjamin Tucker",male,21.0,victualling crew,Belfast,England,,,,,no
+"McMullin, Mr. John Richard",male,36.0,victualling crew,Belfast,England,,,,,no
+"McMurray, Mr. William",male,44.0,victualling crew,Belfast,England,,,,,no
+"McQuillan, Mr. William",male,26.0,engineering crew,Belfast,Northern Ireland,,,,,no
+"McRae, Mr. William Alexander",male,32.0,engineering crew,Southampton,England,,,,,no
+"McReynolds, Mr. William",male,22.0,engineering crew,Belfast,Northern Ireland,,,,,no
+"Mellor, Mr. Arthur",male,34.0,victualling crew,Southampton,England,,,,,no
+"Middleton, Mr. Alfred Pirrie",male,27.0,engineering crew,Belfast,Ireland,,,,,no
+"Middleton, Mr. Mark Victor",male,28.0,victualling crew,Southampton,England,,,,,no
+"Milford, Mr. George",male,28.0,engineering crew,Southampton,England,,,,,no
+"Millar, Mr. Robert",male,26.0,engineering crew,Belfast,Scotland,,,,,no
+"Millar, Mr. Thomas",male,32.0,engineering crew,Belfast,Northern Ireland,,,,,no
+"Mills, Mr. Christopher",male,51.0,victualling crew,Southampton,England,,,,,yes
+"Mintram, Mr. William",male,46.0,engineering crew,Southampton,England,,,,,no
+"Mishellany, Mr. Abraham Mansoor",male,53.0,victualling crew,Belfast,Lebanon,,,,,no
+"Mitchell, Mr. Lorenzo (Lawrence) Horace",male,19.0,engineering crew,Southampton,England,,,,,no
+"Monrós, Sr. Joan Javier",male,20.0,restaurant staff,Southampton,Spain,,,,,no
+"Monteverdi, Sig. Giovanni",male,23.0,restaurant staff,Southampton,England,,,,,no
+"Moody, Mr. James Paul",male,24.0,deck crew,Belfast,England,,,,,no
+"Moore, Mr. Alfred Ernest",male,39.0,victualling crew,Southampton,England,,,,,no
+"Moore, Mr. George Alfred",male,32.0,deck crew,Southampton,England,,,,,yes
+"Moore, Mr. John J.",male,29.0,engineering crew,Southampton,England,,,,,yes
+"Moore, Mr. Ralph",male,22.0,engineering crew,Southampton,England,,,,,no
+"Moores, Mr. Richard Henry",male,44.0,engineering crew,Southampton,England,,,,,no
+"Morgan (Bird), Mr. Charles Frederick",male,42.0,victualling crew,Southampton,England,,,,,no
+"Morgan, Mr. Arthur Herbert",male,27.0,engineering crew,Southampton,England,,,,,no
+"Morgan, Mr. Thomas A.",male,26.0,engineering crew,Southampton,England,,,,,no
+"Morris, Mr. Arthur",male,30.0,engineering crew,Southampton,England,,,,,no
+"Morris, Mr. Frank Herbert",male,28.0,victualling crew,Belfast,England,,,,,yes
+"Morris, Mr. William Edward",male,23.0,engineering crew,Southampton,England,,,,,no
+"Moss, Mr. William",male,36.0,victualling crew,Belfast,England,,,,,no
+"Moyes, Mr. William Young",male,24.0,engineering crew,Belfast,Scotland,,,,,no
+"Müller, Mr. Ludwig",male,37.0,victualling crew,Southampton,England,,,,,no
+"Mullin, Mr. Thomas",male,20.0,victualling crew,Southampton,Scotland,,,,,no
+"Murdoch, Mr. William McMaster",male,39.0,deck crew,Belfast,Scotland,,,,,no
+"Nannini, Sig. Francesco Luigi Arcangelo",male,42.0,restaurant staff,Southampton,Italy,,,,,no
+"Neal, Mr. Bentley Harold",male,26.0,victualling crew,Southampton,England,,,,,yes
+"Nettleton, Mr. George Walter",male,30.0,engineering crew,Southampton,England,,,,,no
+"Newman, Mr. Charles Thomas",male,33.0,engineering crew,Southampton,England,,,,,no
+"Nicholls, Mr. Sidney",male,39.0,victualling crew,Southampton,England,,,,,no
+"Nichols, Mr. Alfred William Stanley",male,48.0,deck crew,Belfast,Australia,,,,,no
+"Nichols, Mr. Arthur",male,46.0,victualling crew,Southampton,England,,,,,no
+"Nichols, Mr. Walter Henry",male,35.0,victualling crew,Southampton,England,,,,,yes
+"Niven, Mr. John Brown",male,30.0,engineering crew,Southampton,Scotland,,,,,no
+"Noon, Mr. John Thomas",male,42.0,engineering crew,Southampton,England,,,,,no
+"Norris, Mr. James",male,22.0,engineering crew,Southampton,England,,,,,no
+"Noss, Mr. Bertram Arthur",male,21.0,engineering crew,Southampton,England,,,,,no
+"Noss, Mr. Henry",male,30.0,engineering crew,Southampton,England,,,,,yes
+"Nutbean, Mr. William",male,30.0,engineering crew,Southampton,England,,,,,yes
+"O'Connor, Mr. John",male,29.0,engineering crew,Southampton,England,,,,,yes
+"O'Connor, Mr. Thomas Peter",male,44.0,victualling crew,Belfast,England,,,,,no
+"Olive, Mr. Charles",male,31.0,engineering crew,Southampton,England,,,,,no
+"Olive, Mr. Ernest Roskelly",male,27.0,victualling crew,Southampton,England,,,,,no
+"Oliver, Mr. H.",male,32.0,engineering crew,Southampton,England,,,,,yes
+"Olliver, Mr. Alfred John",male,27.0,deck crew,Belfast,Channel Islands,,,,,yes
+"O'Loughlin, Dr. William Francis Norman",male,63.0,deck crew,Belfast,England,,,,,no
+"Orpet, Mr. Walter Hayward",male,31.0,victualling crew,Southampton,England,,,,,no
+"Orr, Mr. James",male,39.0,victualling crew,Southampton,Scotland,,,,,no
+"Osborne, Mr. William Edward",male,32.0,victualling crew,Belfast,England,,,,,no
+"Osman, Mr. Frank",male,27.0,deck crew,Southampton,England,,,,,yes
+"Othen, Mr. Charles Alfred",male,36.0,engineering crew,Southampton,England,,,,,yes
+"Owen, Mr. Lewis",male,43.0,victualling crew,Southampton,Wales,,,,,no
+"Pacey, Mr. Reginald lvan",male,17.0,victualling crew,Southampton,England,,,,,no
+"Pachera, Sig. Jean Baptiste Stanislas",male,19.0,restaurant staff,Southampton,England,,,,,no
+"Paice, Mr. Richard Charles John",male,32.0,engineering crew,Southampton,England,,,,,no
+"Painter, Mr. Charles",male,32.0,engineering crew,Southampton,England,,,,,no
+"Painter, Mr. Frank",male,29.0,engineering crew,Southampton,England,,,,,no
+"Paintin, Mr. James Arthur",male,29.0,victualling crew,Southampton,England,,,,,no
+"Palles, Mr. Thomas Henry Michael",male,45.0,engineering crew,Belfast,England,,,,,no
+"Parsons, Mr. Edward",male,37.0,victualling crew,Southampton,England,,,,,no
+"Parsons, Mr. Frank Alfred",male,27.0,engineering crew,Belfast,England,,,,,no
+"Parsons, Mr. Richard Henry",male,18.0,victualling crew,Southampton,England,,,,,no
+"Pascoe, Mr. Charles H.",male,45.0,deck crew,Southampton,England,,,,,yes
+"Pearce, Mr. Alfred Emest",male,24.0,victualling crew,Southampton,England,,,,,no
+"Pearce, Mr. John",male,28.0,engineering crew,Southampton,England,,,,,yes
+"Pearcey, Mr. Albert Victor",male,25.0,victualling crew,Southampton,England,,,,,yes
+"Pedrini, Sig. Alessandro",male,21.0,restaurant staff,Southampton,England,,,,,no
+"Pelham, Mr. George",male,39.0,engineering crew,Southampton,England,,,,,yes
+"Pennal, Mr. Thomas Frederick Cohen",male,34.0,victualling crew,Southampton,England,,,,,no
+"Penny, Mr. William Farr",male,31.0,victualling crew,Southampton,England,,,,,no
+"Penrose, Mr. John Poole",male,49.0,victualling crew,Belfast,England,,,,,no
+"Peracchio, Sig. Alberto",male,20.0,restaurant staff,Southampton,England,,,,,no
+"Peracchio, Sig. Sebastiano",male,17.0,restaurant staff,Southampton,England,,,,,no
+"Perkins, Mr. Laurence Alexander",male,22.0,victualling crew,Southampton,England,,,,,no
+"Perkis, Mr. Walter John",male,37.0,deck crew,Belfast,England,,,,,yes
+"Perotti, Sig. Alfonso",male,20.0,restaurant staff,Southampton,England,,,,,no
+"Perren, Mr. William Charles",male,48.0,victualling crew,Southampton,England,,,,,no
+"Perriton, Mr. Hubert Prouse",male,32.0,victualling crew,Southampton,England,,,,,no
+"Perry, Mr. Edgar Lionel",male,19.0,engineering crew,Southampton,England,,,,,yes
+"Perry, Mr. Henry Frederick",male,23.0,engineering crew,Southampton,England,,,,,no
+"Peters, Mr. William Chapman",male,26.0,deck crew,Southampton,England,,,,,yes
+"Petty, Mr. Edwin Henry",male,25.0,victualling crew,Southampton,England,,,,,no
+"Pfropper, Mr. Richard Paul Jozef",male,30.0,victualling crew,Southampton,Germany,,,,,yes
+"Phillimore, Mr. Harold Charles William",male,23.0,victualling crew,Belfast,England,,,,,yes
+"Phillips, Mr. A. George",male,27.0,engineering crew,Southampton,England,,,,,no
+"Phillips, Mr. John George",male,25.0,victualling crew,Belfast,England,,,,,no
+"Phillips, Mr. Walter John",male,35.0,restaurant staff,Southampton,England,,,,,no
+"Piatti, Sig. Louis",male,17.0,restaurant staff,Southampton,England,,,,,no
+"Piazza, Sig. Pompeo Gaspro",male,33.0,restaurant staff,Southampton,England,,,,,no
+"Pitfield, Mr. William James",male,25.0,engineering crew,Southampton,England,,,,,no
+"Pitman, Mr. Herbert John",male,34.0,deck crew,Belfast,England,,,,,yes
+"Platt, Mr. Wilfred George",male,18.0,victualling crew,Southampton,England,,,,,no
+"Podesta, Mr. Alfred John Alexander",male,24.0,engineering crew,Southampton,England,,,,,yes
+"Poggi, Sig. Emilio",male,28.0,restaurant staff,Southampton,England,,,,,no
+"Poingdestre, Mr. John Thomas",male,33.0,deck crew,Southampton,Channel Islands,,,,,yes
+"Pond, Mr. George",male,33.0,engineering crew,Southampton,England,,,,,no
+"Pook, Mr. Percy Robert",male,36.0,victualling crew,Southampton,England,,,,,no
+"Porteus, Mr. Thomas Henry",male,34.0,victualling crew,Southampton,England,,,,,no
+"Port, Mr. Frank",male,22.0,victualling crew,Southampton,England,,,,,yes
+"Prangnell, Mr. George Alexander",male,30.0,engineering crew,Southampton,England,,,,,yes
+"Prentice, Mr. Frank Winnold",male,23.0,victualling crew,Southampton,England,,,,,yes
+"Preston, Mr. Thomas Charles Alfred",male,20.0,engineering crew,Southampton,England,,,,,no
+"Price, Mr. Ernest Cyril",male,17.0,restaurant staff,Southampton,England,,,,,no
+"Prichard, Mrs. Alice Maud",female,36.0,victualling crew,Southampton,England,,,,,yes
+"Prideaux, Mr. John Arthur (Jack)",male,23.0,victualling crew,Southampton,England,,,,,no
+"Priest, Mr. Arthur John",male,24.0,engineering crew,Southampton,England,,,,,yes
+"Prior, Mr. Harold John Arnold",male,21.0,victualling crew,Southampton,England,,,,,yes
+"Proctor, Mr. Charles",male,46.0,victualling crew,Belfast,England,,,,,no
+"Proudfoot, Mr. Richard Royston",male,22.0,engineering crew,Southampton,England,,,,,no
+"Pryce, Mr. Charles William",male,23.0,victualling crew,Southampton,England,,,,,no
+"Pugh, Mr. Alfred",male,20.0,victualling crew,Southampton,England,,,,,yes
+"Pugh, Mr. Arthur Percy",male,31.0,engineering crew,Southampton,England,,,,,no
+"Pusey, Mr. William Robert Holland",male,22.0,engineering crew,Southampton,England,,,,,yes
+"Puzey, Mr. John Edward",male,44.0,victualling crew,Belfast,England,,,,,no
+"Randall, Mr. Frank Henry",male,29.0,victualling crew,Southampton,England,,,,,no
+"Ranger, Mr. Thomas",male,29.0,engineering crew,Southampton,England,,,,,yes
+"Ransom, Mr. James Augustus",male,50.0,victualling crew,Belfast,England,,,,,no
+"Rattenbury, Mr. William Henry",male,38.0,victualling crew,Belfast,Channel Islands,,,,,no
+"Ratti, Sig. Enrico",male,21.0,restaurant staff,Southampton,England,,,,,no
+"Ray, Mr. Frederick Dent",male,32.0,victualling crew,Belfast,England,,,,,yes
+"Read, Mr. Joseph",male,20.0,engineering crew,Southampton,England,,,,,no
+"Reed, Mr. Thomas Charles Prowse",male,55.0,victualling crew,Southampton,England,,,,,no
+"Reeves, Mr. Frederick Simms",male,34.0,engineering crew,Southampton,England,,,,,no
+"Reid, Mr. Robert Thomas",male,30.0,engineering crew,Southampton,England,,,,,no
+"Revell, Mr. William James Francis",male,31.0,victualling crew,Belfast,England,,,,,no
+"Ricaldone, Sig. Rinaldo Renato",male,22.0,restaurant staff,Southampton,England,,,,,no
+"Rice, Mr. Charles",male,32.0,engineering crew,Southampton,England,,,,,yes
+"Rice, Mr. John Reginald",male,25.0,victualling crew,Southampton,England,,,,,no
+"Rice, Mr. Percy",male,19.0,victualling crew,Southampton,England,,,,,no
+"Richards, Mr. Joseph James",male,30.0,engineering crew,Southampton,England,,,,,no
+"Rickman, Mr. George Albert",male,36.0,engineering crew,Southampton,England,,,,,no
+"Ricks, Mr. Cyril Gordon",male,22.0,victualling crew,Southampton,England,,,,,no
+"Ridout, Mr. Walter George",male,30.0,victualling crew,Southampton,England,,,,,no
+"Rigozzi, Sig. Abele",male,22.0,restaurant staff,Southampton,England,,,,,no
+"Rimmer, Mr. Gilbert",male,29.0,victualling crew,Southampton,England,,,,,no
+"Roberton, Mr. George Edward",male,19.0,victualling crew,Southampton,England,,,,,no
+"Roberts, Mr. Frank John",male,37.0,victualling crew,Belfast,England,,,,,no
+"Roberts, Mr. Hugh H.",male,40.0,victualling crew,Belfast,Wales,,,,,no
+"Roberts, Mr. Robert George",male,35.0,engineering crew,Southampton,England,,,,,no
+"Roberts, Mrs. Mary Kezia",female,41.0,victualling crew,Southampton,England,,,,,yes
+"Robinson, Mr. James William",male,30.0,victualling crew,Southampton,England,,,,,no
+"Robinson, Mrs. Annie",female,41.0,victualling crew,Southampton,England,,,,,yes
+"Rogers, Mr. Edward James William",male,31.0,victualling crew,Southampton,England,,,,,no
+"Rogers, Mr. Michael",male,27.0,victualling crew,Southampton,Ireland,,,,,no
+"Ross, Mr. Horace Leopold",male,36.0,victualling crew,Southampton,England,,,,,yes
+"Rotta, Sig. Angelo Mario",male,23.0,restaurant staff,Southampton,England,,,,,no
+"Rous, Mr. Arthur John",male,26.0,engineering crew,Belfast,England,,,,,no
+"Rousseau, Mr. Pierre",male,49.0,restaurant staff,Southampton,England,,,,,no
+"Rowe, Mr. Edgar Maurice",male,31.0,victualling crew,Belfast,England,,,,,no
+"Rowe, Mr. George Thomas",male,32.0,deck crew,Belfast,England,,,,,yes
+"Rudd, Mr. Henry",male,24.0,engineering crew,Southampton,England,,,,,no
+"Rule, Mr. Samuel James",male,58.0,victualling crew,Belfast,England,,,,,yes
+"Russell, Mr. Boysie Richard",male,17.0,victualling crew,Southampton,England,,,,,no
+"Rutter, Mr. Sidney Frank",male,27.0,engineering crew,Southampton,England,,,,,no
+"Ryan, Mr. Thomas",male,28.0,victualling crew,Southampton,Channel Islands,,,,,no
+"Ryerson, Mr. William Edwy",male,33.0,victualling crew,Southampton,Canada,,,,,yes
+"Saccaggi, Sig. Giovanni Giuseppe Emilio",male,24.0,restaurant staff,Southampton,Italy,,,,,no
+"Salussolia, Sig. Govanni",male,25.0,restaurant staff,Southampton,England,,,,,no
+"Samuel, Mr. Owen Wilmore",male,47.0,victualling crew,Southampton,Wales,,,,,no
+"Sangster, Mr. Charles Edward",male,30.0,engineering crew,Southampton,England,,,,,no
+"Sartori, Sig. Lazar",male,24.0,restaurant staff,Southampton,England,,,,,no
+"Saunders, Mr. D. E.",male,26.0,victualling crew,Southampton,England,,,,,no
+"Saunders, Mr. F.",male,22.0,engineering crew,Southampton,England,,,,,no
+"Saunders, Mr. W.",male,23.0,engineering crew,Southampton,England,,,,,no
+"Saunders, Mr. Walter Ernest",male,23.0,engineering crew,Southampton,England,,,,,no
+"Savage, Mr. Charles Joseph",male,23.0,victualling crew,Southampton,England,,,,,yes
+"Sawyer, Mr. Robert James",male,31.0,deck crew,Southampton,England,,,,,no
+"Scarrott, Mr. Joseph George",male,33.0,deck crew,Southampton,England,,,,,yes
+"Scavino, Sig. Candido",male,42.0,restaurant staff,Southampton,Italy,,,,,no
+"Scott, Mr. Archibald",male,41.0,engineering crew,Southampton,Northern Ireland,,,,,no
+"Scott, Mr. Frederick William",male,28.0,engineering crew,Southampton,England,,,,,yes
+"Scott, Mr. John",male,20.0,victualling crew,Southampton,England,,,,,no
+"Scovell, Mr. Robert",male,55.0,victualling crew,Southampton,England,,,,,no
+"Sedunary, Mr. Samuel Francis",male,25.0,victualling crew,Southampton,England,,,,,no
+"Self, Mr. Albert Charles Edward",male,24.0,engineering crew,Southampton,England,,,,,yes
+"Self, Mr. Alfred Henry",male,40.0,engineering crew,Southampton,England,,,,,no
+"Senior, Mr. Harry",male,31.0,engineering crew,Southampton,England,,,,,yes
+"Sesia, Sig. Giacomo",male,24.0,restaurant staff,Southampton,England,,,,,no
+"Seward, Mr. Wilfred Deable",male,25.0,victualling crew,Southampton,England,,,,,yes
+"Shaw, Mr. Henry",male,42.0,victualling crew,Southampton,England,,,,,no
+"Shea, Mr. John Joseph",male,40.0,victualling crew,Belfast,England,,,,,no
+"Shea, Mr. Thomas",male,32.0,engineering crew,Southampton,England,,,,,no
+"Sheath, Mr. Frederick",male,20.0,engineering crew,Southampton,England,,,,,yes
+"Shepherd, Mr. Jonathan",male,32.0,engineering crew,Southampton,England,,,,,no
+"Shiers, Mr. Alfred Charles",male,25.0,engineering crew,Southampton,England,,,,,yes
+"Shillabeer, Mr. Charles Frederick",male,19.0,engineering crew,Southampton,England,,,,,no
+"Siebert, Mr. Sidney Conrad",male,29.0,victualling crew,Belfast,England,,,,,no
+"Simmons, Mr. Andrew George James",male,31.0,victualling crew,Southampton,England,,,,,yes
+"Simmons, Mr. Frederick Charles",male,24.0,victualling crew,Southampton,England,,,,,no
+"Simmons, Mr. William Simon C.",male,37.0,victualling crew,Southampton,England,,,,,no
+"Simpson, Dr. John Edward",male,37.0,deck crew,Southampton,Northern Ireland,,,,,no
+"Sivier, Mr. William",male,23.0,victualling crew,Southampton,England,,,,,no
+"Skeates, Mr. William",male,23.0,engineering crew,Southampton,England,,,,,no
+"Skinner, Mr. Edward",male,41.0,victualling crew,Belfast,England,,,,,no
+"Slight, Mr. Harry John",male,33.0,victualling crew,Southampton,England,,,,,no
+"Slight, Mr. William Henry James",male,36.0,victualling crew,Belfast,England,,,,,no
+"Sloan, Miss. Mary",female,28.0,victualling crew,Southampton,Northern Ireland,,,,,yes
+"Sloan, Mr. Peter",male,31.0,engineering crew,Belfast,England,,,,,no
+"Slocombe, Mrs. Maude Louise",female,30.0,victualling crew,Southampton,England,,,,,yes
+"Small, Mr. William",male,40.0,engineering crew,Southampton,England,,,,,no
+"Smillie, Mr. John",male,29.0,victualling crew,Belfast,Scotland,,,,,no
+"Smith, Captain. Edward John",male,62.0,deck crew,Southampton,England,,,,,no
+"Smither, Mr. Harry James",male,22.0,engineering crew,Southampton,England,,,,,no
+"Smith, Miss. Katherine Elizabeth",female,45.0,victualling crew,Southampton,England,,,,,yes
+"Smith, Mr. Charles Edwin",male,40.0,victualling crew,Southampton,England,,,,,no
+"Smith, Mr. Charles Henry James",male,38.0,victualling crew,Southampton,England,,,,,no
+"Smith, Mr. Emest George",male,27.0,engineering crew,Southampton,England,,,,,no
+"Smith, Mr. F.",male,20.0,victualling crew,Belfast,England,,,,,no
+"Smith, Mr. James Muil",male,39.0,engineering crew,Belfast,Scotland,,,,,no
+"Smith, Mr. James William",male,24.0,victualling crew,Southampton,England,,,,,no
+"Smith, Mr. John Richard Jago",male,35.0,victualling crew,Southampton,,,,,,no
+"Smith, Mr. Reginald George",male,33.0,victualling crew,Southampton,England,,,,,no
+"Smith, Mr. William",male,26.0,deck crew,Southampton,England,,,,,no
+"Snape, Mrs. Lucy Violet",female,22.0,victualling crew,Southampton,England,,,,,no
+"Snellgrove, Mr. George",male,41.0,engineering crew,Southampton,England,,,,,no
+"Snooks, Mr. W.",male,26.0,engineering crew,Southampton,England,,,,,no
+"Snow, Mr. Eustace Philip",male,21.0,engineering crew,Southampton,England,,,,,yes
+"Sparkman, Mr. Henry William",male,36.0,engineering crew,Southampton,England,,,,,yes
+"Stagg, Mr. John Henry",male,38.0,victualling crew,Southampton,England,,,,,no
+"Stanbrook, Mr. Augustus George",male,31.0,engineering crew,Southampton,England,,,,,no
+"Stap, Miss. Sarah Agnes",female,47.0,victualling crew,Southampton,England,,,,,yes
+"Stebbings, Mr. Sydney Frederick",male,36.0,victualling crew,Belfast,England,,,,,no
+"Steel, Mr. Robert Edward",male,30.0,engineering crew,Southampton,,,,,,no
+"Stewart, Mr. John",male,28.0,victualling crew,Belfast,Scotland,,,,,yes
+"Stocker, Mr. Henry Dorey",male,20.0,engineering crew,Southampton,England,,,,,no
+"Stone, Mr. Edmund",male,33.0,victualling crew,Southampton,England,,,,,no
+"Stone, Mr. Edward Thomas",male,29.0,victualling crew,Southampton,England,,,,,no
+"Street, Mr. Thomas Albert",male,25.0,engineering crew,Southampton,England,,,,,yes
+"Stroud, Mr. Edward Alfred Orlando",male,19.0,victualling crew,Southampton,England,,,,,no
+"Stroud, Mr. Harry John",male,35.0,victualling crew,Southampton,England,,,,,no
+"Strugnell, Mr. John Herbert",male,34.0,victualling crew,Belfast,England,,,,,no
+"Stubbings, Mr. Harry Robert",male,31.0,victualling crew,Belfast,England,,,,,no
+"Stubbs, Mr. James Henry",male,28.0,engineering crew,Southampton,England,,,,,no
+"Sullivan, Mr. S.",male,25.0,engineering crew,Southampton,England,,,,,no
+"Swan, Mr. William",male,48.0,victualling crew,Belfast,Northern Ireland,,,,,no
+"Symonds, Mr. John Crane",male,45.0,victualling crew,Belfast,England,,,,,no
+"Symons, Mr. George Thomas Macdonald",male,24.0,deck crew,Southampton,England,,,,,yes
+"Talbot, Mr. George Frederick Charles",male,20.0,victualling crew,Southampton,England,,,,,no
+"Tamlyn, Mr. Frederick",male,24.0,deck crew,Southampton,England,,,,,no
+"Taylor, Mr. Bernard Cuthbert",male,22.0,victualling crew,Southampton,England,,,,,no
+"Taylor, Mr. Charles William Frederick",male,40.0,deck crew,Southampton,England,,,,,no
+"Taylor, Mr. George",male,24.0,engineering crew,Southampton,England,,,,,yes
+"Taylor, Mr. J.",male,42.0,engineering crew,Southampton,England,,,,,no
+"Taylor, Mr. John Henry",male,49.0,engineering crew,Southampton,England,,,,,no
+"Taylor, Mr. Leonard",male,19.0,victualling crew,Southampton,England,,,,,no
+"Taylor, Mr. William Henry",male,28.0,engineering crew,Southampton,England,,,,,yes
+"Taylor, Mr. William John",male,32.0,victualling crew,Southampton,England,,,,,no
+"Terrell, Mr. Bertram",male,19.0,deck crew,Southampton,England,,,,,no
+"Terrell, Mr. Frank",male,27.0,victualling crew,Southampton,England,,,,,yes
+"Testoni, Sig. Ercole",male,23.0,restaurant staff,Southampton,England,,,,,no
+"Teuton, Mr. Thomas Moore",male,35.0,victualling crew,Southampton,England,,,,,no
+"Thaler, Mr. Montague Donald",male,17.0,victualling crew,Southampton,England,,,,,no
+"Theissinger, Mr. Alfred",male,46.0,victualling crew,Southampton,England,,,,,yes
+"Thomas, Mr. Albert Charles",male,23.0,victualling crew,Southampton,England,,,,,yes
+"Thomas, Mr. Benjamin James",male,30.0,victualling crew,Belfast,England,,,,,yes
+"Thomas, Mr. Joseph Wakefield",male,24.0,engineering crew,Southampton,England,,,,,no
+"Thompson, Mr. Herbert Henry",male,25.0,victualling crew,Belfast,England,,,,,no
+"Thompson, Mr. John William",male,35.0,engineering crew,Southampton,England,,,,,yes
+"Thorley, Mr. William",male,39.0,victualling crew,Southampton,England,,,,,no
+"Thorn, Mr. Harry",male,25.0,victualling crew,Southampton,England,,,,,no
+"Threlfall, Mr. Thomas",male,44.0,engineering crew,Southampton,England,,,,,yes
+"Thresher, Mr. George Terrill",male,25.0,engineering crew,Southampton,England,,,,,yes
+"Tietz, Sig. Carlo/Karl",male,27.0,restaurant staff,Southampton,England,,,,,no
+"Tizard, Mr. Arthur Leopold",male,31.0,engineering crew,Southampton,England,,,,,no
+"Toms, Mr. Fred",male,29.0,victualling crew,Belfast,England,,,,,yes
+"Topp, Mr. Thomas",male,28.0,victualling crew,Southampton,England,,,,,no
+"Toshack, Mr. James Adamson",male,30.0,victualling crew,Southampton,Scotland,,,,,no
+"Tozer, Mr. James",male,32.0,engineering crew,Southampton,England,,,,,no
+"Triggs, Mr. Reuben Robert",male,39.0,engineering crew,Southampton,England,,,,,yes
+"Turley, Mr. Richard",male,37.0,engineering crew,Belfast,Ireland,,,,,no
+"Turner, Mr. George Frederick",male,42.0,victualling crew,Southampton,England,,,,,no
+"Turner, Mr. Leopold Olerenshaw",male,28.0,victualling crew,Belfast,England,,,,,no
+"Turvey, Mr. Charles Thomas",male,17.0,restaurant staff,Southampton,England,,,,,no
+"Urbini, Sig. Roberto",male,20.0,restaurant staff,Southampton,Italy,,,,,no
+"Valvassori, Sig. Ettore Luigi",male,35.0,restaurant staff,Southampton,England,,,,,no
+"van der Brugge, Mr. Wessel Adrianus",male,38.0,engineering crew,Southampton,Netherlands,,,,,no
+"Veal, Mr. Arthur",male,36.0,engineering crew,Southampton,England,,,,,no
+"Veal, Mr. Thomas Henry Edom",male,38.0,victualling crew,Southampton,England,,,,,no
+"Vear, Mr. Henry",male,33.0,engineering crew,Southampton,England,,,,,no
+"Vear, Mr. William",male,34.0,engineering crew,Southampton,England,,,,,no
+"Vicat, Sig. Alphonse Jean Eugene",male,21.0,restaurant staff,Southampton,England,,,,,no
+"Vigott, Mr. Philip Francis",male,32.0,deck crew,Southampton,Channel Islands,,,,,yes
+"Villvarlange, Mr. Pierre Léon Gabriel",male,19.0,restaurant staff,Southampton,England,,,,,no
+"Vine, Mr. Herbert Thomas Gordon",male,18.0,restaurant staff,Southampton,England,,,,,no
+"Vioni, Sig. Roberto",male,25.0,restaurant staff,Southampton,Italy,,,,,no
+"Voegelin-Dubach, Sig. Johannes",male,35.0,restaurant staff,Southampton,England,,,,,no
+"Wake, Mr. Percy",male,37.0,victualling crew,Southampton,England,,,,,no
+"Wallis, Mrs. Catherine Jane",female,36.0,victualling crew,Southampton,England,,,,,no
+"Walpole, Mr. James",male,48.0,victualling crew,Belfast,England,,,,,no
+"Walsh, Miss. Catherine",female,32.0,victualling crew,Southampton,Ireland,,,,,no
+"Ward, Mr. Arthur",male,23.0,engineering crew,Belfast,England,,,,,no
+"Ward, Mr. Edward",male,34.0,victualling crew,Belfast,England,,,,,no
+"Ward, Mr. James William",male,31.0,engineering crew,Southampton,England,,,,,no
+"Ward, Mr. Percy Thomas",male,40.0,victualling crew,Belfast,England,,,,,no
+"Ward, Mr. William",male,37.0,victualling crew,Southampton,England,,,,,yes
+"Wardner, Mr. Fred Albert",male,40.0,engineering crew,Southampton,England,,,,,no
+"Wareham, Mr. Robert Arthur",male,37.0,victualling crew,Belfast,England,,,,,no
+"Warwick, Mr. Tom",male,26.0,victualling crew,Southampton,England,,,,,no
+"Wateridge, Mr. Edward Lewis",male,26.0,engineering crew,Southampton,England,,,,,no
+"Watson, Mr. William Albert",male,15.0,victualling crew,Southampton,England,,,,,no
+"Watson, Mr. Willim",male,27.0,engineering crew,Southampton,England,,,,,no
+"Weatherston, Mr. Thomas Herbert",male,25.0,victualling crew,Belfast,England,,,,,no
+"Webber, Mr. Francis Albert",male,31.0,engineering crew,Southampton,England,,,,,no
+"Webb, Mr. Brook Holding",male,50.0,victualling crew,Belfast,England,,,,,no
+"Webb, Mr. Samuel Francis",male,28.0,engineering crew,Southampton,England,,,,,no
+"Weikman, Mr. Augustus Henry",male,52.0,victualling crew,Southampton,United States,,,,,yes
+"Welch, Mr. William Harold",male,21.0,victualling crew,Southampton,England,,,,,no
+"Weller, Mr. William Clifford",male,30.0,deck crew,Belfast,England,,,,,yes
+"Wheat, Mr. Joseph Thomas",male,30.0,victualling crew,Belfast,England,,,,,yes
+"Wheelton, Mr. Edneser Edward",male,29.0,victualling crew,Belfast,England,,,,,yes
+"Whiteley, Mr. Thomas Arthur",male,18.0,victualling crew,Southampton,England,,,,,yes
+"White, Mr. Albert",male,21.0,engineering crew,Southampton,England,,,,,no
+"White, Mr. Alfred",male,32.0,engineering crew,Southampton,England,,,,,yes
+"White, Mr. Arthur",male,37.0,victualling crew,Southampton,England,,,,,no
+"White, Mr. Edward Joseph",male,27.0,victualling crew,Southampton,England,,,,,no
+"White, Mr. Frank Leonard",male,28.0,engineering crew,Southampton,England,,,,,no
+"White, Mr. Leonard Lisle Oliver",male,32.0,victualling crew,Belfast,Australia,,,,,no
+"White, Mr. William George",male,23.0,engineering crew,Southampton,England,,,,,yes
+"Whitford, Mr. Alfred Henry",male,39.0,victualling crew,Southampton,England,,,,,no
+"Widgery, Mr. Isaac George",male,37.0,victualling crew,Southampton,England,,,,,yes
+"Wilde, Mr. Henry Tingle",male,39.0,deck crew,Southampton,England,,,,,no
+"Williams, Mr. Arthur John",male,42.0,victualling crew,Southampton,England,,,,,no
+"Williams, Mr. Samuel Solomon",male,26.0,engineering crew,Southampton,England,,,,,no
+"Williams, Mr. Walter John",male,28.0,victualling crew,Southampton,England,,,,,yes
+"Williamson, Mr. James Bertram",male,35.0,victualling crew,Southampton,Ireland,,,,,no
+"Willis, Mr. William",male,59.0,victualling crew,Southampton,England,,,,,no
+"Willsher, Mr. William Aubrey",male,34.0,victualling crew,Southampton,England,,,,,no
+"Wilson, Mr. Herbert 'Bertie'",male,28.0,engineering crew,Belfast,England,,,,,no
+"Wilton, Mr. William Edward",male,53.0,engineering crew,Southampton,England,,,,,no
+"Windebank, Mr. Alfred Edgar",male,38.0,victualling crew,Southampton,England,,,,,yes
+"Winser, Mr. Rowland",male,36.0,victualling crew,Southampton,England,,,,,no
+"Witcher, Mr. Albert Ernest",male,39.0,engineering crew,Southampton,England,,,,,no
+"Witter, Mr. James William Cheetham",male,31.0,victualling crew,Southampton,England,,,,,yes
+"Wittman, Mr. Henry",male,39.0,victualling crew,Southampton,Austria,,,,,no
+"Witt, Mr. Henry Dennis",male,37.0,engineering crew,Southampton,England,,,,,no
+"Witts, Mr. William Francis",male,35.0,engineering crew,Southampton,England,,,,,no
+"Woodford, Mr. Frederick Ernest",male,40.0,engineering crew,Southampton,England,,,,,no
+"Wood, Mr. Henry",male,31.0,engineering crew,Southampton,England,,,,,no
+"Wood, Mr. James Thomas",male,49.0,victualling crew,Southampton,England,,,,,no
+"Woody, Mr. Oscar Scott",male,41.0,victualling crew,Southampton,United States,,,,,no
+"Wormald, Mr. Henry Frederick Charles",male,45.0,victualling crew,Southampton,England,,,,,no
+"Worthman, Mr. William Henry",male,37.0,engineering crew,Southampton,England,,,,,no
+"Wrapson, Mr. Frederick Bernard",male,19.0,victualling crew,Belfast,England,,,,,no
+"Wright, Mr. Frederick",male,24.0,victualling crew,Southampton,England,,,,,no
+"Wright, Mr. William",male,40.0,victualling crew,Southampton,England,,,,,yes
+"Wyeth, Mr. James Robert",male,26.0,engineering crew,Southampton,England,,,,,no
+"Wynn, Mr. Walter",male,41.0,deck crew,Belfast,England,,,,,yes
+"Yearsley, Mr. Harry",male,40.0,victualling crew,Southampton,England,,,,,yes
+"Young, Mr. Francis James",male,32.0,engineering crew,Southampton,England,,,,,no
+"Zanetti, Sig. Minio",male,20.0,restaurant staff,Southampton,England,,,,,no
+"Zarracchi, Sig. L.",male,26.0,restaurant staff,Southampton,England,,,,,no

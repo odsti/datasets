@@ -25,8 +25,27 @@ is_crew = titanic['class'].str.contains('crew') | titanic['class'].str.contains(
 print('Number of crew', np.count_nonzero(is_crew))
 print('Number of passengers', np.count_nonzero(~is_crew))
 
-# Save
+# Save full dataset
 out_fname = op.join('processed', 'titanic_stlearn.csv')
+titanic.to_csv(out_fname, index=None)
+
+# Check that data frame loads correctly.
+print(pd.read_csv(out_fname).head())
+
+# Select passengers, with some simple columns
+simple_cols = ['name',
+               'gender',
+               'age',
+               'class',
+               'embarked',
+               'country',
+               'fare',
+               'survived']
+# Select crew, cols, drop remaining NA values.
+basic_passengers = titanic.loc[~is_crew, simple_cols].dropna()
+
+# Save basic dataset
+out_fname = op.join('processed', 'titanic_simple.csv')
 titanic.to_csv(out_fname, index=None)
 
 # Check that data frame loads correctly.
