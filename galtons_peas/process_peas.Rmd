@@ -22,12 +22,15 @@ import matplotlib.pyplot as plt
 # %matplotlib inline
 ```
 
+The original table as downloaded from journal website (see README):
+
 ```{python}
 df = pd.read_csv('galtons_peas.csv')
 df.head()
 ```
 
 ```{python}
+# Duplicate rows according to frequency.
 pea_dfs = []
 for i, row in df.iterrows():
     pea_dfs += [row.iloc[:2]] * int(row['Frequency'])
@@ -42,15 +45,13 @@ individual_df.head()
 individual_df.shape
 ```
 
-Check against R version:
+Check against R version, generated thus:
 
 
 ```r
 install.packages('psychTools')
 library(psychTools)
 data(peas)
-peas
-write.csv(peas, row.names=FALSE)
 write.csv(peas, 'r_peas.csv', row.names=FALSE)
 ```
 
@@ -63,9 +64,8 @@ r_peas.head()
 np.all(np.array(individual_df) == np.array(r_peas))
 ```
 
-Write processed version:
-
 ```{python}
+# Write processed version
 out_fname = op.join('processed', 'galtons_peas.csv')
 individual_df.to_csv(out_fname, index=False)
 ```
