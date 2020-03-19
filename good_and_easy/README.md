@@ -16,3 +16,21 @@ The paper studies ratings from RateMyProfessors.com, for the 190,006 US
 professors that have at least 20 student ratings.
 
 Each row of the data table gives the mean ratings for all professors in a given discipline; thus there is one row per discipline.
+
+Quoting from the paper above:
+
+> Students on RateMyProfessors rate professors based on three main key
+> criteria: clarity, helpfulness, and easiness. These criteria are mandatory
+> fields when a review is submitted, and the rating scale ranges from 1 to 5 in
+> integer increments with 1 being the worst rating and 5 being the best rating.
+> Professors are then assigned an overall quality score that is simply the
+> average of their clarity and helpfulness scores.
+
+Given that background, the column names are self-explanatory:
+
+* Discipline
+* Number of Professors
+* Clarity
+* Helpfulness
+* Overall Quality
+* Easiness
