@@ -7,12 +7,17 @@ jupyter:
       extension: .Rmd
       format_name: rmarkdown
       format_version: '1.2'
-      jupytext_version: 1.3.3
+      jupytext_version: 1.4.2
   kernelspec:
     display_name: Python 3
     language: python
     name: python3
 ---
+
+```{python}
+import os.path as op
+import sys
+```
 
 ```{python}
 import numpy as np
@@ -22,17 +27,34 @@ import matplotlib.pyplot as plt
 ```
 
 ```{python}
+sys.path.append('..')
+from dsutils import get_original
+```
+
+```{python}
+# Read data, metadata from figshare, store locally.
+data_fname = get_original('https://ndownloader.figshare.com/files/22279323',
+                         'Civil_Service_List__Active_.csv',
+                         'e4894d996891228a1d5175e1adbfdbe1')
+meta_fname = get_original('https://ndownloader.figshare.com/files/22279611',
+                          'Civil_Service_List_Active_Definitions.xlsx',
+                          'f7930ec900c015c6fe760b9be3e29a7e')
+```
+
+```{python}
 def proc_cols(df):
     """ Clean civil list data
     """
     wanted = ['Exam No',
-     'Adj. FA',
-     'List Title Code',
-     'List Title Desc',
-     'List Agency Code',
-     'List Agency Desc',
-     'List Div Code',
-     'Published Date']
+              'First Name',
+              'MI',
+              'Last Name',
+              'Adj. FA',
+              'List Title Code',
+              'List Title Desc',
+              'List Agency Code',
+              'List Agency Desc',
+              'Published Date']
     slim = df.loc[:, wanted]
     slim['Published Date'] = pd.to_datetime(slim['Published Date'])
     return slim
@@ -49,44 +71,99 @@ def first_or_n(col):
 ```
 
 ```{python}
-def by_exam_name(df, name):
-    return df[df['List Title Desc'] == name]
-```
-
-```{python}
 # Use low_memory=False to correctly infer data types from columns.
-dfa = pd.read_csv('originals/Civil_Service_List__Active_.csv',
-                  low_memory=False)
-dfa.head()
+df = pd.read_csv(data_fname, low_memory=False)
+df.head()
 ```
 ```{python}
-slima = proc_cols(dfa)
-```
-
-```{python}
-police_a = by_exam_name(slima, 'POLICE OFFICER')
-police_a.groupby('Exam No').agg(first_or_n).sort_values(
-    'Published Date', ascending=False)
+# Get people who have taken open Police Officer exam.
+# Exams which are not "OPEN COMPETITIVE" are promotion exams.
+p_df = df[(df['List Title Desc'] == 'POLICE OFFICER') &
+          (df['List Agency Desc'] == 'OPEN COMPETITIVE')
+         ]
+police = proc_cols(p_df)
 ```
 
 ```{python}
-police_2017 = slima[slima['Exam No'] == 7323]
-police_2017.hist('Adj. FA');
+# Sort exams by recency of publication.
+# first_or_n returns n for columns not identical between entries.
+# Thus "Adj. FA" below is the number of people taking that exam.
+pgb = police.groupby('Exam No').agg(first_or_n).sort_values(
+                     'Published Date', ascending=False)
+pgb
 ```
 
 ```{python}
-police_2019 = slima[slima['Exam No'] == 8339]
-police_2019.hist('Adj. FA');
+# In the groupby, "Adj. FA" is the number of people taking that exam.
+big_exams = pgb[pgb['Adj. FA'] > 10000]
+big_exams
 ```
 
 ```{python}
-police_2019.head()
+# Select big 2017 and 2019 exams.
+dates = big_exams['Published Date']
+
+def jan1(year):
+    return pd.Timestamp(year, 1, 1)
+
+exam_2017 = big_exams.index[(dates > jan1(2017)) & (dates < jan1(2018))].item()
+exam_2019 = big_exams.index[(dates > jan1(2019)) & (dates < jan1(2020))].item()
+exam_2017, exam_2019
 ```
 
 ```{python}
-police_2019['Adj. FA'].value_counts().sort_index(ascending=False)
+police_2017 = police[police['Exam No'] == exam_2017]
+police_2017.hist('Adj. FA')
+police_2017['Adj. FA'].describe()
 ```
 
 ```{python}
+police_2019 = police[police['Exam No'] == exam_2019]
+police_2019.hist('Adj. FA')
+police_2019['Adj. FA'].describe()
+```
 
+```{python}
+# Columns to output in processed files.
+out_cols = ['First Name',
+            'MI',
+            'Last Name',
+            'Adj. FA']
+```
+
+```{python}
+# Write processed 2017 exam scores.
+fname_2017 = op.join('processed', 'nyc_police_exam_sept_2017.csv')
+police_2017.loc[:, out_cols].to_csv(fname_2017, index=None)
+pd.read_csv(fname_2017).head()
+```
+
+```{python}
+# Write processed 2019 exam scores.
+fname_2019 = op.join('processed', 'nyc_police_exam_feb_2019.csv')
+police_2019.loc[:, out_cols].to_csv(fname_2019, index=None)
+pd.read_csv(fname_2019).head()
+```
+
+```{python}
+# Read data definitions.
+meta = pd.read_excel(op.join('originals', 'Civil_Service_List_Active_Definitions.xlsx'),
+                     sheet_name='Data Dictionary').dropna()
+meta
+```
+
+```{python}
+# Select columns from metadata.
+out_col_meta = meta.loc[meta['Column Name'].isin(out_cols),
+                        ['Column Name', 'Description']]
+out_col_meta
+```
+
+```{python}
+# Write data dictionary.
+out_fname_meta = op.join('processed', 'nyc_police_exam_data_dict.md')
+with open(out_fname_meta, 'wt') as fobj:
+    fobj.write('# NYC Civil List police exam data dictionary\n\n')
+    for i, row in out_col_meta.iterrows():
+        fobj.write(f"* `{row['Column Name']}`: {row['Description']}\n")
 ```
