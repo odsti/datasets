@@ -1,0 +1,92 @@
+---
+jupyter:
+  jupytext:
+    notebook_metadata_filter: all,-language_info
+    split_at_heading: true
+    text_representation:
+      extension: .Rmd
+      format_name: rmarkdown
+      format_version: '1.2'
+      jupytext_version: 1.3.3
+  kernelspec:
+    display_name: Python 3
+    language: python
+    name: python3
+---
+
+```{python}
+import numpy as np
+import pandas as pd
+import matplotlib.pyplot as plt
+# %matplotlib inline
+```
+
+```{python}
+def proc_cols(df):
+    """ Clean civil list data
+    """
+    wanted = ['Exam No',
+     'Adj. FA',
+     'List Title Code',
+     'List Title Desc',
+     'List Agency Code',
+     'List Agency Desc',
+     'List Div Code',
+     'Published Date']
+    slim = df.loc[:, wanted]
+    slim['Published Date'] = pd.to_datetime(slim['Published Date'])
+    return slim
+```
+
+```{python}
+def first_or_n(col):
+    """ Return first value if all values equal, else number of values
+    """
+    unique = col.unique()
+    if len(unique) > 1:
+        return len(col)
+    return unique[0]
+```
+
+```{python}
+def by_exam_name(df, name):
+    return df[df['List Title Desc'] == name]
+```
+
+```{python}
+# Use low_memory=False to correctly infer data types from columns.
+dfa = pd.read_csv('originals/Civil_Service_List__Active_.csv',
+                  low_memory=False)
+dfa.head()
+```
+```{python}
+slima = proc_cols(dfa)
+```
+
+```{python}
+police_a = by_exam_name(slima, 'POLICE OFFICER')
+police_a.groupby('Exam No').agg(first_or_n).sort_values(
+    'Published Date', ascending=False)
+```
+
+```{python}
+police_2017 = slima[slima['Exam No'] == 7323]
+police_2017.hist('Adj. FA');
+```
+
+```{python}
+police_2019 = slima[slima['Exam No'] == 8339]
+police_2019.hist('Adj. FA');
+```
+
+```{python}
+police_2019.head()
+```
+
+```{python}
+police_2019['Adj. FA'].value_counts().sort_index(ascending=False)
+```
+
+```{python}
+
+```
