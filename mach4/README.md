@@ -5,6 +5,9 @@ Data from <https://openpsychometrics.org/_rawdata>, and specifically
 
 See the files in `original` for the raw data.
 
+Thanks to the "mach4" team from one of my courses for pointing me to this
+interesting dataset.
+
 ## Data dictionary
 
 I modified the text starting at the next sentence, to the end of this page,
