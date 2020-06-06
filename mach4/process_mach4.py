@@ -80,7 +80,7 @@ TEST_DATA = {q: TEST_DATA[q] for q in sorted(TEST_DATA, key=qno)}
 # Recoding dictionary that replaces 1 with 5, 2 with 4, etc.
 REV_DICT = dict(zip(range(1, 6), range(5, 0, -1)))
 
-# Recoders dictionary for use with data frame "replace" method.
+# Recoding dictionary for use with data frame "replace" method.
 # Keys are column names, values are recoding dictionary to apply to give
 # column.
 NEG_RECODERS = {q: REV_DICT for q in TO_REVERSE_QA}
@@ -148,6 +148,8 @@ def defs2renames(defs):
 
 TIPI_RENAMES = defs2renames(TIPI_DEFS)
 VCL_RENAMES = defs2renames(VCL_DEFS)
+# Merge the dictionaries for renaming columns.
+RENAMES = {**TIPI_RENAMES, **VCL_RENAMES}
 
 # Value recoding dictionary for various demographic questions.
 # See codebook.
@@ -201,7 +203,7 @@ in_fname = op.join('original', 'data.csv')
 df = pd.read_csv(in_fname, sep='\t')
 
 # Apply column renaming.
-renamed = df.rename(columns={**TIPI_RENAMES, **VCL_RENAMES})
+renamed = df.rename(columns=RENAMES)
 # Apply value recoding dictionaries.
 replaced = renamed.replace(DEM_RECODERS)
 # Apply family size and age recoding functions.

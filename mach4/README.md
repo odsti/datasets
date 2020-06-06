@@ -59,9 +59,11 @@ to each item on a five point scale: 1=Disagree, 2=Slightly disagree, 3=Neutral,
 
 Three values are recorded for each question. e.g.
 
-* Q1A - the user's answer
-* Q1I - the position of that item in the survey
-* Q1E - the time spend on that question in milliseconds
+* Q1A - the user's Answer.
+* Q1I - the position (Index) of that item in the survey, where 1 means item
+  presented first. These questions always start the survey, so the index
+  numbers range from 1 to 20.
+* Q1E - the time spent (Elapsed) on that question in milliseconds.
 
 After the test body, users were asked if they would be willing to complete an
 additional research survey. This data only includes those who agreed to.
@@ -148,13 +150,13 @@ of 0 as missing in the processed table.
 * major - "If you attended a university, what was your major (e.g.
   "psychology", "English", "civil engineering")?"
 
-The following value were calculated by the server:
+The following values were calculated by the server:
 
 * country - the user's network location
 * screenw - width of user's device in pixels
 * screenh - width of user's device in pixels
 
-The time spend on each page was recorded in seconds:
+The time spent on each page was recorded in seconds:
 
 * introelapse
 * testelapse
