@@ -39,7 +39,7 @@ Q_DEFS = {
 ALL_QA = [q + 'A' for q in Q_DEFS]
 
 # Questions for which 1 means more Machiavellian.
-# For the remaining questions, 5 means more Maciavellian.
+# For the remaining questions, 5 means more Machiavellian.
 TO_REVERSE = ("Q3", "Q4", "Q6", "Q7" , "Q9" , "Q10", "Q11", "Q14", "Q16",
               "Q17")
 TO_REVERSE_QA = [q + 'A' for q in TO_REVERSE]
