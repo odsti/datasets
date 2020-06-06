@@ -198,7 +198,7 @@ def recode_age(v):
         return np.nan
     return v
 
-# Read original data.
+# Read original data. Values are separated by tabs not commas.
 in_fname = op.join('original', 'data.csv')
 df = pd.read_csv(in_fname, sep='\t')
 
@@ -207,9 +207,10 @@ renamed = df.rename(columns=RENAMES)
 # Apply value recoding dictionaries.
 replaced = renamed.replace(DEM_RECODERS)
 # Apply family size and age recoding functions.
-recoded = replaced.copy()
-recoded.loc[:, ['familysize', 'age']] = recoded.transform(
-    {'familysize': recode_familysize, 'age': recode_age})
+recoded = replaced.assign(
+    age=replaced['age'].apply(recode_age),
+    familysize=replaced['familysize'].apply(recode_familysize)
+)
 # Calculate total score.
 recoded['machIV_score'] = machIV_score(df)
 
