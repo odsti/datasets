@@ -1,17 +1,13 @@
 ---
 jupyter:
   jupytext:
-    metadata_filter:
-      notebook:
-        additional: all
-        excluded:
-        - language_info
+    notebook_metadata_filter: all,-language_info
     split_at_heading: true
     text_representation:
       extension: .Rmd
       format_name: rmarkdown
-      format_version: '1.0'
-      jupytext_version: 0.8.6
+      format_version: '1.2'
+      jupytext_version: 1.4.2
   kernelspec:
     display_name: Python 3
     language: python
@@ -78,14 +74,14 @@ The paper has:
 The dates should be in this range.
 
 ```{python}
-dates = pd.to_datetime('1900-01-01') + pd.to_timedelta(df['date'], unit='days')
+dates = pd.to_datetime('1900-01-01') + pd.to_timedelta(df['date'], unit='D')
 dates.describe()
 ```
 
 Add the hours:
 
 ```{python}
-date_times = dates + pd.to_timedelta(df['hour'], unit='hours')
+date_times = dates + pd.to_timedelta(df['hour'], unit='h')
 date_times.head()
 ```
 
