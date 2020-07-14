@@ -3,7 +3,8 @@
 From [Mosteller interview](https://doi.org/10.1080/10691898.1993.11910453):
 
 * Coleman report on inequality in education achievement across races in the
-  US.
+  US. Search now give <https://www.icpsr.umich.edu/web/AERA/studies/6389>.
+* Efficacy of death penalty.
 * US national study of halothane anesthetics (Tukey and others).
 * "Statistics by Example" series of books
 * "Statistics: guide to the unknown" book.
