@@ -123,3 +123,9 @@
 * [Figshare](https://figshare.com): "Figshare is a repository where users can
   make all of their research outputs available in a citable, shareable and
   discoverable manner".
+* [Does High Public Debt Consistently Stifle Economic Growth? A Critique of
+  Reinhart and Rogoff
+  ](https://www.peri.umass.edu/publication/item/526-does-high-public-debt-consistently-stifle-economic-growth-a-critique-of-reinhart-and-rogoff).
+  Data critique of famous paper that influenced European finance towards
+  austerity measures.  See the [data and code
+  archive](https://www.peri.umass.edu/images/WP322HAP-RR-GITD-code-2013-05-17.zip).
