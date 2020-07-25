@@ -3,8 +3,9 @@
 There is one directory per dataset.
 
 Each directory contains the original data (if small enough), a Jupyter Notebook
-or Python `.py` script to analyze the data, and a directory `processed` with
-new copies of the data as output from the notebook / script.
+or Python `.py` script or R Notebook or `.R` script to process the data, and
+a directory `processed` with new copies of the data as output from the notebook
+/ script.
 
 The Jupyter notebooks are in native `.ipynb` format, and in `.Rmd` RMarkdown
 format, for ease of editing and version control.
@@ -14,3 +15,5 @@ with the RMarkdown versions of the files.
 
 See the `README.md` file in each directory for license / copyright of the files
 in that directory.
+
+See `data_links.md` for links at which to search for datasets.
