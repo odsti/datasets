@@ -6,6 +6,7 @@
 * [Reddit datasets discussion](https://www.reddit.com/r/datasets)
 * [Datahub.io](https://datahub.io) : OKF portal.
 * [IBM dataset exchange](https://developer.ibm.com/exchanges/data)
+* [Azure open datasets](https://azure.microsoft.com/en-us/services/open-datasets/catalog/)
 * [Data is Plural Listing](https://docs.google.com/spreadsheets/d/1wZhPLMCHKJvwOkP4juclhjFgqIY8fQFMemwKL2c64vk);
 * [Wikipedia list of datasets for ML research](https://en.wikipedia.org/wiki/List_of_datasets_for_machine-learning_research)
 * [Awesome public
@@ -129,3 +130,22 @@
   Data critique of famous paper that influenced European finance towards
   austerity measures.  See the [data and code
   archive](https://www.peri.umass.edu/images/WP322HAP-RR-GITD-code-2013-05-17.zip).
+* 2016 United States Presidential Election Tweet Ids
+  <https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/PDI7IN>.
+  "Per Twitter’s Developer Policy, tweet ids may be publicly shared; tweets
+  may not."  This database contains IDs, not tweets.  You can fetch the tweets
+  ("hydrating" the ID), but this will be slow and limited by Twitter API
+  policies.
+* Demographic and Health Surveys
+  <https://www.dhsprogram.com/data/available-datasets.cfm> - health and demographic data
+  across countries.
+* IPUMS "provides census and survey data from around the world integrated
+  across time and space" <https://ipums.org>.
+* National Library of Medicine data sharing resources
+  <https://www.nlm.nih.gov/NIHbmic/nih_data_sharing_repositories.html>
+* Institute for Health Metrics and Evaluation "is an independent population
+  health research center at UW Medicine".  Includes [IHME global burden of disease](http://www.healthdata.org/gbd) metrics.
+* <https://healthdata.gov/> "This site is dedicated to making data
+  discoverable and making valuable government data available to the public in
+  the hopes of better health outcomes for all.".
+* United Nations Human Development Programme <http://hdr.undp.org/en/data>
