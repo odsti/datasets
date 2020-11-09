@@ -21,7 +21,11 @@ col2dtype = {'year': int,
              'budget': int,
              'gross': int}
 
-mmd_trim = mmd_df.loc[:, list(cols)].rename(columns=cols).dropna()
+mmd_df_reorg = mmd_df.rename(columns=cols)
+# Strip bad chars from title names.
+mmd_df_reorg['title'] = mmd_df_reorg['title'].str.strip()
+
+mmd_trim = mmd_df_reorg.loc[:, list(cols.values())].dropna()
 
 for name, dt in col2dtype.items():
     mmd_trim[name] = mmd_trim[name].astype(dt)
