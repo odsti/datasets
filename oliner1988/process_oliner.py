@@ -17,9 +17,9 @@ def proc_n_table(fname, label_col):
     tab.iloc[:, 1:] = (tab.iloc[:, 1:] * ns / 100).round().astype(int)
 
     # Subtract bystanders to get actives
-    tab = tab.rename(columns={'nonrescuers': 'actives'})
-    tab['actives'] = tab['actives'] - tab['bystanders']
-    ns['nonrescuers'] -= ns['bystanders']
+    tab = tab.rename(columns={'nonrescuer': 'active'})
+    tab['active'] = tab['active'] - tab['bystander']
+    ns['nonrescuer'] -= ns['bystander']
 
     # add n at end of table
     tab.loc[tab.index.max() + 1] = ['out of'] + list(ns)
