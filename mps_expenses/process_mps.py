@@ -12,15 +12,9 @@ contact = pd.read_csv(op.join('original', 'mp_contact_11_2020.csv'))
 expenses = pd.read_csv(op.join('original', 'mp_expenses_2020_21.csv')).dropna(
     how='all')
 
-
-def drop_salutation(name):
-    salutation, rest = name.split(' ', 1)
-    if salutation in ('Ms', 'Mrs', 'Miss', 'Mr', 'Dr', 'Dame', 'Sir'):
-        return rest
-    return name
-
-
-RENAMES = {  # Contact name, desired name to match expenses
+# Names in the contact spreadsheet often don't match the names in the expenses
+# spreadsheet, even after knocking off salutations.
+RENAMES = {  # "contact" name: matching name in "expenses"
            "Angus Brendan MacNeil": "Angus MacNeil",
            "Anne Marie Morris": "Anne Morris",
            "William Cash": "Bill Cash",
@@ -48,19 +42,26 @@ RENAMES = {  # Contact name, desired name to match expenses
 
 
 def process_name(name):
-    name = drop_salutation(name)
+    # Drop any salutations.
+    salutation, rest = name.split(' ', 1)
+    if salutation in ('Ms', 'Mrs', 'Miss', 'Mr', 'Dr', 'Dame', 'Sir'):
+        name = rest
+    # Check for any manual renames (above).
     return RENAMES.get(name, name)
 
 
 contact['MP name'] = contact['Name (Display as)'].apply(process_name)
 
-# Expenses missing a contact.
-emissing_contact = expenses[~expenses['MP name'].isin(contact['MP name'])]
-
 
 def debug_names(contact, expenses):
-    """ Print suggestions for matching names
+    """ Print suggestions for matching names between contact and expenses.
+
+    Recorded here for posterity.  I used this function to fill in the RENAMES
+    dictionary above.
     """
+    # Expenses missing a contact.
+    emissing_contact = expenses[~expenses['MP name'].isin(contact['MP name'])]
+
     # Go through each, looking for last name
     con_copy = contact.copy()
     con_copy['last'] = contact['MP name'].apply(lambda n : n.split()[-1])
@@ -76,8 +77,6 @@ def debug_names(contact, expenses):
             print("Possible contact rows")
             print(maybes)
 
-
-details = contact.loc[:, ['MP name', 'Party']]
 
 def proc_pounds(v):
     return float(v.replace('£', '').replace(',', ''))
@@ -97,6 +96,7 @@ total_spend = total_spend.assign(
     **{new: expenses[old].apply(proc_pounds)
        for old, new in column_renames.items()})
 
+details = contact.loc[:, ['MP name', 'Party']]
 both = details.merge(total_spend, on='MP name')
 
 # Check we have the correct number of MPs
