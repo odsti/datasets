@@ -78,15 +78,33 @@ def debug_names(contact, expenses):
 
 
 details = contact.loc[:, ['MP name', 'Party']]
-total_spend = expenses.loc[:, ['MP name']]
 
 def proc_pounds(v):
     return float(v.replace('£', '').replace(',', ''))
 
-total_spend['Total spend'] = expenses[
-    'Overall total spend for this financial year'].apply(proc_pounds)
+column_renames = {
+    'Office spend': 'Office',
+    'Staffing spend': 'Staffing',
+    'Windup spend': 'Windup',
+    'Accommodation spend': 'Accommodation',
+    'Travel/subs spend': 'Travel',
+    'Other spend': 'Other',
+    'Overall total spend for this financial year': 'Total',
+}
+
+total_spend = expenses.loc[:, ['MP name']]
+total_spend = total_spend.assign(
+    **{new: expenses[old].apply(proc_pounds)
+       for old, new in column_renames.items()})
 
 both = details.merge(total_spend, on='MP name')
+
+# Check we have the correct number of MPs
+assert len(both) == 650
+
+# Check we got everything
+calc_totals = both.loc[:, 'Office':'Other'].sum(axis=1)
+assert np.allclose(calc_totals, both['Total'])
 
 out_fname = op.join('processed', 'uk_mp_expenses_2020_21.csv')
 both.to_csv(out_fname, index=None)
