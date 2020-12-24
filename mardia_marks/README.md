@@ -15,3 +15,25 @@ page 1.
 
 It wasn't clear to me what the data license was.  The R package is under the
 usual GPL (>= 2).
+
+At the time of writing, someone has a copy of the book at
+<https://statisticalsupportandresearch.files.wordpress.com/2017/06/k-v-mardia-j-t-kent-j-m-bibby-multivariate-analysis-probability-and-mathematical-statistics-academic-press-inc-1979.pdf>.
+
+The data come from table 1.2.1 of the book.  There is little information about
+the data except for:
+
+> ... performance on different papers taken by the same students.
+
+The table heading for the table 1.2.1 has:
+
+> Marks in open-book and closed-book examinations out of 100
+
+"O" and "C" below refer to Open-book and Closed-book respectively.
+
+The variable headings are:
+
+1. "Mechanics (C)" - `MECH`
+2. "Vectors (C)" - `VECT`
+3. "Algebra (O)" - `ALG`
+4. "Analysis (O)" - `ANL` (avoiding a common cause of distress)
+5. "Statistics (O)" - `STAT`.
