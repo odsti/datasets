@@ -3,31 +3,30 @@ title: "Clean Airbnb dataset
 output: html_document
 ---
 
-Some of the code here comes from [this
-file](https://github.com/alexsingleton/urban_analytics/blob/0bc0f23/04_Descriptive_statistics/P4_Descriptive_Statistics.Rmd),
-[licensed with
-CC-BY](https://github.com/alexsingleton/urban_analytics/blob/0bc0f23/README.md).
+Some of the code here comes from [this file](https://github.com/alexsingleton/urban_analytics/blob/0bc0f23/04_Descriptive_statistics/P4_Descriptive_Statistics.Rmd),
+[licensed with CC-BY](https://github.com/alexsingleton/urban_analytics/blob/0bc0f23/README.md).
 
 We import some [Airbnb](http://insideairbnb.com/get-the-data.html) data for
-Amsterdam that was collected during July, 2016.
+Amsterdam that was collated in February 2021.
 
 ```{r}
-# Read in CSV from local file
-amsterdam <- read.csv("original/listings.csv")
+# Read in CSV from URL
+amsterdam_full <- read.csv("original/listings.csv")
 ```
 
 This contains a wide array of variables:
 
 ```{r}
-colnames(amsterdam)
+colnames(amsterdam_full)
 ```
 
 However, for the example dataset we will subset these data to a limited set of
 variables:
 
 ```{r}
-# Subset data
-amsterdam <- subset(amsterdam, select = c("id","neighbourhood_cleansed","latitude","longitude","property_type","room_type","bedrooms","price","number_of_reviews"))
+# Take a subset of the columns.
+amsterdam <- subset(amsterdam_full,
+                    select = c("id","neighbourhood_cleansed","latitude","longitude","property_type","room_type","bedrooms","price","number_of_reviews"))
 
 # Clean the price data to remove $ and , then convert to numeric (If you are
 # doing this outside of the US / UK and have a non English locale set, try
@@ -43,16 +42,22 @@ amsterdam <- amsterdam[complete.cases(amsterdam),]
 head(amsterdam)
 ```
 
-In fact, we will start by restricting ourselves to the houses and apartments in this dataset.
+In fact, we will start by restricting ourselves to the rooms, houses and
+apartments in this dataset.
 
 ```{r}
+# Give the column data a new name, as a shortcut.
+p_type <- amsterdam$property_type
 houses_apartments <- subset(amsterdam,
-                            amsterdam$property_type == "House" | amsterdam$property_type == "Apartment" )
+                            p_type == "Private room in house" |
+                            p_type == "Private room in apartment" |
+                            p_type == "Entire house" |
+                            p_type == "Entire apartment")
 head(houses_apartments)
 ```
 
 Save this subset for further analysis.
 
 ```{r}
-write.csv(houses_apartments, file='processed/amsterdam_airbnb_2021.csv')
+write.csv(houses_apartments, file='processed/amsterdam_airbnb_2_2021.csv')
 ```
