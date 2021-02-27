@@ -13,8 +13,8 @@ You can find some previews at
 `mechanics` gives a preview with the top three rows of these data listed on
 page 1.
 
-It wasn't clear to me what the data license was.  The R package is under the
-usual GPL (>= 2).
+It wasn't clear to me what the suggested data license was.  The R package is
+under the usual GPL (>= 2).
 
 At the time of writing, someone has a copy of the book at
 <https://statisticalsupportandresearch.files.wordpress.com/2017/06/k-v-mardia-j-t-kent-j-m-bibby-multivariate-analysis-probability-and-mathematical-statistics-academic-press-inc-1979.pdf>.
@@ -30,10 +30,10 @@ The table heading for the table 1.2.1 has:
 
 "O" and "C" below refer to Open-book and Closed-book respectively.
 
-The variable headings are:
+The variable headings for the table are:
 
-1. "Mechanics (C)" - `MECH`
+1. "Mechanics (C)" - `MECH` in the data file.
 2. "Vectors (C)" - `VECT`
 3. "Algebra (O)" - `ALG`
-4. "Analysis (O)" - `ANL` (avoiding a common cause of distress)
+4. "Analysis (O)" - `ANL` (mercifully)
 5. "Statistics (O)" - `STAT`.
