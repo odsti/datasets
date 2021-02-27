@@ -1,0 +1,58 @@
+---
+title: "Clean Airbnb dataset
+output: html_document
+---
+
+Some of the code here comes from [this
+file](https://github.com/alexsingleton/urban_analytics/blob/0bc0f23/04_Descriptive_statistics/P4_Descriptive_Statistics.Rmd),
+[licensed with
+CC-BY](https://github.com/alexsingleton/urban_analytics/blob/0bc0f23/README.md).
+
+We import some [Airbnb](http://insideairbnb.com/get-the-data.html) data for
+Amsterdam that was collected during July, 2016.
+
+```{r}
+# Read in CSV from local file
+amsterdam <- read.csv("original/listings.csv")
+```
+
+This contains a wide array of variables:
+
+```{r}
+colnames(amsterdam)
+```
+
+However, for the example dataset we will subset these data to a limited set of
+variables:
+
+```{r}
+# Subset data
+amsterdam <- subset(amsterdam, select = c("id","neighbourhood_cleansed","latitude","longitude","property_type","room_type","bedrooms","price","number_of_reviews"))
+
+# Clean the price data to remove $ and , then convert to numeric (If you are
+# doing this outside of the US / UK and have a non English locale set, try
+# running Sys.setlocale("LC_ALL","English") before using gsub)
+amsterdam$price <- gsub("$","",amsterdam$price,fixed = TRUE)
+amsterdam$price <- gsub(",","",amsterdam$price,fixed = TRUE)
+amsterdam$price <- as.numeric(as.character(amsterdam$price))
+
+# Remove any records that are not complete
+amsterdam <- amsterdam[complete.cases(amsterdam),]
+
+# Show the top six rows
+head(amsterdam)
+```
+
+In fact, we will start by restricting ourselves to the houses and apartments in this dataset.
+
+```{r}
+houses_apartments <- subset(amsterdam,
+                            amsterdam$property_type == "House" | amsterdam$property_type == "Apartment" )
+head(houses_apartments)
+```
+
+Save this subset for further analysis.
+
+```{r}
+write.csv(houses_apartments, file='processed/amsterdam_airbnb_2021.csv')
+```
