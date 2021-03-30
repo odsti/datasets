@@ -1,0 +1,162 @@
+---
+jupyter:
+  jupytext:
+    notebook_metadata_filter: all,-language_info
+    split_at_heading: true
+    text_representation:
+      extension: .Rmd
+      format_name: rmarkdown
+      format_version: '1.2'
+      jupytext_version: 1.8.2
+  kernelspec:
+    display_name: Python 3
+    language: python
+    name: python3
+---
+
+# Processing the Boston housing dataset
+
+Background from <http://lib.stat.cmu.edu/datasets/boston>
+
+> The Boston house-price data of Harrison, D. and Rubinfeld, D.L. 'Hedonic
+> prices and the demand for clean air', J. Environ. Economics & Management,
+> vol.5, 81-102, 1978.   Used in Belsley, Kuh & Welsch, 'Regression
+> diagnostics ...', Wiley, 1980.   N.B. Various transformations are used in
+> the table on pages 244-261 of the latter.
+
+```{python}
+import os.path as op
+import numpy as np
+import pandas as pd
+```
+
+The following data from
+<http://lib.stat.cmu.edu/datasets/boston_corrected.txt>.
+
+As noted in that file:
+
+> This file contains the Harrison and Rubinfeld (1978) data corrected for
+> a few minor errors and augmented with the latitude and longitude of the
+> observations.
+
+```{python}
+df = pd.read_csv(op.join('original/boston_corrected.txt'),
+                 sep='\t',
+                 skiprows=8,
+                 encoding='latin1',
+                 index_col=0)
+df.head()
+```
+
+There should be 506 rows.
+
+```{python}
+assert len(df) == 506
+```
+
+There are no missing values:
+
+```{python}
+assert len(df.dropna()) == len(df)
+```
+
+Variable list from an earlier version of the datset at <http://lib.stat.cmu.edu/datasets/boston>:
+
+* `CRIM`: per capita crime rate by town
+* `ZN`: proportion of residential land zoned for lots over 25,000 sq.ft.
+* `INDUS`: proportion of non-retail business acres per town
+* `CHAS`: Charles River dummy variable (= 1 if tract bounds river; 0
+  otherwise)
+* `NOX`: nitric oxides concentration (parts per 10 million)
+* `RM`: average number of rooms per dwelling
+* `AGE`: proportion of owner-occupied units built prior to 1940
+* `DIS`: weighted distances to five Boston employment centres
+* `RAD`: index of accessibility to radial highways
+* `TAX`: full-value property-tax rate per \$10,000
+* `PTRATIO`: pupil-teacher ratio by town
+* `B`: 1000(Bk - 0.63)^2 where Bk is the proportion of blacks [sic] by town
+* `LSTAT`: % lower status of the population
+* `MEDV`: Median value of owner-occupied homes in \$1000's
+
+The corrected dataset has [its own paper](http://www.spatial-statistics.com/pace_manuscripts/jeem_ms_dir/pdf/fin_jeem.pdf).  It adds:
+
+* `TOWN`: Town name
+* `TOWN#`: Town number (appears to be arbitrary)
+* `TRACT`:  Census tract number.
+* `LON`: Longitude
+* `LAT`: Latitude
+* `CMEDV`: Median home value with some corrections (see paper)
+
+From <https://www.cs.toronto.edu/~delve/data/boston/bostonDetail.html>, referring the earlier version of the data:
+
+> Variable [MEDV] seems to be censored [thresholded] at 50.00 USD
+> (corresponding to a median > price of 50,000); Censoring is suggested by the
+> fact that the highest median price of exactly 50,000 is reported in 16
+> cases, while 15 cases have prices between 40,000 and 50,000 USD, with prices
+> rounded to the nearest hundred. Harrison and Rubinfeld do not mention any
+> censoring.
+
+Let us check whether this effect obtains in our version of the dataset:
+
+```{python}
+df['MEDV'].value_counts()
+```
+
+It does.
+
+The same thresholding appears in the corrected `CMEDV` version of this variable.
+
+```{python}
+df['CMEDV'].value_counts()
+```
+
+Here we can detect the fixes to the median house prices in the corrected data set:
+
+```{python}
+df[df['MEDV'] != df['CMEDV']]
+```
+
+We do some renaming:
+
+```{python}
+renamed = df.rename(columns={
+    'TOWN': 'town',  # Town name
+    'TOWN#': 'town_no',  # Town number (appears to be arbitrary)
+    'TRACT': 'census_tract', # Census tract number.
+    'LON': 'longitude',
+    'LAT': 'latitude',
+    'CMEDV': 'median_home_value',  # Corrected estimated median value of
+                                   # owner-occupied homes in $1K
+    'CRIM': 'crime_rate',  # per capita crime rate by town
+    'ZN': 'zoned_25k_p',  # propn residential land zoned for lots over 25K ft2
+    'INDUS': 'indust_p',  # proportion of non-retail business acres per town
+    'CHAS': 'borders_charles',  # Charles River dummy variable
+    'NOX': 'NOx',  # nitric oxides concentration (parts per 10 million)
+    'RM': 'n_rooms_avg',  # average number of rooms per dwelling
+    'AGE': 'before_1940_p',  # propn of owner-occupied units built before 1940
+    'DIS': 'employ_dist',  # weighted distance to 5 Boston employment centres
+    'RAD': 'radial_access',  # index of accessibility to radial highways
+    'TAX': 'tax_rate',  # full-value property-tax rate per \$10,000
+    'PTRATIO': 'pupil_teacher_ratio',  # pupil-teacher ratio by town
+    'B': 'black_index',  # 1000(Bk - 0.63)^2 : Bk is propn of Black residents.
+    'LSTAT': 'lower_stat_pct',  # % lower status of the population
+    'MEDV': 'omedian_home_value'  # Original estimate median value of
+                                  # owner-occupied homes in $1K
+})
+renamed.head()
+```
+
+The uncorrected median home value is more confusing than helpful:
+
+```{python}
+renamed = renamed.drop('omedian_home_value', axis='columns')
+renamed.head()
+```
+
+Write out the processed file:
+
+```{python}
+out_fname = op.join('processed', 'boston_corrected.csv')
+renamed.to_csv(out_fname, index=None)
+pd.read_csv(out_fname).head()
+```
