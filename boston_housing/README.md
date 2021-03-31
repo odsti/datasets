@@ -67,14 +67,26 @@ The variables in the `processed/boston_corrected.csv` file are:
 * `pupil_teacher_ratio`: pupil-teacher ratio by town
 * `black_index`: $1000(B - 0.63)^2$ where `B` is the proportion of Black
   residents by town.  Notice this is *not* the proportion of Black residents,
-  (`B` above) but the result of the given, rather obscure calculation on `B`.
-  See [this commentary on data for the "black_index"
-  variable](https://medium.com/@docintangible/racist-data-destruction-113e3eff54a8)
-  for more detail, and links to the original 1970 census data.
+  (`B` above) but the result of the given, rather obscure calculation on `B`.  See below for more discussion.
 * `lower_stat_pct`: Percentage of population that is lower status: 1/2
   * (proportion of adults without some high school education and proportion of
-  male workers classified as laborers).
+    male workers classified as laborers).
+
+## The `black_index` variable
 
 See [this commentary on data for the "black_index"
 variable](https://medium.com/@docintangible/racist-data-destruction-113e3eff54a8)
-for more detail on the rather obscure meaning of this column.
+for more detail, and links to the original 1970 census data.  The formula
+$1000(B - 0.63)^2$  is not in the column descriptions of original paper, which
+records the column as being "Black proportion of population".  Their later
+suggested model does suggest $(B - 0.63)^2$ as a transformation. It may be
+possible to reconstruct the actual proportions `B` from the [original census
+data](https://www2.census.gov/library/publications/decennial/1970/phc-1/39204513p3ch05.pdf),
+combined with the `census_tract` values here.   But, a quick check from those
+figures does not match what we have here.  For example, the US census document
+above has 3.9 "Percent Negro" [sic] for census tract 2071.   The calculation
+above is therefore `1000 * (0.039 - 0.63) ** 2` = 349.28.  The value for
+`black_index` for this census tract is 358.77.  The corresponding numbers for
+census tract 2072 are 11.7%, calculated=263.17, dataset value=248.31.  The
+census tract allocations could be wrong, or the formula could be wrong or the
+dataset values could be wrong.
