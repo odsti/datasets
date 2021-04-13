@@ -9,8 +9,11 @@ Here is a summary of the background for the dataset
 > diagnostics ...', Wiley, 1980.   N.B. Various transformations are used in
 > the table on pages 244-261 of the latter.
 
+There's a copy of the [original paper available
+online](https://deepblue.lib.umich.edu/bitstream/handle/2027.42/22636/0000186.pdf).
+
 Pages 244-261 of the Belsley *et al* book above are typscript listings of the
-values in dataset.  From page page 245:
+values in the dataset.  From page page 245:
 
 > The following are the data used for the analysis of Harrison and Rubinfield
 (1978) Housing-Price equation treated in section 4.4 ...  We are grateful to
@@ -105,6 +108,12 @@ correspondence of observation numbers to town name (Exhibit 4.21 p. 230), and
 these match the names in the original Belsley listing, and the data here.  The
 recorded census tracts of 2011, 2021, 2022 are [still
 correct](http://www2.census.gov/geo/maps/dc10map/tract/st25_ma/c25009_essex/DC10CT_C25009_003.pdf)
-for Nahant and Swampscott.  It seems that the data in the original Belsley *et
-al* table and stored in the data frame here, do not correspond to the values in
-the 1970 census.
+for Nahant and Swampscott.
+
+The census and dataset values are not uncorrelated.  The lowest two
+`black_index` values are for census tract 919 and 812. Respective 1970 census
+"Percent Negro", calculated and recorded values are 64.8, 58.0; 0.324, 2.500;
+0.32, 2.52.
+
+It seems that the data in the original Belsley *et al* table and stored in the
+data frame here, do not exactly correspond to the values in the 1970 census.
