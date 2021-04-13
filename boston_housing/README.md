@@ -106,5 +106,5 @@ these match the names in the original Belsley listing, and the data here.  The
 recorded census tracts of 2011, 2021, 2022 are [still
 correct](http://www2.census.gov/geo/maps/dc10map/tract/st25_ma/c25009_essex/DC10CT_C25009_003.pdf)
 for Nahant and Swampscott.  It seems that the data in the original Belsley *et
-al* table and stored in the data frame here, does not correspond to the values
-in the 1970 census.
+al* table and stored in the data frame here, do not correspond to the values in
+the 1970 census.
