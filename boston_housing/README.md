@@ -9,8 +9,15 @@ Here is a summary of the background for the dataset
 > diagnostics ...', Wiley, 1980.   N.B. Various transformations are used in
 > the table on pages 244-261 of the latter.
 
-The rows are each "towns", or, more accurately, census tracts, within the
-Boston [Standard Metropolitan Statistical
+Pages 244-261 of the Belsley *et al* book above are typscript listings of the
+values in dataset.  From page page 245:
+
+> The following are the data used for the analysis of Harrison and Rubinfield
+(1978) Housing-Price equation treated in section 4.4 ...  We are grateful to
+David Harrison and Daniel L. Rubinfield for making these data available.
+
+The rows in the dataset are each "towns", or, more accurately, *census tracts*,
+within the Boston [Standard Metropolitan Statistical
 Area](https://en.wikipedia.org/wiki/Metropolitan_statistical_area) (SMSA) in
 Massachusetts.  The "towns" are therefore districts within the greater Boston
 area.
@@ -72,21 +79,32 @@ The variables in the `processed/boston_corrected.csv` file are:
   * (proportion of adults without some high school education and proportion of
     male workers classified as laborers).
 
-## The `black_index` variable
+## The `black_index` variable is odd, and probably wrong.
 
 See [this commentary on data for the "black_index"
 variable](https://medium.com/@docintangible/racist-data-destruction-113e3eff54a8)
 for more detail, and links to the original 1970 census data.  The formula
 $1000(B - 0.63)^2$  is not in the column descriptions of original paper, which
-records the column as being "Black proportion of population".  Their later
-suggested model does suggest $(B - 0.63)^2$ as a transformation. It may be
-possible to reconstruct the actual proportions `B` from the [original census
+records the column as being "Black proportion of population", although their
+suggested model does use $(B - 0.63)^2$ as a transformation.   The formula does
+appear as the explanation for the variable in the column descriptions of the
+Belsley *et al* book cited above (p. 231).
+
+It may be possible to reconstruct the actual *proportions* `B` from the
+[original census
 data](https://www2.census.gov/library/publications/decennial/1970/phc-1/39204513p3ch05.pdf),
-combined with the `census_tract` values here.   But, a quick check from those
-figures does not match what we have here.  For example, the US census document
-above has 3.9 "Percent Negro" [sic] for census tract 2071.   The calculation
-above is therefore `1000 * (0.039 - 0.63) ** 2` = 349.28.  The value for
-`black_index` for this census tract is 358.77.  The corresponding numbers for
-census tract 2072 are 11.7%, calculated=263.17, dataset value=248.31.  The
-census tract allocations could be wrong, or the formula could be wrong or the
-dataset values could be wrong.
+combined with the `census_tract` values here.  But, a quick check from those
+figures does not match what we have here.  Consider the first row, for
+"Nahant", census tract number 2011.  The 1970 census document above lists 0.3
+"Percent Negro" (sic). The formula above gives 393.129 for 0.3, but the table
+(and the Belsley original) has 396.90.  Likewise for the two following rows for
+"Swampscott", census tract numbers 2021, 2022; 1970 census "Percent negro"
+values are 0.1, 0.5; calculated `black_index` values are: 395.641, 390.625;
+recorded values are 396.90, 392.83.  The Belsley *et al* book lists the
+correspondence of observation numbers to town name (Exhibit 4.21 p. 230), and
+these match the names in the original Belsley listing, and the data here.  The
+recorded census tracts of 2011, 2021, 2022 are [still
+correct](http://www2.census.gov/geo/maps/dc10map/tract/st25_ma/c25009_essex/DC10CT_C25009_003.pdf)
+for Nahant and Swampscott.  It seems that the data in the original Belsley *et
+al* table and stored in the data frame here, does not correspond to the values
+in the 1970 census.
