@@ -55,7 +55,7 @@ Vol. 58, No. 3 (Aug., 2004), pp. 237-243.  There is [another copy of the paper
 here]](http://www.medicine.mcgill.ca/epidemiology/hanley/Reprints/Hanley_Article_Galton_Data.pdf).
 
 The `galton_heights.csv` data appear to be transcription of the data from Table
-I of Galton's 1886 paper.  As Hanley's "Transmuting" paper discusses, it's
+I of Galton's 1886 paper.  As Hanley's "Transmuting" paper discusses, it is
 rather hard to work out how the 928 children from that table correspond to the
 original data.
 
@@ -66,11 +66,13 @@ Columns in `galton_heights.csv` are:
 * `child`: child's height in inches, where female children's heights have been
   multiplied by 1.08.
 
-The `child` height values all end in `.2` or `.7`.  For example, the first two
-unique heights are `61.7` and `62.2`.  This is because of the bins that Galton used in his Table I.  He explains in the caption:
+The `child` height values all end in `.2` or `.7` .  For example, the first two
+unique heights are `61.7` and `62.2`.  This is because of the bins that Galton
+used in his Table I.  He explains in the caption:
 
 > The reason why the headings run 62.2% 63.2% &c., instead of 62.5, 63.5, &c.,
 is that the observations are unequally distributed between 62 and 63, 63 and
 64, &c., there being a strong bias in favour of integral inches.
 
-It's easiest to see what this means by looking at Galton's Table I.
+It's easiest to see what this means by looking at [Galton's Table
+I](https://galton.org/essays/1880-1889/galton-1886-jaigi-regression-stature.pdf).
