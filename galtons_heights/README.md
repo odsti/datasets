@@ -25,8 +25,8 @@ don't think any of the data here would qualify for copyright under US law, as
 these are facts, and their arrangement does not seem creative. From
 <https://en.wikipedia.org/wiki/Database_right>:
 
-The `galton_families.csv` data frame has 934 rows, with one row per child.  The
-children belong to 205 unique families.  All heights are in inches.
+The `galton_combined.csv` data frame has 934 rows, with one row per child.
+The children belong to 205 unique families.  All heights are in inches.
 
 * `family`: family identifier, a string giving identifiers in Galton's
   notebook.  These are string representations of numbers from `001` through
@@ -76,3 +76,20 @@ is that the observations are unequally distributed between 62 and 63, 63 and
 
 It's easiest to see what this means by looking at [Galton's Table
 I](https://galton.org/essays/1880-1889/galton-1886-jaigi-regression-stature.pdf).
+
+`galton_children.csv` contains one row per child, where the data refers only to the child (not to the parents).  The data comes from the `galton_combined.csv` data frame. Specifically, the variables are:
+
+* `child_number`: identifying number of child within this family (see
+  `childNum` above).
+* `gender`: gender of child, `"male"` or `"female"`.
+* `height`: height of child in inches (`childHeight` above)
+* `family`: family identifier, as above.
+
+`galton_families.csv` data also come from `galton_combined.csv` above.  The
+table contains one row per family, where the data refer only to the family.
+
+Variables:
+
+* `family`: family identifier, as above.
+* `father`: father's height in inches.
+* `mother`: mother's height in inches.
