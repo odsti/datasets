@@ -45,7 +45,7 @@ children.head()
 
 ```{python}
 out_fname = op.join('processed', 'galton_families.csv')
-families.to_csv(out_fname, index=None)
+families.to_csv(out_fname)  # Preserve family in index
 pd.read_csv(out_fname).head()
 ```
 
