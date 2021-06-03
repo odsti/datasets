@@ -1,14 +1,19 @@
 # Data tables from Oliner and Oliner 1988
 
-This dataset is a series of tables from the book:
+This dataset is a series of tables from the book originally published as:
 
-Samuel P. Oliner and Pearl M. Oliner (1992) "The Altruistic Personality:
-Rescuers of Jews in Nazi Europe". Free Press, New York. ISBN 0-02923829-3.
+> Samuel P. Oliner and Pearl M. Oliner (1988) "The Altruistic Personality:
+> Rescuers of Jews in Nazi Europe". Free Press, New York. ISBN 0029238307.
+
+I (MB) have the 1992 paperback edition, from the same publisher, ISBN
+0-02923829-3.  All table and page numbers below refer to the 1992 edition.
+I expect the table numbers also apply to the original 1988 edition.
 
 [Google books preview of Oliner
-1988](https://books.google.co.uk/books?id=UctNcoCtxrIC).
+1992](https://books.google.co.uk/books?id=UctNcoCtxrIC).
 
-The book has many analyses of interview and questionnaire data from a group of "rescuers" and a control "non-rescuer" group.
+The book has many analyses of interview and questionnaire data from a group of
+"rescuers" and a control "non-rescuer" group.
 
 "Rescuers" were people for whom there was strong documentary evidence that they
 had sheltered Jews in Europe during the Second World War.   Their primary
@@ -29,9 +34,9 @@ At the time of writing the book, Yad Vashem's list had around 6000 rescuers.
 The authors made a selection from this list with the criteria that rescuers
 were "geographically accessible and that they come from a number of different
 countries" (p. 263). 95% of their rescuers came from this list, but a further
-5% "consists of persons whose names we obtained rescued survivors also
-interviewed by our project.  In selecting the latter group we were also guided
-by the same criteria that characterize the Yad Vashem rescuers ..." (p. 262).
+5% "consists of persons whose names we obtained from rescued survivors also
+interviewed by our project.  In selecting the latter group we were guided by
+the same criteria that characterize the Yad Vashem rescuers ..." (p. 262).
 
 This procedure found 406 rescuers, of which they identified 175 before the main
 project began, leaving 231 rescuers with detailed data from coded interviews
@@ -41,9 +46,9 @@ using a standard questionnaire. The statistical tables here only refer to the
 The "non-rescuer" control group were 126 persons "neither on Yad Vashem's list
 nor verified by our project as an authenticated rescuer living in Nazi-occupied
 Europe during the war.  Ideally, this group ... should have been a random
-sample from the universe of non-rescuers --- practical reality made this
+sample from the universe of non-rescuers — practical reality made this
 impossible.  We chose instead to try and obtain a matched sample of nonrescuers
--- matched with rescuers on age, sex, education, and geographic location during
+— matched with rescuers on age, sex, education, and geographic location during
 the years of the war. We were successful in matching our sample in the sense
 that there are no statistically significant differences between rescuers and
 nonrescuers in relations to all the above variables with the exception of age.
