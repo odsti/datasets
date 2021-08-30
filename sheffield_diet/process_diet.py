@@ -9,7 +9,7 @@ orig_fname = op.join('original', 'Diet_SPSS.sav')
 
 df = pd.read_spss(orig_fname)
 
-simple_df = df.loc[:, ['Diet', 'weightLOST']].rename(columns={
+simple_df = df.loc[:, ['gender', 'Diet', 'weightLOST']].rename(columns={
     'Diet': 'diet',
     'weightLOST': 'weight_lost'})
 
@@ -19,4 +19,4 @@ simple_df['diet'] = simple_df['diet'].replace(
 
 proc_fname = op.join('processed', 'sheffield_diet.csv')
 
-simple_df.to_csv(proc_fname, index=None)
+simple_df.dropna().to_csv(proc_fname, index=None, float_format='%.1f')
