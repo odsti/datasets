@@ -462,3 +462,14 @@ afqt80 afqt89 std89 std89res math arith word comp numop""".split()
 final_df = df.loc[:, to_keep]
 final_df.head()
 ```
+
+Write file.  Check and read back.
+
+```{python}
+out_fname = Path() / 'processed' / 'race_wages.csv'
+final_df.to_csv(out_fname, index=None)
+```
+
+```{python}
+pd.read_csv(out_fname).head()
+```
