@@ -1,0 +1,44 @@
+
+
+Reference
+Number     Year    Variable Description                                                              Question Name  
+----------------------------------------------------------------------------------------------------------------------
+R00001.00  1979    IDENTIFICATION CODE                                                               CASEID         
+R00003.00  1979    DATE OF BIRTH - MONTH                                                             Q1-3_A~M       
+R00005.00  1979    DATE OF BIRTH - YEAR                                                              Q1-3_A~Y       
+R01736.00  1979    SAMPLE IDENTIFICATION CODE                                                        SAMPLE_ID      
+R02147.00  78SCRN  R'S RACIAL/ETHNIC COHORT FROM SCREENER                                            SAMPLE_RACE    
+R02148.00  1979    SEX OF R                                                                          SAMPLE_SEX     
+R04101.00  1981    DATE OF BIRTH - MONTH                                                             Q1-3_A~M       
+R04103.00  1981    DATE OF BIRTH - YEAR                                                              Q1-3_A~Y       
+R06148.00  1981    PROFILES, ASVAB VOCATIONAL TEST - NORMAL/ALTERED TESTING                          ASVAB-1        
+R06149.00  1981    PROFILES, ASVAB VOCATIONAL TEST - HIGH SCHOOL GRADUATE STATUS                     ASVAB-2        
+R06151.00  1981    PROFILES, ASVAB VOCATIONAL TEST - SECTION 2-ARITHMETIC REASONING                  ASVAB-4        
+R06152.00  1981    PROFILES, ASVAB VOCATIONAL TEST - SECTION 3-WORD KNOWLEDGE                        ASVAB-5        
+R06153.00  1981    PROFILES, ASVAB VOCATIONAL TEST - SECTION 4-PARAGRAPH COMP                        ASVAB-6        
+R06154.00  1981    PROFILES, ASVAB VOCATIONAL TEST - SECTION 5-NUMERICAL OPERATIONS                  ASVAB-7        
+R06157.00  1981    PROFILES, ASVAB VOCATIONAL TEST - SECTION 8-MATHEMATICS KNOWLEDGE                 ASVAB-10       
+R06180.11  1981    PROFILES, ASVAB VOCATIONAL TEST - SECTION 2 STANDARD SCORE                        ASVAB-34       
+R06180.17  1981    PROFILES, ASVAB VOCATIONAL TEST - SECTION 8 STANDARD SCORE                        ASVAB-40       
+R06181.00  1981    PROFILES, ASVAB VOCATIONAL TEST - VERBAL COMPOSITE STANDARD SCORE                 ASVAB-43       
+R06182.00  1981    PROFILES, ARMED FORCES QUALIFICATION TEST (AFQT) PERCENTILE SCORE - 1980          AFQT-1         
+R06183.00  1981    PROFILES, ARMED FORCES QUALIFICATION TEST (AFQT) PERCENTILE SCORE - REVISED 1989  AFQT-2         
+R08102.00  1982    INT REMARKS - SEX OF R                                                            Q15-2          
+R31275.00  1990    CLASS OF WORKER AT CURRENT JOB/MOST RECENT JOB CPS ITEM                           CPS-QES-56C    
+R31278.00  1990    HOURLY RATE OF PAY CURRENT/MOST RECENT JOB                                        CPSHRP         
+R34010.00  1990    EMPLOYMENT STATUS RECODE                                                          ESR_KEY        
+R35232.00  1991    CLASS OF WORKER AT CURRENT JOB/MOST RECENT JOB CPS ITEM                           CPS-QES-56C    
+R35235.00  1991    HOURLY RATE OF PAY CURRENT/MOST RECENT JOB                                        CPSHRP         
+R35590.00  1991    TOTAL INCOME FROM WAGES AND SALARY IN PAST CALENDAR YEAR (TRUNC)                  Q13-5          
+R36564.00  1991    EMPLOYMENT STATUS RECODE                                                          ESR_KEY        
+R37282.00  1992    CLASS OF WORKER AT CURRENT JOB/MOST RECENT JOB CPS ITEM                           CPS-QES-56C    
+R37285.00  1992    HOURLY RATE OF PAY CURRENT/MOST RECENT JOB                                        CPSHRP         
+R38971.00  1992    TOTAL INCOME FROM WAGES AND SALARY IN PAST CALENDAR YEAR (TRUNC)                  Q13-5          
+R40069.00  1992    EMPLOYMENT STATUS RECODE                                                          ESR_KEY        
+R41823.00  1993    CLASS OF WORKER AT CURRENT JOB/MOST RECENT JOB CPS ITEM                           CPS-QES-56C    
+R42951.00  1993    TOTAL INCOME FROM WAGES AND SALARY IN PAST CALENDAR YEAR (TRUNC)                  Q13-5          
+R44168.00  1993    HOURLY RATE OF PAY CURRENT/MOST RECENT JOB                                        CPSHRP         
+R44180.00  1993    EMPLOYMENT STATUS RECODE                                                          ESR_KEY        
+R49828.00  1994    TOTAL INCOME FROM WAGES AND SALARY IN PAST CALENDAR YEAR (TRUNC)                  Q13-5          
+R50798.00  1994    HOURLY RATE OF PAY CURRENT/MOST RECENT JOB                                        CPSHRP         
+R50810.00  1994    EMPLOYMENT STATUS RECODE                                                          ESR_KEY        

@@ -1,0 +1,1260 @@
+R00001.00    [CASEID]                                       Survey Year: 1979
+  PRIMARY VARIABLE
+
+ 
+             IDENTIFICATION CODE
+ 
+ORIGINAL QUESTION NAME: CASEID
+ 
+NOTE: THIS NUMBER WAS ASSIGNED ACCORDING TO THE RECORD NUMBER OF EACH RESPONDENT
+ON THE TAPE. THE FIRST RESPONDENT WAS ASSIGNED ID#1, THE SECOND WAS ASSIGNED 
+ID#2, ETC.
+ 
+ACTUAL NUMBER
+ 
+UNIVERSE: All
+ 
+Refusal(-1)            0
+Don't Know(-2)         0
+TOTAL =========>   12686   VALID SKIP(-4)       0     NON-INTERVIEW(-5)       0
+ 
+Min:              1        Max:          12686        Mean:              6343.5
+ 
+Lead In: None.
+Default Next Question: R00001.49
+--------------------------------------------------------------------------------
+R00003.00    [Q1-3_A~M]                                     Survey Year: 1979
+  PRIMARY VARIABLE
+
+ 
+             DATE OF BIRTH - MONTH
+ 
+ORIGINAL QUESTION NAME: S01Q01A
+ 
+FIRST, WHEN WERE YOU BORN?
+ 
+1 THRU 12 ACTUAL MONTH
+ 
+UNIVERSE: All
+ 
+    1126           1
+     991           2
+    1028           3
+     970           4
+    1015           5
+    1053           6
+    1114           7
+    1223           8
+    1225           9
+    1010          10
+     954          11
+     977          12
+  -------
+   12686
+ 
+Refusal(-1)            0
+Don't Know(-2)         0
+TOTAL =========>   12686   VALID SKIP(-4)       0     NON-INTERVIEW(-5)       0
+ 
+Min:              1        Max:             12        Mean:                6.49
+ 
+Lead In: R00001.66[Default]
+Default Next Question: R00005.00
+--------------------------------------------------------------------------------
+R00005.00    [Q1-3_A~Y]                                     Survey Year: 1979
+  PRIMARY VARIABLE
+
+ 
+             DATE OF BIRTH - YEAR
+ 
+ORIGINAL QUESTION NAME: S01Q01A
+ 
+SEE R(3.)
+ 
+ACTUAL YEAR
+ 
+UNIVERSE: All
+ 
+    1680          57
+    1677          58
+    1722          59
+    1662          60
+    1530          61
+    1600          62
+    1550          63
+    1265          64
+  -------
+   12686
+ 
+Refusal(-1)            0
+Don't Know(-2)         0
+TOTAL =========>   12686   VALID SKIP(-4)       0     NON-INTERVIEW(-5)       0
+ 
+Min:             57        Max:             64        Mean:               60.34
+ 
+Lead In: R00003.00[Default]
+Default Next Question: R00006.00
+--------------------------------------------------------------------------------
+R01736.00    [SAMPLE_ID]                                    Survey Year: 1979
+  PRIMARY VARIABLE
+
+ 
+             SAMPLE IDENTIFICATION CODE
+ 
+ORIGINAL QUESTION NAME: S24Q01
+ 
+UNIVERSE: Entire Sample
+ 
+    2236       1 CROSS MALE WHITE
+     203       2 CROSS MALE WH. POOR
+     346       3 CROSS MALE BLACK
+     218       4 CROSS MALE HISPANIC
+    2279       5 CROSS FEMALE WHITE
+     198       6 CROSS FEMALE WH POOR
+     405       7 CROSS FEMALE BLACK
+     226       8 CROSS FEMALE HISPANIC
+     742       9 SUP MALE WH POOR
+    1105      10 SUP MALE BLACK
+     729      11 SUP MALE HISPANIC
+     901      12 SUP FEM WH POOR
+    1067      13 SUP FEMALE BLACK
+     751      14 SUP FEMALE HISPANIC
+     609      15 MIL MALE WHITE
+     162      16 MIL MALE BLACK
+      53      17 MIL MALE HISPANIC
+     342      18 MIL FEMALE WHITE
+      89      19 MIL FEMALE BLACK
+      25      20 MIL FEMALE HISPANIC
+  -------
+   12686
+ 
+Refusal(-1)            0
+Don't Know(-2)         0
+TOTAL =========>   12686   VALID SKIP(-4)       0     NON-INTERVIEW(-5)       0
+ 
+Min:              1        Max:             20        Mean:                8.17
+ 
+
+
+NOTE: MARCH 1, 1986  NORC
+ 
+SEX CODE CHANGED ON 42 CASES
+ 
+Lead In: R01735.19[Default]
+Default Next Question: R01737.00
+--------------------------------------------------------------------------------
+R02147.00    [SAMPLE_RACE]                                  Survey Year: 78SCRN
+  PRIMARY VARIABLE
+
+ 
+             R'S RACIAL/ETHNIC COHORT FROM SCREENER
+ 
+UNIVERSE: Entire Sample
+ 
+    2002       1 HISPANIC
+    3174       2 BLACK
+    7510       3 NON-BLACK, NON-HISPANIC
+  -------
+   12686
+ 
+Refusal(-1)            0
+Don't Know(-2)         0
+TOTAL =========>   12686   VALID SKIP(-4)       0     NON-INTERVIEW(-5)       0
+ 
+Min:              1        Max:              3        Mean:                2.43
+ 
+
+
+NOTE: AUGUST 26, 1980  DENNIS GREY
+ 
+DESCRIPTION:
+COHORT=3;
+IF R(1736.)=4 ! R(1736.)=8 ! R(1736.)=11 ! R(1736.)=14 THEN COHORT=1;
+IF R(1736.)=17 ! R(1736.)=20 THEN COHORT=1;
+IF R(1736.)=3 ! R(1736.)=7 ! R(1736.)=10 ! R(1736.)=13 THEN COHORT=2;
+IF R(1736.)=16 ! R(1736.)=19 THEN COHORT=2;
+R(2147.)=COHORT;
+ 
+Lead In: R02146.00[Default]
+Default Next Question: R02148.00
+--------------------------------------------------------------------------------
+R02148.00    [SAMPLE_SEX]                                   Survey Year: 1979
+  PRIMARY VARIABLE
+
+ 
+             SEX OF R
+ 
+UNIVERSE: Entire sample
+ 
+    6403       1 MALE
+    6283       2 FEMALE
+  -------
+   12686
+ 
+Refusal(-1)            0
+Don't Know(-2)         0
+TOTAL =========>   12686   VALID SKIP(-4)       0     NON-INTERVIEW(-5)       0
+ 
+Min:              1        Max:              2        Mean:                 1.5
+ 
+
+
+NOTE: AUGUST 26, 1980  DENNIS GREY
+MARCH 1, 1986  NORC
+ 
+DESCRIPTION:
+IF (R(1736.)>0 & R(1736.)<=4) ! (R(1736.)>=9 & R(1736.)<=11) THEN SEX=1;
+IF R(1736.)>=15 & R(1736.)<=17 THEN SEX=1;
+IF (R(1736.)>=5 & R(1736.)<=8) ! (R(1736.)>=12 & R(1736.)<=14) THEN SEX=
+IF R(1736.)>=18 & R(1736.)<=20 THEN SEX=2;
+R(2148.)=SEX;
+SEX CODE CHANGED ON 42 CASES
+ 
+Lead In: R02147.00[Default]
+Default Next Question: R02149.00
+--------------------------------------------------------------------------------
+R04101.00    [Q1-3_A~M]                                     Survey Year: 1981
+  PRIMARY VARIABLE
+
+ 
+             DATE OF BIRTH - MONTH
+ 
+ORIGINAL QUESTION NAME: S01D0114
+ 
+WE WOULD LIKE TO BEGIN THIS YEAR'S INTERVIEW BY CHECKING OUR
+BIRTHDATE INFORMATION, WHEN WERE YOU BORN?
+ 
+1 THRU 12 ACTUAL MONTH
+ 
+UNIVERSE: All
+ 
+       0           0: < 1
+    1087           1
+     938           2
+     982           3
+     925           4
+     981           5
+    1003           6
+    1072           7
+    1191           8
+    1169           9
+     981          10
+     927          11
+     939          12
+       0          13
+       0          14
+       0          15
+       0          16
+       0          17 TO 99999: 17+
+  -------
+   12195
+ 
+Refusal(-1)            0
+Don't Know(-2)         0
+TOTAL =========>   12195   VALID SKIP(-4)       0     NON-INTERVIEW(-5)     491
+ 
+Min:              1        Max:             12        Mean:                6.51
+ 
+Lead In: None.
+Default Next Question: R04103.00
+--------------------------------------------------------------------------------
+R04103.00    [Q1-3_A~Y]                                     Survey Year: 1981
+  PRIMARY VARIABLE
+
+ 
+             DATE OF BIRTH - YEAR
+ 
+ORIGINAL QUESTION NAME: S01D0118
+ 
+SEE R(4101.)
+ 
+ACTUAL YEAR
+ 
+UNIVERSE: All
+ 
+       0           0 TO 54: < 55
+       1          55
+       2          56
+    1590          57
+    1593          58
+    1630          59
+    1597          60
+    1478          61
+    1552          62
+    1516          63
+    1234          64
+       2          65
+       0          66
+       0          67
+       0          68
+       0          69
+       0          70
+       0          71 TO 99999: 71+
+  -------
+   12195
+ 
+Refusal(-1)            0
+Don't Know(-2)         0
+TOTAL =========>   12195   VALID SKIP(-4)       0     NON-INTERVIEW(-5)     491
+ 
+Min:             55        Max:             65        Mean:               60.37
+ 
+Lead In: R04101.00[Default]
+Default Next Question: R04104.00
+--------------------------------------------------------------------------------
+R06148.00    [ASVAB-1]                                      Survey Year: 1981
+  PRIMARY VARIABLE
+
+ 
+             PROFILES, ASVAB VOCATIONAL TEST - NORMAL/ALTERED TESTING
+ 
+ORIGINAL QUESTION NAME: *CREATED
+ 
+SEE ATTACHMENT 106 FOR DEFINITIONS
+ 
+   11625      51 COMPLETED
+      41      52 COMP-CONVERTED REFUSAL
+     127      53 COMP-PROBLEM REPORTED
+      85      54 COMP-SPANISH INSTR. CARDS
+      36      67 COMP-PRODECURES ALTERED
+  -------
+   11914
+ 
+Refusal(-1)            0
+Don't Know(-2)         0
+TOTAL =========>   11914   VALID SKIP(-4)     772     NON-INTERVIEW(-5)       0
+ 
+Min:             51        Max:             67        Mean:               51.09
+ 
+Lead In: R06147.00[Default]
+Default Next Question: R06149.00
+--------------------------------------------------------------------------------
+R06149.00    [ASVAB-2]                                      Survey Year: 1981
+  PRIMARY VARIABLE
+
+ 
+             PROFILES, ASVAB VOCATIONAL TEST - HIGH SCHOOL GRADUATE STATUS
+ 
+ORIGINAL QUESTION NAME: *CREATED
+ 
+SEE ATTACHMENT 106 FOR DEFINITIONS
+ 
+    5582       0 NON-GRADUATE
+    6305       1 GRADUATE
+  -------
+   11887
+ 
+Refusal(-1)            0
+Don't Know(-2)         0
+TOTAL =========>   11887   VALID SKIP(-4)     799     NON-INTERVIEW(-5)       0
+ 
+Min:              0        Max:              1        Mean:                 .53
+ 
+Lead In: R06148.00[Default]
+Default Next Question: R06150.00
+--------------------------------------------------------------------------------
+R06151.00    [ASVAB-4]                                      Survey Year: 1981
+  PRIMARY VARIABLE
+
+ 
+             PROFILES, ASVAB VOCATIONAL TEST - SECTION 2-ARITHMETIC REASONING
+ 
+ORIGINAL QUESTION NAME: *CREATED
+ 
+SEE ATTACHMENT 106 FOR DEFINITIONS
+ 
+ACTUAL NUMBER
+ 
+Refusal(-1)            0
+Don't Know(-2)         0
+TOTAL =========>   11914   VALID SKIP(-4)     772     NON-INTERVIEW(-5)       0
+ 
+Min:              0        Max:             30        Mean:               15.82
+ 
+Lead In: R06150.00[Default]
+Default Next Question: R06152.00
+--------------------------------------------------------------------------------
+R06152.00    [ASVAB-5]                                      Survey Year: 1981
+  PRIMARY VARIABLE
+
+ 
+             PROFILES, ASVAB VOCATIONAL TEST - SECTION 3-WORD KNOWLEDGE
+ 
+ORIGINAL QUESTION NAME: *CREATED
+ 
+SEE ATTACHMENT 106 FOR DEFINITIONS
+ 
+ACTUAL NUMBER
+ 
+Refusal(-1)            0
+Don't Know(-2)         0
+TOTAL =========>   11914   VALID SKIP(-4)     772     NON-INTERVIEW(-5)       0
+ 
+Min:              0        Max:             35        Mean:               23.55
+ 
+Lead In: R06151.00[Default]
+Default Next Question: R06153.00
+--------------------------------------------------------------------------------
+R06153.00    [ASVAB-6]                                      Survey Year: 1981
+  PRIMARY VARIABLE
+
+ 
+             PROFILES, ASVAB VOCATIONAL TEST - SECTION 4-PARAGRAPH COMP
+ 
+ORIGINAL QUESTION NAME: *CREATED
+ 
+SEE ATTACHMENT 106 FOR DEFINITIONS
+ 
+ACTUAL NUMBER
+ 
+Refusal(-1)            0
+Don't Know(-2)         0
+TOTAL =========>   11914   VALID SKIP(-4)     772     NON-INTERVIEW(-5)       0
+ 
+Min:              0        Max:             15        Mean:                9.94
+ 
+Lead In: R06152.00[Default]
+Default Next Question: R06154.00
+--------------------------------------------------------------------------------
+R06154.00    [ASVAB-7]                                      Survey Year: 1981
+  PRIMARY VARIABLE
+
+ 
+             PROFILES, ASVAB VOCATIONAL TEST - SECTION 5-NUMERICAL OPERATIONS
+ 
+ORIGINAL QUESTION NAME: *CREATED
+ 
+SEE ATTACHMENT 106 FOR DEFINITIONS
+ 
+ACTUAL NUMBER
+ 
+Refusal(-1)            0
+Don't Know(-2)         0
+TOTAL =========>   11914   VALID SKIP(-4)     772     NON-INTERVIEW(-5)       0
+ 
+Min:              0        Max:             50        Mean:               31.73
+ 
+Lead In: R06153.00[Default]
+Default Next Question: R06155.00
+--------------------------------------------------------------------------------
+R06157.00    [ASVAB-10]                                     Survey Year: 1981
+  PRIMARY VARIABLE
+
+ 
+             PROFILES, ASVAB VOCATIONAL TEST - SECTION 8-MATHEMATICS KNOWLEDGE
+ 
+ORIGINAL QUESTION NAME: *CREATED
+ 
+SEE ATTACHMENT 106 FOR DEFINITIONS
+ 
+ACTUAL NUMBER
+ 
+Refusal(-1)            0
+Don't Know(-2)         0
+TOTAL =========>   11914   VALID SKIP(-4)     772     NON-INTERVIEW(-5)       0
+ 
+Min:              0        Max:             25        Mean:                  12
+ 
+Lead In: R06156.00[Default]
+Default Next Question: R06158.00
+--------------------------------------------------------------------------------
+R06180.11    [ASVAB-34]                                     Survey Year: 1981
+  PRIMARY VARIABLE
+
+ 
+             PROFILES, ASVAB VOCATIONAL TEST - SECTION 2 STANDARD SCORE
+ 
+ORIGINAL QUESTION NAME: *CREATED
+ 
+SEE ATTACHMENT 106 ADDENDUM FOR DEFINITIONS
+NOTE: (SEE R( 6180.10))
+ 
+ACTUAL NUMBER
+ 
+Refusal(-1)            0
+Don't Know(-2)         0
+Invalid Skip(-3)      36
+TOTAL =========>   11914   VALID SKIP(-4)     772     NON-INTERVIEW(-5)       0
+ 
+Min:             26        Max:             66        Mean:               47.02
+ 
+Lead In: R06180.10[Default]
+Default Next Question: R06180.12
+--------------------------------------------------------------------------------
+R06180.17    [ASVAB-40]                                     Survey Year: 1981
+  PRIMARY VARIABLE
+
+ 
+             PROFILES, ASVAB VOCATIONAL TEST - SECTION 8 STANDARD SCORE
+ 
+ORIGINAL QUESTION NAME: *CREATED
+ 
+SEE ATTACHMENT 106 ADDENDUM FOR DEFINITIONS
+NOTE: (SEE R( 6180.10))
+ 
+ACTUAL NUMBER
+ 
+Refusal(-1)            0
+Don't Know(-2)         0
+Invalid Skip(-3)      36
+TOTAL =========>   11914   VALID SKIP(-4)     772     NON-INTERVIEW(-5)       0
+ 
+Min:             29        Max:             68        Mean:               47.57
+ 
+Lead In: R06180.16[Default]
+Default Next Question: R06180.18
+--------------------------------------------------------------------------------
+R06181.00    [ASVAB-43]                                     Survey Year: 1981
+  PRIMARY VARIABLE
+
+ 
+             PROFILES, ASVAB VOCATIONAL TEST - VERBAL COMPOSITE STANDARD SCORE
+ 
+ORIGINAL QUESTION NAME: *CREATED
+ 
+SEE ATTACHMENT 106 ADDENDUM FOR DEFINITIONS
+NOTE: (SEE R( 6180.10))
+NOTE: THE VERBAL COMPOSITE IS A STANDARD SCORE OF THE SUM OF RAW SCORES
+FOR WORD KNOWLEDGE (SECTION 3) AND PARAGRAPH COMPREHENSION (SECTION 4)
+ 
+ACTUAL NUMBER
+ 
+Refusal(-1)            0
+Don't Know(-2)         0
+Invalid Skip(-3)      36
+TOTAL =========>   11914   VALID SKIP(-4)     772     NON-INTERVIEW(-5)       0
+ 
+Min:             20        Max:             62        Mean:               46.48
+ 
+Lead In: R06180.19[Default]
+Default Next Question: R06182.00
+--------------------------------------------------------------------------------
+R06182.00    [AFQT-1]                                       Survey Year: 1981
+  PRIMARY VARIABLE
+
+ 
+             PROFILES, ARMED FORCES QUALIFICATION TEST (AFQT) PERCENTILE SCORE -
+             1980
+ 
+ORIGINAL QUESTION NAME: *CREATED
+ 
+SEE ATTACHMENT 106 ADDENDUM FOR DEFINITIONS
+NOTE: AFQT PERCENTILE SCORES ARE GIVEN FOR THE TOTAL NUMBER OF
+RESPONDENTS PARTICIPATING IN THE PROFILES STUDY, NOT INCLUDING THOSE
+RESPONDENTS WITH ALTERED TESTING PROCEDURES (CODE 67 ON R( 6148.)).
+HOWEVER, THE CONSTRUCTION OF THE AFQT PERCENTILE SCORE IS BASED UPON
+THOSE RESPONDENTS BORN PRIOR TO 1963 ON R( 5.)
+ 
+ACTUAL PERCENTAGE
+ 
+UNIVERSE: All
+ 
+Refusal(-1)            0
+Don't Know(-2)         0
+Invalid Skip(-3)      36
+TOTAL =========>   11914   VALID SKIP(-4)     772     NON-INTERVIEW(-5)       0
+ 
+Min:              1        Max:             99        Mean:               40.91
+ 
+Lead In: R06181.00[Default]
+Default Next Question: R06183.00
+--------------------------------------------------------------------------------
+R06183.00    [AFQT-2]                                       Survey Year: 1981
+  PRIMARY VARIABLE
+
+ 
+             PROFILES, ARMED FORCES QUALIFICATION TEST (AFQT) PERCENTILE SCORE -
+             REVISED 1989
+ 
+ORIGINAL QUESTION NAME: *CREATED
+ 
+SEE ATTACHMENT 106 ADDENDUM FOR DEFINITIONS
+NOTE: (SEE R( 6182.))
+ 
+ACTUAL PERCENTAGE
+ 
+UNIVERSE: All
+ 
+Refusal(-1)            0
+Don't Know(-2)         0
+Invalid Skip(-3)      36
+TOTAL =========>   11914   VALID SKIP(-4)     772     NON-INTERVIEW(-5)       0
+ 
+Min:              1        Max:             99        Mean:               40.95
+ 
+Lead In: R06182.00[Default]
+Default Next Question: R06183.01
+--------------------------------------------------------------------------------
+R08102.00    [Q15-2]                                        Survey Year: 1982
+  PRIMARY VARIABLE
+
+ 
+             INT REMARKS - SEX OF R
+ 
+ORIGINAL QUESTION NAME: S20D5147
+ 
+SEX OF R:
+ 
+UNIVERSE: All
+ 
+    6089       1 MALE
+    6034       2 FEMALE
+  -------
+   12123
+ 
+Refusal(-1)            0
+Don't Know(-2)         0
+TOTAL =========>   12123   VALID SKIP(-4)       0     NON-INTERVIEW(-5)     563
+ 
+Min:              1        Max:              2        Mean:                 1.5
+ 
+Lead In: R08101.00[Default]
+Default Next Question: R08103.00
+--------------------------------------------------------------------------------
+R31275.00    [CPS-QES-56C]                                  Survey Year: 1990
+  PRIMARY VARIABLE
+
+ 
+             CLASS OF WORKER AT CURRENT JOB/MOST RECENT JOB CPS ITEM
+ 
+ORIGINAL QUESTION NAME: Q1215
+ 
+(HAND CARD C) WERE YOU...AN EMPLOYEE OF A PRIVATE COMPANY, BUSINESS, OR 
+INDIVIDUAL FOR WAGES, SALARY, OR COMMISSION OR A GOVERNMENT EMPLOYEE OR 
+SELF-EMPLOYED IN OWN BUSINESS, PROFESSIONAL PRACTICE, OR FARM OR WORKING WITHOUT
+PAY IN A FAMILY BUSINESS OR FARM?
+ 
+    7211       1 PRIVATE COMPANY
+    1104       2 GOVERNMENT
+     638       3 SELF-EMPLOYED
+      23       4 WITHOUT PAY
+  -------
+    8976
+ 
+Refusal(-1)            0
+Don't Know(-2)         1
+Invalid Skip(-3)      11
+TOTAL =========>    8988   VALID SKIP(-4)    1448     NON-INTERVIEW(-5)    2250
+ 
+Min:              1        Max:              4        Mean:                1.27
+ 
+Lead In: R31274.00[Default]
+Default Next Question: R31276.00
+--------------------------------------------------------------------------------
+R31278.00    [CPSHRP]                                       Survey Year: 1990
+  PRIMARY VARIABLE
+
+ 
+             HOURLY RATE OF PAY CURRENT/MOST RECENT JOB
+ 
+ORIGINAL QUESTION NAME: *CREATED
+ 
+ACTUAL DOLLARS AND CENTS
+ 
+       5           0
+      69           1 TO 99
+      85         100 TO 199
+     116         200 TO 299
+     349         300 TO 399
+     750         400 TO 499
+     898         500 TO 599
+     931         600 TO 699
+     807         700 TO 799
+     842         800 TO 899
+     578         900 TO 999
+    3235        1000 TO 9999999: 1000+
+  -------
+    8665
+ 
+Refusal(-1)            0
+Don't Know(-2)         0
+TOTAL =========>    8665   VALID SKIP(-4)    1771     NON-INTERVIEW(-5)    2250
+ 
+Min:              0        Max:        2100000        Mean:              1617.4
+ 
+Lead In: R31277.00[Default]
+Default Next Question: R31279.00
+--------------------------------------------------------------------------------
+R34010.00    [ESR_KEY]                                      Survey Year: 1990
+  PRIMARY VARIABLE
+
+ 
+             EMPLOYMENT STATUS RECODE
+ 
+ORIGINAL QUESTION NAME: *CREATED
+ 
+NOTE: FOR VARIABLE CREATION SEE APPENDIX 1: EMPLOYMENT STATUS
+RECODE (ESR)
+ 
+    7439       1 WORKING
+     514       2 WITH JOB NOT AT WORK
+     542       3 UNEMPLOYED
+    1180       4 KEEPING HOUSE
+      85       5 GOING TO SCHOOL
+     144       6 UNABLE TO WORK
+     321       7 OTHER
+     211       8 IN ACTIVE FORCES
+  -------
+   10436
+ 
+Refusal(-1)            0
+Don't Know(-2)         0
+TOTAL =========>   10436   VALID SKIP(-4)       0     NON-INTERVIEW(-5)    2250
+ 
+Min:              1        Max:              8        Mean:                1.92
+ 
+Lead In: R34008.10[Default]
+Default Next Question: R34011.00
+--------------------------------------------------------------------------------
+R35232.00    [CPS-QES-56C]                                  Survey Year: 1991
+  PRIMARY VARIABLE
+
+ 
+             CLASS OF WORKER AT CURRENT JOB/MOST RECENT JOB CPS ITEM
+ 
+ORIGINAL QUESTION NAME: Q0853
+ 
+(HAND CARD C) WERE YOU...AN EMPLOYEE OF A PRIVATE COMPANY, BUSINESS,
+OR INDIVIDUAL FOR WAGES, SALARY, OR COMMISSION OR A GOVERNMENT
+EMPLOYEE OR SELF-EMPLOYED IN OWN BUSINESS, PROFESSIONAL PRACTICE,
+OR FARM OR WORKING WITHOUT PAY IN A FAMILY BUSINESS OR FARM?
+ 
+    6038       1 PRIVATE COMPANY
+     998       2 GOVERNMENT
+     593       3 SELF-EMPLOYED
+      18       4 WITHOUT PAY
+  -------
+    7647
+ 
+Refusal(-1)            1
+Don't Know(-2)         0
+Invalid Skip(-3)       1
+TOTAL =========>    7649   VALID SKIP(-4)    1369     NON-INTERVIEW(-5)    3668
+ 
+Min:              1        Max:              4        Mean:                1.29
+ 
+Lead In: R35231.00[Default]
+Default Next Question: R35233.00
+--------------------------------------------------------------------------------
+R35235.00    [CPSHRP]                                       Survey Year: 1991
+  PRIMARY VARIABLE
+
+ 
+             HOURLY RATE OF PAY CURRENT/MOST RECENT JOB
+ 
+ORIGINAL QUESTION NAME: *CREATED
+ 
+ACTUAL DOLLARS AND CENTS
+ 
+       0           0
+      45           1 TO 99
+      70         100 TO 199
+      84         200 TO 299
+     143         300 TO 399
+     591         400 TO 499
+     750         500 TO 599
+     726         600 TO 699
+     665         700 TO 799
+     718         800 TO 899
+     474         900 TO 999
+    3085        1000 TO 9999999: 1000+
+  -------
+    7351
+ 
+Refusal(-1)            0
+Don't Know(-2)         0
+TOTAL =========>    7351   VALID SKIP(-4)    1667     NON-INTERVIEW(-5)    3668
+ 
+Min:              8        Max:        2400000        Mean:              1437.1
+ 
+Lead In: R35234.00[Default]
+Default Next Question: R35236.00
+--------------------------------------------------------------------------------
+R35590.00    [Q13-5]                                        Survey Year: 1991
+  SECONDARY VARIABLE
+
+ 
+             TOTAL INCOME FROM WAGES AND SALARY IN PAST CALENDAR YEAR (TRUNC)
+ 
+ORIGINAL QUESTION NAME: Q1945
+ 
+NOT COUNTING ANY MONEY YOU RECEIVED FROM YOUR MILITARY SERVICE.../
+DURING 1990, HOW MUCH DID YOU RECEIVE FROM WAGES, SALARY,
+COMMISSIONS, OR TIPS FROM ALL (OTHER) JOBS, BEFORE DEDUCTIONS FOR
+TAXES OR ANYTHING ELSE?
+ 
+NOTE: TRUNCATED VALUES ARE EQUAL TO THE AVERAGE VALUE OF ALL
+RESPONDENTS WHO ARE U.S. RESIDENTS AND WHO HAVE VALUES EXCEEDING THE
+TRADITIONAL TRUNCATION LEVEL OF 100,001 FOR THIS ITEM. PERSONS WITH
+OUT-OF-RANGE CODE 999,996 WERE ASSIGNED THIS VALUE AS AN APPROXIMATION.
+SINCE PERSONS WITH OUT-OF-RANGE CODES HAVE VALUES GREATER THAN THIS
+CODE, OUR AVERAGE FOR TOP-CODED RESPONDENTS WILL BE TOO LOW TO THE
+EXTENT THAT OUT-OF-RANGE CODES ARE PRESENT IN THE RAW DATA. OVERSEAS
+RESPONDENTS WHOSE DOLLAR INCOME COULD NOT BE DETERMINED ARE CODED -3.
+ 
+ACTUAL DOLLARS
+ 
+UNIVERSE: All
+ 
+    1684           0
+     193           1 TO 999
+     165        1000 TO 1999
+     151        2000 TO 2999
+     142        3000 TO 3999
+     114        4000 TO 4999
+     155        5000 TO 5999
+     160        6000 TO 6999
+     150        7000 TO 7999
+     219        8000 TO 8999
+     190        9000 TO 9999
+    1131       10000 TO 14999
+    1127       15000 TO 19999
+     947       20000 TO 24999
+    2029       25000 TO 49999
+     265       50000 TO 9999999: 50000+
+  -------
+    8822
+ 
+Refusal(-1)          107
+Don't Know(-2)        88
+Invalid Skip(-3)       1
+TOTAL =========>    9018   VALID SKIP(-4)       0     NON-INTERVIEW(-5)    3668
+ 
+Min:              0        Max:         170383        Mean:            16527.36
+ 
+Lead In: R35589.00[Default]
+Default Next Question: R35591.00
+--------------------------------------------------------------------------------
+R36564.00    [ESR_KEY]                                      Survey Year: 1991
+  PRIMARY VARIABLE
+
+ 
+             EMPLOYMENT STATUS RECODE
+ 
+ORIGINAL QUESTION NAME: *CREATED
+ 
+NOTE: FOR VARIABLE CREATION SEE APPENDIX 1: EMPLOYMENT STATUS
+RECODE (ESR)
+ 
+    6184       1 WORKING
+     554       2 WITH JOB NOT AT WORK
+     594       3 UNEMPLOYED
+    1013       4 KEEPING HOUSE
+      73       5 GOING TO SCHOOL
+     103       6 UNABLE TO WORK
+     313       7 OTHER
+     184       8 IN ACTIVE FORCES
+  -------
+    9018
+ 
+Refusal(-1)            0
+Don't Know(-2)         0
+TOTAL =========>    9018   VALID SKIP(-4)       0     NON-INTERVIEW(-5)    3668
+ 
+Min:              1        Max:              8        Mean:                1.97
+ 
+Lead In: R36562.10[Default]
+Default Next Question: R36565.00
+--------------------------------------------------------------------------------
+R37282.00    [CPS-QES-56C]                                  Survey Year: 1992
+  PRIMARY VARIABLE
+
+ 
+             CLASS OF WORKER AT CURRENT JOB/MOST RECENT JOB CPS ITEM
+ 
+ORIGINAL QUESTION NAME: Q1259
+ 
+(HAND CARD C) WERE YOU...AN EMPLOYEE OF A PRIVATE COMPANY BUSINESS,
+OR INDIVIDUAL FOR WAGES, SALARY, OR COMMISSION OR A GOVERNMENT
+EMPLOYEE OR SELF-EMPLOYED IN YOUR OWN BUSINESS, PROFESSIONAL PRACTICE,
+OR FARM OR WORKING WITHOUT PAY IN A FAMILY BUSINESS OR FARM?
+ 
+    5937       1 PRIVATE COMPANY
+    1088       2 GOVERNMENT
+     621       3 SELF-EMPLOYED
+      20       4 WITHOUT PAY
+  -------
+    7666
+ 
+Refusal(-1)            1
+Don't Know(-2)         0
+Invalid Skip(-3)       3
+TOTAL =========>    7670   VALID SKIP(-4)    1346     NON-INTERVIEW(-5)    3670
+ 
+Min:              1        Max:              4        Mean:                1.31
+ 
+Lead In: R37281.00[Default]
+Default Next Question: R37283.00
+--------------------------------------------------------------------------------
+R37285.00    [CPSHRP]                                       Survey Year: 1992
+  PRIMARY VARIABLE
+
+ 
+             HOURLY RATE OF PAY CURRENT/MOST RECENT JOB
+ 
+ORIGINAL QUESTION NAME: CPSWAGE
+ 
+ACTUAL DOLLARS AND CENTS
+ 
+       2           0
+      42           1 TO 99
+      51         100 TO 199
+      95         200 TO 299
+     120         300 TO 399
+     548         400 TO 499
+     706         500 TO 599
+     679         600 TO 699
+     628         700 TO 799
+     655         800 TO 899
+     524         900 TO 999
+    3232        1000 TO 9999999: 1000+
+  -------
+    7282
+ 
+Refusal(-1)            0
+Don't Know(-2)         0
+TOTAL =========>    7282   VALID SKIP(-4)    1734     NON-INTERVIEW(-5)    3670
+ 
+Min:              0        Max:        3340000        Mean:             1673.05
+ 
+Lead In: R37284.00[Default]
+Default Next Question: R37286.00
+--------------------------------------------------------------------------------
+R38971.00    [Q13-5]                                        Survey Year: 1992
+  SECONDARY VARIABLE
+
+ 
+             TOTAL INCOME FROM WAGES AND SALARY IN PAST CALENDAR YEAR (TRUNC)
+ 
+ORIGINAL QUESTION NAME: Q6319
+ 
+NOT COUNTING ANY MONEY YOU RECEIVED FROM YOUR MILITARY SERVICE.../
+DURING 1991, HOW MUCH DID YOU RECEIVE FROM WAGES, SALARY,
+COMMISSIONS, OR TIPS FROM ALL (OTHER) JOBS, BEFORE DEDUCTIONS FOR
+TAXES OR ANYTHING ELSE?
+ 
+NOTE: TRUNCATED VALUES ARE EQUAL TO THE AVERAGE VALUE OF ALL
+RESPONDENTS WHO ARE U.S. RESIDENTS AND WHO HAVE VALUES EXCEEDING THE
+TRADITIONAL TRUNCATION LEVEL OF 100,001 FOR THIS ITEM. PERSONS WITH
+OUT-OF-RANGE CODE 99,999,996 WERE ASSIGNED THIS VALUE AS AN
+APPROXIMATION. SINCE PERSONS WITH OUT-OF-RANGE CODES HAVE VALUES GREATER
+THAN THIS CODE, OUR AVERAGE FOR TOP-CODED RESPONDENTS WILL BE TOO
+LOW TO THE EXTENT THAT OUT-OF-RANGE CODES ARE PRESENT IN THE RAW DATA.
+OVERSEAS RESPONDENTS WHOSE DOLLAR INCOME COULD NOT BE DETERMINED
+ARE CODED -3.
+CASES. NEW VALUES, BOTH FOR THE CASES IN QUESTION AND FOR THE TOP-CODED
+RESPONDENTS ON AFFECTED VARIABLES WILL BE RELEASED AS SOON AS THEY ARE
+AVAILABLE. IN THE INTERIM, USERS SHOULD BE AWARE THAT THESE CASES EXIST
+AND MAY HAVE AFFECTED THE TOP-CODING FOR SOME VARIABLES. THE FOLLOWING
+8 CASES HAVE BEEN IDENTIFIED: 1620, 2894, 3546, 4226, 4289, 5723, 5940,
+8963.
+ 
+ACTUAL DOLLARS
+ 
+UNIVERSE: All
+ 
+    1756           0
+     181           1 TO 999
+     145        1000 TO 1999
+     121        2000 TO 2999
+     145        3000 TO 3999
+     117        4000 TO 4999
+     136        5000 TO 5999
+     154        6000 TO 6999
+     156        7000 TO 7999
+     167        8000 TO 8999
+     168        9000 TO 9999
+    1065       10000 TO 14999
+    1086       15000 TO 19999
+     958       20000 TO 24999
+    2129       25000 TO 49999
+     328       50000 TO 9999999: 50000+
+  -------
+    8812
+ 
+Refusal(-1)          109
+Don't Know(-2)        92
+Invalid Skip(-3)       3
+TOTAL =========>    9016   VALID SKIP(-4)       0     NON-INTERVIEW(-5)    3670
+ 
+Min:              0        Max:        4115087        Mean:            33548.43
+ 
+Lead In: R38970.00[Default]
+Default Next Question: R38972.00
+--------------------------------------------------------------------------------
+R40069.00    [ESR_KEY]                                      Survey Year: 1992
+  PRIMARY VARIABLE
+
+ 
+             EMPLOYMENT STATUS RECODE
+ 
+ORIGINAL QUESTION NAME: *CREATED
+ 
+NOTE: FOR VARIABLE CREATION SEE APPENDIX 1: EMPLOYMENT STATUS
+RECODE (ESR)
+ 
+    6305       1 WORKING
+     470       2 WITH JOB NOT AT WORK
+     602       3 UNEMPLOYED
+     991       4 KEEPING HOUSE
+      67       5 GOING TO SCHOOL
+     116       6 UNABLE TO WORK
+     302       7 OTHER
+     163       8 IN ACTIVE FORCES
+  -------
+    9016
+ 
+Refusal(-1)            0
+Don't Know(-2)         0
+TOTAL =========>    9016   VALID SKIP(-4)       0     NON-INTERVIEW(-5)    3670
+ 
+Min:              1        Max:              8        Mean:                1.94
+ 
+Lead In: R40067.10[Default]
+Default Next Question: R40070.00
+--------------------------------------------------------------------------------
+R41823.00    [CPS-QES-56C]                                  Survey Year: 1993
+  PRIMARY VARIABLE
+
+ 
+             CLASS OF WORKER AT CURRENT JOB/MOST RECENT JOB CPS ITEM
+ 
+ORIGINAL QUESTION NAME: Q6-56
+ 
+(HAND CARD D)  Were you an employee of a PRIVATE company, business, or
+individual for wages, salary, or commission; or a government employee; or
+self-employed in your OWN business, professional practice, or farm; or
+working WITHOUT pay in a family business or farm?
+ 
+    5791       1 PRIVATE COMPANY
+    1108       2 GOVERNMENT
+     637       3 SELF-EMPLOYED
+      19       4 WITHOUT PAY
+  -------
+    7555
+ 
+Refusal(-1)            0
+Don't Know(-2)         4
+TOTAL =========>    7559   VALID SKIP(-4)    1452     NON-INTERVIEW(-5)    3675
+ 
+Min:              1        Max:              4        Mean:                1.32
+ 
+Lead In: R41822.00[Default]
+Default Next Question: R41824.00
+--------------------------------------------------------------------------------
+R42951.00    [Q13-5]                                        Survey Year: 1993
+  SECONDARY VARIABLE
+
+ 
+             TOTAL INCOME FROM WAGES AND SALARY IN PAST CALENDAR YEAR (TRUNC)
+ 
+ORIGINAL QUESTION NAME: Q11-5
+ 
+During 1992, how much did you receive from wages, salary, commissions, or
+tips from all (other) jobs, before deductions for taxes or anything else?
+ 
+UNIVERSE: All
+ 
+    1717           0
+     177           1 TO 999
+     144        1000 TO 1999
+     122        2000 TO 2999
+     107        3000 TO 3999
+     105        4000 TO 4999
+     151        5000 TO 5999
+     138        6000 TO 6999
+     137        7000 TO 7999
+     167        8000 TO 8999
+     134        9000 TO 9999
+     947       10000 TO 14999
+     997       15000 TO 19999
+     939       20000 TO 24999
+    2205       25000 TO 49999
+     415       50000 TO 9999999: 50000+
+  -------
+    8602
+ 
+Refusal(-1)          140
+Don't Know(-2)       267
+TOTAL =========>    9009   VALID SKIP(-4)       2     NON-INTERVIEW(-5)    3675
+ 
+Min:              0        Max:         156359        Mean:            18434.55
+ 
+
+
+NOTE: SEE CODEBOOK SUPPLEMENT FOR TRUNCATION DOCUMENTATION.
+ 
+Lead In: R42949.00[Default]
+Default Next Question: R42952.00
+--------------------------------------------------------------------------------
+R44168.00    [CPSHRP]                                       Survey Year: 1993
+  PRIMARY VARIABLE
+
+ 
+             HOURLY RATE OF PAY CURRENT/MOST RECENT JOB
+ 
+ORIGINAL QUESTION NAME: CPSHRP
+ 
+ACTUAL DOLLARS AND CENTS
+ 
+COMMENT: HOURLY RATE OF PAY - CPS JOB
+ 
+       3           0
+      34           1 TO 99
+      71         100 TO 199
+      73         200 TO 299
+     120         300 TO 399
+     423         400 TO 499
+     651         500 TO 599
+     663         600 TO 699
+     588         700 TO 799
+     616         800 TO 899
+     525         900 TO 999
+    3504        1000 TO 9999999: 1000+
+  -------
+    7271
+ 
+Refusal(-1)            0
+Don't Know(-2)         0
+TOTAL =========>    7271   VALID SKIP(-4)    1740     NON-INTERVIEW(-5)    3675
+ 
+Min:              0        Max:        6000000        Mean:             2277.96
+ 
+Lead In: R44167.00[Default]
+Default Next Question: R44169.00
+--------------------------------------------------------------------------------
+R44180.00    [ESR_KEY]                                      Survey Year: 1993
+  PRIMARY VARIABLE
+
+ 
+             EMPLOYMENT STATUS RECODE
+ 
+ORIGINAL QUESTION NAME: ESR-KEY
+ 
+COMMENT: Employment Status Recode
+ 
+    6195       1 WORKING
+     504       2 WITH JOB NOT AT WORK
+     520       3 UNEMPLOYED
+    1046       4 KEEPING HOUSE
+      65       5 GOING TO SCHOOL
+     123       6 UNABLE TO WORK
+     321       7 OTHER
+     237       8 IN ACTIVE FORCES
+  -------
+    9011
+ 
+Refusal(-1)            0
+Don't Know(-2)         0
+TOTAL =========>    9011   VALID SKIP(-4)       0     NON-INTERVIEW(-5)    3675
+ 
+Min:              1        Max:              8        Mean:                2.01
+ 
+
+
+NOTE: FOR VARIABLE CREATION SEE APPENDIX 1: EMPLOYMENT STATUS RECODE (ESR)
+ 
+Lead In: R44178.10[Default]
+Default Next Question: R44181.00
+--------------------------------------------------------------------------------
+R49828.00    [Q13-5]                                        Survey Year: 1994
+  SECONDARY VARIABLE
+
+ 
+             TOTAL INCOME FROM WAGES AND SALARY IN PAST CALENDAR YEAR (TRUNC)
+ 
+During 1993, how much did you receive from wages, salary, commissions, or
+tips from all (other) jobs, before deductions for taxes or anything else?
+ 
+    1618           0
+     166           1 TO 999
+     148        1000 TO 1999
+     118        2000 TO 2999
+     104        3000 TO 3999
+      99        4000 TO 4999
+     145        5000 TO 5999
+     135        6000 TO 6999
+     130        7000 TO 7999
+     146        8000 TO 8999
+     110        9000 TO 9999
+     892       10000 TO 14999
+     974       15000 TO 19999
+     888       20000 TO 24999
+    2316       25000 TO 49999
+     494       50000 TO 99999999: 50000+
+  -------
+    8483
+ 
+Refusal(-1)          139
+Don't Know(-2)       267
+TOTAL =========>    8889   VALID SKIP(-4)       2     NON-INTERVIEW(-5)    3795
+ 
+Min:              0        Max:         167697        Mean:            19632.06
+ 
+Lead In: R49825.00[Default] R49826.00[Default]
+Default Next Question: R49829.00
+--------------------------------------------------------------------------------
+R50798.00    [CPSHRP]                                       Survey Year: 1994
+  PRIMARY VARIABLE
+
+ 
+             HOURLY RATE OF PAY CURRENT/MOST RECENT JOB
+ 
+COMMENT: HOURLY RATE OF PAY - CPS JOB
+ 
+NOTE: ACTUAL DOLLARS AND CENTS
+ 
+       0           0
+     589           1 TO 499
+    2877         500 TO 999
+    1921        1000 TO 1499
+     960        1500 TO 1999
+     405        2000 TO 2499
+     151        2500 TO 2999
+      72        3000 TO 3499
+      57        3500 TO 3999
+      24        4000 TO 4499
+      15        4500 TO 4999
+      81        5000 TO 99999999: 5000+
+  -------
+    7152
+ 
+Refusal(-1)            0
+Don't Know(-2)         0
+TOTAL =========>    7152   VALID SKIP(-4)    1739     NON-INTERVIEW(-5)    3795
+ 
+Min:             11        Max:          20000        Mean:             1226.52
+ 
+Lead In: R50797.00[Default]
+Default Next Question: R50799.00
+--------------------------------------------------------------------------------
+R50810.00    [ESR_KEY]                                      Survey Year: 1994
+  PRIMARY VARIABLE
+
+ 
+             EMPLOYMENT STATUS RECODE
+ 
+COMMENT: Employment Status Recode
+ 
+NOTE: FOR VARIABLE CREATION SEE APPENDIX 1: EMPLOYMENT STATUS RECODE (ESR)
+ 
+    6464           1: 1  EMPLOYED
+     330           2: 2  EMPLOYED - ABSENT FROM JOB
+      74           3: 3  UNEMPLOYED - ON LAYOFF
+     403           4: 4  UNEMPLOYED - LOOKING FOR WORK
+      88           5: 5  NOT IN LABOR FORCE - RETIRED
+      59           6: 6  NOT IN LABOR FORCE - DISABLED
+    1340           7: 7  NOT IN LABOR FORCE - OTHER
+     131           8: 8  IN ACTIVE FORCES
+  -------
+    8889
+ 
+Refusal(-1)            0
+Don't Know(-2)         0
+Invalid Skip(-3)       2
+TOTAL =========>    8891   VALID SKIP(-4)       0     NON-INTERVIEW(-5)    3795
+ 
+Min:              1        Max:              8        Mean:                2.27
+ 
+Lead In: R50808.10[Default]
+Default Next Question: R50811.00

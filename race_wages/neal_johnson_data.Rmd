@@ -1,0 +1,464 @@
+---
+jupyter:
+  jupytext:
+    notebook_metadata_filter: all,-language_info
+    split_at_heading: true
+    text_representation:
+      extension: .Rmd
+      format_name: rmarkdown
+      format_version: '1.2'
+      jupytext_version: 1.13.7
+  kernelspec:
+    display_name: Python 3
+    language: python
+    name: python3
+---
+
+# Replicating analysis and data file from Neal & Johnson 1996
+
+This page replicates the data analysis and data file preparation from the paper:
+
+Neal, D. A., & Johnson, W. R. (1996). [The role of premarket factors in
+black-white wage
+differences](https://www.ssc.wisc.edu/~gwallace/Papers/Neal%20and%20Johnson%20%281996%29.pdf).
+Journal of political Economy, 104(5), 869-895.
+
+Professor Neal kindly provided me (MB) a Stata file `RECREATE.DO`, as well as a data file to check against, called `JPE96.DTA`.
+
+See the `README.md` file in this directory for instructions to download the data files here of filename pattern `neal_johnson_nls*.*`.
+
+The original version of this notebook checked the calculations on the
+downloaded data against the `JPE96.DTA` file.  There were some very small
+differences, because the NLS site has updated some of the data records.
+Therefore, the data file saved here is very close to the contents of the
+original `JPE96.DTA`.
+
+Throughout, I have put the relevant Stata commands from the `RECREATE.DO` file into the comments, for comparison.
+
+```{python}
+import re
+from pathlib import Path
+```
+
+```{python}
+import numpy as np
+import pandas as pd
+import statsmodels.formula.api as smf
+```
+
+```{python}
+data_path = Path() / 'original'
+df_export = pd.read_csv(data_path / 'neal_johnson_nls.csv')
+df_export.head()
+```
+
+```{python}
+# Number of cases from paper
+assert len(df_export) == 12_686
+```
+
+These are the variable names from the `RECREATE.DO` file:
+
+```{python}
+recreate_names = """\
+id month79 year79 sid race sex79 month81 year81 code hgasvab
+arith word comp numop math arithstd mathstd verbstd
+afqt80 afqt89 sex82 class90 wage90 esr90 class91 wage91
+earn91 esr91 class92 wage92 earn92 esr92 class93 earn93
+wage93 esr93 earn94 wage94 esr94 
+""".split()
+recreate_names
+```
+
+Here we record the pairs of variables names (NLS export name, `RECREATE.DO` name):
+
+```{python}
+export_names = list(df_export)
+pairs = list(zip(export_names, recreate_names))
+pairs
+```
+
+Do these variable names make sense?   Check against the data dictionary
+file from the export.
+
+```{python}
+data_dict_lines = (data_path / 'neal_johnson_nls.sdf').read_text().splitlines()
+print('\n'.join(data_dict_lines[:10]))
+```
+
+```{python}
+# Extract parts from line in data dictionary.
+Q_RE = re.compile(r'(?P<no>R\d+\.\d+)\s+(?P<year>\d+\w*)\s+(?P<descr>.*?)\s+(?P<name>[A-Z0-9_\-~]+)\s*$')
+```
+
+We need to drop the first 5 lines, as they don't contain a variable definition.
+
+```{python}
+line_dicts = []
+for line in data_dict_lines[5:]:
+    line_dicts.append(Q_RE.match(line).groupdict())
+line_dicts[0]
+```
+
+Show the correspondence of recreate name, descriptions, year and export name.
+
+```{python}
+fmt = "{:<10}{:<82}{:<8}{}"
+header = fmt.format('RecName', 'Description', 'Year', 'Export Name')
+print(header)
+print('-' * len(header))
+for vn, LD, en in zip(recreate_names, line_dicts, export_names):
+    print(fmt.format(vn, LD['descr'], LD['year'], en))
+```
+
+Titles look right.  Rename as above:
+
+```{python}
+renames = {old_name: new_name
+          for old_name, new_name in zip(export_names, recreate_names)}
+df_renamed = df_export.rename(columns=renames)
+df_renamed.head()
+```
+
+Only the cross-section sample & the oversamples of blacks and hispanics.
+
+Delete military & edw sample
+
+```{python}
+sid = df_renamed['sid']
+to_drop = (sid > 14) | (sid == 9) | (sid==12)
+df = df_renamed[~to_drop].reset_index(drop=True)
+df
+```
+
+```{python}
+# The original 'JPE96.DTA` file had 9763 rows.
+assert len(df) == 9763
+```
+
+Generate year of birth using data from two years.
+
+Steve McClaskey of CHRR suggested this rule.
+
+```{python}
+year81 = df['year81']
+df['year'] = year81.where(year81 > 0, df['year79'])
+# replace year=year81 if year81 > 0;
+# replace year=year79 if year81 <=0;
+df.loc[:, ['id', 'year81', 'year79', 'year']].tail()
+```
+
+Set ASVAB scores to -9 if there are problems with the test.
+
+We can use the math test as an indicator because respondents
+either took them all or took none of them.  Further, the
+altered testing codes apply to the exams as a whole.
+
+Note add in 2004: Technically a few people took `arith` without taking
+the other tests, but the code below still does what we want because
+there are no positive math scores for people who have negatives on
+other exams.
+
+```{python}
+# replace math=-9      if code==53 | code==67 | math < 0;
+# replace arith=-9     if math ==-9;
+# replace comp=-9      if math ==-9;
+# replace word=-9      if math ==-9;
+# replace numop=-9     if math ==-9;
+# replace arithstd=-9  if math ==-9;
+# replace mathstd=-9   if math ==-9;
+# replace verbstd=-9   if math ==-9;
+# replace afqt80=-9    if math ==-9;
+# replace afqt89=-9    if math ==-9;
+code, math = df['code'], df['math']
+bad_math = code.isin((53, 67)) | (math < 0)
+test_cols =  ['math', 'arith', 'comp', 'word', 'numop',
+              'arithstd', 'mathstd', 'verbstd', 'afqt80', 'afqt89']
+df.loc[bad_math, test_cols] = -9
+```
+
+This is the scoring system for the 1989 version of the AFQT.
+
+See the NLS user's guide - 1995, P. 52
+
+```{python}
+# gen std89=(2*verbstd) + mathstd + arithstd;
+std89 = 2 * df['verbstd'] + df['mathstd'] + df['arithstd']
+# replace std89=-9     if math==-9;
+df['std89'] = std89.where(~bad_math, -9)
+```
+
+Below we convert the scores to age standardized scores. Therefore, we need to mark bad birth years
+
+```{python}
+# gen badyear=0;
+# replace badyear=1 if year < 57 | year > 64;
+year = df['year']
+df['badyear'] = np.where((year < 57) | (year > 64), 1, 0)
+```
+
+Create age adjusted, standard scores for cases with valid data.
+
+`std89res` is the variable that we used as an AFQT score.
+
+```{python}
+# regress std89 y2 y3 y4 y5 y6 y7 y8 if math >= 0 & badyear==0;
+valid_rows = (df['math'] >= 0) & (df['badyear'] == 0)
+valid_df = df[valid_rows]
+```
+
+```{python}
+# regress std89 y2 y3 y4 y5 y6 y7 y8 if math >= 0 & badyear==0;
+fitted = smf.ols("std89 ~ C(year)", data=valid_df).fit()
+# predict std89res if math>=0 & badyear==0,rstandard;
+# `,rstandard` gives "standardized residuals".
+# See Stata rregresspostestimation.pdf and
+# https://www.statsmodels.org/stable/generated/statsmodels.stats.outliers_influence.OLSInfluence
+influence = fitted.get_influence()
+std89res = influence.resid_studentized_internal
+std89res
+```
+
+```{python}
+# replace std89res=-9 if std89res==.;
+df['std89res'] = -9
+df.loc[valid_rows, 'std89res'] = std89res.copy()
+```
+
+Here, we recreate our wage measure.
+
+First we need to create an employment status variable.
+
+* `status`=1 - resp. is working - valid entry for "class of worker."
+* `status`=0 - resp. is not working - valid skip for "class of worker"
+  and not in the military.
+* `status`=-9 - the respondent is in the military or the respondent's
+  wage data is missing due to coding problems.
+
+```{python}
+# gen st90=-9;
+# replace st90=1 if class90 > 0;
+# replace st90=0 if class90==-4 & esr90~=8;
+df['st90'] = -9
+df.loc[df['class90'] > 0, 'st90'] = 1
+df.loc[(df['class90'] == -4) & (df['esr90'] != 8), 'st90'] = 0
+```
+
+```{python}
+# gen st91=-9;
+# replace st91=1 if class91 > 0;
+# replace st91=0 if class91==-4 & esr91~=8;
+df['st91'] = -9
+df.loc[df['class91'] > 0, 'st91'] = 1
+df.loc[(df['class91'] == -4) & (df['esr91'] != 8), 'st91'] = 0
+```
+
+Now edit the wage data.
+
+If hourly wage exceeds \$75, then label it invalid.
+
+Below, the same rule applies for wages < \$1
+
+```{python}
+# replace wage90=-9 if wage90>7500;
+# replace wage91=-9 if wage91>7500;
+for col_name in 'wage90', 'wage91':
+    df.loc[df[col_name] > 7500, col_name] = -9
+```
+
+Investigation against the `NPE96.DTA` data, showed that the latest download has some different values for the `wage90` variable.  Specifically these rows differed
+
+| id | downloaded wage91 | NPE96.DTA wage91 |
+| ----- | ---- | ---- |
+| 3402  | 1053 | -4.0 |
+| 4312  | 630  | -4.0 |
+| 4841  | 1103 | -4.0 |
+| 5855  | 460  | -4.0 |
+| 5993  | 395  | -4.0 |
+| 6111  | 235  | -4.0 |
+| 6667  | 400  | -4.0 |
+| 6678  | 142  | -4.0 |
+| 8415  | 750  | -4.0 |
+| 9287  | 1000 | -4.0 |
+| 9899  | 1346 | -4.0 |
+| 12001 | 1000 | -4.0 |
+
+Create flags for resp. who belong in the sample for median regressions.  They must have a valid wage observation OR
+`st** = 0` in at least one year.  We do not treat persons with bad wage observ or status=-9 as non-participants.
+
+```{python}
+# gen flag=0;
+# replace flag=1 if st90==0;
+# replace flag=1 if st91==0;
+df['flag'] = 0
+df.loc[(df['st90'] == 0) | (df['st91'] == 0), 'flag'] = 1
+```
+
+`wage`=1 for the non-valid wage records & non-particpants. This is
+okay because there is no-one who earns one cent per hour.
+
+Thus `logwage=0` for both non-participants and coding errors.
+
+```{python}
+# gen wage=1;   # if both wage obs are < 100
+# replace wage=(wage91/1.04) if wage90 <= 100 & wage91 > 100;  # CPI
+# replace wage=wage90 if wage91 <= 100 & wage90 > 100;
+# replace wage=((wage90 + (wage91/1.04))/2) if wage90 > 100 & wage91 > 100;
+
+def wage_apply(row):
+    wage90, wage91 = row['wage90'], row['wage91']
+    adj_91 = wage91 / 1.04  # CPI
+    if wage90 <= 100 and wage91 > 100:
+        return adj_91
+    if wage91 <= 100 and wage90 > 100:
+        return wage90
+    if wage90 > 100 and wage91 > 100:
+        return (wage90 + adj_91) / 2
+    return 1
+        
+df['wage'] = df.apply(wage_apply, axis='columns')
+```
+
+```{python}
+# replace wage=1 if st90==0 & st91==0;   # mitigates coding error problem
+df.loc[(df['st90'] == 0) & (df['st91'] == 0), 'wage'] = 1
+```
+
+
+```{python}
+# replace flag=1 if wage > 1;
+df.loc[df['wage'] > 1, 'flag'] = 1
+```
+
+Because `st90` & `st91` were created from the class of worker variable, it is
+possible to get `st90(91)==-9` & `wage90(91) > 1` for invalid skips on the
+class variable.  However the `st90(91)==0` & `wage90(91) > 1` cases are more of
+a puzzle.  Karima Nagee (CHRR) claims these (two) cases are likely coding
+error.  Thus, in the case where both status variables are zero, we set the
+`wage`=0.
+
+On the other hand, there are approx. 380 people in the 1990 survey & a similar
+number in 1991 who are a valid skip for wages but actually report a valid class
+of worker.  These people are employed but gave bad or incomplete wage
+information.
+
+
+Create variables used in the paper.
+
+```{python}
+# gen lwage=log(wage);
+df['lwage'] = np.log(df['wage'])
+```
+
+Some of these rows are different from the original, because of data changes (above).  The rest are the same.
+
+```{python}
+# gen age=90-year;
+df['age'] = 90 - df['year']
+```
+
+```{python}
+# gen hisp=0;
+# replace hisp=1 if race==1;
+df['hisp'] = df['race'] == 1
+```
+
+```{python}
+# gen black=0;
+# replace black=1 if race==2;
+df['black'] = df['race'] == 2
+```
+
+```{python}
+# gen female=0;
+# replace female=1 if sex82==2;
+# replace female=1 if sex82 < 0 & sex79==2;
+df['female'] = (df['sex82'] == 2) | ((df['sex82'] < 0) & (df['sex79'] == 2))
+```
+
+Further below, we will use these calculations in porting model formulae.
+
+```
+gen a1=std89res;
+gen a2=a1*a1;
+```
+
+
+Create sample identifiers.
+
+* `insamp1` : valid for OLS regressions.
+* `insamp2` : valid for median (quartile) regressions.
+
+```{python}
+# gen insamp1=0;
+# replace insamp1=1 if lwage > 0 & math >= 0 & year > 61 & badyear==0;
+df['insamp1'] = (df['lwage'] > 0) & (df['math'] >= 0) & (df['year'] > 61) & (df['badyear'] == 0)
+```
+
+Difference in `wage` field above means the resulting row values are all equal to original.
+
+```{python}
+# gen insamp2=0;
+# replace insamp2=1 if flag==1 & math >= 0  & year > 61 & badyear==0;
+df['insamp2'] = (df['flag'] == 1) & (df['math'] >= 0) & (df['year'] > 61) & (df['badyear'] == 0)
+```
+
+These regressions replicate key columns of table 1 & table 4.
+
+```{python}
+# regress lwage black hisp age if insamp1==1 & female==0;
+# Column 1 of table 1.
+s1_m_df = df[df['insamp1'] & ~df['female']]
+s1_m_fit = smf.ols('lwage ~ black + hisp + age', data=s1_m_df).fit()
+s1_m_fit.summary()
+```
+
+```{python}
+# regress lwage black hisp age a1 a2 if insamp1==1 & female==0;
+# Column 3 of table 1
+s1_m_fit_ext = smf.ols('lwage ~ black + hisp + age + std89res + I(std89res ** 2)', data=s1_m_df).fit()
+s1_m_fit_ext.summary()
+```
+
+```{python}
+# qreg lwage black hisp age if insamp2==1 & female==0;
+# Column 1 of table 4.
+s2_m_df = df[df['insamp2'] & ~df['female']]
+s2_m_qfit = smf.quantreg("lwage ~ black + hisp + age", data=s2_m_df).fit(q=0.5)
+s2_m_qfit.summary()
+```
+
+```{python}
+# qreg lwage black hisp age a1 a2 if insamp2==1 & female==0;
+# Column 2 of table 4.
+s2_m_qfit_ext = smf.quantreg("lwage ~ black + hisp + age + std89res + I(std89res ** 2)", data=s2_m_df).fit(q=0.5)
+s2_m_qfit_ext.summary()
+```
+
+```{python}
+# regress lwage black hisp age if insamp1==1 & female==1;
+# Column 4 of table 1
+s1_f_df = df[df['insamp1'] & df['female']]
+s1_f_fit = smf.ols('lwage ~ black + hisp + age', data=s1_f_df).fit()
+s1_f_fit.summary()
+```
+
+```{python}
+# regress lwage black hisp age a1 a2 if insamp1==1 & female==1;
+# Column 6 of table 1
+s1_f_fit_ext = smf.ols('lwage ~ black + hisp + age + std89res + I(std89res ** 2)', data=s1_f_df).fit()
+s1_f_fit_ext.summary()
+```
+
+The keep statement gives the variables used in our basic wage regressions plus
+sample identifiers and related tests score items.  Note: `afqt80` & `afqt89` are
+percentile scores.
+
+```{python}
+to_keep = """\
+id sid female black hisp year age insamp1 insamp2 badyear
+wage90 wage91 st90 st91 flag lwage
+afqt80 afqt89 std89 std89res math arith word comp numop""".split()
+final_df = df.loc[:, to_keep]
+final_df.head()
+```
