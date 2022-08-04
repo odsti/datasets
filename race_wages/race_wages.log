@@ -1,0 +1,342 @@
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+      name:  <unnamed>
+       log:  /Volumes/zorg/mb312/dev_trees/datasets/race_wages/race_wages.log
+  log type:  text
+ opened on:   4 Aug 2022, 15:52:47
+
+. 
+. import delimited using processed/race_wages
+(encoding automatically selected: ISO-8859-1)
+(25 vars, 9,763 obs)
+
+. 
+. /***MAKE YEAR OF BIRTH DUMMIES*****/
+. 
+. gen y1=0
+
+. replace y1=1 if year==57
+(1,005 real changes made)
+
+. gen y2=0
+
+. replace y2=1 if year==58
+(1,064 real changes made)
+
+. gen y3=0
+
+. replace y3=1 if year==59
+(1,127 real changes made)
+
+. gen y4=0
+
+. replace y4=1 if year==60
+(1,317 real changes made)
+
+. gen y5=0
+
+. replace y5=1 if year==61
+(1,363 real changes made)
+
+. gen y6=0
+
+. replace y6=1 if year==62
+(1,418 real changes made)
+
+. gen y7=0
+
+. replace y7=1 if year==63
+(1,359 real changes made)
+
+. gen y8=0
+
+. replace y8=1 if year==64
+(1,106 real changes made)
+
+. 
+. 
+. /*CREATE AGE ADJUSTED, STANDARD SCORES FOR CASES WITH VALID DATA.
+>   "std89res" IS THE VARIABLE THAT WE USED AS AN AFQT SCORE.***/
+. 
+. regress std89 y2 y3 y4 y5 y6 y7 y8 if math >= 0 & badyear==0
+
+      Source |       SS           df       MS      Number of obs   =     9,074
+-------------+----------------------------------   F(7, 9066)      =     20.48
+       Model |  206206.328         7  29458.0468   Prob > F        =    0.0000
+    Residual |  13043243.4     9,066  1438.69881   R-squared       =    0.0156
+-------------+----------------------------------   Adj R-squared   =    0.0148
+       Total |  13249449.8     9,073   1460.3163   Root MSE        =     37.93
+
+------------------------------------------------------------------------------
+       std89 | Coefficient  Std. err.      t    P>|t|     [95% conf. interval]
+-------------+----------------------------------------------------------------
+          y2 |   1.557542   1.754851     0.89   0.375    -1.882362    4.997447
+          y3 |  -3.339398   1.727999    -1.93   0.053    -6.726667    .0478709
+          y4 |  -4.956811   1.669783    -2.97   0.003    -8.229963   -1.683659
+          y5 |  -5.628411   1.648935    -3.41   0.001    -8.860696   -2.396127
+          y6 |  -7.318994    1.63233    -4.48   0.000    -10.51873   -4.119259
+          y7 |  -10.70919   1.645756    -6.51   0.000    -13.93525   -7.483138
+          y8 |  -14.63552   1.719575    -8.51   0.000    -18.00627   -11.26476
+       _cons |   191.3123   1.262237   151.57   0.000      188.838    193.7866
+------------------------------------------------------------------------------
+
+. predict std89res_recalc if math>=0 & badyear==0,rstandard
+(689 missing values generated)
+
+. 
+. replace std89res_recalc=-9 if std89res_recalc==.
+(689 real changes made)
+
+. 
+. /***NOW EDIT THE WAGE DATA*******************************/
+. /** IF HOURLY WAGE EXCEEDS $75, THEN LABEL IT INVALID.
+>     BELOW, THE SAME RULE APPLIES FOR WAGES < $1****/
+. 
+. /*BECAUSE ST90 & ST91 WERE CREATED FROM THE CLASS OF WORKER
+>   VARIABLE, IT IS POSSIBLE TO GET ST90(91)=-9 & WAGE90(91) > 1 FOR INVALID
+>   SKIPS ON THE CLASS VARIABLE.  HOWEVER THE ST90(91)==0 & WAGE90(91) > 1
+>   CASES ARE MORE OF A PUZZLE.  KARIMA NAGEE (CHRR) CLAIMS THESE (TWO)
+>   CASES ARE LIKELY CODING ERROR.  THUS, IN THE CASE WHERE BOTH
+>   STATUS VARIABLES ARE ZERO, WE SET THE WAGE=0.
+> 
+>   ON THE OTHER HAND, THERE ARE APPROX. 380 PEOPLE IN
+>   THE 1990 SURVEY & A SIMILAR NUMBER IN 1991 WHO ARE A VAILD SKIP
+>   FOR WAGES BUT ACTUALLY REPORT A VALID CLASS OF WORKER.  THESE
+>   PEOPLE ARE EMPLOYED BUT GAVE BAD OR INCOMPLETE WAGE INFORMATION.*/
+. 
+. gen a1=std89res
+
+. gen a2=a1*a1
+
+. 
+. 
+. /***THESE REGRESSION REPLICATE KEY COLUMNS OF TABLE 1 & TABLE 4.****/
+. 
+. 
+. regress lwage black hisp age if insamp1==1 & female==0
+
+      Source |       SS           df       MS      Number of obs   =     1,594
+-------------+----------------------------------   F(3, 1590)      =     33.58
+       Model |  20.4002945         3  6.80009815   Prob > F        =    0.0000
+    Residual |   321.98311     1,590  .202505101   R-squared       =    0.0596
+-------------+----------------------------------   Adj R-squared   =    0.0578
+       Total |  342.383404     1,593  .214929946   Root MSE        =    .45001
+
+------------------------------------------------------------------------------
+       lwage | Coefficient  Std. err.      t    P>|t|     [95% conf. interval]
+-------------+----------------------------------------------------------------
+       black |   -.245447   .0260598    -9.42   0.000    -.2965623   -.1943318
+        hisp |  -.1137402   .0302787    -3.76   0.000    -.1731306   -.0543498
+         age |   .0473186    .013989     3.38   0.001     .0198798    .0747574
+       _cons |   5.606089     .37901    14.79   0.000     4.862677    6.349501
+------------------------------------------------------------------------------
+
+. 
+. regress lwage black hisp age a1 a2 if insamp1==1 & female==0
+
+      Source |       SS           df       MS      Number of obs   =     1,594
+-------------+----------------------------------   F(5, 1588)      =     64.42
+       Model |  57.7369389         5  11.5473878   Prob > F        =    0.0000
+    Residual |  284.646466     1,588  .179248404   R-squared       =    0.1686
+-------------+----------------------------------   Adj R-squared   =    0.1660
+       Total |  342.383404     1,593  .214929946   Root MSE        =    .42338
+
+------------------------------------------------------------------------------
+       lwage | Coefficient  Std. err.      t    P>|t|     [95% conf. interval]
+-------------+----------------------------------------------------------------
+       black |  -.0719781   .0273089    -2.64   0.008    -.1255434   -.0184129
+        hisp |   .0047069   .0297145     0.16   0.874    -.0535769    .0629908
+         age |   .0395447   .0131764     3.00   0.003     .0136997    .0653897
+          a1 |   .1729965   .0119896    14.43   0.000     .1494795    .1965136
+          a2 |  -.0132498   .0108982    -1.22   0.224    -.0346261    .0081266
+       _cons |   5.754374   .3567386    16.13   0.000     5.054646    6.454102
+------------------------------------------------------------------------------
+
+. 
+. qreg lwage black hisp age if insamp2==1 & female==0
+Iteration  1:  WLS sum of weighted deviations =  598.63871
+
+Iteration  1: sum of abs. weighted deviations =  598.98778
+Iteration  2: sum of abs. weighted deviations =  581.42872
+note: alternate solutions exist.
+Iteration  3: sum of abs. weighted deviations =  566.45357
+note: alternate solutions exist.
+Iteration  4: sum of abs. weighted deviations =  560.06187
+note: alternate solutions exist.
+Iteration  5: sum of abs. weighted deviations =  558.32415
+note: alternate solutions exist.
+Iteration  6: sum of abs. weighted deviations =  553.30757
+Iteration  7: sum of abs. weighted deviations =  552.38102
+note: alternate solutions exist.
+Iteration  8: sum of abs. weighted deviations =  551.72516
+Iteration  9: sum of abs. weighted deviations =  551.22595
+note: alternate solutions exist.
+Iteration 10: sum of abs. weighted deviations =  551.12166
+note: alternate solutions exist.
+Iteration 11: sum of abs. weighted deviations =  551.08182
+Iteration 12: sum of abs. weighted deviations =  551.07787
+Iteration 13: sum of abs. weighted deviations =  551.07733
+note: alternate solutions exist.
+Iteration 14: sum of abs. weighted deviations =  551.07364
+note: alternate solutions exist.
+Iteration 15: sum of abs. weighted deviations =  551.07226
+
+Median regression                                   Number of obs =      1,674
+  Raw sum of deviations 569.4527 (about 6.7312474)
+  Min sum of deviations 551.0723                    Pseudo R2     =     0.0323
+
+------------------------------------------------------------------------------
+       lwage | Coefficient  Std. err.      t    P>|t|     [95% conf. interval]
+-------------+----------------------------------------------------------------
+       black |  -.3560419   .0343904   -10.35   0.000    -.4234947   -.2885891
+        hisp |  -.1809483   .0405177    -4.47   0.000    -.2604191   -.1014774
+         age |   .0674767    .018652     3.62   0.000     .0308931    .1040604
+       _cons |   5.050873   .5054553     9.99   0.000      4.05948    6.042266
+------------------------------------------------------------------------------
+
+. 
+. qreg lwage black hisp age a1 a2 if insamp2==1 & female==0
+Iteration  1:  WLS sum of weighted deviations =   579.8231
+
+Iteration  1: sum of abs. weighted deviations =  579.48771
+Iteration  2: sum of abs. weighted deviations =  569.18774
+Iteration  3: sum of abs. weighted deviations =  556.26491
+Iteration  4: sum of abs. weighted deviations =  553.52875
+Iteration  5: sum of abs. weighted deviations =  548.49768
+Iteration  6: sum of abs. weighted deviations =  545.47725
+Iteration  7: sum of abs. weighted deviations =  540.50482
+note: alternate solutions exist.
+Iteration  8: sum of abs. weighted deviations =  538.41698
+Iteration  9: sum of abs. weighted deviations =  535.90034
+Iteration 10: sum of abs. weighted deviations =  534.19525
+note: alternate solutions exist.
+Iteration 11: sum of abs. weighted deviations =  530.28103
+Iteration 12: sum of abs. weighted deviations =  528.84724
+Iteration 13: sum of abs. weighted deviations =  528.44427
+Iteration 14: sum of abs. weighted deviations =  528.38063
+Iteration 15: sum of abs. weighted deviations =  528.37869
+Iteration 16: sum of abs. weighted deviations =  528.12924
+Iteration 17: sum of abs. weighted deviations =  528.07369
+Iteration 18: sum of abs. weighted deviations =  528.05108
+Iteration 19: sum of abs. weighted deviations =  528.04307
+Iteration 20: sum of abs. weighted deviations =  528.03639
+Iteration 21: sum of abs. weighted deviations =  528.00571
+Iteration 22: sum of abs. weighted deviations =  528.00221
+Iteration 23: sum of abs. weighted deviations =  528.00121
+
+Median regression                                   Number of obs =      1,674
+  Raw sum of deviations 569.4527 (about 6.7312474)
+  Min sum of deviations 528.0012                    Pseudo R2     =     0.0728
+
+------------------------------------------------------------------------------
+       lwage | Coefficient  Std. err.      t    P>|t|     [95% conf. interval]
+-------------+----------------------------------------------------------------
+       black |  -.1344997   .0353775    -3.80   0.000    -.2038887   -.0651107
+        hisp |  -.0133848   .0388197    -0.34   0.730    -.0895253    .0627556
+         age |   .0549939   .0171468     3.21   0.001     .0213624    .0886254
+          a1 |   .2059687   .0155875    13.21   0.000     .1753957    .2365417
+          a2 |     .01017   .0141617     0.72   0.473    -.0176067    .0379466
+       _cons |   5.301137   .4643395    11.42   0.000     4.390388    6.211887
+------------------------------------------------------------------------------
+
+. 
+. 
+. regress lwage black hisp age if insamp1==1 & female==1
+
+      Source |       SS           df       MS      Number of obs   =     1,450
+-------------+----------------------------------   F(3, 1446)      =     14.52
+       Model |   10.023807         3    3.341269   Prob > F        =    0.0000
+    Residual |  332.832806     1,446  .230174831   R-squared       =    0.0292
+-------------+----------------------------------   Adj R-squared   =    0.0272
+       Total |  342.856613     1,449   .23661602   Root MSE        =    .47977
+
+------------------------------------------------------------------------------
+       lwage | Coefficient  Std. err.      t    P>|t|     [95% conf. interval]
+-------------+----------------------------------------------------------------
+       black |  -.1873933   .0291873    -6.42   0.000    -.2446473   -.1301393
+        hisp |  -.0266373   .0332039    -0.80   0.423    -.0917703    .0384957
+         age |   .0101012   .0156728     0.64   0.519    -.0206427    .0408451
+       _cons |   6.388607   .4246391    15.04   0.000     5.555633    7.221582
+------------------------------------------------------------------------------
+
+. 
+. regress lwage black hisp age a1 a2 if insamp1==1 & female==1
+
+      Source |       SS           df       MS      Number of obs   =     1,450
+-------------+----------------------------------   F(5, 1444)      =     57.28
+       Model |  56.7478517         5  11.3495703   Prob > F        =    0.0000
+    Residual |  286.108761     1,444  .198136261   R-squared       =    0.1655
+-------------+----------------------------------   Adj R-squared   =    0.1626
+       Total |  342.856613     1,449   .23661602   Root MSE        =    .44512
+
+------------------------------------------------------------------------------
+       lwage | Coefficient  Std. err.      t    P>|t|     [95% conf. interval]
+-------------+----------------------------------------------------------------
+       black |   .0329196   .0306977     1.07   0.284    -.0272973    .0931365
+        hisp |   .1446467   .0327783     4.41   0.000     .0803486    .2089448
+         age |   .0228385    .014565     1.57   0.117    -.0057323    .0514092
+          a1 |   .2277579   .0154644    14.73   0.000     .1974228    .2580931
+          a2 |   .0119302   .0136838     0.87   0.383    -.0149121    .0387725
+       _cons |    5.91678   .3953408    14.97   0.000     5.141276    6.692283
+------------------------------------------------------------------------------
+
+. 
+. 
+. /***THE KEEP STATEMENT GIVES THE VARIABLES USED IN OUR BASIC
+>     WAGE REGRESSIONS PLUS SAMPLE INDETIFIERS AND RELATED TESTS
+>     SCORE ITEMS.  NOTE: afqt80 & afqt89 ARE PERCENTILE SCORES.**/
+. 
+. sum if insamp1==1
+
+    Variable |        Obs        Mean    Std. dev.       Min        Max
+-------------+---------------------------------------------------------
+          id |      3,044     5258.25    3236.072          4      12518
+         sid |      3,044    6.553219    4.557529          1         14
+      female |      3,044    .4763469    .4995223          0          1
+       black |      3,044    .2946781    .4559728          0          1
+        hisp |      3,044    .1954665    .3966245          0          1
+-------------+---------------------------------------------------------
+        year |      3,044    62.93101    .8053209         62         64
+         age |      3,044    27.06899    .8053209         26         28
+     insamp1 |      3,044           1           0          1          1
+     insamp2 |      3,044           1           0          1          1
+     badyear |      3,044           0           0          0          0
+-------------+---------------------------------------------------------
+      wage90 |      3,044    840.4455    537.1957         -9       7000
+      wage91 |      3,044    883.6761    582.0306         -9       7142
+        st90 |      3,044    .6892247    1.669546         -9          1
+        st91 |      3,044    .7463863    1.442992         -9          1
+        flag |      3,044           1           0          1          1
+-------------+---------------------------------------------------------
+       lwage |      3,044    6.701695      .48413    4.67031   8.853665
+      afqt80 |      3,044    35.66886    26.14868          1         99
+      afqt89 |      3,044    36.56702    27.01137          1         99
+       std89 |      3,044     182.297    36.20933         95        258
+    std89res |      3,044     .042637    .9519464  -2.241617   2.065911
+-------------+---------------------------------------------------------
+        math |      3,044    11.90046    6.035954          0         25
+       arith |      3,044    14.94842    6.761339          0         30
+        word |      3,044    22.03088    7.920968          0         35
+        comp |      3,044    9.476347    3.651302          0         15
+       numop |      3,044    31.02924    10.98732          0         50
+-------------+---------------------------------------------------------
+          y1 |      3,044           0           0          0          0
+          y2 |      3,044           0           0          0          0
+          y3 |      3,044           0           0          0          0
+          y4 |      3,044           0           0          0          0
+          y5 |      3,044           0           0          0          0
+-------------+---------------------------------------------------------
+          y6 |      3,044    .3610381    .4803805          0          1
+          y7 |      3,044     .346912    .4760657          0          1
+          y8 |      3,044    .2920499    .4547799          0          1
+std89res_r~c |      3,044     .042637    .9519464  -2.241617   2.065911
+          a1 |      3,044     .042637    .9519464  -2.241617   2.065911
+-------------+---------------------------------------------------------
+          a2 |      3,044    .9077221    .9407393   3.12e-08   5.024849
+
+. 
+. log close
+      name:  <unnamed>
+       log:  /Volumes/zorg/mb312/dev_trees/datasets/race_wages/race_wages.log
+  log type:  text
+ closed on:   4 Aug 2022, 15:52:47
+-----------------------------------------------------------------------------------------------------------------------------------------------------------

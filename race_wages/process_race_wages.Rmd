@@ -451,8 +451,8 @@ s1_f_fit_ext.summary()
 ```
 
 The keep statement gives the variables used in our basic wage regressions plus
-sample identifiers and related tests score items.  Note: `afqt80` & `afqt89` are
-percentile scores.
+sample identifiers and related tests score items.  Note: `afqt80` & `afqt89`
+are percentile scores.
 
 ```{python}
 to_keep = """\
@@ -461,6 +461,14 @@ wage90 wage91 st90 st91 flag lwage
 afqt80 afqt89 std89 std89res math arith word comp numop""".split()
 final_df = df.loc[:, to_keep]
 final_df.head()
+```
+
+```{python}
+# Convert bool to int for greater portability of the written CSV file.
+for col_name in final_df:
+    if final_df[col_name].dtype == bool:
+        final_df[col_name] = final_df[col_name].astype(int)
+final_df.dtypes
 ```
 
 Write file.  Check and read back.
