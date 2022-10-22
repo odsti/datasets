@@ -19,7 +19,11 @@ The [data is public domain](https://www.bls.gov/bls/linksite.htm):
 >
 > The Bureau of Labor Statistics (BLS) is a Federal government agency and everything that we publish, both in hard copy and electronically, is in the public domain, except for previously copyrighted photographs and illustrations. You are free to use our public domain material without specific permission, although we do ask that you cite the Bureau of Labor Statistics as the source.
 
-The Python here is copyright Matthew Brett; I (MB) release that code as
+The Python notebook is copyright Matthew Brett; I (MB) release that code as
 [CC-0](https://creativecommons.org/share-your-work/public-domain/cc0/).
 Professor Derek Neal is the author of the `RECREATE.DO` file in `original`; he
 releases the file into the public domain.
+
+The `race_wages.do` file replicates the analyses in `RECREATE.DO` using the
+processed `processed/race_wages.csv` file and Stata.  It is based on
+`RECREATE.DO` and is also public domain.
