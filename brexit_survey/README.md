@@ -12,9 +12,28 @@ about how people voted in the Brexit referendum.
 
 Luckily, they make the data freely available online for us to analyze.
 
-You can get the data for yourself from the UK Data Service:
-[https://discover.ukdataservice.ac.uk/catalogue/?sn=8183](https://discover.ukdataservice.ac.uk/catalogue/?sn=8183).
-There are data files in various formats, including:
+You can get the original data for yourself from the [UK Data Service, dataset
+8183](https://discover.ukdataservice.ac.uk/catalogue/?sn=8183).
+
+The README there records the data as "open":
+
+> Open data – Researchers can access open datasets without any registration.
+Some may be subject to an Open Government Licence (OGL) or a Creative Commons
+Licence (CC).
+
+The [citation
+page](https://doc.ukdataservice.ac.uk/doc/8183/mrdoc/UKDA/UKDA_Study_8183_Information.htm) has:
+
+> All works which use or refer to these materials should acknowledge these
+sources by means of data citation. To ensure that such source attributions are
+captured for citation indexes, citations must appear in footnotes or in the
+reference section of publications. The citation for this data collection is:
+>
+> Hansard Society. Parliament and Government Programme. (2017). Audit of
+Political Engagement 14, 2017. [data collection]. UK Data Service. SN: 8183,
+http://doi.org/10.5255/UKDA-SN-8183-1
+
+The UK Data Service has data files in various formats, including:
 
 * SPSS format (for the SPSS statistical package);
 * Stata format (for the Stata statistical package);
