@@ -37,5 +37,24 @@ We also want the variable ``numage``; this is the age of the respondent in
 years.
 """
 
+vote_recode = {
+    1.0 : 'Remain',
+    2.0 : 'Leave',
+    3.0 : 'Did not vote',
+    4.0 : 'Too young',
+    5.0 : "Can't remember",
+    6.0 : "Refused"}
+
+df = pd.DataFrame()
+df['brexit_vote'] = audit_data['cut15'].replace(vote_recode)
+df['age'] = audit_data['numage']
+
 # Drop rows where age is 0
-good_data = audit_data[audit_data['numage'] != 0]
+good_data = df[df['age'] != 0]
+# We lose 14 rows.
+assert len(good_data) == len(df) - 14
+
+out_csv = processed_dir / 'brexit_survey.csv'
+good_data.to_csv(out_csv, index=None)
+
+print(pd.read_csv(out_csv).head())
