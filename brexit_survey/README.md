@@ -15,7 +15,7 @@ Luckily, they make the data freely available online for us to analyze.
 You can get the original data for yourself from the [UK Data Service, dataset
 8183](https://discover.ukdataservice.ac.uk/catalogue/?sn=8183).
 
-The README there records the data as "open":
+The main (details) page there records the data as "open":
 
 > Open data – Researchers can access open datasets without any registration.
 Some may be subject to an Open Government Licence (OGL) or a Creative Commons
@@ -51,4 +51,16 @@ Text Format, but we have converted to PDF for convenience.  It is otherwise
 identical to the file you will find at the UK Data Service.
 
 The `./process_brexit.py` file converts the file to `.csv` format, restricts
-to same columns, with more memorable names, and cleans up some invalid values.
+to two columns, with more memorable names, and cleans up some invalid values.
+
+In particular the processed dataset has the following columns:
+
+*   `brexit_vote`: respondents' report of their vote in the Brexit referendum.
+     Result is categorical with any of these values:
+    *  "Remain"
+    *  "Leave"
+    *  "Did not vote"
+    *  "Too young"
+    *  "Can't remember"
+    *  "Refused"
+*   `age`: age in years.
