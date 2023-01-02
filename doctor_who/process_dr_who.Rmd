@@ -1,0 +1,165 @@
+---
+jupyter:
+  jupytext:
+    notebook_metadata_filter: all,-language_info
+    split_at_heading: true
+    text_representation:
+      extension: .Rmd
+      format_name: rmarkdown
+      format_version: '1.2'
+      jupytext_version: 1.14.1
+  kernelspec:
+    display_name: Python 3 (ipykernel)
+    language: python
+    name: python3
+---
+
+# Doctor Who viewer ratings and numbers
+
+This notebook cleans data scraped from <https://guide.doctorwhonews.net>.
+
+See `original/README.md` for details of the input ratings file.
+
+```{python}
+from pathlib import Path
+
+import numpy as np
+
+import pandas as pd
+
+ratings = pd.read_csv(Path('original') / 'doctor_who_raw.csv')
+ratings.head()
+```
+
+These are the columns in the raw ratings data:
+
+```{python}
+list(ratings)
+```
+
+The `Date` has a space in its values between the date and time, so it generates
+two columns, `Date` (the weekday), and `Date.1` (the date).  We use the
+`Date.1` and `Time` columns to make a Pandas date/time object:
+
+```{python}
+both = ratings['Date.1'] + ' ' + ratings['Time']
+ratings['Broadcast datetime'] = pd.to_datetime(both)
+```
+
+The website allows us to sort the episodes in various ways.  By default, it
+sorts by `Rating`, and this results in a unicode down arrow prepended to the
+`Rating` column.  The first column is nothing but the rank by the given sorting
+method — here `Rating`.  We also rename the `Date` column as `Weekday`.
+
+```{python}
+ratings = ratings.rename(columns={'Unnamed: 0': 'Rank',
+                                  '⇩ Rating': 'Rating',
+                                  'Date': 'Weekday' })
+ratings.head()
+```
+
+## The `Ratings` column
+
+Investigating, later `Rating` figures appear to be BARB 7 day, four screen
+viewing numbers.
+
+"Legend of the Sea Devils" in these tables has 3.47m viewers, where BARB has
+3,466,000 (see 11 Apr 2022 - 17 Apr 2022 figures on
+<https://www.barb.co.uk/viewing-data/most-viewed-programmes>).
+
+Quoting from that site:
+
+> Viewing figures for programmes on broadcast channels are consolidated 7-day
+> viewing figures with pre-broadcast viewing and viewing on tablets, PCs and
+> smartphones included.
+
+These figures are called "four screen" viewing.  It is not very cloar to me
+what the earlier figures refer to exactly.  It appears that, prior to September
+2021, BARB recorded [three screen viewing (TV, tablets and
+PCs)](https://www.barb.co.uk/news/dovetail-fusion-now-includes-smartphone-data).
+[This
+page](https://www.barb.co.uk/news/barb-launches-multiple-screen-audience-reporting/),
+appears to say that, before September 2018, figures were for TV screens only,
+but it also appears to contradict the previous page by saying that figures
+after September 2018 are four-screen figures.
+
+The "consolidated" numbers are viewing figures on a TV (not another type of
+device), but accounting for later viewing on a TV.  See the [BARB
+FAQ](https://www.barb.co.uk/frequently-asked-questions) entry for "What is the
+difference between live and consolidated TV data".
+
+See: [this YouTube video](https://www.youtube.com/watch?v=66eBGKicCnA) for a
+balanced discussion of Doctor Who viewing figures.
+
+```{python}
+def rating2float(val):
+    assert val.endswith('m')
+    return float(val[:-1])
+
+ratings['viewers_in_millions'] = ratings['Rating'].apply(rating2float)
+ratings.head()
+```
+
+Now we have the values for viewership, we can check the `Rank` matches the
+viewership figures.
+
+```{python}
+# Check ranking calculation
+calc_rank = ratings['viewers_in_millions'].rank(method='first', ascending=False)
+assert np.all(calc_rank == ratings['Rank'])
+```
+
+## Audience `Share`
+
+The figures for audience "Share" appear to refer to share compared to other
+programmes broadcast at the same time, watched on a TV.
+
+Looking at the episode "The Woman who fell to earth" — it has recorded share of
+45.1%.  This is the figure [given by Variety
+magazine](https://variety.com/2018/tv/news/doctor-who-jodie-whittaker-debut-most-watched-uk-1202982665):
+
+> Excluding Barb’s new 4-screen measurement, the consolidated audience gave
+> “Doctor Who” a 45.1% audience share.
+
+I take "excluding ... 4-screen ... consolidated" to refer to the consolidated
+TV viewing figures (see above).
+
+This is _not_ the overnight share, also given in Variety and in
+[Wikipedia](https://en.wikipedia.org/wiki/The_Woman_Who_Fell_to_Earth) as
+40.1%.
+
+I can't see any way of getting this consolidated share from the free BARB data.
+
+
+```{python}
+def share2float(val):
+    if pd.isna(val):
+        return val
+    if val.endswith('(i)'):
+        val = val[:-3]
+    assert val.endswith('%')
+    return float(val[:-1])
+
+
+ratings['Share'] = ratings['Share'].apply(share2float)
+ratings.head()
+```
+
+## Save processed file
+
+```{python}
+out_path = Path('processed') / 'doctor_who_stats.csv'
+thinner = (ratings.drop(columns=['Rank', 'Date.1', 'Time', 'Rating'])
+           .sort_values('Broadcast datetime'))
+thinner.to_csv(out_path, index=None)
+pd.read_csv(out_path).head()
+```
+
+```{python}
+sep = '\n*   '
+print(sep + sep.join([f'\{s}' for s in thinner])
+```
+
+```{python}
+
+```
