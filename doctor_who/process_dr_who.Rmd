@@ -154,12 +154,3 @@ thinner = (ratings.drop(columns=['Rank', 'Date.1', 'Time', 'Rating'])
 thinner.to_csv(out_path, index=None)
 pd.read_csv(out_path).head()
 ```
-
-```{python}
-sep = '\n*   '
-print(sep + sep.join([f'\{s}' for s in thinner])
-```
-
-```{python}
-
-```
