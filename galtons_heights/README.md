@@ -15,7 +15,7 @@ I believe the actual data here come from [James
 Hanley's](http://www.medicine.mcgill.ca/epidemiology/hanley/) transcription of
 [Galton's original
 notebooks](http://www.medicine.mcgill.ca/epidemiology/hanley/galton/notebook/index.html),
-with with the deliberately omitted entries filled in.
+with the deliberately omitted entries filled in.
 
 See also [Hanley's page on the same
 data](http://www.medicine.mcgill.ca/epidemiology/hanley/galton).
@@ -52,7 +52,7 @@ others (21 female, 5 male) height  was  described  verbally  (“tallish,”
 James A. Hanley (2004) ["Transmuting" Women into Men: Galton's Family Data on
 Human Stature](https://www.jstor.org/stable/27643564) The American Statistician
 Vol. 58, No. 3 (Aug., 2004), pp. 237-243.  There is [another copy of the paper
-here]](http://www.medicine.mcgill.ca/epidemiology/hanley/Reprints/Hanley_Article_Galton_Data.pdf).
+here](http://www.medicine.mcgill.ca/epidemiology/hanley/Reprints/Hanley_Article_Galton_Data.pdf).
 
 The `galton_heights.csv` data appear to be transcription of the data from Table
 I of Galton's 1886 paper.  As Hanley's "Transmuting" paper discusses, it is
