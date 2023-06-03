@@ -1,0 +1,75 @@
+Country,Gender,N,cry_tendency,cry_time
+Australia,Female,183,6.0,2.67
+Australia,Male,63,3.22,3.63
+Austria,Female,50,6.1,3.36
+Austria,Male,29,3.66,4.24
+Belgium,Female,171,5.91,3.2
+Belgium,Male,51,2.92,4.53
+Brazil,Female,245,6.88,3.37
+Brazil,Male,174,3.97,4.48
+Bulgaria,Female,51,5.59,3.61
+Bulgaria,Male,50,3.58,5.14
+Chile,Female,55,6.4,2.6
+Chile,Male,53,3.43,4.09
+China,Female,103,5.17,3.75
+China,Male,72,3.38,5.13
+Finland,Female,49,6.57,2.92
+Finland,Male,55,3.11,4.07
+Germany,Female,50,6.61,3.02
+Germany,Male,39,3.89,4.15
+Ghana,Female,53,5.28,4.5
+Ghana,Male,54,3.8,5.11
+Greece,Female,79,5.67,2.92
+Greece,Male,37,3.11,4.54
+Hungary,Female,48,5.7,2.98
+Hungary,Male,34,3.65,4.18
+Iceland,Female,180,5.96,3.42
+Iceland,Male,146,2.51,5.04
+India,Female,112,5.05,3.36
+India,Male,162,3.23,4.85
+Indonesia,Female,118,5.61,3.39
+Indonesia,Male,53,3.06,5.11
+Israel,Female,50,6.28,3.1
+Israel,Male,47,2.8,4.15
+Italy,Female,79,6.25,2.88
+Italy,Male,35,4.46,4.54
+Jamaica,Female,64,6.24,3.5
+Jamaica,Male,34,3.18,4.82
+Japan,Female,80,4.9,3.8
+Japan,Male,201,2.79,4.95
+Kenya,Female,82,5.4,3.78
+Kenya,Male,85,3.81,4.82
+Korea,Female,228,5.61,3.18
+Korea,Male,187,3.47,5.06
+Lithuania,Female,135,5.9,2.94
+Lithuania,Male,53,2.79,4.43
+Malaysia,Female,48,5.4,3.91
+Malaysia,Male,43,2.26,5.42
+Nepal,Female,47,5.19,4.4
+Nepal,Male,53,3.55,4.83
+Netherlands,Female,78,6.05,2.88
+Netherlands,Male,85,2.66,4.79
+New Zealand,Female,49,5.84,2.96
+New Zealand,Male,26,3.5,3.88
+Nigeria,Female,41,4.43,4.61
+Nigeria,Male,57,3.49,5.47
+Peru,Female,48,5.4,4.15
+Peru,Male,45,3.95,4.91
+Poland,Female,56,5.66,3.0
+Poland,Male,53,2.47,4.85
+Portugal,Female,64,6.3,3.03
+Portugal,Male,63,2.81,4.95
+Romania,Female,91,5.3,3.4
+Romania,Male,77,3.23,4.75
+Spain,Female,51,6.59,3.0
+Spain,Male,50,3.42,4.86
+Sweden,Female,50,6.96,2.38
+Sweden,Male,47,3.81,4.18
+Switzerland,Female,67,6.19,3.33
+Switzerland,Male,51,2.53,4.96
+Turkey,Female,52,6.35,2.83
+Turkey,Male,50,4.04,4.46
+United Kingdom,Female,51,5.49,3.34
+United Kingdom,Male,32,2.6,4.29
+United States,Female,160,6.34,2.53
+United States,Male,51,3.61,3.73
