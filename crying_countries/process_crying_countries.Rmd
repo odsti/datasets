@@ -28,7 +28,7 @@ Here are the data from Table 1 of Hemert et al (2011), copy-pasted into a `.txt`
 ```{python}
 orig_tab_1 = Path('original') / 'hemert_2011_table1.txt'
 df = pd.read_csv(orig_tab_1, header=[0, 1], delim_whitespace=True)
-df.set_index(('Country', 'Country')).stack(level=-1).reset_index()
+df
 ```
 
 
