@@ -152,20 +152,60 @@
 * [Stat2 book
   datasets](https://cran.r-project.org/web/packages/Stat2Data/Stat2Data.pdf).
   [Stat2 package Github repository](https://github.com/statmanrobin/Stat2Data).
-  Particularly see: CanadianDrugs (voting vs pharma contributions),
-  CO2SouthPole (visualization), CreditRisk (student credit risk), Dinosaurs
-  (finding evidence of asteroid strike, visualization), [The eyes have
-  it](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0040256)
-  data on pupil dilation and sexuality, Faces (attractiveness etc),
-  FaithfulFaces (faces, rating and actual faithfulness), FirstYearGPA
-  (predicting first year college GPA), FloridaDP ([race by death penalty
-  sentence in Florida](https://www.jstor.org/stable/2095088), GrinnelHouses
-  (house price, attribute data), Handwriting (guessing gender from
-  handwriting),
-  [IQGuessing](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0081237)
-  (guessed and actual IQ by age), Kershaw (many measurements of all pitches by
-  pitcher), [Kids198](https://math.nist.gov/~SRessler/anthrokids/) (link has
-  many body measurements for group of 3900 children, including race), Leukemia
-  (responses to treatment)
+
+  Particularly see:
+
+  * CanadianDrugs (voting vs pharma contributions)
+  * CO2SouthPole (visualization)
+  * CreditRisk (student credit risk)
+  * Dinosaurs (finding evidence of asteroid strike, visualization)
+  * [The eyes have
+    it](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0040256)
+    data on pupil dilation and sexuality, Faces (attractiveness etc)
+  * FaithfulFaces (faces, rating and actual faithfulness)
+  * FirstYearGPA (predicting first year college GPA)
+  * FloridaDP ([race by death penalty sentence in
+    Florida](https://www.jstor.org/stable/2095088)
+  * GrinnelHouses (house price, attribute data)
+  * Handwriting (guessing gender from handwriting)
+  * [IQGuessing](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0081237)
+    (guessed and actual IQ by age)
+  * Kershaw (many measurements of all pitches by pitcher)
+  * [Kids198](https://math.nist.gov/~SRessler/anthrokids/) (link has many body
+    measurements for group of 3900 children, including race)
+  * Leukemia (responses to treatment) (see below)
+  * LeveeFailures : Levee failures along the Mississippi River, explanatory
+    variables.
+  * LewyBody2Groups : Lewy Body / Alzheimers, atrophy measure and MMSE
+  * MathPlacement : Math Placement Exam Results, various math scores, GPA,
+    course result.  HS in description is High School.  Recommendations are R0:
+    Stat, 117 or 210 R12: R0 course or 120 R2: 120 or 122, R4: 122 R6: 126, R8:
+    128.
+  * MedGPA : GPA and Medical School Admission
+  * MentalHealth : # of mental-health ER admissions by phase of moon. See also
+    [contradicting article](https://pubmed.ncbi.nlm.nih.gov/17256692)
+  * Milgram : 37 high school teachers asked to rate Milgram-type experiment for
+    ethics, where they thought the results were bad (lots of conformity, actual
+    result), fairly-bad or good.
+  * MouseBrain : effects of serotonin gene knockout on number of social
+    contacts in mice.
+  * Oysters : comparing old 2D and new 3D estimate of oyster weight.
+  * RacialAnimus : racial animus ratings from Google searches for cities in the
+    US, with associated demographics.
+  * RadioactiveTwins : clearance rate from lungs in 15 pairs of identical
+    twins, with one twin living in a city, the other rural.
+  * Ricci : firefighter exam results by race and desired promotion.
+  * WeightLossIncentive : weight loss at 4 and 7 months with and without
+    financial incentive.
+  * YouthRisk : large dataset for kids grades 9 through 12, on whether they
+    drove with drunk driver, smoking, have a driver's license, gender.  From
+    <https://www.cdc.gov/brfss/data_documentation/index.htm>, whence there are
+    more recent data.
+  * Zimmerman : results of cases where "stand your ground" defense was made by
+    race of defendant and victim.
+
 * [Survival data for various treatments and prognostic
-  indicators](https://archive.org/details/statisticalmetho00leee_0)
+  indicators](https://archive.org/details/statisticalmetho00leee_0), source of
+  the Leukemia dataset above.
+* [Challenger O-ring data](https://rdrr.io/cran/DAAG/man/orings.html)
+* [Climate data for teaching](https://www.tandfonline.com/doi/pdf/10.1080/10691898.2013.11889667)
