@@ -149,3 +149,23 @@
   discoverable and making valuable government data available to the public in
   the hopes of better health outcomes for all.".
 * United Nations Human Development Programme <http://hdr.undp.org/en/data>
+* [Stat2 book
+  datasets](https://cran.r-project.org/web/packages/Stat2Data/Stat2Data.pdf).
+  [Stat2 package Github repository](https://github.com/statmanrobin/Stat2Data).
+  Particularly see: CanadianDrugs (voting vs pharma contributions),
+  CO2SouthPole (visualization), CreditRisk (student credit risk), Dinosaurs
+  (finding evidence of asteroid strike, visualization), [The eyes have
+  it](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0040256)
+  data on pupil dilation and sexuality, Faces (attractiveness etc),
+  FaithfulFaces (faces, rating and actual faithfulness), FirstYearGPA
+  (predicting first year college GPA), FloridaDP ([race by death penalty
+  sentence in Florida](https://www.jstor.org/stable/2095088), GrinnelHouses
+  (house price, attribute data), Handwriting (guessing gender from
+  handwriting),
+  [IQGuessing](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0081237)
+  (guessed and actual IQ by age), Kershaw (many measurements of all pitches by
+  pitcher), [Kids198](https://math.nist.gov/~SRessler/anthrokids/) (link has
+  many body measurements for group of 3900 children, including race), Leukemia
+  (responses to treatment)
+* [Survival data for various treatments and prognostic
+  indicators](https://archive.org/details/statisticalmetho00leee_0)
