@@ -12,8 +12,8 @@ subdirectory.
 This is their diet dataset, from
 <https://www.sheffield.ac.uk/polopoly_fs/1.937196!/file/Diet_SPSS.sav>.
 
-The only information we have is from the dataset
-webpage:
+The only information we have is from the dataset webpage, duplicated in the
+data dictionary document (below):
 
 > This data set contains information on 78 people using one of three diets.
 
