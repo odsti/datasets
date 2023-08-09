@@ -18,9 +18,9 @@ then edited the result to form `arbuthnot.csv`.
 
 We loaded the `Arbuthnot` data frame from the [HistData
 R package](https://www.rdocumentation.org/packages/HistData), and checked their
-values against ours.  Finally, we corrected he female values for 1646, 1689,
-and 1707, and the male value for 1707, after confirming by comparison to a [PDF
-of the original
+values against ours.  Finally, we corrected the female values for 1646, 1689,
+and 1707, and the male value for 1707, after confirming by comparison to
+a [PDF of the original
 pages](https://royalsocietypublishing.org/doi/pdf/10.1098/rstl.1710.0011).
 
 The data are the number of christenings of each sex in London, for the given
