@@ -1,0 +1,52 @@
+---
+jupyter:
+  jupytext:
+    notebook_metadata_filter: all,-language_info
+    split_at_heading: true
+    text_representation:
+      extension: .Rmd
+      format_name: rmarkdown
+      format_version: '1.2'
+      jupytext_version: 1.14.5
+  kernelspec:
+    display_name: Python 3 (ipykernel)
+    language: python
+    name: python3
+---
+
+```{python}
+from pathlib import Path
+
+import pandas as pd
+pd.set_option('mode.copy_on_write', True)
+```
+
+```{python}
+in_path = (Path('original') / 
+           'data-police-shootings' / 'v2' /
+           'fatal-police-shootings-data.csv')
+df = pd.read_csv(in_path)
+df['date'] = pd.to_datetime(df['date'])
+df
+```
+
+```{python}
+by_year_race = df.groupby([df['date'].dt.year, df['race']]).count()
+by_year_race
+```
+
+```{python}
+# Select known complete years.
+complete = by_year_race.loc[2016:2022]
+complete
+```
+
+```{python}
+black_labels = [c for c in complete.index if c[1] == 'B']
+b_counts = complete.loc[black_labels][['id']]
+b_counts
+```
+
+```{python}
+b_counts.mean()
+```
