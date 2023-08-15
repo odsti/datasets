@@ -1,0 +1,83 @@
+---
+jupyter:
+  jupytext:
+    notebook_metadata_filter: all,-language_info
+    split_at_heading: true
+    text_representation:
+      extension: .Rmd
+      format_name: rmarkdown
+      format_version: '1.2'
+      jupytext_version: 1.14.5
+  kernelspec:
+    display_name: Python 3 (ipykernel)
+    language: python
+    name: python3
+---
+
+```{python}
+from pathlib import Path
+
+import numpy as np
+import pandas as pd
+pd.set_option('mode.copy_on_write', True)
+```
+
+```{python}
+orig_pth = Path('original')
+incomes = pd.read_csv(orig_pth / 'tabula-rep-kaptur-district-chart.csv')
+incomes
+```
+
+```{python}
+people = pd.read_csv(orig_pth / 'legislators_2023.csv')
+people
+```
+
+```{python}
+reps = people[people['type'] == 'rep']
+len(reps)
+```
+
+```{python}
+# Column names
+list(reps)
+```
+
+```{python}
+def to_district_code(row):
+    state, district = row['state'], row['district']
+    suffix = 'At Large' if district == 0 else str(int(district))
+    return f'{state}-{suffix}'
+```
+
+```{python}
+reps['district_code'] = reps.apply(to_district_code, axis=1)
+reps.head()
+```
+
+```{python}
+df = incomes.merge(reps[['district_code', 'party']],
+                   left_on='District',
+                   right_on='district_code',
+                   how='left'
+                  )
+df
+```
+
+```{python}
+assert not np.any(df['2021 Median Income'].isna())
+```
+
+```{python}
+df = df.rename(columns={"party":'Party'}).drop(columns=['district_code'])
+df
+```
+
+```{python}
+out_pth = Path('processed') / 'congress_118.csv'
+df.to_csv(out_pth, index=None)
+```
+
+```{python}
+pd.read_csv(out_pth).head()
+```
