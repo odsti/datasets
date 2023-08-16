@@ -171,13 +171,13 @@ The following data are from [this survey](https://www.skeptic.com/research-cente
 
 The question asked was:
 
-> If you had to guess, how many unarmed Black men were killed by police in 2019?
+> If you had to guess, how many unarmed Black men were killed by police in
+> 2019?
 
 It's not clear to me what the sample of people was.  From the report "Participants" heading:
 
-> 980 adults in the United States from the CUPES dataset
-that reported a consistent political orientation (see
-measures below).
+> 980 adults in the United States from the CUPES dataset that reported a
+> consistent political orientation (see measures below).
 
 ```{python}
 estimates = pd.read_csv('original/cupes-007.csv')
