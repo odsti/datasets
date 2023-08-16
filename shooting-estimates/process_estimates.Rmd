@@ -102,7 +102,6 @@ pv['allegedly_armed'].value_counts()
 pv_unarmed = pv[~pv['allegedly_armed'].isin(
     ['Unarmed/Did Not Have Actual Weapon', 'Unclear']) |
                 pv['allegedly_armed'].isna()]
-                
 pv_unarmed
 ```
 
@@ -132,7 +131,10 @@ pv_b_counts
 b_counts
 ```
 
-We'll take the WaPo figures, to prefer the higher number.  We've included various ambiguous categories for "unarmed", so this will be higher than the actual number *of those cases found by the WaPo* (some may have been missed).
+We'll take the Washington Post (WaPo) figures, to prefer the higher number.
+We've included various ambiguous categories for "unarmed", so this will be
+higher than the actual number *of those cases found by the WaPo* (some may
+have been missed).
 
 Let's guess then, that the actual figure is probably below 50 in general, and below 30 for 2019.  Please email me (Matthew Brett) if you have some data to call that guess into question.
 

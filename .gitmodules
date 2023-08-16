@@ -1,3 +1,3 @@
 [submodule "police-killings/original/data-police-shootings"]
-	path = police-killings/original/data-police-shootings
+	path = shooting-estimates/original/data-police-shootings
 	url = https://github.com/washingtonpost/data-police-shootings
