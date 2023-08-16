@@ -7,7 +7,7 @@ jupyter:
       extension: .Rmd
       format_name: rmarkdown
       format_version: '1.2'
-      jupytext_version: 1.14.5
+      jupytext_version: 1.14.1
   kernelspec:
     display_name: Python 3 (ipykernel)
     language: python
@@ -21,7 +21,13 @@ import pandas as pd
 pd.set_option('mode.copy_on_write', True)
 ```
 
+First we look at the [Washington Post police shootings database](https://www.washingtonpost.com/graphics/investigations/police-shootings-database).  See [their methodology](https://github.com/washingtonpost/data-police-shootings/tree/master/v2) for more detail.
+
+It's just not clear how many shootings they are missing.
+
 ```{python}
+# To fetch the data file, don't forget to do:
+# $ git submodule update --init
 in_path = (Path('original') / 
            'data-police-shootings' / 'v2' /
            'fatal-police-shootings-data.csv')
@@ -31,7 +37,27 @@ df
 ```
 
 ```{python}
-by_year_race = df.groupby([df['date'].dt.year, df['race']]).count()
+df['armed_with'].value_counts()
+```
+
+```{python}
+df['armed_with'].isna().sum()
+```
+
+```{python}
+# Let's take the most liberal possible interpretation of unarmed.
+unarmed = df[df['armed_with'].isin(['unarmed', 'undetermined', 'unknown']) |
+             df['armed_with'].isna()]
+unarmed
+```
+
+```{python}
+# Check that all rows have an ID (for the subsequent count)
+assert not unarmed['id'].isna().any()
+```
+
+```{python}
+by_year_race = unarmed.groupby([unarmed['date'].dt.year, unarmed['race']])[['id']].count()
 by_year_race
 ```
 
@@ -49,4 +75,113 @@ b_counts
 
 ```{python}
 b_counts.mean()
+```
+
+```{python}
+# Mapping police violence
+# From data at:
+# https://mappingpoliceviolence.org
+# Methodology:
+# https://mappingpoliceviolence.org/methodology
+in_path = Path('original') / 'Mapping Police Violence.csv'
+pv = pd.read_csv(in_path)
+pv['date'] = pd.to_datetime(pv['date'], dayfirst=True)
+pv
+```
+
+```{python}
+list(pv)
+```
+
+```{python}
+pv['allegedly_armed'].value_counts()
+```
+
+```{python}
+# Unarmed, most liberally interpreted.
+pv_unarmed = pv[~pv['allegedly_armed'].isin(
+    ['Unarmed/Did Not Have Actual Weapon', 'Unclear']) |
+                pv['allegedly_armed'].isna()]
+                
+pv_unarmed
+```
+
+```{python}
+# We can use state for counts (no missing values).
+assert not unarmed['state'].isna().any()
+```
+
+```{python}
+pv_year_race = pv_unarmed.groupby([unarmed['date'].dt.year, unarmed['race']])[['state']].count()
+pv_year_race
+```
+
+```{python}
+pv_complete = pv_year_race.loc[2016:2022]
+pv_complete
+```
+
+```{python}
+pv_black_labels = [c for c in pv_complete.index if c[1] == 'B']
+pv_b_counts = pv_complete.loc[pv_black_labels][['state']]
+pv_b_counts
+```
+
+```{python}
+# As a reminder
+b_counts
+```
+
+We'll take the WaPo figures, to prefer the higher number.  We've included various ambiguous categories for "unarmed", so this will be higher than the actual number *of those cases found by the WaPo* (some may have been missed).
+
+Let's guess then, that the actual figure is probably below 50 in general, and below 30 for 2019.  Please email me (Matthew Brett) if you have some data to call that guess into question.
+
+## Some notes on the data
+
+[This report](https://www.skeptic.com/research-center/reports/Research-Report-CUPES-007.pdf) states that both the Washington Post and the Mapping Police Violence sites use data from the [FBI Use-Of-Force](https://www.fbi.gov/how-we-can-help-you/more-fbi-services-and-information/ucr/use-of-force) project.
+
+See the [UoF data page](https://cde.ucr.cjis.gov/LATEST/webapp/#/pages/le/uof) for an example.
+
+These statistics are not complete.  Quoting from the page above (as of 16 August 2023):
+
+>  In 2023, 9,340 out of 18,514 federal, state, local, and tribal law enforcement agencies throughout the nation participated and provided use-of-force data. The officers employed by these agencies represent 60% federal, state, local, and tribal sworn officers in the nation. 
+
+From that site, by selecting years, you can find the following data:
+
+```{python}
+pd.read_csv('original/uof_participation.csv')
+```
+
+You'd have to guess that the non-reporting forces would tend to be smaller, and therefore, less likely to be in high-crime high-mortality areas.  A quick check on the "participating agencies" includes, for example, the LAPD, NYPD,  
+
+Looking at the Mapping Police Violence methodology page, I can't see evidence they are using the UoF database - and it's not clear to me that the Washington Post is using that database either.
+
+## Estimates of shootings and political orientation
+
+
+The following data are from [this survey](https://www.skeptic.com/research-center/reports/Research-Report-CUPES-007.pdf).  The data table below comes from the [supplementary materials for the survey](https://www.skeptic.com/research-center/reports/Supplemental-CUPES-007.pdf).
+
+The question asked was:
+
+> If you had to guess, how many unarmed Black men were killed by police in 2019?
+
+It's not clear to me what the sample of people was.  From the report "Participants" heading:
+
+> 980 adults in the United States from the CUPES dataset
+that reported a consistent political orientation (see
+measures below).
+
+```{python}
+estimates = pd.read_csv('original/cupes-007.csv')
+estimates
+```
+
+```{python}
+# Just write estimates out to processed
+estimates.to_csv('processed/cupes-007.csv', index=None)
+pd.read_csv('processed/cupes-007.csv')
+```
+
+```{python}
+
 ```
