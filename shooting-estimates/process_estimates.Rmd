@@ -154,9 +154,15 @@ From that site, by selecting years, you can find the following data:
 pd.read_csv('original/uof_participation.csv')
 ```
 
-You'd have to guess that the non-reporting forces would tend to be smaller, and therefore, less likely to be in high-crime high-mortality areas.  A quick check on the "participating agencies" includes, for example, the LAPD, NYPD,  
+You'd have to guess that the non-reporting forces would tend to be smaller,
+and therefore, less likely to be in high-crime high-mortality areas.  A quick
+check on the "participating agencies" includes, for example, the LAPD, NYPD,
+and the SFPD.
 
-Looking at the Mapping Police Violence methodology page, I can't see evidence they are using the UoF database - and it's not clear to me that the Washington Post is using that database either.
+Looking at the Mapping Police Violence methodology page, I can't see evidence
+they are using the UoF database - and it's not clear to me that the Washington
+Post is using that database either.
+
 
 ## Estimates of shootings and political orientation
 
@@ -181,9 +187,6 @@ estimates
 ```{python}
 # Just write estimates out to processed
 estimates.to_csv('processed/cupes-007.csv', index=None)
+# Read it back to check.
 pd.read_csv('processed/cupes-007.csv')
-```
-
-```{python}
-
 ```
