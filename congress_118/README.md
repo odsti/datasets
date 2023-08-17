@@ -18,3 +18,9 @@ that Republicans are representing the majority of people who struggle? How is
 that possible?"
 
 This dataset contains the data from the two-page chart linked above.
+
+The data is a standard arrangement from public sources; see
+`./original/README.md` for detail.  As a result I (MB) think it is reasonable
+to apply
+a [CC-0](https://creativecommons.org/share-your-work/public-domain/cc0)
+license.

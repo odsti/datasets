@@ -9,4 +9,6 @@ I (MB) imported the data from the chart using
 The import didn't bring along the colors, giving party affiliation, so I got
 those from `legislators_2023.csv`; this is an August 2023 copy of
 <https://theunitedstates.io/congress-legislators/legislators-current.csv>, as
-of <https://github.com/unitedstates/congress-legislators/tree/98e8dce>.
+of <https://github.com/unitedstates/congress-legislators/tree/98e8dce>.  That
+repository has a [CC-0
+license](https://github.com/unitedstates/congress-legislators/blob/main/LICENSE)
