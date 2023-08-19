@@ -2,6 +2,8 @@
 
 The PDF here is the original chart
 <https://s3.documentcloud.org/documents/23726766/rep-kaptur-district-chart.pdf>.
+The chart notes the original source for income data as
+<https://www.census.gov/mycd/> — a U.S. public data source.
 
 I (MB) imported the data from the chart using
 [Tabula](https://tabula.technology), and did some by-hand cleaning of the CSV, including having to add back the entries in the lowest row for both pages.

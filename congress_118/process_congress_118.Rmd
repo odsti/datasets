@@ -69,7 +69,9 @@ assert not np.any(df['2021 Median Income'].isna())
 ```
 
 ```{python}
-df = df.rename(columns={"party":'Party'}).drop(columns=['district_code'])
+df = df.rename(columns={"party":'Party',
+                        "2021 Median Income":'Median_Income'}
+              ).drop(columns=['district_code'])
 df
 ```
 
