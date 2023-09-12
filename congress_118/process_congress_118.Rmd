@@ -7,7 +7,7 @@ jupyter:
       extension: .Rmd
       format_name: rmarkdown
       format_version: '1.2'
-      jupytext_version: 1.14.5
+      jupytext_version: 1.14.6
   kernelspec:
     display_name: Python 3 (ipykernel)
     language: python
@@ -68,10 +68,12 @@ df
 assert not np.any(df['2021 Median Income'].isna())
 ```
 
+We don't need `Rank` because it derives from the incomes.
+
 ```{python}
 df = df.rename(columns={"party":'Party',
                         "2021 Median Income":'Median_Income'}
-              ).drop(columns=['district_code'])
+              ).drop(columns=['Rank', 'district_code'])
 df
 ```
 
