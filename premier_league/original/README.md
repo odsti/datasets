@@ -8,5 +8,5 @@ The CSV data is the <https://www.extracttable.com> output from
 The results HTML page is the output from:
 
 ```bash
-curl -L https://www.skysports.com/premier-league-table/2021 > epl_results_2021_23.html
+curl -L https://www.skysports.com/premier-league-table/2021 > epl_results_2021_22.html
 ```
