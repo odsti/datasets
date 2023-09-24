@@ -14,7 +14,7 @@ See the processing script for details.
 The citation for the original data is:
 
 > Rohde, R. A. and Hausfather, Z.: The Berkeley Earth Land/Ocean Temperature
-Record, Earth Syst. Sci. Data, 12, 3469�3479,
+Record, Earth Syst. Sci. Data, 12, 3469 — 3479,
 <https://doi.org/10.5194/essd-12-3469-2020>, 2020.
 
 The description of the original values is:
