@@ -1,0 +1,116 @@
+---
+title: "Duncan's Occupational Prestige Regression"
+author: "John Fox"
+date: "`r Sys.Date() # generates today's date`"
+output: pdf_document
+---
+
+<!--this initial code block establishes basic settings-->
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, comment="", prompt=TRUE, fig.height=7, fig.width=7)
+```
+
+## Duncan's Data
+
+Duncan collected data on 45 U.S. occupations in 1950, including the percentage of high-school graduates in each occupation (`education`), the percentage of individuals earning \$3500 or more (`income`), and the percentage of raters in a national survey who rated the occupation as good or better in prestige (`prestige`). The income and education data were from the U.S. Census. He then regressed prestige on education and income, using the resulted estimated regression equation to predict the prestige of hundreds of Census occupations for which education and income data were avaiable but for which they were no direct prestige ratings. This methodology is still used to create substitute prestige (or "socio-economic status") scores for occupations. Duncan's analysis and the data on which it was based appeared in the chapter, "A socioeconomic index for all occupations," in Reiss (ed.), *Occupations and Social Status*, Free Press, 1961.
+
+The data are in the `Duncan` data set in the **carData** package, and so we load it along with the **car** package to access and examine the data:
+
+```{r}
+library("car")      
+dim(Duncan) # rows and columns
+Duncan  # the whole data set
+summary(Duncan) 
+```
+
+Notice that there's a fourth variable in the data set, type of occupation (`type`), a categorical variable with three categories: blue-collar (`"bc"`) , white-collar (`"wc"`) and professional and managerial (`"prof"`). The variable `type` in the `Duncan` data set is a *factor*, and its distinct values (i.e., the three categories) are called *levels*. In R, categorical variables (for most purposes) may be represented as factors, as character-string variables, or, if they have just two categories, as logical variables.
+
+The names of the occupations define the row-names of the data set and the variables define the columns.
+
+## Graphing Duncan's Data
+
+Before duplicating Duncan's regression analysis, let's take a graphical look at his data via a scatterplot matrix for the three variables, employing the `scatterplotMatrix()` function in the **car** package:
+
+```{r}
+scatterplotMatrix(~ prestige + income + education, id=list(n=3),
+                  smooth=list(span=0.7), data=Duncan)
+```
+
+The variables to be included in the scatterplot matrix are specified in the first argument to the function, in the form of a one-sided formula, `~ prestige + education + income`; we read this formula as, "Graph prestige and education and income." The `data` argument tells the function where to find the variables. The argument `id=list(n=3)` indicates that the three most unusual points in each plot should be identified by name (from the row-names of the`Duncan` data set).
+
+Each panel of the scatterplot matrix show the marginal scatterplot for a pair of variables; for example, the plot in the first row, second column has `prestige` on the vertical axis and `education` on the horizontal axis. The green line on each scatterplot is the least-squares line; the heavier red line is a for a nonparametric regression, which makes no assumption about the form of the relationship between the two variables, linear or otherwise; and the broken lines are nonparametric smooths of the positive and negative residuals from the nonparametric regression, which show the spread of points around the regression. The main diagonal of the scatterplot matrix shows the univariate distribution of each variable, in the form of a nonparametric density estimate and (at the bottom) a rug-plot (one-dimensional scatterplot). The argument `smooth=list(span=0.7)` means that the nonparametric regression and spread smoothers are computed using 70% of the data for each smoothed point; this is more than the default span of 50% and was used because of the small size of the data set.
+
+The density estimates suggest that the distributions of `prestige` and `education` are bimodal, and that the distribution of `income` has two or three modes. These peculiar distributions raise questions about how the 45 occupations in the data set were selected. All of the regressions look linear with reasonably constant spreads around the regressions, but there are some unusual cases. In particular, focusing on either scatterplot relating `education` and `income`, the occupation minister is unusual for combining moderately low income with moderately high education; and the occupations railroad engineer and conductor are unusual for combining high income with moderately low education. Because `education` and `income` are the predictors in Duncan's regression, we can anticipate that these three occupations will have "high leverage" (poential influence) on the results.
+
+## Duncan's Regression
+
+Here's the occupational prestige regression as Duncan fit it (minus the labour of performing the computations on a mechanical calculator)
+
+```{r}
+(duncan.model <- lm(prestige ~ education + income, data=Duncan))
+summary(duncan.model)  
+```
+
+$$
+y_i = \beta_0 + \beta_1 x_{1i} + \beta_2 x_{2i} + \varepsilon_i
+$$
+
+Notice that the `lm()` (linear-model) function returns an object, which I arbitrarily named `duncan.model`. Priting this object produces a brief report of the regression; the generic `summary()` function creates a more complete report, with estimated coefficients, their standard errors, t-statistics for testing that each coefficient is zero, and the two-sided p-values for these tests.
+
+The `education` and `income` coefficients are both large (a one-percent increase in high-school graduates, holding `income` constant, is associated on average with a 0.55 percent increase in high ratings of `prestige`; a one-percent increase in higher-income earners, holding `education` constant, is associated on average with a 0.60 percent increase in high ratings of `prestige`). Each of these coefficients is small relative to its standard error, and each is associated with a small p-values. Numbers like `1.73e-06` are in scientific notation: $1.73 \times 10^{-6} = 0.00000173$. The $R^2$ indicates that 83% of the variation in `prestige` among the occupations is accounted for by the regression. The F-statistic at the bottom of the model summary is for the omnibus null hypothesis that both the population `education` and `income` coefficients are zero.
+
+## Regression Diagnostics
+
+These seem like compelling results, but it's wise to check whether the fitted regression adequately represents the data. I'll show several kinds of regression diagnsotics:
+
+### Nonlinearity Diagnostics
+
+Component-plus-residual plots for `education` and `income` suggests that the partial regression are reasonably linear:
+
+```{r fig.height=4, fig.width=8}
+crPlots(duncan.model, smooth=list(span=0.7))
+```
+
+Again, I increased the span of the smoother from the default 0.5 to 0.7 because of the small data set.
+
+### Non-Constant Spread Diagnostics
+
+There is no indication that residual variation changes with the level of the response or with the predictors:
+
+```{r}
+spreadLevelPlot(duncan.model, smooth=list(span=1))
+ncvTest(duncan.model)
+ncvTest(duncan.model, var.formula= ~ income + education)
+```
+
+### Unusual Data Diagnostics
+
+An examination of the studentized residuals from the regression reveals no obvious problems, although the residual for minister stands out:
+
+```{r}
+densityPlot(rstudent(duncan.model))
+qqPlot(duncan.model, id=list(n=3))
+outlierTest(duncan.model)
+```
+
+Influential-case diagnostics tell another story, however:
+
+```{r}
+influencePlot(duncan.model, id=list(n=3))
+```
+
+```{r fig.height=4, fig.width=8}
+avPlots(duncan.model, id=list(n=3, method="mahal"))
+```
+
+The occupations minister and conductor combine fairly large residuals with large hat-values (leverages), producing relatively large Cook's distances (a measure of influence on the coefficients, given by the size of the circles in the influence plot). Railroad engineers have high leverage, but a relatively small studentized residual. The added-variable plots show that minister and conductor are an influential pair, increasing the size of the `education` coefficient and decreasing the size of the `income` coefficients.
+
+Removing these two occupations from the regression changes the results substantially:
+
+```{r}
+whichNames(c("minister", "conductor"), Duncan)
+duncan.model.2 <- update(duncan.model, subset=-c(6, 16))
+summary(duncan.model.2)
+compareCoefs(duncan.model, duncan.model.2)
+```
