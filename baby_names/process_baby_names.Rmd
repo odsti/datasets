@@ -94,8 +94,27 @@ babynames = babynames.reset_index().iloc[:, 1:]
 ```
 
 ```{python}
+popular_babies = babynames[babynames['Count'] > 25]
+len(popular_babies)
+```
+
+```{python}
 out_path = Path() / 'processed' / 'babynames.csv.gz'
 babynames.to_csv(out_path, index=None)
+```
+
+```{python}
+pd.read_csv(out_path).head()
+```
+
+```{python}
+out_path = Path() / 'processed' / 'babynames.csv.gz'
+babynames.to_csv(out_path, index=None)
+```
+
+```{python}
+out_path = Path() / 'processed' / 'notrare_babynames.csv.gz'
+popular_babies.to_csv(out_path, index=None)
 ```
 
 ```{python}
