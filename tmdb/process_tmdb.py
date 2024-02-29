@@ -1,4 +1,4 @@
-""" Process movie_metadata.csv
+""" Process TMDB movie database download
 """
 
 import os.path as op
