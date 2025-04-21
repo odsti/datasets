@@ -30,28 +30,37 @@ from pathlib import Path
 import numpy as np
 import scipy as sp
 import pandas as pd
+import matplotlib.pyplot as plt
 ```
 
 ```{python}
+# This command needed the SSL fix above.
 df = pd.read_csv('https://github.com/HwaiTengTeoh/Newborns-Weight-Prediction/raw/refs/heads/main/data/2008_births.zip')
 df.head()
+```
+
+Assume, for our purposes, and columns of interest, that all 99 values are labels for missing values:
+
+```{python}
+# Copy to defragment the data frame, for performance.
+df_nan = df.replace(99, np.nan).copy()
 ```
 
 See the file `original/data_description.txt` for column definitions.
 
 ```{python}
 # Convert pounds and ounces to kilograms.
-df['birth_weight'] = (df['BPOUND'] * sp.constants.lb + df['BOUNCE'] * sp.constants.oz).round(3)
+df_nan['birth_weight'] = (df_nan['BPOUND'] * sp.constants.lb +
+                          df_nan['BOUNCE'] * sp.constants.oz).round(3)
 ```
 
 ```{python}
 # Copy and rename columns
-out = (df[['SEX', 'WEEKS', 'CIGNUM', 'DRINKNUM', 'birth_weight']].
+out = (df_nan[['SEX', 'WEEKS', 'CIGNUM', 'DRINKNUM', 'birth_weight']].
        rename(columns={'SEX': 'sex',
                        'WEEKS': 'gestation_weeks',
                        'CIGNUM': 'mother_daily_cig_num',
-                       'DRINKNUM': 'mother_daily_drink_num'}).
-       replace(99, np.nan))
+                       'DRINKNUM': 'mother_daily_drink_num'}))
 out
 ```
 
@@ -72,4 +81,10 @@ out_dir = Path('processed')
 if not out_dir.is_dir():
     out_dir.mkdir()
 out.to_csv(out_dir / 'birth_weights.csv', index=None)
+```
+
+Review the histogram.
+
+```{python}
+out.hist('birth_weight')
 ```
