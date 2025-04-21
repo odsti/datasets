@@ -1,0 +1,38 @@
+ID : Unique Identification number of a baby
+SEX : Sex of the baby
+MARITAL: Marital status of its parents
+FAGE : Age of father
+GAINED : Weight gained during pregnancy
+VISITS : Number of prenatal visits
+MAGE : Age of mother
+FEDUC : Father's years of education
+MEDUC : Mother's years of education
+TOTALP : Total pregnancies
+BDEAD : number of children born alive now dead
+TERMS : Number of other terminations 
+LOUTCOME : Outcome of last delivery
+WEEKS : Completed weeks of gestation
+RACEMOM : Race of mother/child from this set {1:'OTHER_NON_WHITE', 2:'WHITE', 3:'BLACK', 4:'AMERICAN_INDIAN', 5:'CHINESE', 6:'JAPANESE', 7:'HAWAIIAN', 8:'FILIPINO', 9:'OTHER_ASIAN'}
+RACEDAD : Race of Father from this set {1:'OTHER_NON_WHITE', 2:'WHITE', 3:'BLACK', 4:'AMERICAN_INDIAN', 5:'CHINESE', 6:'JAPANESE', 7:'HAWAIIAN', 8:'FILIPINO', 9:'OTHER_ASIAN'}
+HISPMOM : Hispanic from this set {C:Cubans, M:Mexicans,  N:No, O:Colombians P:Peruvians, S:Salvadorans, U:Guatemalans }
+HISPDAD : Is dad hispanic? from this set {C:Cubans, M:Mexicans,  N:No, O:Colombians P:Peruvians, S:Salvadorans, U:Guatemalans }
+CIGNUM : Average number of cigarettes used daily (Mother)
+DRINKNUM: Average number of drinks used daily (mother)
+ANEMIA : Mother has/had anemia
+CARDIAC : Mother has/had cardiac disease
+ACLUNG : Mother has/had acute or chronic lung disease
+DIABETES : Mother has/had diabetes
+HERPES : Mother has/had genital herpes
+HYDRAM : Mother has/had hydramnios/Oligohydramnios
+HEMOGLOB : Mother has/had hemoglobinopathy
+HYPERCH : Mother has/had chronic hypertension
+HYPERPR : mother has/had pregnancy hypertension
+ECLAMP : Mother has/had Eclampsia
+CERVIX : Mother has/had incompetent cervix
+PINFANT : Mother had/had previous infant 4000+ grams
+PRETERM : Mother has/had previus preterm/small infant
+RENAL : Mother has/had renal disease
+RHSEN : Mother has/had Rh sensitization
+UTERINE : Mother has/had uterine bleeding
+BWEIGHT :  Baby's weight at birth
+

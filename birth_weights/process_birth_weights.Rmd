@@ -1,0 +1,75 @@
+---
+jupyter:
+  jupytext:
+    notebook_metadata_filter: all,-language_info
+    split_at_heading: true
+    text_representation:
+      extension: .Rmd
+      format_name: rmarkdown
+      format_version: '1.2'
+      jupytext_version: 1.16.6
+  kernelspec:
+    display_name: Python 3 (ipykernel)
+    language: python
+    name: python3
+---
+
+# Process births data
+
+
+Before running the command to fetch the dataset, I had to do this:
+
+```{python}
+# https://stackoverflow.com/a/56230607
+import ssl
+ssl._create_default_https_context = ssl._create_unverified_context
+```
+
+```{python}
+from pathlib import Path
+import numpy as np
+import scipy as sp
+import pandas as pd
+```
+
+```{python}
+df = pd.read_csv('https://github.com/HwaiTengTeoh/Newborns-Weight-Prediction/raw/refs/heads/main/data/2008_births.zip')
+df.head()
+```
+
+See the file `original/data_description.txt` for column definitions.
+
+```{python}
+# Convert pounds and ounces to kilograms.
+df['birth_weight'] = (df['BPOUND'] * sp.constants.lb + df['BOUNCE'] * sp.constants.oz).round(3)
+```
+
+```{python}
+# Copy and rename columns
+out = (df[['SEX', 'WEEKS', 'CIGNUM', 'DRINKNUM', 'birth_weight']].
+       rename(columns={'SEX': 'sex',
+                       'WEEKS': 'gestation_weeks',
+                       'CIGNUM': 'mother_daily_cig_num',
+                       'DRINKNUM': 'mother_daily_drink_num'}).
+       replace(99, np.nan))
+out
+```
+
+There are a few missing values in gestation length, cigarette and drink numbers.
+
+```{python}
+out.count() / len(out)
+```
+
+These missing values seem rare enough that dropping the missing values will have very little effect.
+
+```{python}
+out = out.dropna()
+```
+
+```{python}
+out_dir = Path('processed')
+if not out_dir.is_dir():
+    out_dir.mkdir()
+out.to_csv(out_dir / 'birth_weights.csv', index=None)
+```
