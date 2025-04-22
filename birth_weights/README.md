@@ -12,6 +12,9 @@ Statistics and we acknowledge The State Center for Health Statistics (SCHS)
 and the Howard W. Odum Institute for Research in Social Science at UNC at
 Chapel Hill as the source of data.
 
+From links below, I believe this to be a full census of all births in North
+Carolina in 2008.
+
 The files currently at <https://www.kaggle.com/competitions/csci-ml-s19-pa1>
 differ somewhat from those in
 <https://github.com/HwaiTengTeoh/Newborns-Weight-Prediction> - they appear to
@@ -22,7 +25,7 @@ and ounces).  I've chosen the Github repository version for compatibility with
 the description in the Github repo.
 
 From [description of a similar or identical
-dataset](https://gist.github.com/rakeshchada/7e480b2a8fe7ff7e8f16>) (with
+dataset](https://gist.github.com/rakeshchada/7e480b2a8fe7ff7e8f16) (with
 matching column names, and very similar data description) the original data
 source was
 <https://dataverse.unc.edu/dataset.xhtml?persistentId=hdl:1902.29/10446> (now
